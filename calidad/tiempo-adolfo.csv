@@ -1,0 +1,6 @@
+fecha,inicio,fin,interrupcion_min,fase,actividad
+2026-11-02,16:00,17:30,10,planeacion,Definicion de arquitectura del observatorio y seleccion de fuentes abiertas SNIIM y API cambiaria
+2026-11-03,17:00,19:15,15,diseno,Analisis de robots.txt y terminos de uso de SNIIM PROFECO Banxico e INEGI
+2026-11-04,16:30,19:00,10,codigo,Implementacion de ExtractorEtico en extractores/base.py y scraper sniim_canasta.py
+2026-11-05,17:00,19:30,15,codigo,Implementacion de macro_api.py orquestador ejecutar_captura.py y flujo GitHub Actions
+2026-11-05,20:00,21:00,0,pruebas,Ejecucion de descarga historica (>=36 meses) en capa bronce y pruebas unitarias con pytest

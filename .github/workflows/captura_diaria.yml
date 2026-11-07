@@ -1,0 +1,50 @@
+name: Captura Programada Capa Bronce
+
+on:
+  schedule:
+    # Corre todos los dias a las 13:00 UTC (07:00 a.m. hora del Centro de Mexico)
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  captura-bronce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Instalar dependencias de captura
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Ejecutar captura etica en capa bronce y bitacora SQA
+        env:
+          BANXICO_TOKEN: ${{ secrets.BANXICO_TOKEN }}
+        run: |
+          python -m extractores.ejecutar_captura --modo diario
+
+      - name: Ejecutar pruebas unitarias de extractores
+        run: |
+          pytest tests/
+
+      - name: Guardar evidencias de bronce y bitacora en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/bronce/ calidad/bitacora_captura.csv
+          if git diff --staged --quiet; then
+            echo "Sin cambios nuevos para confirmar."
+          else
+            git commit -m "Actualizando datos de capa bronce y bitacora diaria"
+            git push
+          fi

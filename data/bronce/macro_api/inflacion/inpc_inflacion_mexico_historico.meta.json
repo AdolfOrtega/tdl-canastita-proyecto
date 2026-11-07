@@ -1,0 +1,25 @@
+{
+  "nombre_archivo": "inpc_inflacion_mexico_historico.csv",
+  "descripcion": "Serie historica mensual del INPC Nacional (Banxico SIE SP1, 2022-2026)",
+  "fuente_subcarpeta": "macro_api/inflacion",
+  "fuentes_origen": [
+    "BANXICO_SIE_SP1"
+  ],
+  "fecha_captura_utc": "2026-11-07T01:59:37.944828+00:00",
+  "user_agent": "TDL-Observatorio/1.0 (proyecto academico; contacto: 23460528@colima.tecnm.mx)",
+  "total_registros": 57,
+  "total_periodos_mensuales": 57,
+  "primer_periodo": "2022-01",
+  "ultimo_periodo": "2026-09",
+  "columnas": [
+    "fecha_iso",
+    "anio_mes",
+    "codigo_indicador",
+    "nombre_indicador",
+    "valor",
+    "pais",
+    "_fuente",
+    "_url_origen",
+    "_capturado_en_utc"
+  ]
+}

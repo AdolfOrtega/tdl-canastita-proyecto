@@ -1,0 +1,33 @@
+{
+  "nombre_archivo": "sniim_occidente_historico_2022_2026.csv",
+  "descripcion": "Serie historica 2022-2026 de canasta basica en Colima, Guadalajara y Morelia",
+  "fuente_subcarpeta": "sniim_canasta/historico",
+  "fuentes_origen": [
+    "SNIIM_SE"
+  ],
+  "fecha_captura_utc": "2026-11-06T07:15:32.127530+00:00",
+  "user_agent": "TDL-Observatorio/1.0 (proyecto academico; contacto: 23460528@colima.tecnm.mx)",
+  "total_registros": 13647,
+  "total_periodos_mensuales": 59,
+  "primer_periodo": "2022-01",
+  "ultimo_periodo": "2026-11",
+  "columnas": [
+    "fecha_observacion_raw",
+    "anio_mes",
+    "plaza_id",
+    "estado",
+    "ciudad",
+    "nombre_plaza",
+    "producto",
+    "calidad",
+    "presentacion",
+    "origen",
+    "precio_min_mxn",
+    "precio_max_mxn",
+    "precio_frecuente_mxn",
+    "observaciones",
+    "_fuente",
+    "_url_origen",
+    "_capturado_en_utc"
+  ]
+}

@@ -1,0 +1,10 @@
+timestamp_inicio_utc,timestamp_fin_utc,fuente,modo,duracion_seg,estado,registros_capturados,archivo_bronce,mensaje_error
+2026-11-06T07:10:12.778448+00:00,2026-11-06T07:11:38.786043+00:00,SNIIM_SCRAPER_HIST_36M,completo,86.008,FALLA,0,,No se obtuvieron registros para sniim_canasta/historico/sniim_occidente_historico_2022_2026
+2026-11-06T07:11:38.787549+00:00,2026-11-06T07:11:39.567398+00:00,API_OPEN_METEO_OCCIDENTE,completo,0.78,FALLA,0,,robots.txt no permite https://archive-api.open-meteo.com/v1/archive
+2026-11-06T07:14:15.798082+00:00,2026-11-06T07:15:32.128540+00:00,SNIIM_SCRAPER_HIST_36M,completo,76.33,EXITO,13647,data\bronce\sniim_canasta\historico\sniim_occidente_historico_2022_2026.csv,
+2026-11-07T01:58:37.246838+00:00,2026-11-07T01:58:42.960411+00:00,SNIIM_SCRAPER_REC,diario,5.714,EXITO,1500,data\bronce\sniim_canasta\fecha=2026-11-07\sniim_reciente_2026-11-07.csv,
+2026-11-07T01:58:42.963776+00:00,2026-11-07T01:58:44.535495+00:00,BANXICO_SIE_SF43718_USDMXN,diario,1.572,EXITO,1218,data\bronce\macro_api\tipo_cambio\usd_mxn_historico_2022_2026.csv,
+2026-11-07T01:58:44.536494+00:00,2026-11-07T01:58:46.154646+00:00,BANXICO_SIE_SP1_INPC,diario,1.618,EXITO,57,data\bronce\macro_api\inflacion\inpc_inflacion_mexico_historico.csv,
+2026-11-07T01:59:28.955292+00:00,2026-11-07T01:59:34.870840+00:00,SNIIM_SCRAPER_REC,diario,5.916,EXITO,1500,data\bronce\sniim_canasta\fecha=2026-11-06\sniim_reciente_2026-11-06.csv,
+2026-11-07T01:59:34.872958+00:00,2026-11-07T01:59:36.385450+00:00,BANXICO_SIE_SF43718_USDMXN,diario,1.512,EXITO,1218,data\bronce\macro_api\tipo_cambio\usd_mxn_historico_2022_2026.csv,
+2026-11-07T01:59:36.387815+00:00,2026-11-07T01:59:37.947147+00:00,BANXICO_SIE_SP1_INPC,diario,1.559,EXITO,57,data\bronce\macro_api\inflacion\inpc_inflacion_mexico_historico.csv,

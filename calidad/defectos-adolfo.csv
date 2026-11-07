@@ -1,0 +1,6 @@
+numero,fecha,tipo,fase_introducido,fase_eliminado,minutos_correccion,defecto_origen,descripcion
+1,2026-11-03,entorno,codigo,pruebas,20,,El HTML del SNIIM venia en latin-1 y al leerlo como utf-8 salian caracteres raros en palabras con acento como Michoacan y Limon
+2,2026-11-04,sistema,codigo,pruebas,25,,El servidor del SNIIM nos tiro error HTTP 503 cuando mandamos varias consultas seguidas; se corrigio usando la espera exponencial en ExtractorEtico
+3,2026-11-05,datos,codigo,pruebas,15,,Cuando consultamos un producto especifico en SNIIM la tabla cambia de 9 a 7 columnas y el parser devolvia lista vacia; ajustamos parsear_tabla_sniim para aceptar los dos formatos
+4,2026-11-05,sistema,pruebas,pruebas,15,,Al probar archive-api.open-meteo.com nuestro ExtractorEtico lo bloqueo porque su robots.txt tiene Disallow: /; lo cambiamos por las series oficiales de Banxico SIE (SF43718 y SP1)
+5,2026-11-05,entorno,pruebas,pruebas,5,,Al correr pytest salia ModuleNotFoundError para la carpeta extractores; se arreglo agregando el archivo pytest.ini con pythonpath = .
