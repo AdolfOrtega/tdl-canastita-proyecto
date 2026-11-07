@@ -1,0 +1,4 @@
+numero,fecha,tipo,fase_introducido,fase_eliminado,minutos_correccion,defecto_origen,descripcion
+1,2026-11-03,documentacion,planeacion,revision,15,,En el primer borrador solo habiamos puesto Colima y nos faltaban los 3 grupos obligatorios para el MANOVA de E3; ampliamos el alcance a Colima Guadalajara y Morelia
+2,2026-11-04,datos,diseno,revision,20,,Al principio solo bajamos 2 años de precios (24 meses) y la rubrica pide minimo 36 periodos; ampliamos la consulta desde enero de 2022 para tener 59 meses
+3,2026-11-05,documentacion,codificacion,revision,10,,En la revision de Quality Lead note que faltaba documentar en propuesta.md el bloqueo de robots.txt que nos salio con Open-Meteo; se agrego la evidencia en la seccion 2.3

@@ -1,0 +1,6 @@
+fecha,inicio,fin,interrupcion_min,fase,actividad
+2026-11-02,16:00,17:30,5,planeacion,Formulacion de pregunta central del observatorio hipotesis de negocio y perfil del cliente
+2026-11-03,18:00,19:30,10,diseno,Diseno de las 3 preguntas analiticas (pronostico E1 experimento factorial 2^3 E2 y MANOVA/PCA E3)
+2026-11-04,17:00,18:45,10,planeacion,Preparacion de cuestionario y realizacion de entrevista exploratoria con negocio del sector alimentario
+2026-11-05,18:00,20:15,15,documentacion,Redaccion de propuesta.md definicion de objetivos medibles de calidad SQA y revision cruzada como Quality Lead
+2026-11-05,20:15,21:00,0,revision,Inspeccion de ficha ENTREGA.md y verificacion de serie historica en data/bronce
