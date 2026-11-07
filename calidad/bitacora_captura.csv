@@ -8,3 +8,6 @@ timestamp_inicio_utc,timestamp_fin_utc,fuente,modo,duracion_seg,estado,registros
 2026-11-07T01:59:28.955292+00:00,2026-11-07T01:59:34.870840+00:00,SNIIM_SCRAPER_REC,diario,5.916,EXITO,1500,data\bronce\sniim_canasta\fecha=2026-11-06\sniim_reciente_2026-11-06.csv,
 2026-11-07T01:59:34.872958+00:00,2026-11-07T01:59:36.385450+00:00,BANXICO_SIE_SF43718_USDMXN,diario,1.512,EXITO,1218,data\bronce\macro_api\tipo_cambio\usd_mxn_historico_2022_2026.csv,
 2026-11-07T01:59:36.387815+00:00,2026-11-07T01:59:37.947147+00:00,BANXICO_SIE_SP1_INPC,diario,1.559,EXITO,57,data\bronce\macro_api\inflacion\inpc_inflacion_mexico_historico.csv,
+2026-11-07T02:55:42.294453+00:00,2026-11-07T02:55:47.653881+00:00,SNIIM_SCRAPER_REC,diario,5.359,EXITO,1470,data/bronce/sniim_canasta/fecha=2026-11-07/sniim_reciente_2026-11-07.csv,
+2026-11-07T02:55:47.653994+00:00,2026-11-07T02:55:48.655775+00:00,BANXICO_SIE_SF43718_USDMXN,diario,1.002,EXITO,1218,data/bronce/macro_api/tipo_cambio/usd_mxn_historico_2022_2026.csv,
+2026-11-07T02:55:48.655886+00:00,2026-11-07T02:55:50.302849+00:00,BANXICO_SIE_SP1_INPC,diario,1.647,EXITO,57,data/bronce/macro_api/inflacion/inpc_inflacion_mexico_historico.csv,
