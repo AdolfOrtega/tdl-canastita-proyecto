@@ -3,13 +3,13 @@
   "descripcion": "Serie historica y actual de tipo de cambio FIX USD/MXN (Banxico SIE SF43718, 2022-2026)",
   "fuente_subcarpeta": "macro_api/tipo_cambio",
   "fuentes_origen": [
-    "FRANKFURTER_FX_API"
+    "BANXICO_SIE_SF43718"
   ],
-  "fecha_captura_utc": "2026-11-07T17:58:06.907326+00:00",
+  "fecha_captura_utc": "2026-11-08T18:14:52.583658+00:00",
   "user_agent": "TDL-Observatorio/1.0 (proyecto academico; contacto: 23460528@colima.tecnm.mx)",
-  "total_registros": 1241,
-  "total_periodos_mensuales": 60,
-  "primer_periodo": "2021-12",
+  "total_registros": 1218,
+  "total_periodos_mensuales": 59,
+  "primer_periodo": "2022-01",
   "ultimo_periodo": "2026-11",
   "columnas": [
     "fecha_iso",
