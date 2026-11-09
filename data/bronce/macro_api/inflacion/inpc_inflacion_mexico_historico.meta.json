@@ -5,12 +5,12 @@
   "fuentes_origen": [
     "BANXICO_SIE_SP1"
   ],
-  "fecha_captura_utc": "2026-11-08T18:14:54.206015+00:00",
+  "fecha_captura_utc": "2026-11-09T22:53:31.164331+00:00",
   "user_agent": "TDL-Observatorio/1.0 (proyecto academico; contacto: 23460528@colima.tecnm.mx)",
-  "total_registros": 57,
-  "total_periodos_mensuales": 57,
+  "total_registros": 58,
+  "total_periodos_mensuales": 58,
   "primer_periodo": "2022-01",
-  "ultimo_periodo": "2026-09",
+  "ultimo_periodo": "2026-10",
   "columnas": [
     "fecha_iso",
     "anio_mes",
