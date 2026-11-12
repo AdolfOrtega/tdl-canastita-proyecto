@@ -1,0 +1,33 @@
+{
+  "nombre_archivo": "sniim_reciente_2026-11-12.csv",
+  "descripcion": "Captura programada de precios mayoristas SNIIM en Colima, Guadalajara y Morelia",
+  "fuente_subcarpeta": "sniim_canasta/fecha=2026-11-12",
+  "fuentes_origen": [
+    "SNIIM_SE"
+  ],
+  "fecha_captura_utc": "2026-11-12T20:40:28.498540+00:00",
+  "user_agent": "TDL-Observatorio/1.0 (proyecto academico; contacto: 23460528@colima.tecnm.mx)",
+  "total_registros": 1470,
+  "total_periodos_mensuales": 2,
+  "primer_periodo": "2026-10",
+  "ultimo_periodo": "2026-11",
+  "columnas": [
+    "fecha_observacion_raw",
+    "anio_mes",
+    "plaza_id",
+    "estado",
+    "ciudad",
+    "nombre_plaza",
+    "producto",
+    "calidad",
+    "presentacion",
+    "origen",
+    "precio_min_mxn",
+    "precio_max_mxn",
+    "precio_frecuente_mxn",
+    "observaciones",
+    "_fuente",
+    "_url_origen",
+    "_capturado_en_utc"
+  ]
+}
