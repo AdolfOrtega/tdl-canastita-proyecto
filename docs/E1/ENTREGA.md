@@ -25,9 +25,9 @@ La entrega **E1 (Datos de confianza y pronóstico)** consolida el paso de la ing
 1. **Capa Plata (`data/plata/`):** 14,923 registros limpios, normalizados y deduplicados de precios diarios agropecuarios (2022-2026). Incorpora la **Puerta 1 de Calidad** con derivación activa de registros corruptos hacia **cuarentena** (`data/cuarentena/rechazos_plata.csv`) y detección de valores atípicos con el método **IQR**.
 2. **Capa Oro (`data/oro/`):** 961 observaciones mensuales consolidadas mediante un join analítico multifuente con indicadores de Banco de México (Tipo de Cambio FIX promedio e Inflación INPC), calculando spreads, conversión en USD y tasas de variación intermensual (MoM) y anual (YoY).
 3. **Laboratorio de Series de Tiempo (`laboratorio/`):** Modelado predictivo riguroso sobre 59 meses continuos para tres insumos críticos en Colima (Jitomate Saladette, Limón con semilla #5 y Aguacate Hass). Comparación de 4 familias de modelos (**SES, Holt, Holt-Winters, ARIMA**) con partición fuera de muestra, pruebas de estacionariedad **ADF** ($I(1)$) y pronóstico a 4 meses (Dic 2026 – Mar 2027) con intervalos de confianza al 95%.
-4. **Calidad y SQA (IEEE 730):** Disponibilidad operativa real del **100.0%** en producción con base en 27 ejecuciones programadas exitosas en GitHub Actions; Plan SQA formal en [docs/E1/plan_sqa_ieee730.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/docs/E1/plan_sqa_ieee730.md); y registros PSP actualizados en `calidad/`.
+4. **Calidad y SQA (IEEE 730):** Disponibilidad operativa real del **100.0%** en producción con base en 27 ejecuciones programadas exitosas en GitHub Actions; Plan SQA formal en [docs/E1/plan_sqa_ieee730.md](plan_sqa_ieee730.md); y registros PSP actualizados en `calidad/`.
 5. **Tablero Streamlit (`tablero/app.py`):** Interfaz interactiva de consulta con visor de mercado, comparativo regional de plazas, semáforo de compras para cocinas y panel de gobernanza de datos.
-6. **Suite de Pruebas Automatizadas:** 11 pruebas unitarias y de integración con **91% de cobertura de código**, superando ampliamente la meta del 60%.
+6. **Suite de Pruebas Automatizadas:** 15 pruebas unitarias y de integración con **90% de cobertura de código**, superando ampliamente la meta del 60%.
 
 ---
 
@@ -49,9 +49,13 @@ Para atender de forma exhaustiva y preventiva esta observación, el equipo ejecu
    - `test_integracion_macro_oro`: Verifica la integridad referencial en el join entre SNIIM mensual y las series de Banxico FIX e INPC, sin pérdida de registros temporales.
    - `test_calculo_metricas_variacion_oro`: Verifica el cálculo correcto de variaciones intermensuales (MoM), anuales (YoY) y tasas inflacionarias.
    - `test_pipeline_completo_genera_archivos`: Prueba end-to-end que ejecuta la transformación de capas y certifica la existencia de los artefactos y el cumplimiento de $\ge 36$ períodos continuos.
-3. **Resultado Cuantitativo:**
-   - Total de pruebas en suite: **11 tests pasando exitosamente**.
-   - Cobertura de código alcanzada: **91%** (`pipeline/limpieza_plata.py`: 93%, `pipeline/construir_oro.py`: 89%).
+3. **Suite de Pruebas Estadísticas (`tests/test_estadistica.py`):**
+   - Validación de fórmulas matemáticas de error (MAPE, RMSE, MAE).
+   - Invarianza de la descomposición estacional clásica ($Y_t = T_t + S_t + R_t$).
+   - Pruebas ADF de estacionariedad e intervalos de predicción al 95%.
+4. **Resultado Cuantitativo:**
+   - Total de pruebas en suite: **15 tests pasando exitosamente**.
+   - Cobertura de código alcanzada: **90%** (`pipeline/limpieza_plata.py`: 91%, `pipeline/construir_oro.py`: 88%).
 
 ---
 
@@ -59,21 +63,21 @@ Para atender de forma exhaustiva y preventiva esta observación, el equipo ejecu
 
 | Componente | Artefacto Generado | Ubicación en el Repositorio |
 | :--- | :--- | :--- |
-| **Pruebas Automatizadas** | Suite con 91% de cobertura | [tests/test_pipeline.py](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/tests/test_pipeline.py) · [tests/test_extractores.py](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/tests/test_extractores.py) |
-| **Capa Plata** | Datos limpios y deduplicados | [data/plata/canasta_occidente_plata.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/data/plata/canasta_occidente_plata.csv) · [Metadatos Plata](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/data/plata/canasta_occidente_plata.meta.json) |
-| **Cuarentena** | Auditoría de rechazos Puerta 1 | [data/cuarentena/rechazos_plata.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/data/cuarentena/rechazos_plata.csv) |
-| **Capa Oro** | Tabla dimensional analítica | [data/oro/canasta_occidente_oro.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/data/oro/canasta_occidente_oro.csv) · [Metadatos Oro](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/data/oro/canasta_occidente_oro.meta.json) |
-| **Diccionario de Datos** | Especificación de esquemas | [pipeline/diccionario_datos.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/pipeline/diccionario_datos.md) |
-| **Laboratorio Predictivo** | Script de pronósticos | [laboratorio/pronostico_series_tiempo.py](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/pronostico_series_tiempo.py) |
-| **Informe Estadístico** | Reporte técnico de series de tiempo | [laboratorio/informe_estadistico.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/informe_estadistico.md) |
-| **Métricas de Modelos** | Tabla comparativa MAPE/RMSE | [laboratorio/metricas_modelos.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/metricas_modelos.csv) |
-| **Pronósticos 4 Meses** | Proyecciones Dic 2026 – Mar 2027 | [laboratorio/pronosticos_futuro.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/pronosticos_futuro.csv) |
-| **Gráficos Estadísticos** | Visualizaciones analíticas | [laboratorio/graficos/](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/graficos/) |
-| **Plan SQA IEEE 730** | Estándar de aseguramiento | [docs/E1/plan_sqa_ieee730.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/docs/E1/plan_sqa_ieee730.md) |
-| **Bitácora de Producción** | 27 capturas programadas exitosas | [calidad/bitacora_captura.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/calidad/bitacora_captura.csv) |
-| **Registros PSP** | Defectos y tiempos del equipo | [calidad/defectos-adolfo.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/calidad/defectos-adolfo.csv) · [calidad/defectos-andrea.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/calidad/defectos-andrea.csv) |
-| **Tablero Interactivo** | Aplicación Streamlit | [tablero/app.py](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/tablero/app.py) |
-| **Relatoría Metodológica** | 6 preguntas de reflexión técnica | [docs/relatoria-E1.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/docs/relatoria-E1.md) |
+| **Pruebas Automatizadas** | Suite con 90% de cobertura (15 tests) | [tests/test_pipeline.py](../../tests/test_pipeline.py) · [tests/test_extractores.py](../../tests/test_extractores.py) · [tests/test_estadistica.py](../../tests/test_estadistica.py) |
+| **Capa Plata** | Datos limpios y deduplicados | [data/plata/canasta_occidente_plata.csv](../../data/plata/canasta_occidente_plata.csv) · [Metadatos Plata](../../data/plata/canasta_occidente_plata.meta.json) |
+| **Cuarentena** | Auditoría de rechazos Puerta 1 | [data/cuarentena/rechazos_plata.csv](../../data/cuarentena/rechazos_plata.csv) |
+| **Capa Oro** | Tabla dimensional analítica | [data/oro/canasta_occidente_oro.csv](../../data/oro/canasta_occidente_oro.csv) · [Metadatos Oro](../../data/oro/canasta_occidente_oro.meta.json) |
+| **Diccionario de Datos** | Especificación de esquemas | [pipeline/diccionario_datos.md](../../pipeline/diccionario_datos.md) |
+| **Laboratorio Predictivo** | Script de pronósticos | [laboratorio/pronostico_series_tiempo.py](../../laboratorio/pronostico_series_tiempo.py) |
+| **Informe Estadístico** | Reporte técnico de series de tiempo | [laboratorio/informe_estadistico.md](../../laboratorio/informe_estadistico.md) |
+| **Métricas de Modelos** | Tabla comparativa MAPE/RMSE | [laboratorio/metricas_modelos.csv](../../laboratorio/metricas_modelos.csv) |
+| **Pronósticos 4 Meses** | Proyecciones Dic 2026 – Mar 2027 | [laboratorio/pronosticos_futuro.csv](../../laboratorio/pronosticos_futuro.csv) |
+| **Gráficos Estadísticos** | Visualizaciones analíticas | [laboratorio/graficos/](../../laboratorio/graficos/) |
+| **Plan SQA IEEE 730** | Estándar de aseguramiento | [docs/E1/plan_sqa_ieee730.md](plan_sqa_ieee730.md) |
+| **Bitácora de Producción** | 27 capturas programadas exitosas | [calidad/bitacora_captura.csv](../../calidad/bitacora_captura.csv) |
+| **Registros PSP** | Defectos y tiempos del equipo | [calidad/defectos-adolfo.csv](../../calidad/defectos-adolfo.csv) · [calidad/defectos-andrea.csv](../../calidad/defectos-andrea.csv) |
+| **Tablero Interactivo** | Aplicación Streamlit | [tablero/app.py](../../tablero/app.py) |
+| **Relatoría Metodológica** | 6 preguntas de reflexión técnica | [docs/relatoria-E1.md](../relatoria-E1.md) |
 
 ---
 

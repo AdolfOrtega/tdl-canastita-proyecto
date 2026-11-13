@@ -394,9 +394,9 @@ with pestanas[2]:
     st.markdown("---")
     st.subheader("📑 Documentación y Entregables de Calidad")
     st.markdown("""
-    - **Plan SQA IEEE 730:** [docs/E1/plan_sqa_ieee730.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/docs/E1/plan_sqa_ieee730.md)
-    - **Diccionario de Datos:** [pipeline/diccionario_datos.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/pipeline/diccionario_datos.md)
-    - **Informe de Series de Tiempo:** [laboratorio/informe_estadistico.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/informe_estadistico.md)
-    - **Ficha Ejecutiva E1:** [docs/E1/ENTREGA.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/docs/E1/ENTREGA.md)
-    - **Relatoría Metodológica:** [docs/relatoria-E1.md](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/docs/relatoria-E1.md)
+    - **Plan SQA IEEE 730:** `docs/E1/plan_sqa_ieee730.md`
+    - **Diccionario de Datos:** `pipeline/diccionario_datos.md`
+    - **Informe de Series de Tiempo:** `laboratorio/informe_estadistico.md`
+    - **Ficha Ejecutiva E1:** `docs/E1/ENTREGA.md`
+    - **Relatoría Metodológica:** `docs/relatoria-E1.md`
     """)

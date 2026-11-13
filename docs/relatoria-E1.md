@@ -4,7 +4,7 @@
 **Institución:** Instituto Tecnológico de Colima (TecNM)  
 **Asignaturas:** Ingeniería de Datos, Análisis Estadístico y Calidad en Sistemas de Información  
 **Docentes:** Mtro. Armando Román Gallardo Heredia, Mtro. Mónico Joel Sánchez Velasco y Mtra. Isis Saraí Espinosa Lozano  
-**Equipo:** Adolfo Rodríguez (Ingeniería de Datos) y Andrea Tairi Velázquez Gallardo (Análisis Estadístico)  
+**Equipo:** Adolfo Rodríguez  y Andrea Tairi Velázquez Gallardo
 **Fecha:** Noviembre 2026
 
 ---

@@ -162,10 +162,10 @@ Cada integrante del equipo mantuvo un registro diario riguroso de defectos encon
 1. **Clasificación de Defectos:** Documentación, Entorno, Sistema, Datos, Lógica.
 2. **Ciclo de Defecto:** Registro de la fase donde se introdujo (Planeación, Diseño, Código) vs la fase donde fue eliminado (Pruebas, Revisión) y los minutos requeridos para su corrección.
 3. **Archivos de Auditoría PSP:**
-   - [defectos-adolfo.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/calidad/defectos-adolfo.csv) (8 defectos gestionados y resueltos).
-   - [tiempo-adolfo.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/calidad/tiempo-adolfo.csv) (10 sesiones de trabajo registradas).
-   - [defectos-andrea.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/calidad/defectos-andrea.csv) (6 defectos gestionados y resueltos).
-   - [tiempo-andrea.csv](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/calidad/tiempo-andrea.csv) (10 sesiones de trabajo registradas).
+   - [defectos-adolfo.csv](../../calidad/defectos-adolfo.csv) (8 defectos gestionados y resueltos).
+   - [tiempo-adolfo.csv](../../calidad/tiempo-adolfo.csv) (10 sesiones de trabajo registradas).
+   - [defectos-andrea.csv](../../calidad/defectos-andrea.csv) (6 defectos gestionados y resueltos).
+   - [tiempo-andrea.csv](../../calidad/tiempo-andrea.csv) (10 sesiones de trabajo registradas).
 
 ---
 

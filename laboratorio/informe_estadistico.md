@@ -39,9 +39,9 @@ Se realizó la descomposición estacional con período $s=12$ meses:
 $$Y_t = T_t + S_t + R_t$$
 
 * **Gráficos generados:**
-  * [Descomposición Jitomate Saladette](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/graficos/descomposicion_jitomate.png)
-  * [Descomposición Limón con semilla #5](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/graficos/descomposicion_limon.png)
-  * [Descomposición Aguacate Hass](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/graficos/descomposicion_aguacate.png)
+  * [Descomposición Jitomate Saladette](graficos/descomposicion_jitomate.png)
+  * [Descomposición Limón con semilla #5](graficos/descomposicion_limon.png)
+  * [Descomposición Aguacate Hass](graficos/descomposicion_aguacate.png)
 
 ### Hallazgos de la Descomposición:
 - **Jitomate:** Estacionalidad con picos entre diciembre y febrero (heladas en zonas productoras del norte que encarecen el producto en Colima) y valles en verano.
@@ -97,7 +97,7 @@ Con el modelo ganador reentrenado sobre los 59 meses completos, se proyectaron l
 | Aguacate Hass | 2027-02 | **$49.04** | $21.78 | $76.31 | Modelo de Holt (Doble Suavizamiento) |
 | Aguacate Hass | 2027-03 | **$48.72** | $17.24 | $80.21 | Modelo de Holt (Doble Suavizamiento) |
 
-* **Gráfico de Pronósticos:** [Visualización Comparativa 4 Meses](file:///c:/Users/adolf/Downloads/Proyecto%20Integrador/tdl-canastita-proyecto/laboratorio/graficos/pronostico_comparativo_4meses.png)
+* **Gráfico de Pronósticos:** [Visualización Comparativa 4 Meses](graficos/pronostico_comparativo_4meses.png)
 
 ---
 
