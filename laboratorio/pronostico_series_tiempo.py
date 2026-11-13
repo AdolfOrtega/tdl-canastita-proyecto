@@ -74,7 +74,7 @@ def preparar_serie(df_oro: pd.DataFrame, producto: str, plaza_id: int = 80) -> p
     return serie
 
 
-def test_adf(serie: pd.Series, nombre: str) -> Dict:
+def ejecutar_prueba_adf(serie: pd.Series, nombre: str) -> Dict:
     """Ejecuta la prueba de Augmented Dickey-Fuller en niveles y primera diferencia."""
     resultado_niveles = adfuller(serie.dropna(), autolag="AIC")
     stat_niveles = resultado_niveles[0]
@@ -394,7 +394,7 @@ def ejecutar_laboratorio_completo() -> Dict:
         series_dict[prod] = serie
 
         # 1. ADF Test
-        res_adf = test_adf(serie, prod)
+        res_adf = ejecutar_prueba_adf(serie, prod)
         pruebas_adf.append(res_adf)
 
         # 2. Descomposición
