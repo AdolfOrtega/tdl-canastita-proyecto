@@ -190,14 +190,21 @@ def registrar_cuarentena(df_rechazados: pd.DataFrame) -> None:
 
     if df_rechazados.empty:
         if not archivo_cuarentena.exists():
-            # Crear archivo vacío con encabezados
             columnas = ["fecha_rechazo_utc", "motivo_rechazo", "fecha_observacion_raw", "producto", "precio_frecuente_mxn"]
             pd.DataFrame(columns=columnas).to_csv(archivo_cuarentena, index=False)
         return
 
-    # Si ya existe, anexar; si no, crear
+    # Si ya existe, combinar y deduplicar por (fecha_observacion_raw, producto, motivo_rechazo)
     if archivo_cuarentena.exists():
-        df_rechazados.to_csv(archivo_cuarentena, mode="a", header=False, index=False)
+        try:
+            df_previo = pd.read_csv(archivo_cuarentena)
+            df_combinado = pd.concat([df_previo, df_rechazados], ignore_index=True)
+            cols_sub = ["fecha_observacion_raw", "plaza_id", "producto", "motivo_rechazo"]
+            cols_validas = [c for c in cols_sub if c in df_combinado.columns]
+            df_dedup = df_combinado.drop_duplicates(subset=cols_validas, keep="last")
+            df_dedup.to_csv(archivo_cuarentena, index=False)
+        except Exception:
+            df_rechazados.to_csv(archivo_cuarentena, index=False)
     else:
         df_rechazados.to_csv(archivo_cuarentena, index=False)
 
