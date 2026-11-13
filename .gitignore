@@ -13,6 +13,9 @@ htmlcov/
 .env.*
 !.env.example
 
-# Archivos temporales del sistema
+# Archivos temporales del sistema y notas de coordinacion interna
 .DS_Store
 Thumbs.db
+*antigravity*
+*ANTIGRAVITY*
+PROMPT*
