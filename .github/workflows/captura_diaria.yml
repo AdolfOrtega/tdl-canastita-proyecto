@@ -33,18 +33,23 @@ jobs:
         run: |
           python -m extractores.ejecutar_captura --modo diario
 
-      - name: Ejecutar pruebas unitarias de extractores
+      - name: Procesar Capa Plata y Capa Oro (Pipeline Medallion)
         run: |
-          pytest tests/
+          python pipeline/limpieza_plata.py
+          python pipeline/construir_oro.py
 
-      - name: Guardar evidencias de bronce y bitacora en el repositorio
+      - name: Ejecutar suite de pruebas con medicion de cobertura
+        run: |
+          pytest -v --cov=pipeline tests/
+
+      - name: Guardar evidencias de datos y bitacora en el repositorio
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/bronce/ calidad/bitacora_captura.csv
+          git add data/bronce/ data/plata/ data/oro/ data/cuarentena/ calidad/bitacora_captura.csv
           if git diff --staged --quiet; then
             echo "Sin cambios nuevos para confirmar."
           else
-            git commit -m "Actualizando datos de capa bronce y bitacora diaria"
+            git commit -m "Actualizando datos diarios de capas Bronce, Plata y Oro con bitacora SQA"
             git push
           fi

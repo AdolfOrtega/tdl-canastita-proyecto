@@ -1,0 +1,4 @@
+producto,corr_pearson_tc_fix,p_valor_tc_fix,corr_spearman_tc_fix,corr_pearson_inpc,p_valor_inpc,corr_spearman_inpc
+Jitomate Saladette,-0.305,0.0187,-0.295,0.377,0.0033,0.304
+Limon con semilla #5,-0.172,0.193,-0.322,0.128,0.3351,0.268
+Aguacate Hass,0.57,0.0,0.537,-0.288,0.0271,-0.257

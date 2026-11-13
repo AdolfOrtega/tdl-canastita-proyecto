@@ -4,3 +4,8 @@ fecha,inicio,fin,interrupcion_min,fase,actividad
 2026-11-04,17:00,18:45,10,planeacion,Preparacion de cuestionario y realizacion de entrevista exploratoria con negocio del sector alimentario
 2026-11-05,18:00,20:15,15,documentacion,Redaccion de propuesta.md definicion de objetivos medibles de calidad SQA y revision cruzada como Quality Lead
 2026-11-05,20:15,21:00,0,revision,Inspeccion de ficha ENTREGA.md y verificacion de serie historica en data/bronce
+2026-11-07,16:00,17:30,10,analisis,Analisis exploratorio de la serie historica de 59 meses de Jitomate Limon y Aguacate para la plaza de Colima
+2026-11-09,17:00,19:15,15,documentacion,Redaccion del Plan de Aseguramiento de Calidad de Software (SQA) adaptado a IEEE 730 en docs/E1/plan_sqa_ieee730.md
+2026-11-10,16:30,19:00,10,analisis,Diseno y validacion de pruebas de estacionariedad Augmented Dickey-Fuller (ADF) en niveles y diferencias para insumos agricolas
+2026-11-11,17:00,20:00,15,codigo,Implementacion del laboratorio de series de tiempo (pronostico_series_tiempo.py) comparando 4 modelos (SES Holt Holt-Winters ARIMA) y calculo de MAPE/RMSE
+2026-11-12,17:30,20:30,10,analisis,Generacion de pronosticos a 4 meses intervalos de confianza al 95% correlaciones macroeconomicas y redaccion de relatoria-E1.md

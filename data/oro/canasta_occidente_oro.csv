@@ -1,0 +1,962 @@
+anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio_promedio_mxn,precio_mediana_mxn,precio_min_mes,precio_max_mes,volatilidad_precio_std,num_observaciones,conteo_atipicos_iqr,spread_mensual_mxn,spread_pct,tipo_cambio_fix_promedio,inpc_mensual,precio_usd,variacion_mom_pct,variacion_yoy_pct,media_movil_3m,inflacion_mensual_pct
+2022-01,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,68.5,68.5,68.0,55.0,75.0,2.83,8,0,20.0,29.2,20.4978,118.002,3.3418,,,68.5,
+2022-02,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,75.0,75.0,75.0,60.0,75.0,0.0,8,0,15.0,20.0,20.4495,118.981,3.6676,9.49,,71.75,0.83
+2022-03,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,79.67,79.67,80.0,60.0,81.0,1.8,9,0,21.0,26.36,20.5562,120.159,3.8756,6.22,,74.39,0.99
+2022-04,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,89.62,89.62,90.0,65.0,98.0,8.35,8,0,33.0,36.82,20.1088,120.809,4.457,12.5,,81.43,0.54
+2022-05,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,108.33,107.22,100.0,85.0,125.0,16.01,9,4,40.0,36.92,20.0305,121.022,5.4084,20.87,,92.54,0.18
+2022-06,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,109.38,108.75,105.0,90.0,125.0,12.37,8,2,35.0,32.0,20.0237,122.044,5.4623,0.96,,102.44,0.84
+2022-07,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,109.44,109.44,120.0,65.0,120.0,14.02,9,0,55.0,50.25,20.5467,122.948,5.3266,0.06,,109.05,0.74
+2022-08,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,93.89,93.89,75.0,55.0,120.0,22.61,9,0,65.0,69.23,20.1209,123.803,4.6662,-14.21,,104.24,0.7
+2022-09,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,67.62,67.62,65.0,55.0,75.0,5.15,8,0,20.0,29.57,20.075,124.571,3.3686,-27.97,,90.32,0.62
+2022-10,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,60.75,60.75,60.5,35.0,70.0,8.21,8,0,35.0,57.61,19.9845,125.276,3.0398,-10.17,,74.09,0.57
+2022-11,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,58.89,58.89,60.0,42.0,60.0,2.2,9,0,18.0,30.57,19.4449,125.997,3.0285,-3.06,,62.42,0.58
+2022-12,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,50.88,50.88,50.0,40.0,55.0,1.81,8,0,15.0,29.48,19.593,126.478,2.5966,-13.61,,56.84,0.38
+2023-01,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,51.67,51.67,55.0,40.0,55.0,5.0,9,0,15.0,29.03,18.9863,127.336,2.7213,1.56,-24.57,53.81,0.68
+2023-02,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,51.88,51.88,52.5,39.0,55.0,3.72,8,0,16.0,30.84,18.5986,128.046,2.7892,0.4,-30.83,51.47,0.56
+2023-03,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,56.11,56.11,55.0,42.0,60.0,4.17,9,0,18.0,32.08,18.3749,128.389,3.0537,8.17,-29.57,53.22,0.27
+2023-04,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,57.14,57.14,60.0,46.0,60.0,4.88,7,0,14.0,24.5,18.0855,128.363,3.1596,1.84,-36.24,55.04,-0.02
+2023-05,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,56.5,56.5,60.0,44.0,60.0,4.87,8,0,16.0,28.32,17.7373,128.084,3.1854,-1.13,-47.85,56.58,-0.22
+2023-06,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,58.33,58.33,60.0,45.0,70.0,7.07,9,0,25.0,42.86,17.2412,128.214,3.3834,3.24,-46.67,57.33,0.1
+2023-07,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,72.25,72.25,69.0,58.0,95.0,11.73,8,0,37.0,51.21,16.9049,128.832,4.2739,23.86,-33.98,62.36,0.48
+2023-08,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,76.11,76.11,78.0,65.0,80.0,4.43,9,0,15.0,19.71,16.9766,129.545,4.4833,5.34,-18.93,68.9,0.55
+2023-09,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,68.11,68.11,70.0,55.0,75.0,6.49,9,0,20.0,29.36,17.3077,130.12,3.9353,-10.51,0.72,72.16,0.44
+2023-10,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,67.89,67.89,68.0,60.0,70.0,2.32,9,0,10.0,14.73,18.0823,130.609,3.7544,-0.33,11.75,70.7,0.38
+2023-11,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,62.62,62.62,63.5,49.0,65.0,3.42,8,0,16.0,25.55,17.3767,131.445,3.604,-7.75,6.34,66.21,0.64
+2023-12,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,50.33,50.33,50.0,45.0,55.0,2.87,9,0,10.0,19.87,17.186,132.373,2.9287,-19.63,-1.06,60.28,0.71
+2024-01,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,51.0,51.0,50.0,48.0,55.0,1.73,9,0,7.0,13.73,17.0873,133.555,2.9847,1.32,-1.29,54.65,0.89
+2024-02,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,52.0,52.0,52.0,48.0,52.0,0.0,8,0,4.0,7.69,17.0898,133.681,3.0428,1.96,0.24,51.11,0.09
+2024-03,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,57.0,57.0,56.5,48.0,60.0,2.83,8,0,12.0,21.05,16.7918,134.065,3.3945,9.62,1.58,53.33,0.29
+2024-04,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,65.33,65.33,65.0,55.0,68.0,2.83,9,0,13.0,19.9,16.8104,134.336,3.8865,14.62,14.33,58.11,0.2
+2024-05,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,68.33,68.33,65.0,60.0,75.0,4.33,9,0,15.0,21.95,16.7936,134.087,4.069,4.59,20.94,63.56,-0.19
+2024-06,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,83.38,83.38,85.0,70.0,90.0,6.52,8,0,20.0,23.99,18.2174,134.594,4.5767,22.01,42.93,72.35,0.38
+2024-07,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,92.11,92.11,95.0,80.0,98.0,5.25,9,0,18.0,19.54,18.1117,136.003,5.0857,10.48,27.49,81.27,1.05
+2024-08,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,92.56,92.56,92.0,80.0,95.0,2.01,9,0,15.0,16.21,19.1515,136.013,4.8328,0.48,21.61,89.35,0.01
+2024-09,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,83.88,83.88,85.0,80.0,85.0,1.55,8,0,5.0,5.96,19.6316,136.08,4.2724,-9.38,23.14,89.51,0.05
+2024-10,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,81.88,81.88,82.0,75.0,85.0,1.64,8,0,10.0,12.21,19.7062,136.828,4.1548,-2.38,20.6,86.1,0.55
+2024-11,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,80.22,80.22,80.0,75.0,82.0,0.67,9,0,7.0,8.73,20.3455,137.424,3.943,-2.02,28.1,81.99,0.44
+2024-12,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,83.33,83.33,82.0,80.0,85.0,1.58,9,0,5.0,6.0,20.2661,137.949,4.112,3.88,65.56,81.81,0.38
+2025-01,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,83.0,83.0,82.0,80.0,85.0,1.5,9,0,5.0,6.02,20.549,138.343,4.0391,-0.4,62.75,82.19,0.29
+2025-02,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,83.12,83.12,82.0,80.0,85.0,1.55,8,0,5.0,6.02,20.4571,138.726,4.0634,0.15,59.86,83.15,0.28
+2025-03,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,73.5,73.5,71.0,68.0,82.0,5.32,8,0,14.0,19.05,20.2417,139.161,3.6311,-11.58,28.95,79.88,0.31
+2025-04,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,65.75,65.75,65.0,60.0,70.0,3.73,8,0,10.0,15.21,20.0564,139.62,3.2783,-10.54,0.64,74.12,0.33
+2025-05,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,93.0,93.0,92.0,90.0,95.0,1.5,9,0,5.0,5.38,19.4355,140.012,4.7851,41.44,36.1,77.42,0.28
+2025-06,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,92.0,92.0,92.0,90.0,92.0,0.0,8,0,2.0,2.17,19.03,140.405,4.8345,-1.08,10.34,83.58,0.28
+2025-07,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,92.0,92.0,92.0,90.0,92.0,0.0,9,0,2.0,2.17,18.6909,140.78,4.9222,0.0,-0.12,92.33,0.27
+2025-08,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,92.33,92.33,92.0,90.0,95.0,1.0,9,0,5.0,5.42,18.7063,140.867,4.9359,0.36,-0.24,92.11,0.06
+2025-09,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,82.33,82.33,92.0,65.0,95.0,12.97,9,0,30.0,36.44,18.499,141.197,4.4507,-10.83,-1.84,88.89,0.23
+2025-10,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,68.67,68.67,68.0,65.0,70.0,1.0,9,0,5.0,7.28,18.4296,141.708,3.7259,-16.6,-16.13,81.11,0.36
+2025-11,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,67.5,67.5,68.0,60.0,70.0,1.69,8,0,10.0,14.81,18.4185,142.645,3.6648,-1.7,-15.86,72.83,0.66
+2025-12,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,63.0,63.0,62.0,60.0,65.0,1.5,9,0,5.0,7.94,18.0739,143.042,3.4857,-6.67,-24.4,66.39,0.28
+2026-01,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,61.89,61.89,62.0,50.0,65.0,2.89,9,0,15.0,24.24,17.6449,143.588,3.5075,-1.76,-25.44,64.13,0.38
+2026-02,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,55.5,55.5,57.0,50.0,58.0,2.98,8,0,8.0,14.41,17.2228,144.307,3.2225,-10.32,-33.23,60.13,0.5
+2026-03,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,58.11,58.11,58.0,55.0,60.0,0.78,9,0,5.0,8.6,17.7692,145.544,3.2703,4.7,-20.94,58.5,0.86
+2026-04,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,57.25,57.25,58.0,50.0,58.0,1.39,8,0,8.0,13.97,17.4187,145.831,3.2867,-1.48,-12.93,56.95,0.2
+2026-05,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,53.12,53.12,52.0,50.0,55.0,1.55,8,0,5.0,9.41,17.3034,145.527,3.0702,-7.21,-42.88,56.16,-0.21
+2026-06,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,52.33,52.33,52.0,50.0,55.0,1.0,9,0,5.0,9.55,17.3819,145.131,3.0108,-1.49,-43.12,54.24,-0.27
+2026-07,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,52.67,52.67,52.0,50.0,55.0,1.32,9,0,5.0,9.49,17.4607,145.169,3.0163,0.64,-42.75,52.71,0.03
+2026-08,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,52.0,52.0,52.0,50.0,52.0,0.0,8,0,2.0,3.85,17.0664,145.462,3.0469,-1.27,-43.68,52.33,0.2
+2026-09,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,50.22,50.22,50.0,48.0,52.0,0.67,9,0,4.0,7.96,17.264,146.075,2.9091,-3.42,-39.0,51.63,0.42
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,50.0,50.0,50.0,48.0,50.0,0.0,9,0,2.0,4.0,18.434,147.026,2.7124,-0.44,-27.18,50.74,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Aguacate Hass,50.0,50.0,50.0,48.0,50.0,0.0,3,0,2.0,4.0,18.7008,147.026,2.6737,0.0,-25.93,50.07,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Ajo Blanco,135.0,135.0,135.0,130.0,135.0,0.0,9,0,5.0,3.7,18.434,147.026,7.3234,,,135.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Ajo Blanco,135.0,135.0,135.0,130.0,135.0,0.0,3,0,5.0,3.7,18.7008,147.026,7.2189,0.0,,135.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Ajo Morado,135.0,135.0,135.0,130.0,135.0,0.0,9,0,5.0,3.7,18.434,147.026,7.3234,,,135.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Ajo Morado,135.0,135.0,135.0,130.0,135.0,0.0,3,0,5.0,3.7,18.7008,147.026,7.2189,0.0,,135.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Calabacita Italiana,21.89,21.89,22.0,20.0,22.0,0.33,9,0,2.0,9.14,18.434,147.026,1.1874,,,21.89,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Calabacita Italiana,21.67,21.67,22.0,20.0,22.0,0.58,3,0,2.0,9.23,18.7008,147.026,1.1586,-1.02,,21.78,0.0
+2022-09,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,33.8,33.8,34.0,21.0,38.0,3.35,5,0,17.0,50.3,20.075,124.571,1.6837,,,33.8,0.62
+2022-10,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,24.5,24.5,22.5,18.0,30.0,3.7,8,0,12.0,48.98,19.9845,125.276,1.2259,-27.51,,29.15,0.57
+2022-11,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,17.89,17.89,18.0,10.0,20.0,2.37,9,0,10.0,55.9,19.4449,125.997,0.92,-26.98,,25.4,0.58
+2022-12,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,11.62,11.62,12.0,8.0,13.0,1.19,8,0,5.0,43.01,19.593,126.478,0.5933,-35.02,,18.0,0.38
+2023-01,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,10.56,10.56,11.0,8.0,12.0,0.88,9,0,4.0,37.89,18.9863,127.336,0.556,-9.2,,13.36,0.68
+2023-02,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,12.38,12.38,12.0,10.0,14.0,0.92,8,0,4.0,32.32,18.5986,128.046,0.6654,17.24,,11.52,0.56
+2023-03,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,12.22,12.22,12.0,10.0,13.0,0.83,9,0,3.0,24.55,18.3749,128.389,0.6652,-1.23,,11.72,0.27
+2023-04,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,12.57,12.57,12.0,10.0,15.0,1.72,7,0,5.0,39.77,18.0855,128.363,0.6951,2.86,,12.39,-0.02
+2023-05,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,13.0,13.0,12.0,10.0,15.0,1.41,8,0,5.0,38.46,17.7373,128.084,0.7329,3.41,,12.6,-0.22
+2023-06,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,13.89,13.89,15.0,10.0,15.0,1.36,9,0,5.0,36.0,17.2412,128.214,0.8056,6.84,,13.15,0.1
+2023-07,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,16.62,16.62,16.5,12.0,20.0,1.77,8,0,8.0,48.12,16.9049,128.832,0.9834,19.7,,14.5,0.48
+2023-08,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,25.44,25.44,25.0,16.0,30.0,3.36,9,0,14.0,55.02,16.9766,129.545,1.4988,53.05,,18.65,0.55
+2023-09,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,28.89,28.89,30.0,23.0,30.0,2.2,9,0,7.0,24.23,17.3077,130.12,1.6691,13.54,-14.53,23.65,0.44
+2023-10,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,21.78,21.78,20.0,15.0,30.0,4.15,9,0,15.0,68.88,18.0823,130.609,1.2044,-24.62,-11.11,25.37,0.38
+2023-11,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,15.75,15.75,15.0,14.0,18.0,1.39,8,0,4.0,25.4,17.3767,131.445,0.9064,-27.68,-11.96,22.14,0.64
+2023-12,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,34.0,32.78,30.0,15.0,45.0,8.85,9,4,30.0,88.24,17.186,132.373,1.9784,115.87,192.47,23.84,0.71
+2024-01,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,38.0,38.0,38.0,25.0,40.0,3.16,9,0,15.0,39.47,17.0873,133.555,2.2239,11.76,260.0,29.25,0.89
+2024-02,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,41.88,39.5,42.0,36.0,45.0,3.0,8,5,9.0,21.49,17.0898,133.681,2.4503,10.2,238.38,37.96,0.09
+2024-03,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,35.0,35.0,35.0,25.0,40.0,5.35,8,0,15.0,42.86,16.7918,134.065,2.0844,-16.42,186.36,38.29,0.29
+2024-04,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,24.78,24.78,25.0,17.0,30.0,4.99,9,0,13.0,52.47,16.8104,134.336,1.474,-29.21,97.1,33.88,0.2
+2024-05,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,16.78,16.78,15.0,13.0,22.0,2.44,9,0,9.0,53.64,16.7936,134.087,0.9991,-32.29,29.06,25.52,-0.19
+2024-06,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,18.62,18.62,18.0,13.0,25.0,3.38,8,0,12.0,64.43,18.2174,134.594,1.0224,11.01,34.1,20.06,0.38
+2024-07,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,22.56,22.56,22.0,20.0,28.0,2.07,9,0,8.0,35.47,18.1117,136.003,1.2454,21.1,35.67,19.32,1.05
+2024-08,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,23.67,23.67,25.0,20.0,25.0,1.58,9,0,5.0,21.13,19.1515,136.013,1.2358,4.93,-6.99,21.62,0.01
+2024-09,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,22.25,22.25,22.0,20.0,24.0,0.71,8,0,4.0,17.98,19.6316,136.08,1.1334,-5.99,-22.98,22.82,0.05
+2024-10,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,22.62,22.62,22.0,20.0,25.0,1.51,8,0,5.0,22.1,19.7062,136.828,1.1481,1.69,3.89,22.85,0.55
+2024-11,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,25.0,25.0,25.0,22.0,25.0,0.0,9,0,3.0,12.0,20.3455,137.424,1.2288,10.5,58.73,23.29,0.44
+2024-12,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,25.0,25.0,25.0,22.0,25.0,0.0,9,0,3.0,12.0,20.2661,137.949,1.2336,0.0,-26.47,24.21,0.38
+2025-01,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,23.56,23.56,25.0,18.0,25.0,2.4,9,0,7.0,29.72,20.549,138.343,1.1463,-5.78,-38.01,24.52,0.29
+2025-02,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,19.0,19.0,19.0,16.0,20.0,0.93,8,0,4.0,21.05,20.4571,138.726,0.9288,-19.34,-54.63,22.52,0.28
+2025-03,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,17.5,17.5,18.0,15.0,18.0,0.93,8,0,3.0,17.14,20.2417,139.161,0.8645,-7.89,-50.0,20.02,0.31
+2025-04,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,17.22,17.22,18.0,10.0,19.0,2.11,9,0,9.0,52.26,20.0564,139.62,0.8587,-1.59,-30.49,17.91,0.33
+2025-05,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,11.67,11.67,12.0,10.0,12.0,0.5,9,0,2.0,17.14,19.4355,140.012,0.6003,-32.26,-30.46,15.46,0.28
+2025-06,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,11.88,11.88,12.0,10.0,12.0,0.35,8,0,2.0,16.84,19.03,140.405,0.624,1.79,-36.24,13.59,0.28
+2025-07,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,12.33,12.33,12.0,10.0,15.0,1.0,9,0,5.0,40.54,18.6909,140.78,0.6599,3.86,-45.32,11.96,0.27
+2025-08,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,12.0,12.0,12.0,10.0,12.0,0.0,9,0,2.0,16.67,18.7063,140.867,0.6415,-2.7,-49.3,12.07,0.06
+2025-09,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,16.67,16.67,14.0,10.0,22.0,5.1,9,0,12.0,72.0,18.499,141.197,0.9009,38.89,-25.09,13.67,0.23
+2025-10,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,22.0,22.0,22.0,20.0,22.0,0.0,9,0,2.0,9.09,18.4296,141.708,1.1937,32.0,-2.76,16.89,0.36
+2025-11,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,21.38,21.38,21.0,20.0,22.0,0.52,8,0,2.0,9.36,18.4185,142.645,1.1605,-2.84,-14.5,20.01,0.66
+2025-12,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,21.78,21.78,22.0,20.0,23.0,0.67,9,0,3.0,13.78,18.0739,143.042,1.2049,1.88,-12.89,21.72,0.28
+2026-01,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,20.78,20.78,21.0,14.0,22.0,2.22,9,0,8.0,38.5,17.6449,143.588,1.1776,-4.59,-11.79,21.31,0.38
+2026-02,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,15.0,15.0,15.0,14.0,15.0,0.0,8,0,1.0,6.67,17.2228,144.307,0.8709,-27.81,-21.05,19.19,0.5
+2026-03,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,15.0,15.0,15.0,14.0,15.0,0.0,9,0,1.0,6.67,17.7692,145.544,0.8442,0.0,-14.29,16.93,0.86
+2026-04,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,15.0,15.0,15.0,14.0,15.0,0.0,8,0,1.0,6.67,17.4187,145.831,0.8611,0.0,-12.9,15.0,0.2
+2026-05,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,15.25,15.25,15.0,14.0,16.0,0.46,8,0,2.0,13.11,17.3034,145.527,0.8813,1.67,30.71,15.08,-0.21
+2026-06,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,15.0,15.0,15.0,14.0,15.0,0.0,9,0,1.0,6.67,17.3819,145.131,0.863,-1.64,26.32,15.08,-0.27
+2026-07,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,15.0,15.0,15.0,14.0,15.0,0.0,9,0,1.0,6.67,17.4607,145.169,0.8591,0.0,21.62,15.08,0.03
+2026-08,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,15.0,15.0,15.0,14.0,15.0,0.0,8,0,1.0,6.67,17.0664,145.462,0.8789,0.0,25.0,15.0,0.2
+2026-09,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,24.89,24.89,25.0,22.0,25.0,0.33,9,0,3.0,12.05,17.264,146.075,1.4417,65.93,49.33,18.3,0.42
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,25.33,25.33,25.0,22.0,28.0,1.0,9,0,6.0,23.68,18.434,147.026,1.3743,1.79,15.15,21.74,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Cebolla Bola,22.67,22.67,22.0,20.0,25.0,2.08,3,0,5.0,22.06,18.7008,147.026,1.2121,-10.53,6.04,24.3,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Cebolla de rabo,21.56,21.56,22.0,20.0,22.0,0.53,9,0,2.0,9.28,18.434,147.026,1.1693,,,21.56,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Cebolla de rabo,21.67,21.67,22.0,20.0,22.0,0.58,3,0,2.0,9.23,18.7008,147.026,1.1586,0.52,,21.61,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chayote sin espinas,26.56,26.21,26.0,25.0,28.0,0.88,9,3,3.0,11.3,18.434,147.026,1.4406,,,26.56,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chayote sin espinas,26.0,26.0,26.0,25.0,26.0,0.0,3,0,1.0,3.85,18.7008,147.026,1.3903,-2.09,,26.28,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Guajillo,135.0,135.0,135.0,130.0,135.0,0.0,9,0,5.0,3.7,18.434,147.026,7.3234,,,135.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Guajillo,135.0,135.0,135.0,130.0,135.0,0.0,3,0,5.0,3.7,18.7008,147.026,7.2189,0.0,,135.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile JalapeÃ±o,32.0,32.0,32.0,30.0,32.0,0.0,9,0,2.0,6.25,18.434,147.026,1.7359,,,32.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile JalapeÃ±o,32.0,32.0,32.0,30.0,32.0,0.0,3,0,2.0,6.25,18.7008,147.026,1.7112,0.0,,32.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Pasilla,225.0,225.0,225.0,220.0,225.0,0.0,8,0,5.0,2.22,18.434,147.026,12.2057,,,225.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Pasilla,225.0,225.0,225.0,220.0,225.0,0.0,3,0,5.0,2.22,18.7008,147.026,12.0316,0.0,,225.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Pimiento morrÃ³n,52.11,51.9,52.0,50.0,55.0,1.17,9,3,5.0,9.59,18.434,147.026,2.8269,,,52.11,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Pimiento morrÃ³n,51.67,51.79,52.0,50.0,52.0,0.58,3,1,2.0,3.87,18.7008,147.026,2.7628,-0.85,,51.89,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Poblano,38.0,38.0,38.0,35.0,38.0,0.0,9,0,3.0,7.89,18.434,147.026,2.0614,,,38.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Poblano,38.0,38.0,38.0,35.0,38.0,0.0,3,0,3.0,7.89,18.7008,147.026,2.032,0.0,,38.0,0.0
+2022-01,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,25.25,25.25,21.0,15.0,50.0,10.22,8,0,35.0,138.61,20.4978,118.002,1.2318,,,25.25,
+2022-02,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,21.75,21.75,22.5,15.0,26.0,4.3,8,0,11.0,50.57,20.4495,118.981,1.0636,-13.86,,23.5,0.83
+2022-03,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,29.78,29.78,30.0,15.0,35.0,5.83,9,0,20.0,67.16,20.5562,120.159,1.4486,36.91,,25.59,0.99
+2022-04,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,38.88,38.88,37.5,28.0,46.0,5.99,8,0,18.0,46.3,20.1088,120.809,1.9332,30.55,,30.13,0.54
+2022-05,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,37.56,37.56,38.0,28.0,45.0,4.45,9,0,17.0,45.27,20.0305,121.022,1.8749,-3.39,,35.4,0.18
+2022-06,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,27.75,27.75,25.5,20.0,38.0,4.53,8,0,18.0,64.86,20.0237,122.044,1.3859,-26.11,,34.73,0.84
+2022-07,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,26.11,26.11,26.0,20.0,28.0,1.96,9,0,8.0,30.64,20.5467,122.948,1.2708,-5.91,,30.47,0.74
+2022-08,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,32.67,32.67,31.0,22.0,45.0,8.83,9,0,23.0,70.41,20.1209,123.803,1.6235,25.11,,28.84,0.7
+2022-09,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,30.38,30.38,30.0,20.0,35.0,2.67,8,0,15.0,49.38,20.075,124.571,1.5131,-7.02,,29.72,0.62
+2022-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,25.81,25.81,26.0,22.0,26.5,0.53,8,0,4.5,17.43,19.9845,125.276,1.2916,-15.02,,29.62,0.57
+2022-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,50.44,48.22,52.0,25.0,80.0,12.77,9,1,55.0,109.03,19.4449,125.997,2.5942,95.43,,35.54,0.58
+2022-12,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,58.25,56.38,55.0,42.0,70.0,6.34,8,2,28.0,48.07,19.593,126.478,2.973,15.47,,44.84,0.38
+2023-01,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,53.67,53.11,50.0,32.0,65.0,8.28,9,1,33.0,61.49,18.9863,127.336,2.8266,-7.87,112.54,54.12,0.68
+2023-02,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,40.62,40.62,40.0,35.0,45.0,1.77,8,0,10.0,24.62,18.5986,128.046,2.1843,-24.3,86.78,50.85,0.56
+2023-03,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,41.67,41.67,42.0,30.0,48.0,3.97,9,0,18.0,43.2,18.3749,128.389,2.2676,2.56,39.93,45.32,0.27
+2023-04,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,28.57,28.57,30.0,20.0,30.0,2.23,7,0,10.0,35.0,18.0855,128.363,1.5798,-31.43,-26.5,36.95,-0.02
+2023-05,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,30.75,30.75,31.5,20.0,34.0,2.71,8,0,14.0,45.53,17.7373,128.084,1.7336,7.62,-18.12,33.66,-0.22
+2023-06,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,34.44,34.44,35.0,25.0,40.0,3.88,9,0,15.0,43.55,17.2412,128.214,1.9978,12.01,24.12,31.26,0.1
+2023-07,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,49.5,49.5,50.0,30.0,58.0,7.23,8,0,28.0,56.57,16.9049,128.832,2.9281,43.71,89.57,38.23,0.48
+2023-08,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,41.89,41.89,40.0,33.0,45.0,2.32,9,0,12.0,28.65,16.9766,129.545,2.4674,-15.38,28.23,41.94,0.55
+2023-09,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,40.11,40.11,40.0,32.0,42.0,1.76,9,0,10.0,24.93,17.3077,130.12,2.3175,-4.24,32.05,43.83,0.44
+2023-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,35.78,35.78,35.0,32.0,40.0,1.72,9,0,8.0,22.36,18.0823,130.609,1.9786,-10.8,38.61,39.26,0.38
+2023-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,40.0,40.0,38.0,30.0,50.0,4.14,8,0,20.0,50.0,17.3767,131.445,2.3019,11.8,-20.7,38.63,0.64
+2023-12,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,38.22,38.22,38.0,32.0,48.0,4.24,9,0,16.0,41.86,17.186,132.373,2.224,-4.44,-34.38,38.0,0.71
+2024-01,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,34.56,34.56,32.0,25.0,40.0,3.84,9,0,15.0,43.41,17.0873,133.555,2.0223,-9.59,-35.61,37.59,0.89
+2024-02,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,32.25,32.25,30.0,28.0,38.0,3.24,8,0,10.0,31.01,17.0898,133.681,1.8871,-6.67,-20.62,35.01,0.09
+2024-03,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,39.12,39.12,40.0,32.0,45.0,3.23,8,0,13.0,33.23,16.7918,134.065,2.33,21.32,-6.1,35.31,0.29
+2024-04,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,57.78,53.78,62.0,40.0,72.0,11.97,9,5,32.0,55.38,16.8104,134.336,3.437,47.67,102.22,43.05,0.2
+2024-05,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,72.89,58.56,80.0,50.0,85.0,12.78,9,7,35.0,48.02,16.7936,134.087,4.3403,26.15,137.04,56.6,-0.19
+2024-06,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,45.25,45.25,43.0,35.0,55.0,6.2,8,0,20.0,44.2,18.2174,134.594,2.4839,-37.92,31.37,58.64,0.38
+2024-07,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,41.67,41.67,42.0,35.0,45.0,1.87,9,0,10.0,24.0,18.1117,136.003,2.3005,-7.92,-15.82,53.27,1.05
+2024-08,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,40.67,40.67,42.0,28.0,42.0,4.0,9,0,14.0,34.43,19.1515,136.013,2.1234,-2.4,-2.92,42.53,0.01
+2024-09,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,30.0,30.0,30.0,28.0,30.0,0.0,8,0,2.0,6.67,19.6316,136.08,1.5281,-26.23,-25.21,37.44,0.05
+2024-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,33.0,33.0,30.0,28.0,42.0,5.55,8,0,14.0,42.42,19.7062,136.828,1.6746,10.0,-7.76,34.56,0.55
+2024-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,42.0,42.0,42.0,40.0,42.0,0.0,9,0,2.0,4.76,20.3455,137.424,2.0643,27.27,5.0,35.0,0.44
+2024-12,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,42.0,42.0,42.0,40.0,42.0,0.0,9,0,2.0,4.76,20.2661,137.949,2.0724,0.0,9.88,39.0,0.38
+2025-01,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,37.44,37.44,42.0,20.0,42.0,9.04,9,0,22.0,58.75,20.549,138.343,1.8222,-10.85,8.36,40.48,0.29
+2025-02,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,23.25,23.25,23.5,20.0,25.0,1.91,8,0,5.0,21.51,20.4571,138.726,1.1365,-37.91,-27.91,34.23,0.28
+2025-03,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,26.88,26.88,28.0,20.0,28.0,2.23,8,0,8.0,29.77,20.2417,139.161,1.3277,15.59,-31.31,29.19,0.31
+2025-04,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,29.11,29.11,28.0,25.0,38.0,3.33,9,0,13.0,44.66,20.0564,139.62,1.4515,8.32,-49.62,26.41,0.33
+2025-05,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,38.0,38.0,38.0,35.0,38.0,0.0,9,0,3.0,7.89,19.4355,140.012,1.9552,30.53,-47.87,31.33,0.28
+2025-06,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,38.5,38.5,38.0,35.0,40.0,0.93,8,0,5.0,12.99,19.03,140.405,2.0231,1.32,-14.92,35.2,0.28
+2025-07,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,38.56,38.56,38.0,35.0,40.0,0.88,9,0,5.0,12.97,18.6909,140.78,2.0628,0.14,-7.47,38.35,0.27
+2025-08,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,38.78,38.78,38.0,35.0,40.0,0.97,9,0,5.0,12.89,18.7063,140.867,2.073,0.58,-4.64,38.61,0.06
+2025-09,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,50.78,47.0,40.0,33.0,70.0,16.9,9,4,37.0,72.87,18.499,141.197,2.7449,30.95,69.26,42.7,0.23
+2025-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,68.22,60.0,68.0,65.0,70.0,0.67,9,9,5.0,7.33,18.4296,141.708,3.7018,34.35,106.73,52.59,0.36
+2025-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,68.0,60.0,68.0,65.0,68.0,0.0,8,8,3.0,4.41,18.4185,142.645,3.6919,-0.33,61.9,62.33,0.66
+2025-12,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,66.67,60.0,68.0,63.0,68.0,1.58,9,9,5.0,7.5,18.0739,143.042,3.6886,-1.96,58.73,67.63,0.28
+2026-01,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,63.33,56.89,68.0,30.0,68.0,11.82,9,8,38.0,60.0,17.6449,143.588,3.5893,-5.0,69.14,66.0,0.38
+2026-02,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,33.12,33.12,32.0,30.0,35.0,1.55,8,0,5.0,15.09,17.2228,144.307,1.9233,-47.7,42.47,54.38,0.5
+2026-03,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,32.78,32.78,32.0,30.0,35.0,1.3,9,0,5.0,15.25,17.7692,145.544,1.8446,-1.05,21.96,43.08,0.86
+2026-04,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,32.88,32.88,32.0,30.0,35.0,1.36,8,0,5.0,15.21,17.4187,145.831,1.8873,0.3,12.93,32.93,0.2
+2026-05,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,33.88,33.88,35.0,30.0,35.0,1.55,8,0,5.0,14.76,17.3034,145.527,1.9577,3.04,-10.86,33.18,-0.21
+2026-06,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,33.0,33.0,32.0,30.0,35.0,1.5,9,0,5.0,15.15,17.3819,145.131,1.8985,-2.58,-14.29,33.25,-0.27
+2026-07,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,32.67,32.67,32.0,30.0,35.0,1.32,9,0,5.0,15.31,17.4607,145.169,1.8709,-1.01,-15.27,33.18,0.03
+2026-08,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,32.0,32.0,32.0,30.0,32.0,0.0,8,0,2.0,6.25,17.0664,145.462,1.875,-2.04,-17.48,32.56,0.2
+2026-09,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,27.78,27.78,28.0,25.0,30.0,1.2,9,0,5.0,18.0,17.264,146.075,1.609,-13.19,-45.3,30.81,0.42
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,27.22,27.22,27.0,25.0,28.0,0.83,9,0,3.0,11.02,18.434,147.026,1.4767,-2.0,-60.1,29.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Serrano,26.33,26.33,26.0,25.0,27.0,0.58,3,0,2.0,7.59,18.7008,147.026,1.4081,-3.27,-61.27,27.11,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile de Ãrbol seco,145.0,145.0,145.0,140.0,145.0,0.0,9,0,5.0,3.45,18.434,147.026,7.8659,,,145.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile de Ãrbol seco,145.0,145.0,145.0,140.0,145.0,0.0,3,0,5.0,3.45,18.7008,147.026,7.7537,0.0,,145.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Coco,28.0,28.0,28.0,25.0,28.0,0.0,9,0,3.0,10.71,18.434,147.026,1.5189,,,28.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Coco,27.33,27.33,28.0,25.0,28.0,1.15,3,0,3.0,10.98,18.7008,147.026,1.4616,-2.38,,27.67,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Col mediana,17.78,17.78,18.0,16.0,18.0,0.44,9,0,2.0,11.25,18.434,147.026,0.9644,,,17.78,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Col mediana,18.0,18.0,18.0,16.0,18.0,0.0,3,0,2.0,11.11,18.7008,147.026,0.9625,1.25,,17.89,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Coliflor grande,26.56,26.21,26.0,25.0,28.0,0.88,9,3,3.0,11.3,18.434,147.026,1.4406,,,26.56,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Coliflor grande,26.0,26.0,26.0,25.0,26.0,0.0,3,0,1.0,3.85,18.7008,147.026,1.3903,-2.09,,26.28,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Durazno Amarillo,78.0,78.0,78.0,75.0,78.0,0.0,9,0,3.0,3.85,18.434,147.026,4.2313,,,78.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Durazno Amarillo,77.33,77.33,77.0,75.0,78.0,0.58,3,0,3.0,3.88,18.7008,147.026,4.1353,-0.85,,77.67,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Fresa,82.0,82.0,82.0,80.0,82.0,0.0,9,0,2.0,2.44,18.434,147.026,4.4483,,,82.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Fresa,82.0,82.0,82.0,80.0,82.0,0.0,3,0,2.0,2.44,18.7008,147.026,4.3848,0.0,,82.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Guayaba,25.0,25.0,25.0,24.0,25.0,0.0,9,0,1.0,4.0,18.434,147.026,1.3562,,,25.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Guayaba,25.0,25.0,25.0,24.0,25.0,0.0,3,0,1.0,4.0,18.7008,147.026,1.3368,0.0,,25.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Jamaica,115.0,115.0,115.0,110.0,115.0,0.0,9,0,5.0,4.35,18.434,147.026,6.2385,,,115.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Jamaica,115.0,115.0,115.0,110.0,115.0,0.0,3,0,5.0,4.35,18.7008,147.026,6.1495,0.0,,115.0,0.0
+2022-01,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,19.12,19.12,19.0,10.0,28.0,4.12,8,0,18.0,94.12,20.4978,118.002,0.933,,,19.12,
+2022-02,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,13.0,13.0,13.0,10.0,14.0,0.76,8,0,4.0,30.77,20.4495,118.981,0.6357,-32.03,,16.06,0.83
+2022-03,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,14.89,14.89,15.0,12.0,16.0,1.27,9,0,4.0,26.87,20.5562,120.159,0.7243,14.53,,15.67,0.99
+2022-04,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,16.62,16.62,17.5,11.0,18.0,2.07,8,0,7.0,42.11,20.1088,120.809,0.8268,11.66,,14.84,0.54
+2022-05,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,19.11,19.11,20.0,13.0,22.0,2.85,9,0,9.0,47.09,20.0305,121.022,0.9541,14.95,,16.88,0.18
+2022-06,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,20.62,20.62,20.0,16.0,24.0,1.77,8,0,8.0,38.79,20.0237,122.044,1.03,7.92,,18.79,0.84
+2022-07,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,18.22,18.22,18.0,12.0,20.0,1.64,9,0,8.0,43.9,20.5467,122.948,0.8869,-11.65,,19.32,0.74
+2022-08,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,20.67,20.67,21.0,14.0,25.0,3.54,9,0,11.0,53.23,20.1209,123.803,1.0271,13.41,,19.84,0.7
+2022-09,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,23.25,23.25,24.0,18.0,25.0,1.58,8,0,7.0,30.11,20.075,124.571,1.1582,12.5,,20.71,0.62
+2022-10,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,26.12,26.12,25.5,20.0,30.0,2.9,8,0,10.0,38.28,19.9845,125.276,1.3073,12.37,,23.35,0.57
+2022-11,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,25.67,25.67,25.0,20.0,28.0,1.0,9,0,8.0,31.17,19.4449,125.997,1.32,-1.75,,25.01,0.58
+2022-12,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,25.25,25.25,25.0,22.0,28.0,1.49,8,0,6.0,23.76,19.593,126.478,1.2887,-1.62,,25.68,0.38
+2023-01,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,25.67,25.67,28.0,18.0,28.0,3.16,9,0,10.0,38.96,18.9863,127.336,1.3518,1.65,34.2,25.53,0.68
+2023-02,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,19.25,19.25,19.0,15.0,20.0,0.46,8,0,5.0,25.97,18.5986,128.046,1.035,-25.0,48.08,23.39,0.56
+2023-03,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,19.78,19.78,20.0,16.0,22.0,1.09,9,0,6.0,30.34,18.3749,128.389,1.0763,2.74,32.84,21.56,0.27
+2023-04,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,18.14,18.14,17.0,15.0,20.0,1.77,7,0,5.0,27.56,18.0855,128.363,1.0032,-8.27,9.13,19.06,-0.02
+2023-05,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,20.88,20.88,20.0,15.0,30.0,3.91,8,0,15.0,71.86,17.7373,128.084,1.1769,15.06,9.23,19.6,-0.22
+2023-06,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,19.44,19.44,20.0,15.0,20.0,0.88,9,0,5.0,25.71,17.2412,128.214,1.1278,-6.85,-5.72,19.49,0.1
+2023-07,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,19.25,19.25,20.0,15.0,20.0,1.04,8,0,5.0,25.97,16.9049,128.832,1.1387,-1.0,5.64,19.86,0.48
+2023-08,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,28.0,28.0,28.0,18.0,35.0,6.48,9,0,17.0,60.71,16.9766,129.545,1.6493,45.45,35.48,22.23,0.55
+2023-09,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,30.0,30.0,30.0,25.0,30.0,0.0,9,0,5.0,16.67,17.3077,130.12,1.7333,7.14,29.03,25.75,0.44
+2023-10,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,24.33,24.33,25.0,19.0,25.0,1.32,9,0,6.0,24.66,18.0823,130.609,1.3457,-18.89,-6.86,27.44,0.38
+2023-11,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,22.75,22.75,22.0,20.0,25.0,1.39,8,0,5.0,21.98,17.3767,131.445,1.3092,-6.51,-11.36,25.69,0.64
+2023-12,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,28.78,28.78,30.0,20.0,30.0,1.72,9,0,10.0,34.75,17.186,132.373,1.6745,26.5,13.97,25.29,0.71
+2024-01,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,38.89,34.44,40.0,28.0,42.0,3.48,9,8,14.0,36.0,17.0873,133.555,2.2759,35.14,51.52,30.14,0.89
+2024-02,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,26.75,25.75,22.5,20.0,40.0,7.65,8,2,20.0,74.77,17.0898,133.681,1.5653,-31.21,38.96,31.47,0.09
+2024-03,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,23.5,23.5,23.5,20.0,25.0,1.6,8,0,5.0,21.28,16.7918,134.065,1.3995,-12.15,18.82,29.71,0.29
+2024-04,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,22.89,22.89,22.0,19.0,25.0,1.76,9,0,6.0,26.21,16.8104,134.336,1.3616,-2.6,26.16,24.38,0.2
+2024-05,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,28.0,28.0,30.0,20.0,30.0,3.12,9,0,10.0,35.71,16.7936,134.087,1.6673,22.33,34.13,24.8,-0.19
+2024-06,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,24.0,24.0,25.0,20.0,25.0,1.41,8,0,5.0,20.83,18.2174,134.594,1.3174,-14.29,23.43,24.96,0.38
+2024-07,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,35.78,32.78,38.0,22.0,40.0,6.18,9,7,18.0,50.31,18.1117,136.003,1.9754,49.07,85.86,29.26,1.05
+2024-08,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,36.89,33.78,38.0,22.0,40.0,5.11,9,8,18.0,48.8,19.1515,136.013,1.9262,3.11,31.75,32.22,0.01
+2024-09,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,24.5,24.5,25.0,22.0,25.0,0.93,8,0,3.0,12.24,19.6316,136.08,1.248,-33.58,-18.33,32.39,0.05
+2024-10,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,25.75,25.75,24.0,22.0,32.0,3.96,8,0,10.0,38.83,19.7062,136.828,1.3067,5.1,5.82,29.05,0.55
+2024-11,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,32.0,32.0,32.0,30.0,32.0,0.0,9,0,2.0,6.25,20.3455,137.424,1.5728,24.27,40.66,27.42,0.44
+2024-12,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,32.0,32.0,32.0,30.0,32.0,0.0,9,0,2.0,6.25,20.2661,137.949,1.579,0.0,11.2,29.92,0.38
+2025-01,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,30.0,30.0,32.0,20.0,35.0,4.92,9,0,15.0,50.0,20.549,138.343,1.4599,-6.25,-22.86,31.33,0.29
+2025-02,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,23.88,23.88,25.0,20.0,25.0,1.55,8,0,5.0,20.94,20.4571,138.726,1.1671,-20.42,-10.75,28.62,0.28
+2025-03,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,19.5,19.5,18.0,16.0,25.0,2.73,8,0,9.0,46.15,20.2417,139.161,0.9634,-18.32,-17.02,24.46,0.31
+2025-04,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,17.89,17.89,17.0,16.0,22.0,1.62,9,0,6.0,33.54,20.0564,139.62,0.8919,-8.26,-21.84,20.42,0.33
+2025-05,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,22.33,22.33,22.0,20.0,25.0,1.0,9,0,5.0,22.39,19.4355,140.012,1.1491,24.84,-20.24,19.91,0.28
+2025-06,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,22.75,22.75,22.0,20.0,25.0,1.39,8,0,5.0,21.98,19.03,140.405,1.1955,1.87,-5.21,20.99,0.28
+2025-07,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,22.0,22.0,22.0,20.0,22.0,0.0,9,0,2.0,9.09,18.6909,140.78,1.177,-3.3,-38.51,22.36,0.27
+2025-08,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,22.0,22.0,22.0,20.0,22.0,0.0,9,0,2.0,9.09,18.7063,140.867,1.1761,0.0,-40.36,22.25,0.06
+2025-09,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,23.22,23.22,22.0,20.0,25.0,1.72,9,0,5.0,21.53,18.499,141.197,1.2553,5.56,-5.22,22.41,0.23
+2025-10,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,25.0,25.0,25.0,22.0,25.0,0.0,9,0,3.0,12.0,18.4296,141.708,1.3565,7.66,-2.91,23.41,0.36
+2025-11,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,24.75,24.75,25.0,22.0,25.0,0.71,8,0,3.0,12.12,18.4185,142.645,1.3438,-1.0,-22.66,24.32,0.66
+2025-12,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,25.22,25.22,25.0,22.0,27.0,0.67,9,0,5.0,19.82,18.0739,143.042,1.3955,1.91,-21.18,24.99,0.28
+2026-01,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,25.44,25.44,25.0,22.0,28.0,1.59,9,0,6.0,23.58,17.6449,143.588,1.442,0.88,-15.19,25.14,0.38
+2026-02,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,24.75,24.75,25.0,22.0,25.0,0.71,8,0,3.0,12.12,17.2228,144.307,1.4371,-2.73,3.66,25.14,0.5
+2026-03,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,25.56,25.56,25.0,20.0,35.0,4.8,9,0,15.0,58.7,17.7692,145.544,1.4382,3.25,31.05,25.25,0.86
+2026-04,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,36.75,34.25,38.0,30.0,40.0,3.06,8,6,10.0,27.21,17.4187,145.831,2.1098,43.8,105.43,29.02,0.2
+2026-05,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,37.75,35.0,38.0,35.0,38.0,0.46,8,8,3.0,7.95,17.3034,145.527,2.1817,2.72,69.03,33.35,-0.21
+2026-06,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,34.22,32.22,37.0,20.0,38.0,6.67,9,7,18.0,52.6,17.3819,145.131,1.9688,-9.35,50.43,36.24,-0.27
+2026-07,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,22.11,22.11,22.0,20.0,25.0,1.17,9,0,5.0,22.61,17.4607,145.169,1.2663,-35.39,0.51,31.36,0.03
+2026-08,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,18.75,18.75,18.0,16.0,22.0,2.05,8,0,6.0,32.0,17.0664,145.462,1.0987,-15.2,-14.77,25.03,0.2
+2026-09,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,24.78,24.78,25.0,22.0,25.0,0.67,9,0,3.0,12.11,17.264,146.075,1.4352,32.15,6.7,21.88,0.42
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,20.0,20.0,18.0,17.0,25.0,2.96,9,0,8.0,40.0,18.434,147.026,1.085,-19.28,-20.0,21.18,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Jitomate Saladette,18.67,18.67,18.0,17.0,20.0,1.15,3,0,3.0,16.07,18.7008,147.026,0.9982,-6.67,-24.58,21.15,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,JÃ­cama,20.0,20.0,20.0,18.0,20.0,0.0,9,0,2.0,10.0,18.434,147.026,1.085,,,20.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,JÃ­cama,19.67,19.67,20.0,18.0,20.0,0.58,3,0,2.0,10.17,18.7008,147.026,1.0516,-1.67,,19.83,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Lechuga Romanita mediana,21.22,21.22,21.0,20.0,22.0,0.44,9,0,2.0,9.42,18.434,147.026,1.1513,,,21.22,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Lechuga Romanita mediana,21.0,21.0,21.0,20.0,21.0,0.0,3,0,1.0,4.76,18.7008,147.026,1.1229,-1.05,,21.11,0.0
+2022-01,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,52.62,50.88,55.0,35.0,55.0,6.72,8,7,20.0,38.0,20.4978,118.002,2.5674,,,52.62,
+2022-02,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,58.38,52.75,55.0,50.0,66.0,5.93,8,7,16.0,27.41,20.4495,118.981,2.8546,10.93,,55.5,0.83
+2022-03,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,56.11,51.67,60.0,40.0,65.0,6.01,9,5,25.0,44.55,20.5562,120.159,2.7296,-3.88,,55.7,0.99
+2022-04,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,29.88,29.88,30.0,20.0,35.0,3.68,8,0,15.0,50.21,20.1088,120.809,1.4857,-46.76,,48.12,0.54
+2022-05,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,25.44,25.44,25.0,18.0,30.0,1.74,9,0,12.0,47.16,20.0305,121.022,1.2703,-14.83,,37.14,0.18
+2022-06,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,21.88,21.88,22.0,15.0,25.0,2.64,8,0,10.0,45.71,20.0237,122.044,1.0925,-14.03,,25.73,0.84
+2022-07,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,23.0,23.0,24.0,18.0,26.0,2.29,9,0,8.0,34.78,20.5467,122.948,1.1194,5.14,,23.44,0.74
+2022-08,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,22.89,22.89,22.0,18.0,28.0,2.8,9,0,10.0,43.69,20.1209,123.803,1.1376,-0.48,,22.59,0.7
+2022-09,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,21.62,21.62,22.0,18.0,22.0,0.74,8,0,4.0,18.5,20.075,124.571,1.0772,-5.52,,22.5,0.62
+2022-10,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,20.25,20.25,20.0,16.0,23.0,1.75,8,0,7.0,34.57,19.9845,125.276,1.0133,-6.36,,21.59,0.57
+2022-11,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,22.22,22.22,23.0,15.0,24.0,1.64,9,0,9.0,40.5,19.4449,125.997,1.1428,9.74,,21.37,0.58
+2022-12,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,25.62,25.62,26.0,18.0,30.0,3.07,8,0,12.0,46.83,19.593,126.478,1.3079,15.31,,22.7,0.38
+2023-01,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,29.78,29.78,30.0,26.0,31.0,1.09,9,0,5.0,16.79,18.9863,127.336,1.5684,16.21,-43.42,25.88,0.68
+2023-02,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,33.0,33.0,32.0,25.0,42.0,4.63,8,0,17.0,51.52,18.5986,128.046,1.7743,10.82,-43.47,29.47,0.56
+2023-03,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,37.89,37.89,38.0,32.0,42.0,2.26,9,0,10.0,26.39,18.3749,128.389,2.062,14.81,-32.48,33.56,0.27
+2023-04,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,38.71,38.71,39.0,30.0,41.0,1.98,7,0,11.0,28.41,18.0855,128.363,2.1406,2.18,29.59,36.53,-0.02
+2023-05,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,31.38,31.38,32.0,24.0,35.0,3.2,8,0,11.0,35.06,17.7373,128.084,1.7689,-18.96,23.31,35.99,-0.22
+2023-06,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,27.78,27.78,30.0,22.0,30.0,2.64,9,0,8.0,28.8,17.2412,128.214,1.6111,-11.47,26.98,32.62,0.1
+2023-07,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,30.25,30.25,30.0,25.0,32.0,0.71,8,0,7.0,23.14,16.9049,128.832,1.7894,8.9,31.52,29.8,0.48
+2023-08,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,30.22,30.22,30.0,27.0,32.0,0.67,9,0,5.0,16.54,16.9766,129.545,1.7802,-0.09,32.04,29.42,0.55
+2023-09,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,36.44,36.44,37.0,29.0,45.0,5.9,9,0,16.0,43.9,17.3077,130.12,2.1057,20.59,68.53,32.31,0.44
+2023-10,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,36.0,36.0,38.0,28.0,40.0,4.58,9,0,12.0,33.33,18.0823,130.609,1.9909,-1.22,77.78,34.22,0.38
+2023-11,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,29.75,29.75,30.0,27.0,30.0,0.71,8,0,3.0,10.08,17.3767,131.445,1.7121,-17.36,33.88,34.06,0.64
+2023-12,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,31.44,31.44,30.0,25.0,35.0,2.96,9,0,10.0,31.8,17.186,132.373,1.8297,5.7,22.71,32.4,0.71
+2024-01,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,33.0,33.0,32.0,30.0,35.0,1.5,9,0,5.0,15.15,17.0873,133.555,1.9313,4.95,10.82,31.4,0.89
+2024-02,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,33.62,33.62,35.0,25.0,35.0,2.0,8,0,10.0,29.74,17.0898,133.681,1.9676,1.89,1.89,32.69,0.09
+2024-03,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,30.62,30.62,30.0,28.0,35.0,1.77,8,0,7.0,22.86,16.7918,134.065,1.8238,-8.92,-19.17,32.42,0.29
+2024-04,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,33.56,33.56,35.0,28.0,35.0,2.24,9,0,7.0,20.86,16.8104,134.336,1.9961,9.57,-13.33,32.6,0.2
+2024-05,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,30.22,30.22,28.0,25.0,35.0,3.03,9,0,10.0,33.09,16.7936,134.087,1.7996,-9.93,-3.67,31.47,-0.19
+2024-06,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,28.5,28.5,30.0,20.0,32.0,4.11,8,0,12.0,42.11,18.2174,134.594,1.5644,-5.7,2.6,30.76,0.38
+2024-07,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,27.78,27.78,28.0,20.0,30.0,2.39,9,0,10.0,36.0,18.1117,136.003,1.5337,-2.53,-8.17,28.83,1.05
+2024-08,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,31.0,31.0,28.0,26.0,38.0,3.87,9,0,12.0,38.71,19.1515,136.013,1.6187,11.6,2.57,29.09,0.01
+2024-09,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,38.0,38.0,38.0,35.0,38.0,0.0,8,0,3.0,7.89,19.6316,136.08,1.9357,22.58,4.27,32.26,0.05
+2024-10,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,36.0,36.0,38.0,28.0,38.0,3.7,8,0,10.0,27.78,19.7062,136.828,1.8268,-5.26,0.0,35.0,0.55
+2024-11,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,30.0,30.0,30.0,28.0,30.0,0.0,9,0,2.0,6.67,20.3455,137.424,1.4745,-16.67,0.84,34.67,0.44
+2024-12,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,30.0,30.0,30.0,28.0,30.0,0.0,9,0,2.0,6.67,20.2661,137.949,1.4803,0.0,-4.59,32.0,0.38
+2025-01,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,27.78,27.78,30.0,18.0,30.0,4.41,9,0,12.0,43.2,20.549,138.343,1.3518,-7.41,-15.82,29.26,0.29
+2025-02,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,20.38,20.38,20.0,18.0,22.0,1.19,8,0,4.0,19.63,20.4571,138.726,0.996,-26.65,-39.41,26.05,0.28
+2025-03,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,29.62,29.62,32.0,20.0,33.0,4.72,8,0,13.0,43.88,20.2417,139.161,1.4636,45.4,-3.27,25.93,0.31
+2025-04,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,31.78,31.78,32.0,28.0,32.0,0.67,9,0,4.0,12.59,20.0564,139.62,1.5844,7.27,-5.3,27.26,0.33
+2025-05,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,30.0,30.0,30.0,28.0,30.0,0.0,9,0,2.0,6.67,19.4355,140.012,1.5436,-5.59,-0.74,30.47,0.28
+2025-06,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,30.12,30.12,30.0,28.0,31.0,0.35,8,0,3.0,9.96,19.03,140.405,1.583,0.42,5.7,30.63,0.28
+2025-07,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,29.78,29.78,30.0,28.0,30.0,0.44,9,0,2.0,6.72,18.6909,140.78,1.5932,-1.15,7.2,29.97,0.27
+2025-08,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,30.11,30.11,30.0,28.0,31.0,0.33,9,0,3.0,9.96,18.7063,140.867,1.6097,1.12,-2.87,30.0,0.06
+2025-09,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,29.0,29.0,29.0,25.0,30.0,1.0,9,0,5.0,17.24,18.499,141.197,1.5677,-3.69,-23.68,29.63,0.23
+2025-10,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,28.22,28.22,28.0,25.0,30.0,0.67,9,0,5.0,17.72,18.4296,141.708,1.5314,-2.68,-21.6,29.11,0.36
+2025-11,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,27.62,27.62,28.0,25.0,28.0,0.74,8,0,3.0,10.86,18.4185,142.645,1.4999,-2.12,-7.92,28.28,0.66
+2025-12,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,28.0,28.0,28.0,25.0,28.0,0.0,9,0,3.0,10.71,18.0739,143.042,1.5492,1.36,-6.67,27.95,0.28
+2026-01,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,28.78,28.78,28.0,25.0,38.0,3.6,9,0,13.0,45.17,17.6449,143.588,1.6309,2.78,3.6,28.13,0.38
+2026-02,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,38.75,38.75,38.0,35.0,48.0,3.88,8,0,13.0,33.55,17.2228,144.307,2.2499,34.65,90.18,31.84,0.5
+2026-03,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,47.0,47.0,47.0,45.0,48.0,1.0,9,0,3.0,6.38,17.7692,145.544,2.645,21.29,58.65,38.18,0.86
+2026-04,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,47.5,47.5,48.0,45.0,48.0,0.76,8,0,3.0,6.32,17.4187,145.831,2.7269,1.06,49.48,44.42,0.2
+2026-05,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,47.75,47.75,48.0,45.0,48.0,0.71,8,0,3.0,6.28,17.3034,145.527,2.7596,0.53,59.17,47.42,-0.21
+2026-06,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,47.33,47.33,48.0,40.0,48.0,2.0,9,0,8.0,16.9,17.3819,145.131,2.7231,-0.87,57.12,47.53,-0.27
+2026-07,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,41.89,41.89,42.0,40.0,43.0,0.6,9,0,3.0,7.16,17.4607,145.169,2.399,-11.5,40.67,45.66,0.03
+2026-08,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,41.62,41.62,41.0,40.0,45.0,1.41,8,0,5.0,12.01,17.0664,145.462,2.439,-0.63,38.24,43.62,0.2
+2026-09,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,37.67,37.67,38.0,35.0,40.0,1.22,9,0,5.0,13.27,17.264,146.075,2.1818,-9.51,29.89,40.39,0.42
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,37.56,37.56,38.0,35.0,38.0,0.73,9,0,3.0,7.99,18.434,147.026,2.0373,-0.29,33.07,38.95,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Limon con semilla #5,36.0,36.0,36.0,35.0,36.0,0.0,3,0,1.0,2.78,18.7008,147.026,1.9251,-4.14,30.32,37.07,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Manzana Golden Delicious,67.67,67.79,68.0,65.0,68.0,0.5,9,3,3.0,4.43,18.434,147.026,3.6708,,,67.67,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Manzana Golden Delicious,68.0,68.0,68.0,65.0,68.0,0.0,3,0,3.0,4.41,18.7008,147.026,3.6362,0.49,,67.83,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Manzana Red Delicious,51.78,51.78,52.0,50.0,52.0,0.44,9,0,2.0,3.86,18.434,147.026,2.8088,,,51.78,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Manzana Red Delicious,52.0,52.0,52.0,50.0,52.0,0.0,3,0,2.0,3.85,18.7008,147.026,2.7806,0.43,,51.89,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,MelÃ³n Cantaloupe # 23,26.67,26.67,26.0,25.0,28.0,0.87,9,0,3.0,11.25,18.434,147.026,1.4466,,,26.67,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,MelÃ³n Cantaloupe # 23,26.33,26.33,26.0,25.0,27.0,0.58,3,0,2.0,7.59,18.7008,147.026,1.4081,-1.25,,26.5,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Naranja Valencia mediana,22.0,22.0,22.0,20.0,22.0,0.0,9,0,2.0,9.09,18.434,147.026,1.1934,,,22.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Naranja Valencia mediana,21.67,21.67,22.0,20.0,22.0,0.58,3,0,2.0,9.23,18.7008,147.026,1.1586,-1.52,,21.83,0.0
+2022-01,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,21.0,21.12,20.0,18.0,24.0,1.93,8,1,6.0,28.57,20.4978,118.002,1.0245,,,21.0,
+2022-02,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,18.75,20.88,19.0,12.0,24.0,3.96,8,5,12.0,64.0,20.4495,118.981,0.9169,-10.71,,19.88,0.83
+2022-03,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,17.0,20.0,18.0,12.0,19.0,1.8,9,9,7.0,41.18,20.5562,120.159,0.827,-9.33,,18.92,0.99
+2022-04,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,17.25,20.0,17.0,14.0,18.0,0.71,8,8,4.0,23.19,20.1088,120.809,0.8578,1.47,,17.67,0.54
+2022-05,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,20.22,21.44,18.0,17.0,27.0,3.63,9,6,10.0,49.45,20.0305,121.022,1.0096,17.23,,18.16,0.18
+2022-06,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,28.25,28.25,28.0,25.0,31.0,1.58,8,0,6.0,21.24,20.0237,122.044,1.4108,39.7,,21.91,0.84
+2022-07,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,32.22,32.22,32.0,28.0,36.0,1.72,9,0,8.0,24.83,20.5467,122.948,1.5682,14.06,,26.9,0.74
+2022-08,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,31.78,31.78,32.0,29.0,35.0,1.72,9,0,6.0,18.88,20.1209,123.803,1.5793,-1.38,,30.75,0.7
+2022-09,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,34.31,34.31,34.5,32.0,35.0,0.8,8,0,3.0,8.74,20.075,124.571,1.7092,7.98,,32.77,0.62
+2022-10,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,31.69,31.69,32.0,22.0,33.0,1.1,8,0,11.0,34.71,19.9845,125.276,1.5856,-7.65,,32.59,0.57
+2022-11,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,28.78,28.78,29.0,25.0,30.0,0.83,9,0,5.0,17.37,19.4449,125.997,1.48,-9.18,,31.59,0.58
+2022-12,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,28.12,28.12,28.0,25.0,30.0,1.25,8,0,5.0,17.78,19.593,126.478,1.4355,-2.27,,29.53,0.38
+2023-01,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.44,27.44,27.0,24.0,30.0,1.24,9,0,6.0,21.86,18.9863,127.336,1.4455,-2.42,30.69,28.12,0.68
+2023-02,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,29.25,29.25,29.5,22.0,32.0,2.19,8,0,10.0,34.19,18.5986,128.046,1.5727,6.58,56.0,28.27,0.56
+2023-03,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,26.67,26.67,26.0,24.0,28.0,1.32,9,0,4.0,15.0,18.3749,128.389,1.4513,-8.83,56.86,27.79,0.27
+2023-04,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.71,27.71,27.0,14.0,30.0,2.21,7,0,16.0,57.73,18.0855,128.363,1.5324,3.93,60.66,27.88,-0.02
+2023-05,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,30.75,30.75,32.0,20.0,35.0,3.69,8,0,15.0,48.78,17.7373,128.084,1.7336,10.95,52.06,28.38,-0.22
+2023-06,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,34.11,34.0,35.0,25.0,37.0,2.32,9,1,12.0,35.18,17.2412,128.214,1.9785,10.93,20.75,30.86,0.1
+2023-07,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,33.5,33.38,34.0,25.0,37.0,2.73,8,1,12.0,35.82,16.9049,128.832,1.9817,-1.79,3.97,32.79,0.48
+2023-08,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,29.33,29.33,30.0,20.0,32.0,2.6,9,0,12.0,40.91,16.9766,129.545,1.7279,-12.44,-7.69,32.31,0.55
+2023-09,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,30.22,30.22,30.0,27.0,32.0,0.67,9,0,5.0,16.54,17.3077,130.12,1.7462,3.03,-11.92,31.02,0.44
+2023-10,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,30.0,30.0,30.0,26.0,30.0,0.0,9,0,4.0,13.33,18.0823,130.609,1.6591,-0.74,-5.33,29.85,0.38
+2023-11,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,29.75,29.75,30.0,25.0,30.0,0.71,8,0,5.0,16.81,17.3767,131.445,1.7121,-0.83,3.38,29.99,0.64
+2023-12,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,29.33,29.33,30.0,25.0,30.0,1.0,9,0,5.0,17.05,17.186,132.373,1.7068,-1.4,4.3,29.69,0.71
+2024-01,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,30.0,30.0,30.0,27.0,30.0,0.0,9,0,3.0,10.0,17.0873,133.555,1.7557,2.27,9.31,29.69,0.89
+2024-02,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,30.0,30.0,30.0,28.0,30.0,0.0,8,0,2.0,6.67,17.0898,133.681,1.7554,0.0,2.56,29.78,0.09
+2024-03,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,29.75,29.75,30.0,27.0,30.0,0.71,8,0,3.0,10.08,16.7918,134.065,1.7717,-0.83,11.56,29.92,0.29
+2024-04,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,30.0,30.0,30.0,27.0,30.0,0.0,9,0,3.0,10.0,16.8104,134.336,1.7846,0.84,8.25,29.92,0.2
+2024-05,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,29.11,29.11,30.0,25.0,30.0,1.17,9,0,5.0,17.18,16.7936,134.087,1.7335,-2.96,-5.33,29.62,-0.19
+2024-06,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.0,27.0,26.5,22.0,30.0,2.27,8,0,8.0,29.63,18.2174,134.594,1.4821,-7.25,-20.85,28.7,0.38
+2024-07,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,28.78,28.78,30.0,22.0,30.0,2.17,9,0,8.0,27.8,18.1117,136.003,1.5889,6.58,-14.1,28.3,1.05
+2024-08,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,30.56,30.56,30.0,28.0,35.0,1.67,9,0,7.0,22.91,19.1515,136.013,1.5955,6.18,4.17,28.78,0.01
+2024-09,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,34.75,34.75,35.0,32.0,35.0,0.71,8,0,3.0,8.63,19.6316,136.08,1.7701,13.73,14.98,31.36,0.05
+2024-10,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,35.0,35.0,35.0,32.0,35.0,0.0,8,0,3.0,8.57,19.7062,136.828,1.7761,0.72,16.67,33.44,0.55
+2024-11,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,35.0,35.0,35.0,32.0,35.0,0.0,9,0,3.0,8.57,20.3455,137.424,1.7203,0.0,17.65,34.92,0.44
+2024-12,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,35.0,35.0,35.0,32.0,35.0,0.0,9,0,3.0,8.57,20.2661,137.949,1.727,0.0,19.32,35.0,0.38
+2025-01,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,32.78,32.78,35.0,22.0,35.0,4.41,9,0,13.0,39.66,20.549,138.343,1.5951,-6.35,9.26,34.26,0.29
+2025-02,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,24.75,24.75,25.0,22.0,25.0,0.71,8,0,3.0,12.12,20.4571,138.726,1.2098,-24.49,-17.5,30.84,0.28
+2025-03,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,22.75,22.75,22.0,20.0,25.0,1.39,8,0,5.0,21.98,20.2417,139.161,1.1239,-8.08,-23.53,26.76,0.31
+2025-04,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,22.0,22.0,22.0,20.0,22.0,0.0,9,0,2.0,9.09,20.0564,139.62,1.0969,-3.3,-26.67,23.17,0.33
+2025-05,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,21.89,21.89,22.0,20.0,22.0,0.33,9,0,2.0,9.14,19.4355,140.012,1.1262,-0.51,-24.81,22.21,0.28
+2025-06,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,22.0,22.0,22.0,20.0,22.0,0.0,8,0,2.0,9.09,19.03,140.405,1.1561,0.51,-18.52,21.96,0.28
+2025-07,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,22.0,22.0,22.0,20.0,22.0,0.0,9,0,2.0,9.09,18.6909,140.78,1.177,0.0,-23.55,21.96,0.27
+2025-08,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,22.0,22.0,22.0,20.0,22.0,0.0,9,0,2.0,9.09,18.7063,140.867,1.1761,0.0,-28.0,22.0,0.06
+2025-09,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,24.67,24.67,22.0,20.0,28.0,3.16,9,0,8.0,32.43,18.499,141.197,1.3334,12.12,-29.02,22.89,0.23
+2025-10,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.89,27.89,28.0,25.0,28.0,0.33,9,0,3.0,10.76,18.4296,141.708,1.5133,13.06,-20.32,24.85,0.36
+2025-11,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,26.62,26.62,26.0,25.0,28.0,0.92,8,0,3.0,11.27,18.4185,142.645,1.4456,-4.53,-23.93,26.39,0.66
+2025-12,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.56,27.56,28.0,25.0,28.0,0.88,9,0,3.0,10.89,18.0739,143.042,1.5246,3.5,-21.27,27.36,0.28
+2026-01,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.22,27.22,28.0,25.0,28.0,0.97,9,0,3.0,11.02,17.6449,143.588,1.5428,-1.21,-16.95,27.13,0.38
+2026-02,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.75,27.75,28.0,25.0,28.0,0.71,8,0,3.0,10.81,17.2228,144.307,1.6112,1.94,12.12,27.51,0.5
+2026-03,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.89,27.89,28.0,25.0,28.0,0.33,9,0,3.0,10.76,17.7692,145.544,1.5695,0.5,22.59,27.62,0.86
+2026-04,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.5,27.5,28.0,25.0,28.0,0.93,8,0,3.0,10.91,17.4187,145.831,1.5788,-1.39,25.0,27.71,0.2
+2026-05,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.75,27.75,28.0,25.0,28.0,0.71,8,0,3.0,10.81,17.3034,145.527,1.6037,0.91,26.78,27.71,-0.21
+2026-06,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.78,27.78,28.0,25.0,28.0,0.67,9,0,3.0,10.8,17.3819,145.131,1.5981,0.1,26.26,27.68,-0.27
+2026-07,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.56,27.56,28.0,25.0,28.0,0.88,9,0,3.0,10.89,17.4607,145.169,1.5781,-0.8,25.25,27.69,0.03
+2026-08,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.25,27.25,28.0,25.0,28.0,1.04,8,0,3.0,11.01,17.0664,145.462,1.5967,-1.11,23.86,27.53,0.2
+2026-09,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,27.67,27.67,28.0,25.0,30.0,1.12,9,0,5.0,18.07,17.264,146.075,1.6026,1.53,12.16,27.49,0.42
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,26.67,26.67,26.0,25.0,28.0,0.87,9,0,3.0,11.25,18.434,147.026,1.4466,-3.61,-4.38,27.19,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Papa Alpha,26.33,26.33,26.0,25.0,27.0,0.58,3,0,2.0,7.59,18.7008,147.026,1.4081,-1.25,-1.1,26.89,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Papaya Maradol,15.33,15.33,15.0,13.0,18.0,1.0,9,0,5.0,32.61,18.434,147.026,0.8318,,,15.33,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Papaya Maradol,15.0,15.0,15.0,13.0,15.0,0.0,3,0,2.0,13.33,18.7008,147.026,0.8021,-2.17,,15.17,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Pepino,17.22,17.22,18.0,15.0,18.0,0.97,9,0,3.0,17.42,18.434,147.026,0.9343,,,17.22,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Pepino,18.0,18.0,18.0,15.0,18.0,0.0,3,0,3.0,16.67,18.7008,147.026,0.9625,4.52,,17.61,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Pera DÂ´anjou # 100,47.67,47.67,48.0,45.0,48.0,0.71,9,0,3.0,6.29,18.434,147.026,2.5858,,,47.67,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Pera DÂ´anjou # 100,48.0,48.0,48.0,45.0,48.0,0.0,3,0,3.0,6.25,18.7008,147.026,2.5667,0.7,,47.83,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,PiÃ±a mediana,21.56,21.56,22.0,20.0,22.0,0.53,9,0,2.0,9.28,18.434,147.026,1.1693,,,21.56,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,PiÃ±a mediana,21.67,21.67,22.0,20.0,22.0,0.58,3,0,2.0,9.23,18.7008,147.026,1.1586,0.52,,21.61,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,PlÃ¡tano Macho,21.56,21.56,22.0,20.0,22.0,0.53,9,0,2.0,9.28,18.434,147.026,1.1693,,,21.56,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,PlÃ¡tano Macho,21.67,21.67,22.0,20.0,22.0,0.58,3,0,2.0,9.23,18.7008,147.026,1.1586,0.52,,21.61,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,PlÃ¡tano Manzano,37.44,37.44,38.0,35.0,38.0,0.73,9,0,3.0,8.01,18.434,147.026,2.0313,,,37.44,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,PlÃ¡tano Manzano,37.33,37.33,37.0,35.0,38.0,0.58,3,0,3.0,8.04,18.7008,147.026,1.9963,-0.3,,37.39,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,PlÃ¡tano Pera,15.0,15.0,15.0,14.0,15.0,0.0,9,0,1.0,6.67,18.434,147.026,0.8137,,,15.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,PlÃ¡tano Pera,15.0,15.0,15.0,14.0,15.0,0.0,3,0,1.0,6.67,18.7008,147.026,0.8021,0.0,,15.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,PlÃ¡tano Valerie,15.0,15.0,15.0,13.0,15.0,0.0,9,0,2.0,13.33,18.434,147.026,0.8137,,,15.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,PlÃ¡tano Valerie,15.0,15.0,15.0,13.0,15.0,0.0,3,0,2.0,13.33,18.7008,147.026,0.8021,0.0,,15.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,SandÃ­a Jubilee,16.89,16.89,17.0,15.0,18.0,0.93,9,0,3.0,17.76,18.434,147.026,0.9162,,,16.89,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,SandÃ­a Jubilee,18.0,18.0,18.0,15.0,18.0,0.0,3,0,3.0,16.67,18.7008,147.026,0.9625,6.58,,17.44,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,SandÃ­a Peacock,17.0,17.0,17.0,15.0,18.0,0.87,9,0,3.0,17.65,18.434,147.026,0.9222,,,17.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,SandÃ­a Peacock,18.0,18.0,18.0,15.0,18.0,0.0,3,0,3.0,16.67,18.7008,147.026,0.9625,5.88,,17.5,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Tamarindo,42.22,42.06,42.0,40.0,45.0,1.09,9,1,5.0,11.84,18.434,147.026,2.2905,,,42.22,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Tamarindo,41.0,41.0,41.0,40.0,41.0,0.0,3,0,1.0,2.44,18.7008,147.026,2.1924,-2.89,,41.61,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Tomate Bola,20.44,19.56,18.0,17.0,27.0,3.81,9,2,10.0,48.91,18.434,147.026,1.1091,,,20.44,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Tomate Bola,19.33,19.33,20.0,17.0,20.0,1.15,3,0,3.0,15.52,18.7008,147.026,1.0338,-5.43,,19.89,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Tomate Verde,21.78,21.86,22.0,20.0,22.0,0.44,9,2,2.0,9.18,18.434,147.026,1.1814,,,21.78,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Tomate Verde,21.67,21.79,22.0,20.0,22.0,0.58,3,1,2.0,9.23,18.7008,147.026,1.1586,-0.51,,21.72,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Toronja Roja,21.78,21.78,22.0,20.0,22.0,0.44,9,0,2.0,9.18,18.434,147.026,1.1814,,,21.78,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Toronja Roja,21.0,21.0,21.0,20.0,21.0,0.0,3,0,1.0,4.76,18.7008,147.026,1.1229,-3.57,,21.39,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Uva Globo,84.33,84.58,85.0,80.0,85.0,1.32,9,2,5.0,5.93,18.434,147.026,4.5749,,,84.33,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Uva Globo,84.0,84.38,85.0,80.0,85.0,1.73,3,1,5.0,5.95,18.7008,147.026,4.4918,-0.4,,84.17,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Uva Thompson,115.0,115.0,115.0,110.0,115.0,0.0,9,0,5.0,4.35,18.434,147.026,6.2385,,,115.0,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Uva Thompson,115.0,115.0,115.0,110.0,115.0,0.0,3,0,5.0,4.35,18.7008,147.026,6.1495,0.0,,115.0,0.0
+2026-10,80,Colima,Colima: Centros de distribucion de Colima,Zanahoria mediana,17.89,17.89,18.0,16.0,18.0,0.33,9,0,2.0,11.18,18.434,147.026,0.9704,,,17.89,0.65
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Zanahoria mediana,17.67,17.67,18.0,16.0,18.0,0.58,3,0,2.0,11.32,18.7008,147.026,0.9447,-1.24,,17.78,0.0
+2022-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,491.93,491.93,495.0,410.0,612.0,35.13,42,0,202.0,41.06,20.4978,118.002,23.9991,,,491.93,
+2022-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,554.92,554.92,540.0,495.0,675.0,26.66,38,0,180.0,32.44,20.4495,118.981,27.1361,12.81,,523.42,0.83
+2022-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,607.3,607.3,585.0,540.0,891.0,56.71,44,0,351.0,57.8,20.5562,120.159,29.5432,9.44,,551.38,0.99
+2022-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,722.61,722.61,742.5,612.0,891.0,51.46,38,0,279.0,38.61,20.1088,120.809,35.9348,18.99,,628.27,0.54
+2022-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,762.21,762.21,720.0,630.0,1080.0,67.98,42,0,450.0,59.04,20.0305,121.022,38.0526,5.48,,697.37,0.18
+2022-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,848.32,848.32,810.0,801.0,1080.0,45.72,44,0,279.0,32.89,20.0237,122.044,42.3656,11.3,,777.71,0.84
+2022-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,809.79,809.79,810.0,801.0,891.0,13.41,42,0,90.0,11.11,20.5467,122.948,39.4119,-4.54,,806.77,0.74
+2022-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,561.52,561.52,540.0,495.0,675.0,48.13,46,0,180.0,32.06,20.1209,123.803,27.9073,-30.66,,739.88,0.7
+2022-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,490.48,490.48,450.0,440.0,549.0,47.93,42,0,109.0,22.22,20.075,124.571,24.4322,-12.65,,620.59,0.62
+2022-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,369.38,369.38,360.0,351.0,468.0,29.7,42,0,117.0,31.67,19.9845,125.276,18.4833,-24.69,,473.79,0.57
+2022-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,374.4,374.4,378.0,360.0,387.0,7.29,40,0,27.0,7.21,19.4449,125.997,19.2544,1.36,,411.42,0.58
+2022-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,360.0,360.0,360.0,360.0,369.0,0.0,44,0,9.0,2.5,19.593,126.478,18.3739,-3.85,,367.93,0.38
+2023-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,339.61,339.61,342.0,315.0,415.0,11.73,44,0,100.0,29.45,18.9863,127.336,17.8873,-5.66,-30.96,358.0,0.68
+2023-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,315.0,315.0,315.0,315.0,415.0,0.0,38,0,100.0,31.75,18.5986,128.046,16.9368,-7.25,-43.24,338.2,0.56
+2023-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,343.84,343.84,360.0,315.0,432.0,27.35,44,0,117.0,34.03,18.3749,128.389,18.7125,9.16,-43.38,332.82,0.27
+2023-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,393.89,393.89,400.0,360.0,531.0,15.91,36,0,171.0,43.41,18.0855,128.363,21.7793,14.56,-45.49,350.91,-0.02
+2023-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,421.62,421.62,423.0,410.0,540.0,4.87,42,0,130.0,30.83,17.7373,128.084,23.7702,7.04,-44.68,386.45,-0.22
+2023-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,460.0,460.0,405.0,405.0,661.0,79.75,44,0,256.0,55.65,17.2412,128.214,26.6803,9.1,-45.78,425.17,0.1
+2023-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,613.21,613.21,630.0,585.0,675.0,23.78,42,0,90.0,14.68,16.9049,128.832,36.2743,33.31,-24.27,498.28,0.48
+2023-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,612.96,612.96,612.0,585.0,780.0,30.57,46,0,195.0,31.81,16.9766,129.545,36.1059,-0.04,9.16,562.06,0.55
+2023-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,562.9,562.9,540.0,522.0,675.0,45.31,42,0,153.0,27.18,17.3077,130.12,32.5234,-8.17,14.77,596.36,0.44
+2023-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,506.82,506.82,500.0,490.0,560.0,17.49,44,0,70.0,13.81,18.0823,130.609,28.0284,-9.96,37.21,560.89,0.38
+2023-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,332.45,332.45,279.0,200.0,520.0,129.58,40,0,320.0,96.26,17.3767,131.445,19.1319,-34.4,-11.2,467.39,0.64
+2023-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,292.94,292.94,295.0,200.0,390.0,55.24,34,0,190.0,64.86,17.186,132.373,17.0453,-11.88,-18.63,377.4,0.71
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,270.24,270.24,265.0,220.0,360.0,20.42,42,0,140.0,51.81,18.434,147.026,14.6598,-7.75,-20.43,298.54,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,241.25,241.25,240.0,200.0,300.0,15.33,16,0,100.0,41.45,18.7008,147.026,12.9005,-10.73,-23.41,268.14,0.0
+2022-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,690.0,690.0,600.0,600.0,1050.0,129.38,21,0,450.0,65.22,20.4978,118.002,33.6622,,,690.0,
+2022-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,720.0,720.0,750.0,600.0,1170.0,84.26,19,0,570.0,79.17,20.4495,118.981,35.2086,4.35,,705.0,0.83
+2022-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,762.27,762.27,750.0,750.0,1140.0,57.56,22,0,390.0,51.16,20.5562,120.159,37.0824,5.87,,724.09,0.99
+2022-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,533.68,533.68,540.0,450.0,1140.0,62.11,19,0,690.0,129.29,20.1088,120.809,26.5398,-29.99,,671.99,0.54
+2022-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,457.14,457.14,450.0,390.0,870.0,35.38,21,0,480.0,105.0,20.0305,121.022,22.8223,-14.34,,584.37,0.18
+2022-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,384.55,384.55,360.0,260.0,810.0,49.54,22,0,550.0,143.03,20.0237,122.044,19.2045,-15.88,,458.46,0.84
+2022-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,540.0,540.0,570.0,330.0,810.0,102.62,21,0,480.0,88.89,20.5467,122.948,26.2816,40.43,,460.56,0.74
+2022-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,877.83,877.83,900.0,750.0,1410.0,58.77,23,0,660.0,75.19,20.1209,123.803,43.6275,62.56,,600.79,0.7
+2022-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,965.71,932.86,900.0,810.0,1380.0,140.59,21,10,570.0,59.02,20.075,124.571,48.1053,10.01,,794.51,0.62
+2022-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,741.43,737.14,630.0,510.0,1100.0,222.92,21,2,590.0,79.58,19.9845,125.276,37.1001,-23.22,,861.66,0.57
+2022-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,417.0,417.0,360.0,300.0,810.0,79.01,20,0,510.0,122.3,19.4449,125.997,21.4452,-43.76,,708.05,0.58
+2022-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,300.0,300.0,300.0,300.0,660.0,0.0,22,0,360.0,120.0,19.593,126.478,15.3116,-28.06,,486.14,0.38
+2023-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,398.18,398.18,300.0,300.0,660.0,120.78,22,0,360.0,90.41,18.9863,127.336,20.972,32.73,-42.29,371.73,0.68
+2023-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,540.0,540.0,540.0,540.0,660.0,0.0,19,0,120.0,22.22,18.5986,128.046,29.0345,35.62,-25.0,412.73,0.56
+2023-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,540.0,540.0,540.0,540.0,660.0,0.0,22,0,120.0,22.22,18.3749,128.389,29.3879,0.0,-29.16,492.73,0.27
+2023-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,471.67,471.67,540.0,330.0,600.0,90.18,18,0,270.0,57.24,18.0855,128.363,26.0798,-12.65,-11.62,517.22,-0.02
+2023-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,330.0,330.0,330.0,330.0,420.0,0.0,21,0,90.0,27.27,17.7373,128.084,18.6049,-30.04,-27.81,447.22,-0.22
+2023-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,441.82,441.82,480.0,300.0,570.0,72.42,22,0,270.0,61.11,17.2412,128.214,25.6257,33.88,14.89,414.49,0.1
+2023-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,338.1,338.1,390.0,260.0,630.0,62.42,21,0,370.0,109.44,16.9049,128.832,19.9998,-23.48,-37.39,369.97,0.48
+2023-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,557.83,557.83,600.0,350.0,750.0,83.88,23,0,400.0,71.71,16.9766,129.545,32.8584,64.99,-36.45,445.91,0.55
+2023-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,600.0,600.0,600.0,600.0,750.0,0.0,21,0,150.0,25.0,17.3077,130.12,34.6667,7.56,-37.87,498.64,0.44
+2023-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,621.82,621.82,640.0,600.0,690.0,20.39,22,0,90.0,14.47,18.0823,130.609,34.3882,3.64,-16.13,593.21,0.38
+2023-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,505.0,505.0,465.0,400.0,660.0,104.76,20,0,260.0,51.49,17.3767,131.445,29.0619,-18.79,21.1,575.61,0.64
+2023-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,449.0,449.0,440.0,440.0,490.0,14.1,20,0,50.0,11.14,17.186,132.373,26.1259,-11.09,49.67,525.27,0.71
+2024-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,981.82,943.64,985.0,440.0,1500.0,220.27,22,4,1060.0,107.96,17.0873,133.555,57.4589,118.67,146.58,645.27,0.89
+2024-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,1176.5,1035.0,1125.0,1050.0,1500.0,108.98,20,20,450.0,38.25,17.0898,133.681,68.8423,19.83,117.87,869.11,0.09
+2024-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,716.11,708.89,630.0,540.0,1200.0,201.47,18,2,660.0,92.16,16.7918,134.065,42.6465,-39.13,32.61,958.14,0.29
+2024-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,395.0,395.0,390.0,270.0,600.0,54.75,22,0,330.0,83.54,16.8104,134.336,23.4973,-44.84,-16.25,762.54,0.2
+2024-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,201.82,201.82,200.0,180.0,300.0,30.02,22,0,120.0,59.46,16.7936,134.087,12.0176,-48.91,-38.84,437.64,-0.19
+2024-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,250.5,250.5,210.0,150.0,480.0,109.81,20,0,330.0,131.74,18.2174,134.594,13.7506,24.12,-43.3,282.44,0.38
+2024-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,354.78,354.78,330.0,300.0,540.0,61.56,23,0,240.0,67.65,18.1117,136.003,19.5886,41.63,4.94,269.03,1.05
+2024-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,409.09,409.09,420.0,390.0,480.0,14.77,22,0,90.0,22.0,19.1515,136.013,21.3608,15.31,-26.66,338.12,0.01
+2024-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,319.5,319.5,300.0,300.0,450.0,31.2,20,0,150.0,46.95,19.6316,136.08,16.2748,-21.9,-46.75,361.12,0.05
+2024-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,438.64,438.64,420.0,300.0,600.0,101.57,22,0,300.0,68.39,19.7062,136.828,22.2588,37.29,-29.46,389.08,0.55
+2024-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,687.0,687.0,720.0,540.0,840.0,77.19,20,0,300.0,43.67,20.3455,137.424,33.7667,56.62,36.04,481.71,0.44
+2024-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,640.0,640.0,690.0,540.0,840.0,86.6,3,0,300.0,46.88,20.2661,137.949,31.5799,-6.84,42.54,588.55,0.38
+2022-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,328.57,328.57,300.0,300.0,450.0,30.71,21,0,150.0,45.65,20.4978,118.002,16.0296,,,328.57,
+2022-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,300.0,300.0,300.0,300.0,390.0,0.0,19,0,90.0,30.0,20.4495,118.981,14.6703,-8.7,,314.29,0.83
+2022-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,488.18,488.18,510.0,300.0,690.0,157.71,22,0,390.0,79.89,20.5562,120.159,23.7486,62.73,,372.25,0.99
+2022-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,884.21,884.21,990.0,600.0,1200.0,163.82,19,0,600.0,67.86,20.1088,120.809,43.9713,81.12,,557.46,0.54
+2022-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,521.43,521.43,510.0,360.0,720.0,95.09,21,0,360.0,69.04,20.0305,121.022,26.0317,-41.03,,631.27,0.18
+2022-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,332.73,332.73,330.0,330.0,520.0,8.83,22,0,190.0,57.1,20.0237,122.044,16.6166,-36.19,,579.46,0.84
+2022-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,367.14,367.14,360.0,330.0,510.0,36.63,21,0,180.0,49.03,20.5467,122.948,17.8687,10.34,,407.1,0.74
+2022-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,559.57,559.57,450.0,360.0,1050.0,190.3,23,0,690.0,123.31,20.1209,123.803,27.8101,52.41,,419.81,0.7
+2022-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,470.0,470.0,450.0,450.0,750.0,63.17,21,0,300.0,63.83,20.075,124.571,23.4122,-16.01,,465.57,0.62
+2022-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,457.14,457.14,450.0,450.0,630.0,32.73,21,0,180.0,39.38,19.9845,125.276,22.8748,-2.74,,495.57,0.57
+2022-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1018.5,1002.75,750.0,600.0,1800.0,407.07,20,3,1200.0,117.82,19.4449,125.997,52.3787,122.8,,648.55,0.58
+2022-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1440.91,1387.05,1500.0,1200.0,1950.0,227.11,22,7,750.0,52.05,19.593,126.478,73.5422,41.47,,972.18,0.38
+2023-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1309.09,1309.09,1350.0,1050.0,1800.0,161.57,22,0,750.0,57.29,18.9863,127.336,68.9491,-9.15,298.42,1256.17,0.68
+2023-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,978.95,978.95,960.0,900.0,1500.0,133.87,19,0,600.0,61.29,18.5986,128.046,52.6356,-25.22,226.32,1242.98,0.56
+2023-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,752.73,752.73,780.0,570.0,990.0,152.38,22,0,420.0,55.8,18.3749,128.389,40.965,-23.11,54.19,1013.59,0.27
+2023-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,571.67,571.67,570.0,570.0,750.0,7.07,18,0,180.0,31.49,18.0855,128.363,31.6091,-24.05,-35.35,767.78,-0.02
+2023-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,668.57,668.57,720.0,600.0,900.0,60.85,21,0,300.0,44.87,17.7373,128.084,37.693,16.95,28.22,664.32,-0.22
+2023-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,675.0,675.0,600.0,600.0,1050.0,89.64,22,0,450.0,66.67,17.2412,128.214,39.1504,0.96,102.87,638.41,0.1
+2023-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,984.29,984.29,1050.0,900.0,1140.0,72.63,21,0,240.0,24.38,16.9049,128.832,58.2247,45.82,168.09,775.95,0.48
+2023-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,872.61,872.61,900.0,690.0,1050.0,72.31,23,0,360.0,41.26,16.9766,129.545,51.4005,-11.35,55.94,843.96,0.55
+2023-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,732.86,732.86,900.0,510.0,950.0,197.77,21,0,440.0,60.04,17.3077,130.12,42.3429,-16.02,55.93,863.25,0.44
+2023-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,480.0,480.0,470.0,470.0,540.0,15.74,22,0,70.0,14.58,18.0823,130.609,26.5452,-34.5,5.0,695.16,0.38
+2023-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,746.5,746.5,750.0,470.0,1100.0,233.85,20,0,630.0,84.39,17.3767,131.445,42.9598,55.52,-26.71,653.12,0.64
+2023-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,817.0,817.0,760.0,750.0,1100.0,108.49,20,0,350.0,42.84,17.186,132.373,47.5387,9.44,-43.3,681.17,0.71
+2024-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,965.91,965.91,970.0,840.0,1100.0,44.04,22,0,260.0,26.92,17.0873,133.555,56.5278,18.23,-26.22,843.14,0.89
+2024-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,732.0,732.0,795.0,560.0,900.0,128.25,20,0,340.0,46.45,17.0898,133.681,42.8326,-24.22,-25.23,838.3,0.09
+2024-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,667.78,667.78,660.0,470.0,980.0,152.8,18,0,510.0,76.37,16.7918,134.065,39.7681,-8.77,-11.29,788.56,0.29
+2024-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1147.73,1128.64,1200.0,700.0,2000.0,374.95,22,4,1300.0,113.27,16.8104,134.336,68.2747,71.87,100.77,849.17,0.2
+2024-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1384.09,1279.77,1500.0,750.0,2100.0,460.43,22,9,1350.0,97.54,16.7936,134.087,82.4179,20.59,107.02,1066.53,-0.19
+2024-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,654.0,654.0,600.0,540.0,1200.0,122.58,20,0,660.0,100.92,18.2174,134.594,35.8998,-52.75,-3.11,1061.94,0.38
+2024-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,575.22,575.22,600.0,450.0,900.0,39.07,23,0,450.0,78.23,18.1117,136.003,31.7595,-12.05,-41.56,871.1,1.05
+2024-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,386.82,386.82,380.0,360.0,600.0,31.83,22,0,240.0,62.04,19.1515,136.013,20.1978,-32.75,-55.67,538.68,0.01
+2024-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,554.0,554.0,540.0,400.0,750.0,86.35,20,0,350.0,63.18,19.6316,136.08,28.2198,43.22,-24.41,505.35,0.05
+2024-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,557.73,557.73,540.0,390.0,780.0,85.69,22,0,390.0,69.93,19.7062,136.828,28.3021,0.67,16.19,499.52,0.55
+2024-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,663.0,663.0,600.0,540.0,900.0,127.61,20,0,360.0,54.3,20.3455,137.424,32.5871,18.88,-11.19,591.58,0.44
+2024-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,380.0,380.0,390.0,210.0,720.0,115.93,21,0,510.0,134.21,20.2661,137.949,18.7506,-42.68,-53.49,533.58,0.38
+2025-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,250.64,250.64,300.0,156.0,350.0,59.86,22,0,194.0,77.4,20.549,138.343,12.197,-34.04,-74.05,431.21,0.29
+2025-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,417.37,417.37,360.0,180.0,680.0,144.87,19,0,500.0,119.8,20.4571,138.726,20.4021,66.52,-42.98,349.33,0.28
+2025-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,561.0,561.0,570.0,360.0,620.0,56.0,20,0,260.0,46.35,20.2417,139.161,27.715,34.41,-15.99,409.67,0.31
+2025-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,690.0,690.0,600.0,300.0,1260.0,195.09,20,0,960.0,139.13,20.0564,139.62,34.4031,22.99,-39.88,556.12,0.33
+2025-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,684.75,684.75,675.0,600.0,840.0,68.18,20,0,240.0,35.05,19.4355,140.012,35.2319,-0.76,-50.53,645.25,0.28
+2025-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,583.57,583.57,630.0,450.0,750.0,85.1,21,0,300.0,51.41,19.03,140.405,30.6659,-14.78,-10.77,652.77,0.28
+2025-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,718.7,718.7,675.0,600.0,840.0,55.93,23,0,240.0,33.39,18.6909,140.78,38.4516,23.15,24.94,662.34,0.27
+2025-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1221.43,1221.43,1395.0,600.0,1550.0,312.8,21,0,950.0,77.78,18.7063,140.867,65.2949,69.95,215.76,841.23,0.06
+2025-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1076.9,1076.9,1075.0,900.0,1550.0,115.89,21,0,650.0,60.36,18.499,141.197,58.2142,-11.83,94.39,1005.68,0.23
+2025-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1026.09,1026.09,1080.0,900.0,1150.0,71.94,23,0,250.0,24.36,18.4296,141.708,55.6761,-4.72,83.98,1108.14,0.36
+2025-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1513.42,1374.47,1360.0,1050.0,2450.0,410.55,19,3,1400.0,92.51,18.4185,142.645,82.1686,47.49,128.27,1205.47,0.66
+2025-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1429.69,1099.69,870.0,750.0,2450.0,796.84,16,6,1700.0,118.91,18.0739,143.042,79.1023,-5.53,276.23,1323.07,0.28
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Fresa,461.43,461.43,400.0,380.0,620.0,81.89,21,0,240.0,52.01,18.434,147.026,25.0314,,,461.43,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Fresa,475.0,475.0,472.5,420.0,550.0,27.52,8,0,130.0,27.37,18.7008,147.026,25.4,2.94,,468.21,0.0
+2022-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,235.19,241.19,210.0,195.0,364.0,41.14,21,9,169.0,71.86,20.4978,118.002,11.474,,,235.19,
+2022-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,195.0,209.0,195.0,195.0,265.0,0.0,19,19,70.0,35.9,20.4495,118.981,9.5357,-17.09,,215.1,0.83
+2022-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,219.55,228.45,195.0,195.0,378.0,34.27,22,14,183.0,83.35,20.5562,120.159,10.6803,12.59,,216.58,0.99
+2022-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,273.95,276.26,280.0,165.0,378.0,26.38,19,1,213.0,77.75,20.1088,120.809,13.6233,24.78,,229.5,0.54
+2022-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,290.0,290.0,280.0,280.0,406.0,18.33,21,0,126.0,43.45,20.0305,121.022,14.4779,5.86,,261.16,0.18
+2022-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,314.36,314.36,308.0,308.0,406.0,7.14,22,0,98.0,31.17,20.0237,122.044,15.6995,8.4,,292.77,0.84
+2022-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,272.0,272.0,266.0,266.0,392.0,15.06,21,0,126.0,46.32,20.5467,122.948,13.2381,-13.48,,292.12,0.74
+2022-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,276.43,275.52,280.0,252.0,406.0,23.55,23,1,154.0,55.71,20.1209,123.803,13.7387,1.63,,287.6,0.7
+2022-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,286.43,286.43,280.0,280.0,470.0,16.14,21,0,190.0,66.33,20.075,124.571,14.2679,3.62,,278.29,0.62
+2022-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,360.33,338.33,378.0,325.0,518.0,25.6,21,14,193.0,53.56,19.9845,125.276,18.0306,25.8,,307.73,0.57
+2022-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,328.0,311.5,328.0,278.0,518.0,51.3,20,10,240.0,73.17,19.4449,125.997,16.8682,-8.97,,324.92,0.58
+2022-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,278.0,278.0,278.0,278.0,518.0,0.0,22,0,240.0,86.33,19.593,126.478,14.1888,-15.24,,322.11,0.38
+2023-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,278.0,278.0,278.0,278.0,518.0,0.0,22,0,240.0,86.33,18.9863,127.336,14.6421,0.0,18.2,294.67,0.68
+2023-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,278.0,278.0,278.0,278.0,518.0,0.0,19,0,240.0,86.33,18.5986,128.046,14.9474,0.0,42.56,278.0,0.56
+2023-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,305.77,305.77,325.0,278.0,518.0,23.65,22,0,240.0,78.49,18.3749,128.389,16.6408,9.99,39.28,287.26,0.27
+2023-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,303.33,303.33,325.0,255.0,450.0,29.05,18,0,195.0,64.29,18.0855,128.363,16.7722,-0.8,10.73,295.7,-0.02
+2023-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,255.0,255.0,255.0,255.0,308.0,0.0,21,0,53.0,20.78,17.7373,128.084,14.3765,-15.93,-12.07,288.04,-0.22
+2023-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,277.73,277.73,280.0,255.0,406.0,7.36,22,0,151.0,54.37,17.2412,128.214,16.1083,8.91,-11.65,278.69,0.1
+2023-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,251.21,254.14,260.0,180.0,406.0,29.71,29,5,226.0,89.97,16.9049,128.832,14.86,-9.55,-7.64,261.31,0.48
+2023-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,282.0,285.76,280.5,180.0,475.0,56.35,46,13,295.0,104.61,16.9766,129.545,16.6111,12.26,2.01,270.31,0.55
+2023-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,304.07,299.07,290.0,200.0,450.0,56.21,42,24,250.0,82.22,17.3077,130.12,17.5686,7.83,6.16,279.09,0.44
+2023-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,242.73,247.32,245.0,190.0,395.0,42.17,44,18,205.0,84.46,18.0823,130.609,13.4234,-20.17,-32.64,276.27,0.38
+2023-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,270.12,271.7,270.0,200.0,340.0,40.94,40,7,140.0,51.83,17.3767,131.445,15.5452,11.29,-17.64,272.31,0.64
+2023-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,303.71,303.71,290.0,250.0,360.0,36.25,35,0,110.0,36.22,17.186,132.373,17.6722,12.43,9.25,272.19,0.71
+2022-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,854.76,738.1,825.0,450.0,1275.0,202.73,21,11,825.0,96.52,20.4978,118.002,41.7002,,,854.76,
+2022-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,935.53,800.0,975.0,825.0,1350.0,67.86,19,19,525.0,56.12,20.4495,118.981,45.7481,9.45,,895.14,0.83
+2022-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,800.0,769.32,825.0,675.0,1275.0,79.06,22,16,600.0,75.0,20.5562,120.159,38.9177,-14.49,,863.43,0.99
+2022-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,797.37,780.26,825.0,675.0,1020.0,44.79,19,13,345.0,43.27,20.1088,120.809,39.6527,-0.33,,844.3,0.54
+2022-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,575.71,575.71,525.0,495.0,825.0,95.63,21,0,330.0,57.32,20.0305,121.022,28.7418,-27.8,,724.36,0.18
+2022-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,450.68,450.68,450.0,400.0,585.0,27.44,22,0,185.0,41.05,20.0237,122.044,22.5074,-21.72,,607.92,0.84
+2022-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,435.0,435.0,450.0,375.0,645.0,25.98,21,0,270.0,62.07,20.5467,122.948,21.1713,-3.48,,487.13,0.74
+2022-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,438.26,438.26,450.0,375.0,645.0,37.83,23,0,270.0,61.61,20.1209,123.803,21.7813,0.75,,441.31,0.7
+2022-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,390.71,390.71,400.0,300.0,645.0,56.09,21,0,345.0,88.3,20.075,124.571,19.4627,-10.85,,421.33,0.62
+2022-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,368.33,368.33,300.0,210.0,630.0,104.68,21,0,420.0,114.03,19.9845,125.276,18.4309,-5.73,,399.1,0.57
+2022-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,213.0,213.0,210.0,210.0,555.0,13.42,20,0,345.0,161.97,19.4449,125.997,10.954,-42.17,,324.02,0.58
+2022-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,325.23,325.23,300.0,270.0,700.0,41.68,22,0,430.0,132.22,19.593,126.478,16.5992,52.69,,302.19,0.38
+2023-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,368.86,368.86,375.0,345.0,675.0,9.99,22,0,330.0,89.46,18.9863,127.336,19.4278,13.42,-56.85,302.36,0.68
+2023-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,351.32,351.32,300.0,300.0,675.0,83.11,19,0,375.0,106.74,18.5986,128.046,18.8894,-4.76,-62.45,348.47,0.56
+2023-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,542.73,542.73,510.0,510.0,810.0,84.3,22,0,300.0,55.28,18.3749,128.389,29.5363,54.48,-32.16,420.97,0.27
+2023-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,615.0,615.0,600.0,540.0,825.0,66.09,18,0,285.0,46.34,18.0855,128.363,34.0052,13.32,-22.87,503.01,-0.02
+2023-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,450.43,450.43,375.0,360.0,750.0,109.56,21,0,390.0,86.58,17.7373,128.084,25.3944,-26.76,-21.76,536.05,-0.22
+2023-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,384.82,384.82,373.0,373.0,720.0,16.3,22,0,347.0,90.17,17.2412,128.214,22.3197,-14.57,-14.61,483.42,0.1
+2023-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,417.14,417.14,420.0,375.0,735.0,22.06,21,0,360.0,86.3,16.9049,128.832,24.6758,8.4,-4.11,417.46,0.48
+2023-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,436.52,436.52,450.0,340.0,900.0,89.1,23,0,560.0,128.29,16.9766,129.545,25.7131,4.65,-0.4,412.83,0.55
+2023-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,650.0,640.48,600.0,400.0,1200.0,113.74,21,4,800.0,123.08,17.3077,130.12,37.5556,48.9,66.36,501.22,0.44
+2023-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,1056.36,796.36,1075.0,720.0,1370.0,96.49,22,21,650.0,61.53,18.0823,130.609,58.4197,62.52,186.8,714.3,0.38
+2023-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,504.0,434.0,240.0,220.0,1100.0,373.47,20,7,880.0,174.6,17.3767,131.445,29.0044,-52.29,136.62,736.79,0.64
+2023-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,228.5,228.5,230.0,220.0,250.0,8.75,20,0,30.0,13.13,17.186,132.373,13.2957,-54.66,-29.74,596.29,0.71
+2024-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,302.95,302.95,300.0,220.0,350.0,39.9,22,0,130.0,42.91,17.0873,133.555,17.7298,32.58,-17.87,345.15,0.89
+2024-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,288.25,288.25,290.0,280.0,350.0,7.48,20,0,70.0,24.28,17.0898,133.681,16.8668,-4.85,-17.95,273.23,0.09
+2024-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,289.17,289.17,290.0,280.0,350.0,7.33,18,0,70.0,24.21,16.7918,134.065,17.2207,0.32,-46.72,293.46,0.29
+2024-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,302.73,302.73,300.0,280.0,400.0,25.67,22,0,120.0,39.64,16.8104,134.336,18.0083,4.69,-50.78,293.38,0.2
+2024-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,274.55,274.55,250.0,220.0,400.0,50.4,22,0,180.0,65.56,16.7936,134.087,16.3483,-9.31,-39.05,288.81,-0.19
+2024-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,263.0,263.0,280.0,200.0,450.0,52.32,20,0,250.0,95.06,18.2174,134.594,14.4368,-4.21,-31.66,280.09,0.38
+2024-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,280.43,280.43,260.0,200.0,500.0,58.27,23,0,300.0,106.98,18.1117,136.003,15.4836,6.63,-32.77,272.66,1.05
+2024-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,495.45,495.45,500.0,450.0,600.0,40.56,22,0,150.0,30.28,19.1515,136.013,25.8703,76.67,13.5,346.3,0.01
+2024-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,602.5,602.5,600.0,500.0,680.0,30.24,20,0,180.0,29.88,19.6316,136.08,30.6903,21.61,-7.31,459.46,0.05
+2024-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,322.73,322.73,300.0,250.0,580.0,82.7,22,0,330.0,102.25,19.7062,136.828,16.377,-46.44,-69.45,473.56,0.55
+2024-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,186.0,186.0,165.0,150.0,350.0,44.53,20,0,200.0,107.53,20.3455,137.424,9.1421,-42.37,-63.1,370.41,0.44
+2024-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,217.62,217.62,220.0,180.0,270.0,22.34,21,0,90.0,41.36,20.2661,137.949,10.7381,17.0,-4.76,242.12,0.38
+2025-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,270.45,270.45,250.0,250.0,480.0,43.8,22,0,230.0,85.04,20.549,138.343,13.1614,24.28,-10.73,224.69,0.29
+2025-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,338.95,338.95,350.0,180.0,520.0,94.1,19,0,340.0,100.31,20.4571,138.726,16.5687,25.33,17.59,275.67,0.28
+2025-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,490.0,490.0,500.0,400.0,620.0,85.22,20,0,220.0,44.9,20.2417,139.161,24.2074,44.57,69.45,366.47,0.31
+2025-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,394.5,394.5,412.5,300.0,550.0,59.16,20,0,250.0,63.37,20.0564,139.62,19.6696,-19.49,30.32,407.82,0.33
+2025-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,468.0,468.0,450.0,400.0,520.0,28.21,20,0,120.0,25.64,19.4355,140.012,24.0797,18.63,70.46,450.83,0.28
+2025-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,479.52,479.52,475.0,400.0,510.0,15.8,21,0,110.0,22.94,19.03,140.405,25.1983,2.46,82.33,447.34,0.28
+2025-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,401.96,401.96,410.0,300.0,500.0,28.59,23,0,200.0,49.76,18.6909,140.78,21.5054,-16.18,43.33,449.83,0.27
+2025-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,450.48,450.48,450.0,400.0,520.0,36.12,21,0,120.0,26.64,18.7063,140.867,24.0815,12.07,-9.08,443.99,0.06
+2025-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,412.38,412.38,475.0,250.0,520.0,96.48,21,0,270.0,65.47,18.499,141.197,22.2921,-8.46,-31.56,421.6,0.23
+2025-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,373.04,373.04,335.0,300.0,500.0,67.2,23,0,200.0,53.61,18.4296,141.708,20.2416,-9.54,15.59,411.97,0.36
+2025-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,264.21,264.21,240.0,220.0,500.0,58.12,19,0,280.0,105.98,18.4185,142.645,14.3449,-29.17,42.05,349.88,0.66
+2025-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,330.31,330.31,360.0,250.0,370.0,40.43,16,0,120.0,36.33,18.0739,143.042,18.2757,25.02,51.78,322.52,0.28
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,353.1,353.1,360.0,250.0,430.0,49.86,21,0,180.0,50.98,18.434,147.026,19.1546,6.9,30.56,315.87,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,265.0,265.0,250.0,200.0,330.0,44.72,8,0,130.0,49.06,18.7008,147.026,14.1705,-24.95,-21.82,316.14,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,LimÃ³n s/semilla,223.21,223.21,240.0,150.0,270.0,28.45,21,0,120.0,53.76,18.434,147.026,12.1089,,,223.21,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,LimÃ³n s/semilla,201.56,201.56,187.5,150.0,270.0,40.97,8,0,120.0,59.53,18.7008,147.026,10.7783,-9.7,,212.39,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Golden Delicious,762.98,762.98,715.0,480.0,1150.0,262.69,42,0,670.0,87.81,18.434,147.026,41.3897,,,762.98,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Golden Delicious,715.0,715.0,702.5,500.0,1020.0,212.41,16,0,520.0,72.73,18.7008,147.026,38.2337,-6.29,,738.99,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Red Delicious,677.86,677.86,665.0,450.0,980.0,151.2,42,0,530.0,78.19,18.434,147.026,36.7722,,,677.86,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Red Delicious,678.12,678.12,645.0,500.0,1000.0,168.66,16,0,500.0,73.73,18.7008,147.026,36.2618,0.04,,677.99,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Naranja Valencia grande,17.59,17.59,18.0,16.0,20.0,0.76,21,0,4.0,22.74,18.434,147.026,0.9542,,,17.59,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Naranja Valencia grande,14.45,14.45,14.25,13.0,16.2,0.71,8,0,3.1999999999999993,22.15,18.7008,147.026,0.7727,-17.85,,16.02,0.0
+2022-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,833.33,833.33,750.0,750.0,1350.0,120.76,21,0,600.0,72.0,20.4978,118.002,40.6548,,,833.33,
+2022-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,771.05,771.05,750.0,750.0,1350.0,63.06,19,0,600.0,77.82,20.4495,118.981,37.7052,-7.47,,802.19,0.83
+2022-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,750.0,750.0,750.0,750.0,1150.0,0.0,22,0,400.0,53.33,20.5562,120.159,36.4853,-2.73,,784.8,0.99
+2022-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,792.11,792.11,750.0,750.0,1150.0,50.73,19,0,400.0,50.5,20.1088,120.809,39.391,5.61,,771.05,0.54
+2022-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,802.38,802.38,850.0,750.0,1250.0,51.18,21,0,500.0,62.31,20.0305,121.022,40.0579,1.3,,781.5,0.18
+2022-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,840.91,840.91,750.0,750.0,1500.0,145.27,22,0,750.0,89.19,20.0237,122.044,41.9956,4.8,,811.8,0.84
+2022-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1185.71,1185.71,1150.0,1000.0,1600.0,159.01,21,0,600.0,50.6,20.5467,122.948,57.7082,41.0,,943.0,0.74
+2022-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1284.78,1284.78,1350.0,950.0,1750.0,198.54,23,0,800.0,62.27,20.1209,123.803,63.853,8.36,,1103.8,0.7
+2022-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1411.9,1411.9,1500.0,1250.0,1750.0,116.09,21,0,500.0,35.41,20.075,124.571,70.3314,9.89,,1294.13,0.62
+2022-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1285.71,1285.71,1300.0,1000.0,1400.0,65.47,21,0,400.0,31.11,19.9845,125.276,64.3354,-8.94,,1327.47,0.57
+2022-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1242.5,1242.5,1350.0,1000.0,1400.0,148.92,20,0,400.0,32.19,19.4449,125.997,63.8985,-3.36,,1313.37,0.58
+2022-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1322.73,1322.73,1350.0,1200.0,1400.0,59.22,22,0,200.0,15.12,19.593,126.478,67.5103,6.46,,1283.65,0.38
+2023-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,809.09,809.09,800.0,800.0,1250.0,29.42,22,0,450.0,55.62,18.9863,127.336,42.6144,-38.83,-2.91,1124.77,0.68
+2023-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,800.0,800.0,800.0,800.0,1250.0,0.0,19,0,450.0,56.25,18.5986,128.046,43.0141,-1.12,3.75,977.27,0.56
+2023-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,900.0,900.0,900.0,900.0,1350.0,0.0,22,0,450.0,50.0,18.3749,128.389,48.9798,12.5,20.0,836.36,0.27
+2023-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,919.44,919.44,900.0,900.0,1350.0,25.08,18,0,450.0,48.94,18.0855,128.363,50.8388,2.16,16.08,873.15,-0.02
+2023-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,964.29,964.29,950.0,950.0,1350.0,45.12,21,0,400.0,41.48,17.7373,128.084,54.3649,4.88,20.18,927.91,-0.22
+2023-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1272.73,1272.73,1250.0,1100.0,1700.0,117.24,22,0,600.0,47.14,17.2412,128.214,73.8189,31.99,51.35,1052.15,0.1
+2023-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1240.48,1240.48,1300.0,1000.0,1750.0,94.37,21,0,750.0,60.46,16.9049,128.832,73.3795,-2.53,4.62,1159.16,0.48
+2023-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1191.3,1191.3,1200.0,1000.0,1750.0,79.28,23,0,750.0,62.96,16.9766,129.545,70.1731,-3.96,-7.28,1234.84,0.55
+2023-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1252.38,1252.38,1300.0,1100.0,1600.0,58.04,21,0,500.0,39.92,17.3077,130.12,72.3598,5.13,-11.3,1228.05,0.44
+2023-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1188.64,1188.64,1250.0,650.0,1650.0,185.38,22,0,1000.0,84.13,18.0823,130.609,65.7347,-5.09,-7.55,1210.77,0.38
+2023-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,856.7,856.7,820.0,750.0,1500.0,129.83,20,0,750.0,87.55,17.3767,131.445,49.3017,-27.93,-31.05,1099.24,0.64
+2023-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,995.5,995.5,1000.0,990.0,1100.0,5.1,20,0,110.0,11.05,17.186,132.373,57.9251,16.2,-24.74,1013.61,0.71
+2024-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,963.18,963.18,960.0,940.0,1250.0,17.01,22,0,310.0,32.18,17.0873,133.555,56.3682,-3.25,19.04,938.46,0.89
+2024-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1075.0,1075.0,1075.0,1000.0,1250.0,73.45,20,0,250.0,23.26,17.0898,133.681,62.9031,11.61,34.38,1011.23,0.09
+2024-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1027.78,1027.78,1000.0,750.0,1350.0,200.9,18,0,600.0,58.38,16.7918,134.065,61.2072,-4.39,14.2,1021.99,0.29
+2024-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1197.73,1197.73,1150.0,1000.0,1500.0,85.19,22,0,500.0,41.75,16.8104,134.336,71.249,16.54,30.27,1100.17,0.2
+2024-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,947.73,947.73,900.0,900.0,1200.0,60.7,22,0,300.0,31.65,16.7936,134.087,56.434,-20.87,-1.72,1057.74,-0.19
+2024-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,885.0,885.0,900.0,750.0,1100.0,60.91,20,0,350.0,39.55,18.2174,134.594,48.58,-6.62,-30.46,1010.15,0.38
+2024-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1030.43,1030.43,1100.0,750.0,1350.0,145.96,23,0,600.0,58.23,18.1117,136.003,56.8933,16.43,-16.93,954.39,1.05
+2024-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1095.45,1095.45,1100.0,1050.0,1350.0,30.51,22,0,300.0,27.39,19.1515,136.013,57.1995,6.31,-8.05,1003.63,0.01
+2024-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1170.0,1170.0,1150.0,1100.0,1500.0,80.13,20,0,400.0,34.19,19.6316,136.08,59.5977,6.8,-6.58,1098.63,0.05
+2024-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,1175.0,1175.0,1150.0,1000.0,1450.0,134.3,22,0,450.0,38.3,19.7062,136.828,59.626,0.43,-1.15,1146.82,0.55
+2024-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,942.5,942.5,950.0,800.0,1300.0,83.15,20,0,500.0,53.05,20.3455,137.424,46.3248,-19.79,10.02,1095.83,0.44
+2024-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,897.62,897.62,900.0,700.0,1250.0,147.88,21,0,550.0,61.27,20.2661,137.949,44.2918,-4.76,-9.83,1005.04,0.38
+2025-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,843.64,843.64,775.0,560.0,1200.0,186.54,22,0,640.0,75.86,20.549,138.343,41.0548,-6.01,-12.41,894.59,0.29
+2025-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,635.79,635.79,650.0,500.0,1000.0,63.27,19,0,500.0,78.64,20.4571,138.726,31.0791,-24.64,-40.86,792.35,0.28
+2025-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,645.0,645.0,650.0,500.0,900.0,51.04,20,0,400.0,62.02,20.2417,139.161,31.8648,1.45,-37.24,708.14,0.31
+2025-04,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,632.5,632.5,650.0,450.0,900.0,97.7,20,0,450.0,71.15,20.0564,139.62,31.5361,-1.94,-47.19,637.76,0.33
+2025-05,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,820.0,820.0,812.5,650.0,950.0,67.67,20,0,300.0,36.59,19.4355,140.012,42.1908,29.64,-13.48,699.17,0.28
+2025-06,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,763.1,763.1,750.0,650.0,900.0,56.25,21,0,250.0,32.76,19.03,140.405,40.0996,-6.94,-13.77,738.53,0.28
+2025-07,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,936.96,936.96,950.0,800.0,1100.0,46.39,23,0,300.0,32.02,18.6909,140.78,50.1289,22.78,-9.07,840.02,0.27
+2025-08,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,940.48,940.48,950.0,750.0,1100.0,50.3,21,0,350.0,37.22,18.7063,140.867,50.2758,0.38,-14.15,880.18,0.06
+2025-09,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,816.67,816.67,800.0,700.0,1000.0,85.63,21,0,300.0,36.73,18.499,141.197,44.1465,-13.16,-30.2,898.03,0.23
+2025-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,709.78,709.78,700.0,550.0,850.0,36.73,23,0,300.0,42.27,18.4296,141.708,38.5132,-13.09,-39.59,822.31,0.36
+2025-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,651.32,651.32,650.0,550.0,800.0,5.74,19,0,250.0,38.38,18.4185,142.645,35.3621,-8.24,-30.89,725.92,0.66
+2025-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,642.19,642.19,650.0,600.0,700.0,11.97,16,0,100.0,15.57,18.0739,143.042,35.5312,-1.4,-28.46,667.76,0.28
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papaya Maradol,20.21,20.21,18.5,16.0,25.0,2.69,63,0,9.0,44.53,18.434,147.026,1.0964,,,20.21,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papaya Maradol,23.79,23.79,23.25,18.0,28.0,2.35,24,0,10.0,42.03,18.7008,147.026,1.2722,17.72,,22.0,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PiÃ±a grande,122.05,122.05,116.0,15.0,260.0,106.71,42,0,245.0,200.74,18.434,147.026,6.6208,,,122.05,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PiÃ±a grande,115.41,115.41,110.25,15.0,235.0,102.09,16,0,220.0,190.63,18.7008,147.026,6.1712,-5.44,,118.73,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Chiapas,405.0,405.0,405.0,390.0,420.0,0.0,21,0,30.0,7.41,18.434,147.026,21.9703,,,405.0,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Chiapas,409.38,409.38,410.0,390.0,420.0,1.77,8,0,30.0,7.33,18.7008,147.026,21.8908,1.08,,407.19,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Dominico,17.4,17.4,18.0,15.0,19.0,1.15,21,0,4.0,22.98,18.434,147.026,0.9442,,,17.4,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Dominico,18.88,18.88,19.25,15.0,20.0,1.19,8,0,5.0,26.49,18.7008,147.026,1.0093,8.45,,18.14,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Macho,22.36,22.36,22.5,20.0,25.0,0.95,21,0,5.0,22.36,18.434,147.026,1.2128,,,22.36,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Macho,22.06,22.06,22.0,20.0,25.0,1.15,8,0,5.0,22.66,18.7008,147.026,1.1798,-1.32,,22.21,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Tabasco,13.93,12.95,13.0,11.5,19.0,2.28,21,4,7.5,53.85,18.434,147.026,0.7556,,,13.93,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Tabasco,12.16,12.5,11.25,10.5,19.0,2.56,8,8,8.5,69.92,18.7008,147.026,0.65,-12.72,,13.04,0.0
+2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Toronja Roja,14.1,14.1,14.1,12.2,16.0,0.0,20,0,3.8000000000000007,26.95,18.434,147.026,0.7649,,,14.1,0.65
+2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,978.57,978.57,950.0,850.0,1200.0,78.38,21,0,350.0,35.77,20.4978,118.002,47.7404,,,978.57,
+2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,950.0,950.0,950.0,900.0,950.0,0.0,19,0,50.0,5.26,20.4495,118.981,46.4559,-2.92,,964.29,0.83
+2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,945.45,945.45,950.0,850.0,950.0,14.71,22,0,100.0,10.58,20.5562,120.159,45.9936,-0.48,,958.01,0.99
+2022-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1068.42,1068.42,900.0,850.0,1300.0,202.9,19,0,450.0,42.12,20.1088,120.809,53.132,13.01,,987.96,0.54
+2022-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1276.19,1276.19,1300.0,1100.0,1300.0,25.59,21,0,200.0,15.67,20.0305,121.022,63.7123,19.45,,1096.69,0.18
+2022-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1497.73,1497.73,1500.0,1150.0,1700.0,207.29,22,0,550.0,36.72,20.0237,122.044,74.7976,17.36,,1280.78,0.84
+2022-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1728.57,1710.71,1700.0,1500.0,1900.0,100.71,21,5,400.0,23.14,20.5467,122.948,84.1288,15.41,,1500.83,0.74
+2022-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1554.55,1554.55,1650.0,1100.0,1650.0,180.15,22,0,550.0,35.38,20.1209,123.803,77.2601,-10.07,,1593.61,0.7
+2022-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1300.0,1300.0,1300.0,1200.0,1300.0,0.0,21,0,100.0,7.69,20.075,124.571,64.7571,-16.37,,1527.71,0.62
+2022-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1028.57,1028.57,1000.0,900.0,1300.0,90.24,21,0,400.0,38.89,19.9845,125.276,51.4683,-20.88,,1294.37,0.57
+2022-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1000.0,1000.0,1000.0,900.0,1000.0,0.0,20,0,100.0,10.0,19.4449,125.997,51.4273,-2.78,,1109.52,0.58
+2022-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1061.9,1061.9,1100.0,900.0,1100.0,49.76,21,0,200.0,18.83,19.593,126.478,54.1983,6.19,,1030.16,0.38
+2023-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1100.0,1100.0,1100.0,900.0,1100.0,0.0,22,0,200.0,18.18,18.9863,127.336,57.9364,3.59,12.41,1053.97,0.68
+2023-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1100.0,1100.0,1100.0,900.0,1100.0,0.0,19,0,200.0,18.18,18.5986,128.046,59.1443,0.0,15.79,1087.3,0.56
+2023-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1078.36,1078.36,1100.0,880.0,1100.0,57.9,22,0,220.0,20.4,18.3749,128.389,58.6868,-1.97,14.06,1092.79,0.27
+2023-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,913.33,913.33,912.0,880.0,920.0,3.07,18,0,40.0,4.38,18.0855,128.363,50.5009,-15.3,-14.52,1030.57,-0.02
+2023-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,991.67,991.67,1000.0,880.0,1100.0,77.03,21,0,220.0,22.18,17.7373,128.084,55.9085,8.58,-22.29,994.45,-0.22
+2023-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1034.09,1034.09,1050.0,750.0,1100.0,74.62,22,0,350.0,33.85,17.2412,128.214,59.9779,4.28,-30.96,979.7,0.1
+2023-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1327.14,1327.14,1400.0,850.0,1430.0,144.33,21,0,580.0,43.7,16.9049,128.832,78.5062,28.34,-23.22,1117.63,0.48
+2023-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1458.7,1458.7,1500.0,1250.0,1500.0,45.36,23,0,250.0,17.14,16.9766,129.545,85.9237,9.91,-6.17,1273.31,0.55
+2023-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1435.0,1435.0,1500.0,975.0,1500.0,163.15,21,0,525.0,36.59,17.3077,130.12,82.9111,-1.62,10.38,1406.95,0.44
+2023-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1131.36,1131.36,1140.0,975.0,1140.0,27.95,22,0,165.0,14.58,18.0823,130.609,62.5674,-21.16,9.99,1341.69,0.38
+2023-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1058.75,1058.75,950.0,900.0,1200.0,123.62,20,0,300.0,28.34,17.3767,131.445,60.9293,-6.42,5.88,1208.37,0.64
+2023-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,992.5,992.5,1000.0,900.0,1000.0,18.32,20,0,100.0,10.08,17.186,132.373,57.7505,-6.26,-6.54,1060.87,0.71
+2024-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,972.73,972.73,950.0,850.0,1000.0,25.48,22,0,150.0,15.42,17.0873,133.555,56.9269,-1.99,-11.57,1007.99,0.89
+2024-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,952.5,952.5,970.0,700.0,1000.0,73.71,20,0,300.0,31.5,17.0898,133.681,55.7351,-2.08,-13.41,972.58,0.09
+2024-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,763.89,763.89,750.0,700.0,950.0,46.67,18,0,250.0,32.73,16.7918,134.065,45.4918,-19.8,-29.16,896.37,0.29
+2024-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,911.14,911.14,950.0,800.0,950.0,47.81,22,0,150.0,16.46,16.8104,134.336,54.2006,19.28,-0.24,875.84,0.2
+2024-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,903.41,903.41,900.0,800.0,1000.0,43.57,22,0,200.0,22.14,16.7936,134.087,53.795,-0.85,-8.9,859.48,-0.19
+2024-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,955.0,955.0,950.0,900.0,1000.0,15.39,20,0,100.0,10.47,18.2174,134.594,52.4225,5.71,-7.65,923.18,0.38
+2024-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1520.65,1520.65,1575.0,900.0,1615.0,180.07,23,0,715.0,47.02,18.1117,136.003,83.9597,59.23,14.58,1126.35,1.05
+2024-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1483.75,1483.75,1450.0,1200.0,1615.0,98.77,20,0,415.0,27.97,19.1515,136.013,77.4744,-2.43,1.72,1319.8,0.01
+2024-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1320.0,1320.0,1300.0,1250.0,1520.0,45.6,20,0,270.0,20.45,19.6316,136.08,67.2384,-11.04,-8.01,1441.47,0.05
+2024-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1173.41,1173.41,1150.0,950.0,1330.0,90.14,22,0,380.0,32.38,19.7062,136.828,59.5452,-11.11,3.72,1325.72,0.55
+2024-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1060.75,1060.75,1045.0,950.0,1150.0,38.47,20,0,200.0,18.85,20.3455,137.424,52.1369,-9.6,0.19,1184.72,0.44
+2024-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1050.0,1050.0,1000.0,900.0,1150.0,72.46,21,0,250.0,23.81,20.2661,137.949,51.8108,-1.01,5.79,1094.72,0.38
+2025-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1052.05,1052.05,1045.0,900.0,1235.0,68.39,22,0,335.0,31.84,20.549,138.343,51.1969,0.19,8.15,1054.27,0.29
+2025-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1094.74,1094.74,1200.0,900.0,1235.0,126.81,19,0,335.0,30.6,20.4571,138.726,53.5137,4.06,14.93,1065.59,0.28
+2025-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,954.5,954.5,950.0,722.0,1235.0,204.81,20,0,513.0,53.75,20.2417,139.161,47.155,-12.81,24.95,1033.76,0.31
+2025-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1239.75,1239.75,1235.0,1100.0,1330.0,21.24,20,0,230.0,18.55,20.0564,139.62,61.8133,29.88,36.07,1096.33,0.33
+2025-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1330.0,1330.0,1330.0,1200.0,1330.0,0.0,20,0,130.0,9.77,19.4355,140.012,68.4315,7.28,47.22,1174.75,0.28
+2025-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1330.0,1330.0,1330.0,1200.0,1330.0,0.0,21,0,130.0,9.77,19.03,140.405,69.8897,0.0,39.27,1299.92,0.28
+2025-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1219.69,1219.69,1235.0,1100.0,1235.0,17.93,16,0,135.0,11.07,18.6909,140.78,65.2556,-8.29,-19.79,1293.23,0.27
+2025-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1209.05,1209.05,1200.0,980.0,1330.0,77.5,19,0,350.0,28.95,18.7063,140.867,64.6333,-0.87,-18.51,1252.91,0.06
+2025-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,1034.81,1034.81,1083.0,750.0,1100.0,106.13,21,0,350.0,33.82,18.499,141.197,55.9386,-14.41,-21.61,1154.52,0.23
+2025-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,850.65,850.65,855.0,750.0,855.0,6.09,23,0,105.0,12.34,18.4296,141.708,46.1569,-17.8,-27.51,1031.5,0.36
+2025-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,770.0,770.0,760.0,700.0,855.0,29.95,19,0,155.0,20.13,18.4185,142.645,41.8058,-9.48,-27.41,885.15,0.66
+2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,758.64,758.64,760.0,700.0,760.0,3.51,22,0,60.0,7.91,18.0739,143.042,41.9741,-1.48,-27.75,793.1,0.28
+2026-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,750.0,750.0,750.0,700.0,760.0,0.0,5,0,60.0,8.0,17.6449,143.588,42.5052,-1.14,-28.71,759.55,0.38
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,752.43,752.43,627.0,600.0,1000.0,164.17,21,0,400.0,53.16,18.434,147.026,40.8175,0.32,-31.27,753.69,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,622.25,622.25,627.0,590.0,627.0,8.8,8,0,37.0,5.95,18.7008,147.026,33.274,-17.3,-34.81,708.23,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,CaÃ±a,116.95,116.95,120.0,100.0,120.0,3.98,21,0,20.0,17.1,18.434,147.026,6.3444,,,116.95,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,CaÃ±a,120.0,120.0,120.0,110.0,120.0,0.0,8,0,10.0,8.33,18.7008,147.026,6.4168,2.61,,118.48,0.0
+2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,30.57,30.57,30.0,25.0,36.0,1.8,21,0,11.0,35.98,20.4978,118.002,1.4915,,,30.57,
+2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,20.11,20.11,21.0,16.0,30.0,3.09,19,0,14.0,69.63,20.4495,118.981,0.9832,-34.24,,25.34,0.83
+2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,17.59,17.59,18.0,16.0,18.0,0.5,22,0,2.0,11.37,20.5562,120.159,0.8557,-12.51,,22.76,0.99
+2022-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,23.37,23.37,18.0,16.0,32.0,6.95,19,0,16.0,68.47,20.1088,120.809,1.1621,32.84,,20.35,0.54
+2022-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,30.0,30.0,30.0,25.0,32.0,0.0,21,0,7.0,23.33,20.0305,121.022,1.4977,28.38,,23.65,0.18
+2022-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,30.45,30.45,30.0,25.0,32.0,0.86,22,0,7.0,22.99,20.0237,122.044,1.5209,1.52,,27.94,0.84
+2022-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,22.05,22.05,22.0,18.0,32.0,2.77,21,0,14.0,63.5,20.5467,122.948,1.073,-27.6,,27.5,0.74
+2022-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,22.0,22.0,22.0,20.0,22.0,0.0,23,0,2.0,9.09,20.1209,123.803,1.0934,-0.22,,24.83,0.7
+2022-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,21.48,21.48,21.0,20.0,22.0,0.51,21,0,2.0,9.31,20.075,124.571,1.0698,-2.38,,21.84,0.62
+2022-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,25.24,25.24,24.0,20.0,28.0,2.26,21,0,8.0,31.7,19.9845,125.276,1.2629,17.52,,22.9,0.57
+2022-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,32.9,32.9,35.0,22.0,36.0,3.29,20,0,14.0,42.55,19.4449,125.997,1.692,30.36,,26.54,0.58
+2022-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,35.0,35.0,35.0,30.0,36.0,0.0,21,0,6.0,17.14,19.593,126.478,1.7864,6.38,,31.05,0.38
+2023-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,35.0,35.0,35.0,30.0,36.0,0.0,22,0,6.0,17.14,18.9863,127.336,1.8434,0.0,14.49,34.3,0.68
+2023-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,35.0,35.0,35.0,30.0,36.0,0.0,19,0,6.0,17.14,18.5986,128.046,1.8819,0.0,74.08,35.0,0.56
+2023-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,34.91,34.91,36.0,20.0,36.0,3.53,22,0,16.0,45.83,18.3749,128.389,1.8998,-0.26,98.45,34.97,0.27
+2023-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,24.0,24.0,24.0,20.0,24.0,0.0,18,0,4.0,16.67,18.0855,128.363,1.327,-31.25,2.7,31.3,-0.02
+2023-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,23.71,23.71,24.0,20.0,24.0,0.46,21,0,4.0,16.87,17.7373,128.084,1.337,-1.19,-20.95,27.54,-0.22
+2023-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,24.14,24.14,24.0,20.0,27.0,1.46,22,0,7.0,29.0,17.2412,128.214,1.3999,1.78,-20.75,23.95,0.1
+2023-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,33.29,33.29,35.0,25.0,38.0,4.29,21,0,13.0,39.06,16.9049,128.832,1.969,37.91,50.97,27.05,0.48
+2023-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,36.43,36.43,36.0,35.0,38.0,0.84,23,0,3.0,8.23,16.9766,129.545,2.1462,9.46,65.61,31.29,0.55
+2023-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,36.0,36.0,36.0,35.0,38.0,0.0,21,0,3.0,8.33,17.3077,130.12,2.08,-1.19,67.63,35.24,0.44
+2023-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,36.0,36.0,36.0,35.0,38.0,0.0,22,0,3.0,8.33,18.0823,130.609,1.9909,0.0,42.64,36.14,0.38
+2023-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,37.85,37.85,38.0,35.0,38.0,0.37,20,0,3.0,7.93,17.3767,131.445,2.1782,5.14,15.05,36.62,0.64
+2023-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,37.6,37.6,38.0,35.0,38.0,0.5,20,0,3.0,7.98,17.186,132.373,2.1878,-0.66,7.43,37.15,0.71
+2024-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,27.09,27.09,18.0,15.0,38.0,10.19,22,0,23.0,84.9,17.0873,133.555,1.5854,-27.95,-22.6,34.18,0.89
+2024-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,17.75,17.75,17.0,15.0,23.0,1.52,20,0,8.0,45.07,17.0898,133.681,1.0386,-34.48,-49.29,27.48,0.09
+2024-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,22.5,22.5,22.5,20.0,23.0,0.51,18,0,3.0,13.33,16.7918,134.065,1.3399,26.76,-35.55,22.45,0.29
+2024-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,35.95,35.95,34.0,20.0,40.0,4.15,22,0,20.0,55.63,16.8104,134.336,2.1388,59.8,49.81,25.4,0.2
+2024-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,38.77,38.77,40.0,35.0,40.0,1.51,22,0,5.0,12.9,16.7936,134.087,2.3088,7.84,63.5,32.41,-0.19
+2024-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,33.35,33.35,33.0,30.0,40.0,1.27,20,0,10.0,29.99,18.2174,134.594,1.8307,-13.99,38.17,36.03,0.38
+2024-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,27.65,27.65,28.0,22.0,33.0,1.85,23,0,11.0,39.78,18.1117,136.003,1.5268,-17.08,-16.92,33.26,1.05
+2024-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,27.0,27.0,27.0,25.0,28.0,0.0,20,0,3.0,11.11,19.1515,136.013,1.4098,-2.36,-25.89,29.33,0.01
+2024-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,27.05,27.05,27.0,25.0,28.0,0.83,20,0,3.0,11.09,19.6316,136.08,1.3779,0.19,-24.86,27.23,0.05
+2024-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,27.0,27.0,26.0,25.0,32.0,1.83,22,0,7.0,25.93,19.7062,136.828,1.3701,-0.18,-25.0,27.02,0.55
+2024-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,32.0,32.0,32.0,28.0,32.0,0.0,20,0,4.0,12.5,20.3455,137.424,1.5728,18.52,-15.46,28.68,0.44
+2024-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,24.19,24.19,21.0,18.0,32.0,4.65,21,0,14.0,57.87,20.2661,137.949,1.1936,-24.4,-35.66,27.73,0.38
+2025-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,19.23,19.23,18.0,16.0,21.0,1.51,22,0,5.0,26.0,20.549,138.343,0.9357,-20.52,-29.03,25.14,0.29
+2025-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,19.68,19.68,18.0,16.0,22.0,2.03,19,0,6.0,30.48,20.4571,138.726,0.9622,2.38,10.9,21.03,0.28
+2025-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,22.45,22.45,22.0,18.0,25.0,2.44,20,0,7.0,31.18,20.2417,139.161,1.1091,14.05,-0.22,20.45,0.31
+2025-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,31.2,31.2,33.0,20.0,45.0,4.94,20,0,25.0,80.13,20.0564,139.62,1.5556,38.98,-13.22,24.44,0.33
+2025-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,45.0,45.0,45.0,40.0,45.0,0.0,20,0,5.0,11.11,19.4355,140.012,2.3154,44.23,16.06,32.88,0.28
+2025-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,21.19,21.19,20.0,18.0,45.0,5.46,21,0,27.0,127.42,19.03,140.405,1.1135,-52.91,-36.46,32.46,0.28
+2025-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,20.22,20.22,20.0,15.0,23.0,2.07,23,0,8.0,39.57,18.6909,140.78,1.0817,-4.59,-26.89,28.8,0.27
+2025-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,40.19,40.19,50.0,20.0,50.0,12.83,21,0,30.0,74.64,18.7063,140.867,2.1485,98.79,48.85,27.2,0.06
+2025-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,47.62,47.62,50.0,38.0,50.0,4.36,21,0,12.0,25.2,18.499,141.197,2.5741,18.48,76.04,36.01,0.23
+2025-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,37.09,37.09,36.0,35.0,40.0,1.62,23,0,5.0,13.48,18.4296,141.708,2.0124,-22.12,37.36,41.63,0.36
+2025-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,39.58,39.58,40.0,35.0,40.0,1.26,19,0,5.0,12.63,18.4185,142.645,2.1489,6.72,23.68,41.43,0.66
+2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,40.0,40.0,40.0,35.0,40.0,0.0,17,0,5.0,12.5,18.0739,143.042,2.2131,1.06,65.35,38.89,0.28
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Coco,30.71,30.71,30.0,28.0,32.0,0.96,21,0,4.0,13.02,18.434,147.026,1.6662,,,30.71,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Coco,30.75,30.75,30.0,28.0,33.0,1.39,8,0,5.0,16.26,18.7008,147.026,1.6443,0.12,,30.73,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Durazno Amarillo,87.86,87.86,105.0,55.0,105.0,22.39,21,0,50.0,56.91,18.434,147.026,4.766,,,87.86,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Durazno Amarillo,101.25,101.25,105.0,85.0,105.0,6.94,8,0,20.0,19.75,18.7008,147.026,5.4142,15.24,,94.55,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Fresa,87.33,87.33,88.0,75.0,90.0,1.62,21,0,15.0,17.18,18.434,147.026,4.7376,,,87.33,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Fresa,88.5,88.5,88.0,75.0,90.0,0.93,8,0,15.0,16.95,18.7008,147.026,4.7324,1.34,,87.92,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Granada China,1211.43,1211.43,960.0,930.0,1620.0,328.42,21,0,690.0,56.96,18.434,147.026,65.7172,,,1211.43,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Granada China,885.0,885.0,960.0,600.0,960.0,138.87,8,0,360.0,40.68,18.7008,147.026,47.3242,-26.95,,1048.21,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Guanabana,50.45,50.45,48.0,45.0,55.0,3.43,20,0,10.0,19.82,18.434,147.026,2.7368,,,50.45,0.65
+2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,487.62,487.62,476.0,400.0,650.0,54.96,21,0,250.0,51.27,20.4978,118.002,23.7889,,,487.62,
+2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,386.95,386.95,400.0,300.0,476.0,28.09,19,0,176.0,45.48,20.4495,118.981,18.9221,-20.65,,437.28,0.83
+2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,355.73,355.73,350.0,300.0,364.0,7.05,22,0,64.0,17.99,20.5562,120.159,17.3051,-8.07,,410.1,0.99
+2022-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,414.84,414.84,350.0,300.0,504.0,78.12,19,0,204.0,49.18,20.1088,120.809,20.6299,16.62,,385.84,0.54
+2022-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,504.0,504.0,504.0,470.0,504.0,0.0,21,0,34.0,6.75,20.0305,121.022,25.1616,21.49,,424.86,0.18
+2022-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,534.27,534.27,535.0,470.0,550.0,16.44,22,0,80.0,14.97,20.0237,122.044,26.682,6.01,,484.37,0.84
+2022-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,508.1,508.1,505.0,450.0,550.0,14.1,21,0,100.0,19.68,20.5467,122.948,24.7288,-4.9,,515.46,0.74
+2022-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,505.0,505.0,505.0,450.0,510.0,0.0,23,0,60.0,11.88,20.1209,123.803,25.0982,-0.61,,515.79,0.7
+2022-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,495.48,495.48,505.0,450.0,510.0,12.44,21,0,60.0,12.11,20.075,124.571,24.6812,-1.89,,502.86,0.62
+2022-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,570.48,570.48,580.0,450.0,580.0,30.08,21,0,130.0,22.79,19.9845,125.276,28.5459,15.14,,523.65,0.57
+2022-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,664.0,664.0,700.0,530.0,700.0,56.42,20,0,170.0,25.6,19.4449,125.997,34.1477,16.39,,576.65,0.58
+2022-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,700.0,700.0,700.0,645.0,700.0,0.0,21,0,55.0,7.86,19.593,126.478,35.7271,5.42,,644.83,0.38
+2023-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,631.82,631.82,600.0,500.0,700.0,47.67,22,0,200.0,31.65,18.9863,127.336,33.2775,-9.74,29.57,665.27,0.68
+2023-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,600.0,600.0,600.0,500.0,600.0,0.0,19,0,100.0,16.67,18.5986,128.046,32.2605,-5.04,55.06,643.94,0.56
+2023-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,627.64,627.64,640.0,480.0,640.0,40.02,22,0,160.0,25.49,18.3749,128.389,34.1573,4.61,76.44,619.82,0.27
+2023-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,455.56,455.56,448.0,350.0,504.0,35.62,18,0,154.0,33.8,18.0855,128.363,25.189,-27.42,9.81,561.06,-0.02
+2023-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,400.0,400.0,400.0,350.0,400.0,0.0,21,0,50.0,12.5,17.7373,128.084,22.5513,-12.2,-20.63,494.4,-0.22
+2023-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,411.36,411.36,400.0,350.0,450.0,21.45,22,0,100.0,24.31,17.2412,128.214,23.8593,2.84,-23.0,422.31,0.1
+2023-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,450.48,450.48,420.0,350.0,510.0,50.47,21,0,160.0,35.52,16.9049,128.832,26.6476,9.51,-11.34,420.61,0.48
+2023-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,674.13,674.13,700.0,400.0,840.0,130.02,23,0,440.0,65.27,16.9766,129.545,39.7093,49.65,33.49,511.99,0.55
+2023-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,816.0,816.0,840.0,600.0,840.0,60.24,21,0,240.0,29.41,17.3077,130.12,47.1467,21.04,64.69,646.87,0.44
+2023-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,672.0,672.0,672.0,600.0,672.0,0.0,22,0,72.0,10.71,18.0823,130.609,37.1633,-17.65,17.8,720.71,0.38
+2023-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,578.0,578.0,560.0,500.0,600.0,20.42,20,0,100.0,17.3,17.3767,131.445,33.2629,-13.99,-12.95,688.67,0.64
+2023-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,551.5,551.5,550.0,500.0,560.0,3.66,20,0,60.0,10.88,17.186,132.373,32.0901,-4.58,-21.21,600.5,0.71
+2024-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,904.55,754.0,1200.0,500.0,1260.0,331.27,22,12,760.0,84.02,17.0873,133.555,52.9367,64.02,43.17,678.02,0.89
+2024-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,947.0,773.1,1190.0,300.0,1260.0,346.29,20,13,960.0,101.37,17.0898,133.681,55.4133,4.69,57.83,801.02,0.09
+2024-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,365.0,365.0,350.0,300.0,672.0,71.17,18,0,372.0,101.92,16.7918,134.065,21.7368,-61.46,-41.85,738.85,0.29
+2024-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,727.73,727.73,650.0,550.0,840.0,95.61,22,0,290.0,39.85,16.8104,134.336,43.2902,99.38,59.75,679.91,0.2
+2024-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,786.82,786.82,775.0,700.0,855.0,42.19,22,0,155.0,19.7,16.7936,134.087,46.8524,8.12,96.7,626.52,-0.19
+2024-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,617.5,617.5,600.0,550.0,750.0,46.67,20,0,200.0,32.39,18.2174,134.594,33.8962,-21.52,50.11,710.68,0.38
+2024-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,625.65,625.65,616.0,550.0,650.0,16.79,23,0,100.0,15.98,18.1117,136.003,34.5441,1.32,38.89,676.66,1.05
+2024-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,600.0,600.0,600.0,550.0,620.0,0.0,20,0,70.0,11.67,19.1515,136.013,31.3292,-4.1,-11.0,614.38,0.01
+2024-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,600.0,600.0,600.0,550.0,600.0,0.0,20,0,50.0,8.33,19.6316,136.08,30.5629,0.0,-26.47,608.55,0.05
+2024-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,550.0,550.0,500.0,450.0,800.0,91.29,22,0,350.0,63.64,19.7062,136.828,27.91,-8.33,-18.15,583.33,0.55
+2024-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,800.0,800.0,800.0,750.0,800.0,0.0,20,0,50.0,6.25,20.3455,137.424,39.3208,45.45,38.41,650.0,0.44
+2024-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,753.62,753.62,784.0,600.0,800.0,59.54,21,0,200.0,26.54,20.2661,137.949,37.1863,-5.8,36.65,701.21,0.38
+2025-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,644.73,644.73,600.0,475.0,800.0,124.44,22,0,325.0,50.41,20.549,138.343,31.3751,-14.45,-28.72,732.78,0.29
+2025-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,480.42,480.42,504.0,400.0,504.0,28.41,19,0,104.0,21.65,20.4571,138.726,23.4843,-25.48,-49.27,626.26,0.28
+2025-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,464.8,464.8,400.0,390.0,700.0,121.53,20,0,310.0,66.7,20.2417,139.161,22.9624,-3.25,27.34,529.98,0.31
+2025-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,607.6,607.6,560.0,500.0,700.0,66.82,20,0,200.0,32.92,20.0564,139.62,30.2946,30.72,-16.51,517.61,0.33
+2025-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,672.0,672.0,672.0,600.0,672.0,0.0,20,0,72.0,10.71,19.4355,140.012,34.5759,10.6,-14.59,581.47,0.28
+2025-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,778.67,778.67,784.0,600.0,784.0,24.44,21,0,184.0,23.63,19.03,140.405,40.9179,15.87,26.1,686.09,0.28
+2025-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,732.87,732.87,784.0,580.0,784.0,79.04,23,0,204.0,27.84,18.6909,140.78,39.2099,-5.88,17.14,727.85,0.27
+2025-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,581.33,581.33,560.0,504.0,616.0,27.87,21,0,112.0,19.27,18.7063,140.867,31.0768,-20.68,-3.11,697.62,0.06
+2025-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,557.14,557.14,560.0,504.0,560.0,6.04,21,0,56.0,10.05,18.499,141.197,30.1174,-4.16,-7.14,623.78,0.23
+2025-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,560.0,560.0,560.0,504.0,560.0,0.0,23,0,56.0,10.0,18.4296,141.708,30.3859,0.51,1.82,566.16,0.36
+2025-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,546.58,546.58,545.0,504.0,560.0,4.73,19,0,56.0,10.25,18.4185,142.645,29.6756,-2.4,-31.68,554.57,0.66
+2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,545.0,545.0,545.0,504.0,560.0,0.0,17,0,56.0,10.28,18.0739,143.042,30.154,-0.29,-27.68,550.53,0.28
+2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,765.24,765.24,850.0,450.0,850.0,140.24,21,0,400.0,52.27,20.4978,118.002,37.3327,,,765.24,
+2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1607.89,1181.58,1500.0,750.0,1800.0,237.03,19,18,1050.0,65.3,20.4495,118.981,78.6275,110.12,,1186.57,0.83
+2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1790.91,1200.0,1800.0,1600.0,1800.0,29.42,22,22,200.0,11.17,20.5562,120.159,87.1225,11.38,,1388.01,0.99
+2022-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1405.26,1115.79,1700.0,900.0,1700.0,355.08,19,11,800.0,56.93,20.1088,120.809,69.883,-21.53,,1601.36,0.54
+2022-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1000.0,1000.0,1000.0,900.0,1000.0,0.0,21,0,100.0,10.0,20.0305,121.022,49.9238,-28.84,,1398.72,0.18
+2022-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1150.0,1100.0,1150.0,900.0,1300.0,153.53,22,11,400.0,34.78,20.0237,122.044,57.4318,15.0,,1185.09,0.84
+2022-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,905.71,896.19,780.0,700.0,1300.0,189.86,21,2,600.0,66.25,20.5467,122.948,44.0807,-21.24,,1018.57,0.74
+2022-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,795.65,795.65,780.0,700.0,840.0,26.94,23,0,140.0,17.6,20.1209,123.803,39.5435,-12.15,,950.46,0.7
+2022-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,851.43,851.43,840.0,780.0,870.0,14.93,21,0,90.0,10.57,20.075,124.571,42.4123,7.01,,850.93,0.62
+2022-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,754.29,754.29,870.0,530.0,870.0,136.91,21,0,340.0,45.08,19.9845,125.276,37.7435,-11.41,,800.46,0.57
+2022-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,530.0,600.0,0.0,20,0,70.0,11.67,19.4449,125.997,30.8564,-20.45,,735.24,0.58
+2022-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,530.0,600.0,0.0,21,0,70.0,11.67,19.593,126.478,30.6232,0.0,,651.43,0.38
+2023-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,530.0,600.0,0.0,22,0,70.0,11.67,18.9863,127.336,31.6017,0.0,-21.59,600.0,0.68
+2023-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,530.0,600.0,0.0,19,0,70.0,11.67,18.5986,128.046,32.2605,0.0,-62.68,600.0,0.56
+2023-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,599.09,599.09,600.0,530.0,600.0,4.26,22,0,70.0,11.68,18.3749,128.389,32.6038,-0.15,-66.55,599.7,0.27
+2023-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,530.0,600.0,0.0,18,0,70.0,11.67,18.0855,128.363,33.1758,0.15,-57.3,599.7,-0.02
+2023-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,530.0,600.0,0.0,21,0,70.0,11.67,17.7373,128.084,33.827,0.0,-40.0,599.7,-0.22
+2023-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,530.0,600.0,0.0,22,0,70.0,11.67,17.2412,128.214,34.8004,0.0,-47.83,600.0,0.1
+2023-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,702.86,702.86,600.0,530.0,960.0,166.65,21,0,430.0,61.18,16.9049,128.832,41.577,17.14,-22.4,634.29,0.48
+2023-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1048.26,1033.04,960.0,900.0,1350.0,136.44,23,7,450.0,42.93,16.9766,129.545,61.7472,49.14,31.75,783.71,0.55
+2023-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1285.71,1200.0,1250.0,1000.0,1500.0,89.64,21,21,500.0,38.89,17.3077,130.12,74.2857,22.65,51.01,1012.28,0.44
+2023-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1500.0,1200.0,1500.0,1350.0,1500.0,0.0,22,22,150.0,10.0,18.0823,130.609,82.9539,16.67,98.86,1277.99,0.38
+2023-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1087.5,952.5,750.0,700.0,1500.0,382.81,20,9,800.0,73.56,17.3767,131.445,62.5838,-27.5,81.25,1291.07,0.64
+2023-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,750.0,750.0,750.0,700.0,750.0,0.0,20,0,50.0,6.67,17.186,132.373,43.6402,-31.03,25.0,1112.5,0.71
+2024-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,750.0,750.0,750.0,700.0,750.0,0.0,22,0,50.0,6.67,17.0873,133.555,43.8922,0.0,25.0,862.5,0.89
+2024-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,750.0,750.0,750.0,700.0,750.0,0.0,20,0,50.0,6.67,17.0898,133.681,43.8859,0.0,25.0,750.0,0.09
+2024-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,750.0,750.0,750.0,700.0,750.0,0.0,18,0,50.0,6.67,16.7918,134.065,44.6647,0.0,25.19,750.0,0.29
+2024-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,770.45,770.45,750.0,700.0,810.0,25.16,22,0,110.0,14.28,16.8104,134.336,45.8319,2.73,28.41,756.82,0.2
+2024-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,807.73,807.73,810.0,700.0,810.0,4.29,22,0,110.0,13.62,16.7936,134.087,48.0974,4.84,34.62,776.06,-0.19
+2024-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,702.0,702.0,690.0,600.0,810.0,36.94,20,0,210.0,29.91,18.2174,134.594,38.5347,-13.09,17.0,760.06,0.38
+2024-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,669.13,669.13,660.0,600.0,690.0,14.11,23,0,90.0,13.45,18.1117,136.003,36.9447,-4.68,-4.8,726.29,1.05
+2024-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,660.0,660.0,660.0,600.0,690.0,0.0,20,0,90.0,13.64,19.1515,136.013,34.4621,-1.36,-37.04,677.04,0.01
+2024-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,678.0,678.0,690.0,600.0,690.0,15.08,20,0,90.0,13.27,19.6316,136.08,34.5361,2.73,-47.27,669.04,0.05
+2024-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,672.73,672.73,690.0,450.0,690.0,55.91,22,0,240.0,35.68,19.7062,136.828,34.1379,-0.78,-55.15,670.24,0.55
+2024-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,500.0,500.0,500.0,450.0,500.0,0.0,20,0,50.0,10.0,20.3455,137.424,24.5755,-25.68,-54.02,616.91,0.44
+2024-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,452.38,452.38,375.0,320.0,650.0,119.09,21,0,330.0,72.95,20.2661,137.949,22.3221,-9.52,-39.68,541.7,0.38
+2025-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,543.41,543.41,660.0,320.0,660.0,143.42,22,0,340.0,62.57,20.549,138.343,26.4445,20.12,-27.55,498.6,0.29
+2025-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,735.79,735.79,660.0,600.0,840.0,91.31,19,0,240.0,32.62,20.4571,138.726,35.9674,35.4,-1.89,577.19,0.28
+2025-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,624.0,624.0,600.0,600.0,840.0,73.87,20,0,240.0,38.46,20.2417,139.161,30.8274,-15.19,-16.8,634.4,0.31
+2025-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,615.0,615.0,600.0,600.0,900.0,67.08,20,0,300.0,48.78,20.0564,139.62,30.6636,-1.44,-20.18,658.26,0.33
+2025-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,630.0,630.0,600.0,500.0,900.0,92.34,20,0,400.0,63.49,19.4355,140.012,32.4149,2.44,-22.0,623.0,0.28
+2025-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,500.0,600.0,0.0,21,0,100.0,16.67,19.03,140.405,31.5292,-4.76,-14.53,615.0,0.28
+2025-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,540.0,540.0,540.0,500.0,540.0,0.0,23,0,40.0,7.41,18.6909,140.78,28.891,-10.0,-19.3,590.0,0.27
+2025-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,614.29,614.29,660.0,500.0,660.0,59.71,21,0,160.0,26.05,18.7063,140.867,32.8384,13.76,-6.93,584.76,0.06
+2025-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,660.0,660.0,660.0,600.0,660.0,0.0,21,0,60.0,9.09,18.499,141.197,35.6776,7.44,-2.65,604.76,0.23
+2025-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,660.0,660.0,660.0,600.0,660.0,0.0,23,0,60.0,9.09,18.4296,141.708,35.812,0.0,-1.89,644.76,0.36
+2025-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,552.63,552.63,540.0,500.0,660.0,37.84,19,0,160.0,28.95,18.4185,142.645,30.0042,-16.27,10.53,624.21,0.66
+2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,540.0,540.0,540.0,500.0,540.0,0.0,17,0,40.0,7.41,18.0739,143.042,29.8773,-2.29,19.37,584.21,0.28
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,645.71,645.71,600.0,550.0,720.0,59.71,21,0,170.0,26.33,18.434,147.026,35.0285,19.58,18.83,579.45,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,585.0,585.0,600.0,500.0,600.0,27.77,8,0,100.0,17.09,18.7008,147.026,31.2821,-9.4,-20.49,590.24,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,LimÃ³n s/semilla,754.76,754.76,610.0,575.0,990.0,189.09,21,0,415.0,54.98,18.434,147.026,40.9441,,,754.76,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,LimÃ³n s/semilla,607.5,607.5,610.0,575.0,610.0,4.63,8,0,35.0,5.76,18.7008,147.026,32.4852,-19.51,,681.13,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Golden Delicious,1042.38,1042.38,1110.0,680.0,1300.0,223.42,42,0,620.0,59.48,18.434,147.026,56.5468,,,1042.38,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Golden Delicious,992.5,992.5,980.0,680.0,1360.0,260.65,16,0,680.0,68.51,18.7008,147.026,53.0726,-4.79,,1017.44,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Red Delicious,1022.62,1022.62,1055.0,700.0,1300.0,233.25,42,0,600.0,58.67,18.434,147.026,55.4747,,,1022.62,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Red Delicious,995.0,995.0,980.0,700.0,1360.0,265.08,16,0,660.0,66.33,18.7008,147.026,53.2063,-2.7,,1008.81,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia chica,14.57,14.57,10.0,9.0,22.0,5.97,21,0,13.0,89.22,18.434,147.026,0.7905,,,14.57,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia chica,9.5,9.5,10.0,7.0,10.0,0.93,8,0,3.0,31.58,18.7008,147.026,0.508,-34.8,,12.04,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia grande,18.33,18.33,14.0,13.0,26.0,5.67,21,0,13.0,70.91,18.434,147.026,0.9945,,,18.33,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia grande,13.5,13.5,14.0,11.0,14.0,0.93,8,0,3.0,22.22,18.7008,147.026,0.7219,-26.36,,15.92,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia mediana,16.57,16.57,12.0,11.0,24.0,5.97,21,0,13.0,78.45,18.434,147.026,0.899,,,16.57,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia mediana,11.5,11.5,12.0,9.0,12.0,0.93,8,0,3.0,26.09,18.7008,147.026,0.6149,-30.6,,14.04,0.0
+2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,21.57,21.57,22.0,15.0,22.0,0.68,21,0,7.0,32.45,20.4978,118.002,1.0524,,,21.57,
+2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,21.58,21.58,22.0,20.0,22.0,0.51,19,0,2.0,9.27,20.4495,118.981,1.0552,0.03,,21.58,0.83
+2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,21.59,21.59,22.0,20.0,22.0,0.5,22,0,2.0,9.26,20.5562,120.159,1.0503,0.06,,21.58,0.99
+2022-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,20.95,20.95,21.0,16.0,22.0,0.91,19,0,6.0,28.64,20.1088,120.809,1.0417,-2.98,,21.37,0.54
+2022-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,18.67,18.67,18.0,16.0,20.0,0.97,21,0,4.0,21.43,20.0305,121.022,0.9319,-10.89,,20.4,0.18
+2022-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,19.14,19.14,19.5,16.0,20.0,0.94,22,0,4.0,20.9,20.0237,122.044,0.9557,2.52,,19.58,0.84
+2022-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,20.0,20.0,20.0,16.0,20.0,0.0,21,0,4.0,20.0,20.5467,122.948,0.9734,4.51,,19.27,0.74
+2022-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,20.0,20.0,20.0,16.0,20.0,0.0,23,0,4.0,20.0,20.1209,123.803,0.994,0.0,,19.71,0.7
+2022-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,19.43,19.43,20.0,16.0,20.0,0.93,21,0,4.0,20.59,20.075,124.571,0.9678,-2.86,,19.81,0.62
+2022-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,27.67,27.67,28.0,16.0,30.0,2.59,21,0,14.0,50.6,19.9845,125.276,1.3844,42.4,,22.37,0.57
+2022-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,28.35,28.35,28.0,25.0,30.0,0.49,20,0,5.0,17.64,19.4449,125.997,1.458,2.47,,25.15,0.58
+2022-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,28.86,28.86,29.0,24.0,30.0,1.49,21,0,6.0,20.79,19.593,126.478,1.4728,1.79,,28.29,0.38
+2023-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,26.0,26.0,26.0,24.0,26.0,0.0,22,0,2.0,7.69,18.9863,127.336,1.3694,-9.9,20.53,27.74,0.68
+2023-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.0,25.0,25.0,24.0,26.0,0.0,19,0,2.0,8.0,18.5986,128.046,1.3442,-3.85,15.85,26.62,0.56
+2023-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.55,25.55,26.0,24.0,26.0,0.51,22,0,2.0,7.83,18.3749,128.389,1.3902,2.18,18.32,25.52,0.27
+2023-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.28,25.28,25.0,24.0,26.0,0.46,18,0,2.0,7.91,18.0855,128.363,1.3977,-1.05,20.67,25.27,-0.02
+2023-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.0,25.0,25.0,24.0,25.0,0.0,21,0,1.0,4.0,17.7373,128.084,1.4095,-1.1,33.93,25.27,-0.22
+2023-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.0,25.0,25.0,24.0,25.0,0.0,22,0,1.0,4.0,17.2412,128.214,1.45,0.0,30.64,25.09,0.1
+2023-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,31.9,31.9,35.0,24.0,35.0,4.49,21,0,11.0,34.48,16.9049,128.832,1.8873,27.62,59.52,27.3,0.48
+2023-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,35.0,35.0,35.0,33.0,35.0,0.0,23,0,2.0,5.71,16.9766,129.545,2.0617,9.7,75.0,30.63,0.55
+2023-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,34.71,34.71,35.0,30.0,35.0,0.72,21,0,5.0,14.4,17.3077,130.12,2.0057,-0.82,78.68,33.87,0.44
+2023-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,32.32,32.32,32.0,30.0,33.0,0.48,22,0,3.0,9.28,18.0823,130.609,1.7873,-6.9,16.81,34.01,0.38
+2023-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,31.6,31.6,31.0,30.0,33.0,0.94,20,0,3.0,9.49,17.3767,131.445,1.8185,-2.22,11.46,32.88,0.64
+2023-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,32.35,32.35,32.5,30.0,35.0,0.75,20,0,5.0,15.46,17.186,132.373,1.8823,2.37,12.1,32.09,0.71
+2024-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,30.27,30.27,28.0,25.0,35.0,2.55,22,0,10.0,33.03,17.0873,133.555,1.7716,-6.42,16.43,31.41,0.89
+2024-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,27.8,27.8,27.0,25.0,35.0,1.51,20,0,10.0,35.97,17.0898,133.681,1.6267,-8.17,11.2,30.14,0.09
+2024-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,32.33,32.33,32.0,30.0,35.0,0.49,18,0,5.0,15.46,16.7918,134.065,1.9255,16.31,26.57,30.14,0.29
+2024-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,31.14,31.14,30.0,25.0,35.0,1.78,22,0,10.0,32.12,16.8104,134.336,1.8522,-3.7,23.18,30.42,0.2
+2024-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,35.0,35.0,35.0,25.0,35.0,0.0,22,0,10.0,28.57,16.7936,134.087,2.0841,12.41,40.0,32.82,-0.19
+2024-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,28.2,28.2,27.5,25.0,35.0,2.38,20,0,10.0,35.46,18.2174,134.594,1.548,-19.43,12.8,31.45,0.38
+2024-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,26.96,26.96,27.0,25.0,28.0,0.21,23,0,3.0,11.13,18.1117,136.003,1.4883,-4.41,-15.51,30.05,1.05
+2024-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,26.0,26.0,26.0,25.0,28.0,0.0,20,0,3.0,11.54,19.1515,136.013,1.3576,-3.55,-25.71,27.05,0.01
+2024-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,26.95,26.95,27.0,25.0,28.0,0.89,20,0,3.0,11.13,19.6316,136.08,1.3728,3.65,-22.37,26.64,0.05
+2024-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,27.18,27.18,27.0,25.0,28.0,0.66,22,0,3.0,11.04,19.7062,136.828,1.3794,0.86,-15.89,26.71,0.55
+2024-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,28.0,28.0,28.0,25.0,28.0,0.0,20,0,3.0,10.71,20.3455,137.424,1.3762,3.01,-11.39,27.38,0.44
+2024-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,28.0,28.0,28.0,25.0,28.0,0.0,21,0,3.0,10.71,20.2661,137.949,1.3816,0.0,-13.45,27.73,0.38
+2025-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,28.27,28.27,28.0,25.0,30.0,0.7,22,0,5.0,17.68,20.549,138.343,1.3759,0.97,-6.61,28.09,0.29
+2025-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,30.0,30.0,30.0,26.0,30.0,0.0,19,0,4.0,13.33,20.4571,138.726,1.4665,6.11,7.91,28.76,0.28
+2025-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,29.0,29.0,30.0,24.0,30.0,2.05,20,0,6.0,20.69,20.2417,139.161,1.4327,-3.33,-10.31,29.09,0.31
+2025-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.0,25.0,25.0,24.0,25.0,0.0,20,0,1.0,4.0,20.0564,139.62,1.2465,-13.79,-19.71,28.0,0.33
+2025-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.0,25.0,25.0,24.0,25.0,0.0,20,0,1.0,4.0,19.4355,140.012,1.2863,0.0,-28.57,26.33,0.28
+2025-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.0,25.0,25.0,24.0,25.0,0.0,21,0,1.0,4.0,19.03,140.405,1.3137,0.0,-11.35,25.0,0.28
+2025-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.0,25.0,25.0,24.0,25.0,0.0,23,0,1.0,4.0,18.6909,140.78,1.3375,0.0,-7.26,25.0,0.27
+2025-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,25.29,25.29,25.0,19.0,28.0,2.43,21,0,9.0,35.59,18.7063,140.867,1.3517,1.14,-2.75,25.1,0.06
+2025-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,21.48,21.48,21.0,19.0,24.0,1.5,21,0,5.0,23.28,18.499,141.197,1.1609,-15.07,-20.31,23.92,0.23
+2025-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,24.0,24.0,24.0,21.0,24.0,0.0,23,0,3.0,12.5,18.4296,141.708,1.3023,11.75,-11.71,23.59,0.36
+2025-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,23.84,23.84,24.0,21.0,24.0,0.37,19,0,3.0,12.58,18.4185,142.645,1.2945,-0.66,-14.85,23.11,0.66
+2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,23.0,23.0,23.0,21.0,24.0,0.0,17,0,3.0,13.04,18.0739,143.042,1.2726,-3.53,-17.86,23.61,0.28
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papaya Maradol,18.67,18.67,16.0,14.0,23.0,3.48,21,0,9.0,48.21,18.434,147.026,1.0126,,,18.67,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papaya Maradol,18.0,18.0,16.0,14.0,24.0,3.7,8,0,10.0,55.56,18.7008,147.026,0.9625,-3.57,,18.33,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PiÃ±a grande,23.24,23.24,23.0,22.0,24.0,0.44,21,0,2.0,8.61,18.434,147.026,1.2606,,,23.24,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PiÃ±a grande,22.75,22.75,23.0,22.0,23.0,0.46,8,0,1.0,4.4,18.7008,147.026,1.2165,-2.1,,22.99,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Dominico,27.95,27.95,28.0,26.0,29.0,0.38,21,0,3.0,10.73,18.434,147.026,1.5164,,,27.95,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Dominico,28.0,28.0,28.0,26.0,28.0,0.0,8,0,2.0,7.14,18.7008,147.026,1.4973,0.17,,27.98,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Macho,26.67,26.67,28.0,22.0,28.0,1.8,21,0,6.0,22.5,18.434,147.026,1.4466,,,26.67,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Macho,28.0,28.0,28.0,26.0,28.0,0.0,8,0,2.0,7.14,18.7008,147.026,1.4973,5.0,,27.33,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Tabasco,15.9,15.9,16.0,14.0,16.0,0.3,21,0,2.0,12.57,18.434,147.026,0.8628,,,15.9,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Tabasco,16.0,16.0,16.0,14.0,16.0,0.0,8,0,2.0,12.5,18.7008,147.026,0.8556,0.6,,15.95,0.0

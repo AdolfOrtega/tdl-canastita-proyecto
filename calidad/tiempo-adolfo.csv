@@ -4,3 +4,8 @@ fecha,inicio,fin,interrupcion_min,fase,actividad
 2026-11-04,16:30,19:00,10,codigo,Implementacion de ExtractorEtico en extractores/base.py y scraper sniim_canasta.py
 2026-11-05,17:00,19:30,15,codigo,Implementacion de macro_api.py orquestador ejecutar_captura.py y flujo GitHub Actions
 2026-11-05,20:00,21:00,0,pruebas,Ejecucion de descarga historica (>=36 meses) en capa bronce y pruebas unitarias con pytest
+2026-11-07,17:00,18:00,5,pruebas,Monitoreo de ejecucion programada en GitHub Actions y revision de bitacora_captura.csv
+2026-11-09,16:30,19:00,15,pruebas,Robustecimiento de suite de pruebas unitarias en tests/test_pipeline.py respondiendo al feedback docente de E0
+2026-11-10,16:00,19:30,20,codigo,Diseno e implementacion del modulo Capa Plata (limpieza_plata.py) reglas IQR y aislamiento a cuarentena
+2026-11-11,16:30,19:30,15,codigo,Diseno e implementacion de Capa Oro (construir_oro.py) join multifuente con Banxico FIX e INPC y diccionario de datos
+2026-11-12,17:00,20:30,20,pruebas,Integracion de pruebas de cobertura con pytest-cov (91%) soporte para tablero Streamlit y CI en GitHub Actions

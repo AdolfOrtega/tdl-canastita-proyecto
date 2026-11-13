@@ -4,3 +4,6 @@ numero,fecha,tipo,fase_introducido,fase_eliminado,minutos_correccion,defecto_ori
 3,2026-11-05,datos,codigo,pruebas,15,,Cuando consultamos un producto especifico en SNIIM la tabla cambia de 9 a 7 columnas y el parser devolvia lista vacia; ajustamos parsear_tabla_sniim para aceptar los dos formatos
 4,2026-11-05,sistema,pruebas,pruebas,15,,Al probar archive-api.open-meteo.com nuestro ExtractorEtico lo bloqueo porque su robots.txt tiene Disallow: /; lo cambiamos por las series oficiales de Banxico SIE (SF43718 y SP1)
 5,2026-11-05,entorno,pruebas,pruebas,5,,Al correr pytest salia ModuleNotFoundError para la carpeta extractores; se arreglo agregando el archivo pytest.ini con pythonpath = .
+6,2026-11-09,entorno,codigo,pruebas,15,,Al correr pytest con fastparquet/pyarrow en Windows la directiva WDAC bloqueo los DLLs de parquet; se corrigio implementando fallback transparente a CSV asegurando compatibilidad multiplataforma
+7,2026-11-10,datos,codigo,pruebas,10,,En Puerta 1 algunos registros del SNIIM tenian precio_frecuente fuera del rango min-max o max < min; se creo data/cuarentena/rechazos_plata.csv para aislarlos con auditoria
+8,2026-11-11,datos,codigo,pruebas,10,,Al agrupar en capa Oro algunas columnas opcionales en tests mocks causaban KeyError en redondeo; se agrego validacion defensiva de existencia de columnas

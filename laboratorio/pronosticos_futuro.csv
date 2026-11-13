@@ -1,0 +1,13 @@
+producto,anio_mes,fecha,modelo_utilizado,precio_pronosticado_mxn,limite_inferior_95_mxn,limite_superior_95_mxn
+Jitomate Saladette,2026-12,2026-12-01,"ARIMA (1,1,1)",20.64,11.88,29.4
+Jitomate Saladette,2027-01,2027-01-01,"ARIMA (1,1,1)",21.92,11.33,32.51
+Jitomate Saladette,2027-02,2027-02-01,"ARIMA (1,1,1)",22.75,11.39,34.11
+Jitomate Saladette,2027-03,2027-03-01,"ARIMA (1,1,1)",23.29,11.57,35.02
+Limon con semilla #5,2026-12,2026-12-01,Holt-Winters (Triple Suavizamiento),37.37,28.56,46.18
+Limon con semilla #5,2027-01,2027-01-01,Holt-Winters (Triple Suavizamiento),38.44,25.98,50.89
+Limon con semilla #5,2027-02,2027-02-01,Holt-Winters (Triple Suavizamiento),40.87,25.62,56.13
+Limon con semilla #5,2027-03,2027-03-01,Holt-Winters (Triple Suavizamiento),44.29,26.68,61.91
+Aguacate Hass,2026-12,2026-12-01,Modelo de Holt (Doble Suavizamiento),49.68,33.94,65.42
+Aguacate Hass,2027-01,2027-01-01,Modelo de Holt (Doble Suavizamiento),49.36,27.1,71.62
+Aguacate Hass,2027-02,2027-02-01,Modelo de Holt (Doble Suavizamiento),49.04,21.78,76.31
+Aguacate Hass,2027-03,2027-03-01,Modelo de Holt (Doble Suavizamiento),48.72,17.24,80.21
