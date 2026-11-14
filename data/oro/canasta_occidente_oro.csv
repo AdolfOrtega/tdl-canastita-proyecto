@@ -120,11 +120,11 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chayote sin espinas,26.56,26.56,26.0,25.0,28.0,0.88,9,0,3.0,11.3,18.434,147.026,1.4406,,,26.56,0.65
 2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chayote sin espinas,26.0,26.0,26.0,25.0,26.0,0.0,4,0,1.0,3.85,18.7008,147.026,1.3903,-2.09,,26.28,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Guajillo,135.0,135.0,135.0,130.0,135.0,0.0,9,0,5.0,3.7,18.434,147.026,7.3234,,,135.0,0.65
-2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Guajillo,135.0,135.0,135.0,130.0,135.0,0.0,3,0,5.0,3.7,18.7008,147.026,7.2189,0.0,,135.0,0.0
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Guajillo,137.5,137.5,135.0,130.0,145.0,5.0,4,0,15.0,10.91,18.7008,147.026,7.3526,1.85,,136.25,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile JalapeÃ±o,32.0,32.0,32.0,30.0,32.0,0.0,9,0,2.0,6.25,18.434,147.026,1.7359,,,32.0,0.65
 2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile JalapeÃ±o,35.75,35.75,32.0,30.0,47.0,7.5,4,0,17.0,47.55,18.7008,147.026,1.9117,11.72,,33.88,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Pasilla,225.0,225.0,225.0,220.0,225.0,0.0,8,0,5.0,2.22,18.434,147.026,12.2057,,,225.0,0.65
-2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Pasilla,225.0,225.0,225.0,220.0,225.0,0.0,3,0,5.0,2.22,18.7008,147.026,12.0316,0.0,,225.0,0.0
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Pasilla,229.25,229.25,225.0,220.0,242.0,8.5,4,0,22.0,9.6,18.7008,147.026,12.2588,1.89,,227.12,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Pimiento morrÃ³n,52.11,52.11,52.0,50.0,55.0,1.17,9,0,5.0,9.59,18.434,147.026,2.8269,,,52.11,0.65
 2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Pimiento morrÃ³n,56.5,56.5,52.0,50.0,71.0,9.68,4,0,21.0,37.17,18.7008,147.026,3.0213,8.42,,54.31,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Poblano,38.0,38.0,38.0,35.0,38.0,0.0,9,0,3.0,7.89,18.434,147.026,2.0614,,,38.0,0.65
@@ -682,6 +682,7 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Tabasco,13.93,13.27,13.0,11.5,19.0,2.28,21,4,7.5,53.85,18.434,147.026,0.7556,,,13.93,0.65
 2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Tabasco,12.06,11.67,11.25,10.5,19.0,2.42,9,1,8.5,70.51,18.7008,147.026,0.6447,-13.45,,12.99,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Toronja Roja,14.1,14.1,14.1,12.2,16.0,0.0,20,0,3.8000000000000007,26.95,18.434,147.026,0.7649,,,14.1,0.65
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Toronja Roja,13.3,13.3,13.1,12.2,16.0,0.45,5,0,3.8000000000000007,28.57,18.7008,147.026,0.7112,-5.67,,13.7,0.0
 2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,978.57,978.57,950.0,850.0,1200.0,78.38,21,0,350.0,35.77,20.4978,118.002,47.7404,,,978.57,
 2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,950.0,950.0,950.0,900.0,950.0,0.0,19,0,50.0,5.26,20.4495,118.981,46.4559,-2.92,,964.29,0.83
 2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,945.45,945.45,950.0,850.0,950.0,14.71,22,0,100.0,10.58,20.5562,120.159,45.9936,-0.48,,958.01,0.99
@@ -792,6 +793,7 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Granada China,1211.43,1211.43,960.0,930.0,1620.0,328.42,21,0,690.0,56.96,18.434,147.026,65.7172,,,1211.43,0.65
 2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Granada China,860.0,860.0,960.0,600.0,960.0,150.0,9,0,360.0,41.86,18.7008,147.026,45.9873,-29.01,,1035.71,0.0
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Guanabana,50.45,50.45,48.0,45.0,55.0,3.43,20,0,10.0,19.82,18.434,147.026,2.7368,,,50.45,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Guanabana,48.0,48.0,48.0,45.0,48.0,0.0,5,0,3.0,6.25,18.7008,147.026,2.5667,-4.86,,49.22,0.0
 2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,487.62,487.62,476.0,400.0,650.0,54.96,21,0,250.0,51.27,20.4978,118.002,23.7889,,,487.62,
 2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,386.95,386.95,400.0,300.0,476.0,28.09,19,0,176.0,45.48,20.4495,118.981,18.9221,-20.65,,437.28,0.83
 2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,355.73,355.73,350.0,300.0,364.0,7.05,22,0,64.0,17.99,20.5562,120.159,17.3051,-8.07,,410.1,0.99
