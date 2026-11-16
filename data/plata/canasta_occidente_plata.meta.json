@@ -1,7 +1,7 @@
 {
   "capa": "Plata",
   "descripcion": "Datos limpios, normalizados y con banderas IQR de la canasta agropecuaria de Occidente",
-  "fecha_procesamiento_utc": "2026-11-15T19:17:01.524488+00:00",
+  "fecha_procesamiento_utc": "2026-11-16T22:46:19.384197+00:00",
   "total_registros": 15019,
   "total_en_cuarentena": 11,
   "total_atipicos_iqr": 639,
@@ -73,7 +73,7 @@
     "Guanabana",
     "Chile Pasilla"
   ],
-  "sha256_artefacto": "b3fcf3dbea9ab279b13d53a7f7b08950dedf13655edd307f7ea69fb2bd95fd09",
+  "sha256_artefacto": "57953499c6bf22c2531ba7bb0dae9c5289bb35a0c3708a57f760e7f2666972ef",
   "formato_primario": "parquet",
   "archivos_salida": {
     "parquet": "data/plata/canasta_occidente_plata.parquet",

@@ -1,7 +1,7 @@
 {
   "capa": "Oro",
   "descripcion": "Tabla analítica dimensional mensual integrada con precios mayoristas SNIIM e indicadores macro Banxico",
-  "fecha_procesamiento_utc": "2026-11-15T19:17:01.583941+00:00",
+  "fecha_procesamiento_utc": "2026-11-16T22:46:19.441666+00:00",
   "total_registros_mensuales": 963,
   "total_meses_unicos": 59,
   "rango_periodos": {
