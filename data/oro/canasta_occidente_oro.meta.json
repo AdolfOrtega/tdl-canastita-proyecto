@@ -1,7 +1,7 @@
 {
   "capa": "Oro",
   "descripcion": "Tabla analítica dimensional mensual integrada con precios mayoristas SNIIM e indicadores macro Banxico",
-  "fecha_procesamiento_utc": "2026-11-16T22:46:19.441666+00:00",
+  "fecha_procesamiento_utc": "2026-11-17T21:32:27.551559+00:00",
   "total_registros_mensuales": 963,
   "total_meses_unicos": 59,
   "rango_periodos": {
@@ -72,7 +72,7 @@
     "Guanabana",
     "Naranja Valencia chica"
   ],
-  "sha256_artefacto": "a03dc48b89f3c8c8014f21825b69cf28450bcaf5f0efbb226b4048334b0cd84b",
+  "sha256_artefacto": "f4e5ad7e209d330c9441eddc9677fc41dca25f2eb092a02f24af6f793549378d",
   "formato_primario": "parquet",
   "archivos_salida": {
     "parquet": "data/oro/canasta_occidente_oro.parquet",
