@@ -120,11 +120,11 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chayote sin espinas,26.56,26.53,26.0,25.0,28.0,0.88,9,2,3.0,11.3,18.434,147.026,1.4406,,,26.56,0.65
 2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chayote sin espinas,26.2,26.2,26.0,25.0,27.0,0.45,5,0,2.0,7.63,18.7008,147.026,1.401,-1.34,,26.38,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Guajillo,135.0,135.0,135.0,130.0,135.0,0.0,9,0,5.0,3.7,18.434,147.026,7.3234,,,135.0,0.65
-2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Guajillo,137.5,137.5,135.0,130.0,145.0,5.0,4,0,15.0,10.91,18.7008,147.026,7.3526,1.85,,136.25,0.0
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Guajillo,139.0,139.0,135.0,130.0,145.0,5.48,5,0,15.0,10.79,18.7008,147.026,7.4328,2.96,,137.0,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile JalapeÃ±o,32.0,32.0,32.0,30.0,32.0,0.0,9,0,2.0,6.25,18.434,147.026,1.7359,,,32.0,0.65
 2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile JalapeÃ±o,37.8,37.8,32.0,30.0,47.0,7.95,5,0,17.0,44.97,18.7008,147.026,2.0213,18.12,,34.9,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Pasilla,225.0,225.0,225.0,220.0,225.0,0.0,8,0,5.0,2.22,18.434,147.026,12.2057,,,225.0,0.65
-2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Pasilla,229.25,229.25,225.0,220.0,242.0,8.5,4,0,22.0,9.6,18.7008,147.026,12.2588,1.89,,227.12,0.0
+2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Pasilla,232.4,232.4,225.0,220.0,245.0,10.19,5,0,25.0,10.76,18.7008,147.026,12.4273,3.29,,228.7,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Pimiento morrÃ³n,52.11,52.11,52.0,50.0,55.0,1.17,9,0,5.0,9.59,18.434,147.026,2.8269,,,52.11,0.65
 2026-11,80,Colima,Colima: Centros de distribucion de Colima,Chile Pimiento morrÃ³n,59.6,59.6,52.0,50.0,72.0,10.88,5,0,22.0,36.91,18.7008,147.026,3.187,14.37,,55.86,0.0
 2026-10,80,Colima,Colima: Centros de distribucion de Colima,Chile Poblano,38.0,38.0,38.0,35.0,38.0,0.0,9,0,3.0,7.89,18.434,147.026,2.0614,,,38.0,0.65
@@ -452,7 +452,7 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2023-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,332.45,332.45,279.0,200.0,520.0,129.58,40,0,320.0,96.26,17.3767,131.445,19.1319,-34.4,-11.2,467.39,0.64
 2023-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,292.94,292.94,295.0,200.0,390.0,55.24,34,0,190.0,64.86,17.186,132.373,17.0453,-11.88,-18.63,377.4,0.71
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,270.24,270.24,265.0,220.0,360.0,20.42,42,0,140.0,51.81,18.434,147.026,14.6598,-7.75,-20.43,298.54,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,240.0,240.0,240.0,200.0,300.0,14.05,20,0,100.0,41.67,18.7008,147.026,12.8337,-11.19,-23.81,267.73,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Aguacate Hass,241.14,241.14,240.0,200.0,300.0,14.39,22,0,100.0,41.47,18.7008,147.026,12.8944,-10.77,-23.45,268.11,0.0
 2022-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,690.0,690.0,600.0,600.0,1050.0,129.38,21,0,450.0,65.22,20.4978,118.002,33.6622,,,690.0,
 2022-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,720.0,720.0,750.0,600.0,1170.0,84.26,19,0,570.0,79.17,20.4495,118.981,35.2086,4.35,,705.0,0.83
 2022-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Cebolla Bola,762.27,762.27,750.0,750.0,1140.0,57.56,22,0,390.0,51.16,20.5562,120.159,37.0824,5.87,,724.09,0.99
@@ -538,7 +538,7 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2025-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1513.42,1374.47,1360.0,1050.0,2450.0,410.55,19,3,1400.0,92.51,18.4185,142.645,82.1686,47.49,128.27,1205.47,0.66
 2025-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Chile Serrano,1429.69,1099.69,870.0,750.0,2450.0,796.84,16,6,1700.0,118.91,18.0739,143.042,79.1023,-5.53,276.23,1323.07,0.28
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Fresa,461.43,461.43,400.0,380.0,620.0,81.89,21,0,240.0,52.01,18.434,147.026,25.0314,,,461.43,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Fresa,479.0,479.0,495.0,420.0,550.0,25.69,10,0,130.0,27.14,18.7008,147.026,25.6139,3.81,,470.21,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Fresa,477.73,477.73,495.0,420.0,550.0,24.73,11,0,130.0,27.21,18.7008,147.026,25.5458,3.53,,469.58,0.0
 2022-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,235.19,241.19,210.0,195.0,364.0,41.14,21,9,169.0,71.86,20.4978,118.002,11.474,,,235.19,
 2022-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,195.0,209.0,195.0,195.0,265.0,0.0,19,19,70.0,35.9,20.4495,118.981,9.5357,-17.09,,215.1,0.83
 2022-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Jitomate Saladette,219.55,228.45,195.0,195.0,378.0,34.27,22,14,183.0,83.35,20.5562,120.159,10.6803,12.59,,216.58,0.99
@@ -612,15 +612,15 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2025-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,264.21,264.21,240.0,220.0,500.0,58.12,19,0,280.0,105.98,18.4185,142.645,14.3449,-29.17,42.05,349.88,0.66
 2025-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,330.31,330.31,360.0,250.0,370.0,40.43,16,0,120.0,36.33,18.0739,143.042,18.2757,25.02,51.78,322.52,0.28
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,353.1,353.1,360.0,250.0,430.0,49.86,21,0,180.0,50.98,18.434,147.026,19.1546,6.9,30.56,315.87,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,275.0,275.0,295.0,200.0,330.0,44.72,10,0,130.0,47.27,18.7008,147.026,14.7053,-22.12,-18.87,319.47,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Limon con semilla #5,278.64,278.64,315.0,200.0,330.0,44.11,11,0,130.0,46.66,18.7008,147.026,14.8997,-21.09,-17.79,320.68,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,LimÃ³n s/semilla,223.21,223.21,240.0,150.0,270.0,28.45,21,0,120.0,53.76,18.434,147.026,12.1089,,,223.21,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,LimÃ³n s/semilla,210.75,210.75,228.75,150.0,270.0,41.0,10,0,120.0,56.94,18.7008,147.026,11.2696,-5.58,,216.98,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,LimÃ³n s/semilla,222.27,220.48,247.5,150.0,375.0,54.53,11,1,225.0,101.23,18.7008,147.026,11.8857,-0.42,,222.74,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Golden Delicious,762.98,762.98,715.0,480.0,1150.0,262.69,42,0,670.0,87.81,18.434,147.026,41.3897,,,762.98,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Golden Delicious,719.0,719.0,702.5,500.0,1020.0,215.28,20,0,520.0,72.32,18.7008,147.026,38.4476,-5.76,,740.99,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Golden Delicious,726.82,726.82,702.5,500.0,1200.0,225.52,22,0,700.0,96.31,18.7008,147.026,38.8656,-4.74,,744.9,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Red Delicious,677.86,677.86,665.0,450.0,980.0,151.2,42,0,530.0,78.19,18.434,147.026,36.7722,,,677.86,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Red Delicious,669.5,669.5,645.0,500.0,1000.0,161.43,20,0,500.0,74.68,18.7008,147.026,35.8006,-1.23,,673.68,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Manzana Red Delicious,666.59,666.59,645.0,400.0,1000.0,163.83,22,0,600.0,90.01,18.7008,147.026,35.645,-1.66,,672.22,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Naranja Valencia grande,17.59,17.59,18.0,16.0,20.0,0.76,21,0,4.0,22.74,18.434,147.026,0.9542,,,17.59,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Naranja Valencia grande,14.46,14.46,14.5,13.0,16.2,0.63,10,0,3.1999999999999993,22.13,18.7008,147.026,0.7732,-17.8,,16.03,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Naranja Valencia grande,14.42,14.42,14.5,13.0,16.2,0.61,11,0,3.1999999999999993,22.19,18.7008,147.026,0.771,-18.03,,16.0,0.0
 2022-01,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,833.33,833.33,750.0,750.0,1350.0,120.76,21,0,600.0,72.0,20.4978,118.002,40.6548,,,833.33,
 2022-02,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,771.05,771.05,750.0,750.0,1350.0,63.06,19,0,600.0,77.82,20.4495,118.981,37.7052,-7.47,,802.19,0.83
 2022-03,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,750.0,750.0,750.0,750.0,1150.0,0.0,22,0,400.0,53.33,20.5562,120.159,36.4853,-2.73,,784.8,0.99
@@ -670,19 +670,19 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2025-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,651.32,651.32,650.0,550.0,800.0,5.74,19,0,250.0,38.38,18.4185,142.645,35.3621,-8.24,-30.89,725.92,0.66
 2025-12,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papa Alpha,642.19,642.19,650.0,600.0,700.0,11.97,16,0,100.0,15.57,18.0739,143.042,35.5312,-1.4,-28.46,667.76,0.28
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papaya Maradol,20.21,20.21,18.5,16.0,25.0,2.69,63,0,9.0,44.53,18.434,147.026,1.0964,,,20.21,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papaya Maradol,23.9,23.9,23.0,18.0,28.0,2.34,30,0,10.0,41.84,18.7008,147.026,1.278,18.26,,22.06,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Papaya Maradol,23.74,23.74,23.0,18.0,28.0,2.37,33,0,10.0,42.12,18.7008,147.026,1.2696,17.48,,21.98,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PiÃ±a grande,122.05,122.05,116.0,15.0,260.0,106.71,42,0,245.0,200.74,18.434,147.026,6.6208,,,122.05,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PiÃ±a grande,116.78,116.78,110.25,15.0,235.0,102.8,20,0,220.0,188.4,18.7008,147.026,6.2444,-4.32,,119.41,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PiÃ±a grande,117.02,117.02,110.25,15.0,235.0,102.77,22,0,220.0,188.0,18.7008,147.026,6.2576,-4.12,,119.54,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Chiapas,405.0,405.0,405.0,390.0,420.0,0.0,21,0,30.0,7.41,18.434,147.026,21.9703,,,405.0,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Chiapas,409.5,409.5,410.0,390.0,420.0,1.58,10,0,30.0,7.33,18.7008,147.026,21.8975,1.11,,407.25,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Chiapas,410.0,410.0,410.0,390.0,420.0,2.24,11,0,30.0,7.32,18.7008,147.026,21.9242,1.23,,407.5,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Dominico,17.4,17.4,18.0,15.0,19.0,1.15,21,0,4.0,22.98,18.434,147.026,0.9442,,,17.4,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Dominico,18.9,18.9,19.0,15.0,20.0,1.05,10,0,5.0,26.46,18.7008,147.026,1.0107,8.59,,18.15,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Dominico,18.86,18.86,19.0,15.0,20.0,1.0,11,0,5.0,26.51,18.7008,147.026,1.0087,8.38,,18.13,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Macho,22.36,22.36,22.5,20.0,25.0,0.95,21,0,5.0,22.36,18.434,147.026,1.2128,,,22.36,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Macho,22.25,22.25,23.0,20.0,25.0,1.09,10,0,5.0,22.47,18.7008,147.026,1.1898,-0.48,,22.3,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Macho,22.14,22.14,23.0,20.0,25.0,1.1,11,0,5.0,22.59,18.7008,147.026,1.1837,-0.99,,22.25,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Tabasco,13.93,13.38,13.0,11.5,19.0,2.28,21,4,7.5,53.85,18.434,147.026,0.7556,,,13.93,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Tabasco,11.98,11.69,11.25,10.5,19.0,2.29,10,1,8.5,70.98,18.7008,147.026,0.6403,-14.03,,12.95,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,PlÃ¡tano Tabasco,11.93,11.67,11.25,10.5,19.0,2.18,11,1,8.5,71.24,18.7008,147.026,0.638,-14.34,,12.93,0.0
 2026-10,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Toronja Roja,14.1,14.1,14.1,12.2,16.0,0.0,20,0,3.8000000000000007,26.95,18.434,147.026,0.7649,,,14.1,0.65
-2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Toronja Roja,13.25,13.25,13.1,12.0,16.0,0.42,6,0,4.0,30.19,18.7008,147.026,0.7085,-6.03,,13.68,0.0
+2026-11,140,Guadalajara,Jalisco: Mercado de Abasto de Guadalajara,Toronja Roja,13.21,13.21,13.1,12.0,16.0,0.39,7,0,4.0,30.27,18.7008,147.026,0.7066,-6.28,,13.66,0.0
 2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,978.57,978.57,950.0,850.0,1200.0,78.38,21,0,350.0,35.77,20.4978,118.002,47.7404,,,978.57,
 2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,950.0,950.0,950.0,900.0,950.0,0.0,19,0,50.0,5.26,20.4495,118.981,46.4559,-2.92,,964.29,0.83
 2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,945.45,945.45,950.0,850.0,950.0,14.71,22,0,100.0,10.58,20.5562,120.159,45.9936,-0.48,,958.01,0.99
@@ -733,9 +733,9 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,758.64,758.64,760.0,700.0,760.0,3.51,22,0,60.0,7.91,18.0739,143.042,41.9741,-1.48,-27.75,793.1,0.28
 2026-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,750.0,750.0,750.0,700.0,760.0,0.0,5,0,60.0,8.0,17.6449,143.588,42.5052,-1.14,-28.71,759.55,0.38
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,752.43,752.43,627.0,600.0,1000.0,164.17,21,0,400.0,53.16,18.434,147.026,40.8175,0.32,-31.27,753.69,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,619.4,619.4,627.0,590.0,627.0,9.81,10,0,37.0,5.97,18.7008,147.026,33.1216,-17.68,-35.11,707.28,0.0
-2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,CaÃ±a,116.95,116.95,120.0,100.0,120.0,3.98,21,0,20.0,17.1,18.434,147.026,6.3444,,,116.95,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,CaÃ±a,120.0,120.0,120.0,110.0,120.0,0.0,10,0,10.0,8.33,18.7008,147.026,6.4168,2.61,,118.48,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Aguacate Hass,618.36,618.36,627.0,590.0,627.0,9.92,11,0,37.0,5.98,18.7008,147.026,33.0662,-17.82,-35.22,706.93,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,CaÃ±a,116.95,118.1,120.0,100.0,120.0,3.98,21,8,20.0,17.1,18.434,147.026,6.3444,,,116.95,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,CaÃ±a,120.0,120.0,120.0,110.0,120.0,0.0,11,0,10.0,8.33,18.7008,147.026,6.4168,2.61,,118.48,0.0
 2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,30.57,30.57,30.0,25.0,36.0,1.8,21,0,11.0,35.98,20.4978,118.002,1.4915,,,30.57,
 2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,20.11,20.11,21.0,16.0,30.0,3.09,19,0,14.0,69.63,20.4495,118.981,0.9832,-34.24,,25.34,0.83
 2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,17.59,17.59,18.0,16.0,18.0,0.5,22,0,2.0,11.37,20.5562,120.159,0.8557,-12.51,,22.76,0.99
@@ -785,15 +785,15 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2025-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,39.58,39.58,40.0,35.0,40.0,1.26,19,0,5.0,12.63,18.4185,142.645,2.1489,6.72,23.68,41.43,0.66
 2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Chile Serrano,40.0,40.0,40.0,35.0,40.0,0.0,17,0,5.0,12.5,18.0739,143.042,2.2131,1.06,65.35,38.89,0.28
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Coco,30.71,30.71,30.0,28.0,32.0,0.96,21,0,4.0,13.02,18.434,147.026,1.6662,,,30.71,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Coco,31.2,31.2,30.0,28.0,33.0,1.55,10,0,5.0,16.03,18.7008,147.026,1.6684,1.58,,30.96,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Coco,31.36,31.36,30.0,28.0,33.0,1.57,11,0,5.0,15.94,18.7008,147.026,1.6771,2.11,,31.04,0.0
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Durazno Amarillo,87.86,87.86,105.0,55.0,105.0,22.39,21,0,50.0,56.91,18.434,147.026,4.766,,,87.86,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Durazno Amarillo,99.0,99.0,105.0,85.0,105.0,7.75,10,0,20.0,20.2,18.7008,147.026,5.2939,12.68,,93.43,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Durazno Amarillo,98.18,98.18,105.0,85.0,105.0,7.83,11,0,20.0,20.37,18.7008,147.026,5.2501,11.75,,93.02,0.0
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Fresa,87.33,87.33,88.0,75.0,90.0,1.62,21,0,15.0,17.18,18.434,147.026,4.7376,,,87.33,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Fresa,88.8,88.8,88.0,75.0,90.0,1.03,10,0,15.0,16.89,18.7008,147.026,4.7485,1.68,,88.07,0.0
-2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Granada China,1211.43,1211.43,960.0,930.0,1620.0,328.42,21,0,690.0,56.96,18.434,147.026,65.7172,,,1211.43,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Granada China,840.0,840.0,960.0,600.0,960.0,154.92,10,0,360.0,42.86,18.7008,147.026,44.9179,-30.66,,1025.71,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Fresa,88.91,88.91,88.0,75.0,90.0,1.04,11,0,15.0,16.87,18.7008,147.026,4.7543,1.8,,88.12,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Granada China,1211.43,1117.14,960.0,930.0,1620.0,328.42,21,8,690.0,56.96,18.434,147.026,65.7172,,,1211.43,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Granada China,823.64,847.5,960.0,600.0,960.0,156.67,11,5,360.0,43.71,18.7008,147.026,44.0428,-32.01,,1017.53,0.0
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Guanabana,50.45,50.45,48.0,45.0,55.0,3.43,20,0,10.0,19.82,18.434,147.026,2.7368,,,50.45,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Guanabana,48.0,48.0,48.0,45.0,48.0,0.0,6,0,3.0,6.25,18.7008,147.026,2.5667,-4.86,,49.22,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Guanabana,48.29,48.29,48.0,45.0,50.0,0.76,7,0,5.0,10.36,18.7008,147.026,2.582,-4.29,,49.37,0.0
 2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,487.62,487.62,476.0,400.0,650.0,54.96,21,0,250.0,51.27,20.4978,118.002,23.7889,,,487.62,
 2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,386.95,386.95,400.0,300.0,476.0,28.09,19,0,176.0,45.48,20.4495,118.981,18.9221,-20.65,,437.28,0.83
 2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,355.73,355.73,350.0,300.0,364.0,7.05,22,0,64.0,17.99,20.5562,120.159,17.3051,-8.07,,410.1,0.99
@@ -843,12 +843,12 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2025-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,546.58,546.58,545.0,504.0,560.0,4.73,19,0,56.0,10.25,18.4185,142.645,29.6756,-2.4,-31.68,554.57,0.66
 2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Jitomate Saladette,545.0,545.0,545.0,504.0,560.0,0.0,17,0,56.0,10.28,18.0739,143.042,30.154,-0.29,-27.68,550.53,0.28
 2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,765.24,765.24,850.0,450.0,850.0,140.24,21,0,400.0,52.27,20.4978,118.002,37.3327,,,765.24,
-2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1607.89,1181.58,1500.0,750.0,1800.0,237.03,19,18,1050.0,65.3,20.4495,118.981,78.6275,110.12,,1186.57,0.83
-2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1790.91,1200.0,1800.0,1600.0,1800.0,29.42,22,22,200.0,11.17,20.5562,120.159,87.1225,11.38,,1388.01,0.99
-2022-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1405.26,1115.79,1700.0,900.0,1700.0,355.08,19,11,800.0,56.93,20.1088,120.809,69.883,-21.53,,1601.36,0.54
+2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1607.89,1163.82,1500.0,750.0,1800.0,237.03,19,18,1050.0,65.3,20.4495,118.981,78.6275,110.12,,1186.57,0.83
+2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1790.91,1181.25,1800.0,1600.0,1800.0,29.42,22,22,200.0,11.17,20.5562,120.159,87.1225,11.38,,1388.01,0.99
+2022-04,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1405.26,1104.93,1700.0,900.0,1700.0,355.08,19,11,800.0,56.93,20.1088,120.809,69.883,-21.53,,1601.36,0.54
 2022-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1000.0,1000.0,1000.0,900.0,1000.0,0.0,21,0,100.0,10.0,20.0305,121.022,49.9238,-28.84,,1398.72,0.18
-2022-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1150.0,1100.0,1150.0,900.0,1300.0,153.53,22,11,400.0,34.78,20.0237,122.044,57.4318,15.0,,1185.09,0.84
-2022-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,905.71,896.19,780.0,700.0,1300.0,189.86,21,2,600.0,66.25,20.5467,122.948,44.0807,-21.24,,1018.57,0.74
+2022-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1150.0,1090.62,1150.0,900.0,1300.0,153.53,22,11,400.0,34.78,20.0237,122.044,57.4318,15.0,,1185.09,0.84
+2022-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,905.71,894.4,780.0,700.0,1300.0,189.86,21,2,600.0,66.25,20.5467,122.948,44.0807,-21.24,,1018.57,0.74
 2022-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,795.65,795.65,780.0,700.0,840.0,26.94,23,0,140.0,17.6,20.1209,123.803,39.5435,-12.15,,950.46,0.7
 2022-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,851.43,851.43,840.0,780.0,870.0,14.93,21,0,90.0,10.57,20.075,124.571,42.4123,7.01,,850.93,0.62
 2022-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,754.29,754.29,870.0,530.0,870.0,136.91,21,0,340.0,45.08,19.9845,125.276,37.7435,-11.41,,800.46,0.57
@@ -861,10 +861,10 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2023-05,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,530.0,600.0,0.0,21,0,70.0,11.67,17.7373,128.084,33.827,0.0,-40.0,599.7,-0.22
 2023-06,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,600.0,600.0,600.0,530.0,600.0,0.0,22,0,70.0,11.67,17.2412,128.214,34.8004,0.0,-47.83,600.0,0.1
 2023-07,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,702.86,702.86,600.0,530.0,960.0,166.65,21,0,430.0,61.18,16.9049,128.832,41.577,17.14,-22.4,634.29,0.48
-2023-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1048.26,1033.04,960.0,900.0,1350.0,136.44,23,7,450.0,42.93,16.9766,129.545,61.7472,49.14,31.75,783.71,0.55
-2023-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1285.71,1200.0,1250.0,1000.0,1500.0,89.64,21,21,500.0,38.89,17.3077,130.12,74.2857,22.65,51.01,1012.28,0.44
-2023-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1500.0,1200.0,1500.0,1350.0,1500.0,0.0,22,22,150.0,10.0,18.0823,130.609,82.9539,16.67,98.86,1277.99,0.38
-2023-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1087.5,952.5,750.0,700.0,1500.0,382.81,20,9,800.0,73.56,17.3767,131.445,62.5838,-27.5,81.25,1291.07,0.64
+2023-08,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1048.26,1027.34,960.0,900.0,1350.0,136.44,23,7,450.0,42.93,16.9766,129.545,61.7472,49.14,31.75,783.71,0.55
+2023-09,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1285.71,1181.25,1250.0,1000.0,1500.0,89.64,21,21,500.0,38.89,17.3077,130.12,74.2857,22.65,51.01,1012.28,0.44
+2023-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1500.0,1181.25,1500.0,1350.0,1500.0,0.0,22,22,150.0,10.0,18.0823,130.609,82.9539,16.67,98.86,1277.99,0.38
+2023-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,1087.5,944.06,750.0,700.0,1500.0,382.81,20,9,800.0,73.56,17.3767,131.445,62.5838,-27.5,81.25,1291.07,0.64
 2023-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,750.0,750.0,750.0,700.0,750.0,0.0,20,0,50.0,6.67,17.186,132.373,43.6402,-31.03,25.0,1112.5,0.71
 2024-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,750.0,750.0,750.0,700.0,750.0,0.0,22,0,50.0,6.67,17.0873,133.555,43.8922,0.0,25.0,862.5,0.89
 2024-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,750.0,750.0,750.0,700.0,750.0,0.0,20,0,50.0,6.67,17.0898,133.681,43.8859,0.0,25.0,750.0,0.09
@@ -891,19 +891,19 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2025-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,552.63,552.63,540.0,500.0,660.0,37.84,19,0,160.0,28.95,18.4185,142.645,30.0042,-16.27,10.53,624.21,0.66
 2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,540.0,540.0,540.0,500.0,540.0,0.0,17,0,40.0,7.41,18.0739,143.042,29.8773,-2.29,19.37,584.21,0.28
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,645.71,645.71,600.0,550.0,720.0,59.71,21,0,170.0,26.33,18.434,147.026,35.0285,19.58,18.83,579.45,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,576.0,576.0,600.0,500.0,600.0,30.98,10,0,100.0,17.36,18.7008,147.026,30.8008,-10.8,-21.72,587.24,0.0
-2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,LimÃ³n s/semilla,754.76,754.76,610.0,575.0,990.0,189.09,21,0,415.0,54.98,18.434,147.026,40.9441,,,754.76,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,LimÃ³n s/semilla,606.0,606.0,610.0,575.0,610.0,5.16,10,0,35.0,5.78,18.7008,147.026,32.405,-19.71,,680.38,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Limon con semilla #5,572.73,572.73,600.0,500.0,600.0,31.33,11,0,100.0,17.46,18.7008,147.026,30.6258,-11.3,-22.16,586.15,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,LimÃ³n s/semilla,754.76,700.48,610.0,575.0,990.0,189.09,21,8,415.0,54.98,18.434,147.026,40.9441,,,754.76,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,LimÃ³n s/semilla,605.45,605.45,610.0,575.0,610.0,5.22,11,0,35.0,5.78,18.7008,147.026,32.3759,-19.78,,680.11,0.0
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Golden Delicious,1042.38,1042.38,1110.0,680.0,1300.0,223.42,42,0,620.0,59.48,18.434,147.026,56.5468,,,1042.38,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Golden Delicious,1006.0,1006.0,980.0,680.0,1360.0,270.83,20,0,680.0,67.59,18.7008,147.026,53.7945,-3.49,,1024.19,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Golden Delicious,1010.91,1010.91,980.0,680.0,1360.0,274.21,22,0,680.0,67.27,18.7008,147.026,54.057,-3.02,,1026.65,0.0
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Red Delicious,1022.62,1022.62,1055.0,700.0,1300.0,233.25,42,0,600.0,58.67,18.434,147.026,55.4747,,,1022.62,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Red Delicious,1007.0,1007.0,980.0,700.0,1360.0,275.07,20,0,660.0,65.54,18.7008,147.026,53.848,-1.53,,1014.81,0.0
-2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia chica,14.57,14.57,10.0,9.0,22.0,5.97,21,0,13.0,89.22,18.434,147.026,0.7905,,,14.57,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia chica,9.2,9.2,10.0,7.0,10.0,1.03,10,0,3.0,32.61,18.7008,147.026,0.492,-36.86,,11.89,0.0
-2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia grande,18.33,18.33,14.0,13.0,26.0,5.67,21,0,13.0,70.91,18.434,147.026,0.9945,,,18.33,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia grande,13.2,13.2,14.0,11.0,14.0,1.03,10,0,3.0,22.73,18.7008,147.026,0.7059,-28.0,,15.77,0.0
-2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia mediana,16.57,16.57,12.0,11.0,24.0,5.97,21,0,13.0,78.45,18.434,147.026,0.899,,,16.57,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia mediana,11.2,11.2,12.0,9.0,12.0,1.03,10,0,3.0,26.79,18.7008,147.026,0.5989,-32.41,,13.89,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Manzana Red Delicious,1011.36,1011.36,980.0,700.0,1360.0,278.42,22,0,660.0,65.26,18.7008,147.026,54.0813,-1.1,,1016.99,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia chica,14.57,12.86,10.0,9.0,22.0,5.97,21,8,13.0,89.22,18.434,147.026,0.7905,,,14.57,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia chica,9.09,9.09,10.0,7.0,10.0,1.04,11,0,3.0,33.0,18.7008,147.026,0.4861,-37.61,,11.83,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia grande,18.33,16.62,14.0,13.0,26.0,5.67,21,8,13.0,70.91,18.434,147.026,0.9945,,,18.33,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia grande,13.09,13.09,14.0,11.0,14.0,1.04,11,0,3.0,22.92,18.7008,147.026,0.7,-28.6,,15.71,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia mediana,16.57,14.86,12.0,11.0,24.0,5.97,21,8,13.0,78.45,18.434,147.026,0.899,,,16.57,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Naranja Valencia mediana,11.09,11.09,12.0,9.0,12.0,1.04,11,0,3.0,27.05,18.7008,147.026,0.5931,-33.07,,13.83,0.0
 2022-01,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,21.57,21.57,22.0,15.0,22.0,0.68,21,0,7.0,32.45,20.4978,118.002,1.0524,,,21.57,
 2022-02,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,21.58,21.58,22.0,20.0,22.0,0.51,19,0,2.0,9.27,20.4495,118.981,1.0552,0.03,,21.58,0.83
 2022-03,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,21.59,21.59,22.0,20.0,22.0,0.5,22,0,2.0,9.26,20.5562,120.159,1.0503,0.06,,21.58,0.99
@@ -953,12 +953,12 @@ anio_mes,plaza_id,ciudad,nombre_plaza,producto,precio_promedio_mxn,precio_limpio
 2025-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,23.84,23.84,24.0,21.0,24.0,0.37,19,0,3.0,12.58,18.4185,142.645,1.2945,-0.66,-14.85,23.11,0.66
 2025-12,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papa Alpha,23.0,23.0,23.0,21.0,24.0,0.0,17,0,3.0,13.04,18.0739,143.042,1.2726,-3.53,-17.86,23.61,0.28
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papaya Maradol,18.67,18.67,16.0,14.0,23.0,3.48,21,0,9.0,48.21,18.434,147.026,1.0126,,,18.67,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papaya Maradol,19.2,19.2,16.0,14.0,24.0,4.13,10,0,10.0,52.08,18.7008,147.026,1.0267,2.86,,18.93,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,Papaya Maradol,19.64,19.64,16.0,14.0,24.0,4.18,11,0,10.0,50.93,18.7008,147.026,1.05,5.19,,19.15,0.0
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PiÃ±a grande,23.24,23.24,23.0,22.0,24.0,0.44,21,0,2.0,8.61,18.434,147.026,1.2606,,,23.24,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PiÃ±a grande,22.6,22.6,23.0,22.0,23.0,0.52,10,0,1.0,4.42,18.7008,147.026,1.2085,-2.75,,22.92,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PiÃ±a grande,22.55,22.55,23.0,22.0,23.0,0.52,11,0,1.0,4.44,18.7008,147.026,1.2056,-2.98,,22.89,0.0
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Dominico,27.95,27.95,28.0,26.0,29.0,0.38,21,0,3.0,10.73,18.434,147.026,1.5164,,,27.95,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Dominico,28.0,28.0,28.0,26.0,28.0,0.0,10,0,2.0,7.14,18.7008,147.026,1.4973,0.17,,27.98,0.0
-2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Macho,26.67,27.07,28.0,22.0,28.0,1.8,21,7,6.0,22.5,18.434,147.026,1.4466,,,26.67,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Macho,28.0,28.0,28.0,26.0,28.0,0.0,10,0,2.0,7.14,18.7008,147.026,1.4973,5.0,,27.33,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Dominico,28.0,28.0,28.0,26.0,28.0,0.0,11,0,2.0,7.14,18.7008,147.026,1.4973,0.17,,27.98,0.0
+2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Macho,26.67,27.52,28.0,22.0,28.0,1.8,21,8,6.0,22.5,18.434,147.026,1.4466,,,26.67,0.65
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Macho,28.0,28.0,28.0,26.0,28.0,0.0,11,0,2.0,7.14,18.7008,147.026,1.4973,5.0,,27.33,0.0
 2026-10,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Tabasco,15.9,15.9,16.0,14.0,16.0,0.3,21,0,2.0,12.57,18.434,147.026,0.8628,,,15.9,0.65
-2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Tabasco,16.0,16.0,16.0,14.0,16.0,0.0,10,0,2.0,12.5,18.7008,147.026,0.8556,0.6,,15.95,0.0
+2026-11,160,Morelia,Michoacan: Mercado de Abasto de Morelia,PlÃ¡tano Tabasco,16.0,16.0,16.0,14.0,16.0,0.0,11,0,2.0,12.5,18.7008,147.026,0.8556,0.6,,15.95,0.0

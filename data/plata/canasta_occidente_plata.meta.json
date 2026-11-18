@@ -1,13 +1,13 @@
 {
   "capa": "Plata",
   "descripcion": "Datos limpios, normalizados y con banderas IQR de la canasta agropecuaria de Occidente",
-  "fecha_procesamiento_utc": "2026-11-17T21:32:27.438959+00:00",
-  "total_registros": 15105,
+  "fecha_procesamiento_utc": "2026-11-18T21:08:39.234781+00:00",
+  "total_registros": 15148,
   "total_en_cuarentena": 11,
-  "total_atipicos_iqr": 658,
+  "total_atipicos_iqr": 713,
   "rango_fechas": {
     "min": "2022-01-03",
-    "max": "2026-11-17"
+    "max": "2026-11-18"
   },
   "plazas_incluidas": [
     "Guadalajara",
@@ -73,7 +73,7 @@
     "Guanabana",
     "Chile Pasilla"
   ],
-  "sha256_artefacto": "46de4594440de5e2414ff5252dabf1200d089054193122855a9648c1788993d5",
+  "sha256_artefacto": "39b6139069d4f2e2b40cb4b528329e0fbad526a1c7697e36487631f0a5b0c714",
   "formato_primario": "parquet",
   "archivos_salida": {
     "parquet": "data/plata/canasta_occidente_plata.parquet",
