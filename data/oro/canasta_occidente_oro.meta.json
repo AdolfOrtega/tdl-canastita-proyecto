@@ -1,7 +1,7 @@
 {
   "capa": "Oro",
   "descripcion": "Tabla analítica dimensional mensual integrada con precios mayoristas SNIIM, indicadores macro Banxico y densidad comercial geoespacial DENUE-INEGI",
-  "fecha_procesamiento_utc": "2026-11-20T04:20:38.776414+00:00",
+  "fecha_procesamiento_utc": "2026-11-20T20:57:24.297260+00:00",
   "total_registros_mensuales": 963,
   "total_meses_unicos": 59,
   "rango_periodos": {
@@ -74,8 +74,8 @@
   ],
   "fuente_geoespacial_integrada": true,
   "archivo_linaje": "data/oro/linaje_oro.json",
-  "sha256_csv": "bda69a8e3c9d589fe6dba36b9eb99eee9577c8b1c049737f56c828d8cdbbd96e",
-  "sha256_artefacto": "7f627958b06d2ab1e59b1d930767e5a72f3b8667cb7f5c1fa1fabeab543d44b8",
+  "sha256_csv": "01e56cde2268825c7a6b2248ca3b6f59d151baebc9279c1e163171eed4683747",
+  "sha256_artefacto": "b2c116359d77e92c1d8f7cf73e06913307a2739d879463d13246dcda0c36629e",
   "formato_primario": "parquet",
   "archivos_salida": {
     "parquet": "data/oro/canasta_occidente_oro.parquet",
