@@ -1,5 +1,5 @@
 {
-  "fecha_evaluacion_utc": "2026-11-20T04:14:18.424940+00:00",
+  "fecha_evaluacion_utc": "2026-11-20T04:20:22.574607+00:00",
   "norma": "ISO/IEC 25010",
   "seguridad_hallazgos_secretos": 0,
   "seguridad_hallazgos_pii": 0,
@@ -16,9 +16,9 @@
     "fallas_historicas_setup_e0": 2
   },
   "mantenibilidad_detalle": {
-    "archivos_python_analizados": 15,
-    "total_funciones": 79,
-    "funciones_documentadas_pct": 81.01,
+    "archivos_python_analizados": 16,
+    "total_funciones": 84,
+    "funciones_documentadas_pct": 77.38,
     "complejidad_ciclomatica_promedio": 4.71,
     "complejidad_maxima_funcion": 19,
     "evidencia_cobertura_presente": true
@@ -68,7 +68,7 @@
       "id": 6,
       "caracteristica": "Seguridad",
       "metrica": "Secretos expuestos en codigo/datos y cumplimiento LFPDPPP (cero PII)",
-      "valor_medido": "0 secretos expuestos y 0 columnas PII en 92 archivos",
+      "valor_medido": "0 secretos expuestos y 0 columnas PII en 99 archivos",
       "umbral_objetivo": "0 secretos y 0 PII",
       "calificacion_pct": 100.0
     },
@@ -76,9 +76,9 @@
       "id": 7,
       "caracteristica": "Mantenibilidad",
       "metrica": "Complejidad ciclomatica promedio de McCabe y tasa de docstrings en funciones",
-      "valor_medido": "CC promedio = 4.71, docstrings = 81.01% (79 funciones)",
+      "valor_medido": "CC promedio = 4.71, docstrings = 77.38% (84 funciones)",
       "umbral_objetivo": "CC promedio <= 6 y doc >= 80%",
-      "calificacion_pct": 90.5
+      "calificacion_pct": 82.0
     },
     {
       "id": 8,
@@ -89,5 +89,5 @@
       "calificacion_pct": 100.0
     }
   ],
-  "puntaje_global_pct": 97.06
+  "puntaje_global_pct": 96.0
 }

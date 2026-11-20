@@ -18,11 +18,11 @@ Todas las metricas provienen de ejecuciones reales de codigo ([calidad/evaluar_i
 | 3 | **Compatibilidad** | Interoperabilidad de formatos heterogeneos integrados al modelo comun | HTML latin-1 + REST JSON + GeoJSON ITRF2008/WGS84 -> UTF-8 CSV/Parquet/GeoJSON | 100% integracion sin perdida | **95.0%** |
 | 4 | **Capacidad de interaccion (Usabilidad)** | Cobertura funcional en Streamlit con semaforo de compra, filtros, mapa pydeck e incertidumbre 95% | 5 pestanas interactivas y semaforo comprensible para el cliente (Restaurante Luisiana) | >= 4 vistas ejecutivas | **95.0%** |
 | 5 | **Fiabilidad** | Disponibilidad operativa medida A = MTBF/(MTBF+MTTR) y Puerta 1 con cuarentena | 100.0% (48/48 corridas diarias en 307.2h; MTTR=0h) | >= 95.0% | **100.0%** |
-| 6 | **Seguridad** | Secretos expuestos en codigo/datos y cumplimiento LFPDPPP (cero PII) | 0 secretos expuestos y 0 columnas PII en 92 archivos | 0 secretos y 0 PII | **100.0%** |
-| 7 | **Mantenibilidad** | Complejidad ciclomatica promedio de McCabe y tasa de docstrings en funciones | CC promedio = 4.71, docstrings = 81.01% (79 funciones) | CC promedio <= 6 y doc >= 80% | **90.5%** |
+| 6 | **Seguridad** | Secretos expuestos en codigo/datos y cumplimiento LFPDPPP (cero PII) | 0 secretos expuestos y 0 columnas PII en 99 archivos | 0 secretos y 0 PII | **100.0%** |
+| 7 | **Mantenibilidad** | Complejidad ciclomatica promedio de McCabe y tasa de docstrings en funciones | CC promedio = 4.71, docstrings = 77.38% (84 funciones) | CC promedio <= 6 y doc >= 80% | **82.0%** |
 | 8 | **Portabilidad** | Ausencia de rutas locales absolutas y compatibilidad Windows + Linux CI | 0 rutas locales absolutas; fallback puro Python + PyArrow/CSV | 0 rutas locales absolutas | **100.0%** |
 
-* **Indice global medido ISO/IEC 25010:** **`97.06%`** (Escala TecNM: Excelente).
+* **Indice global medido ISO/IEC 25010:** **`96.00%`** (Escala TecNM: Excelente).
 * **Resultado de Seguridad y Privacidad:** `0` secretos expuestos, `0` columnas PII en datos geoespaciales, `.env` protegido en `.gitignore` y no rastreado por Git.
 
 ---

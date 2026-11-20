@@ -51,7 +51,7 @@ Una unión espacial real (`within`) no termina al cruzar coordenadas: primero re
 El diseño factorial $2^3$ demostró con evidencia que la intuición técnica puede fallar sin experimentación: 4 hilos empeoraron el desempeño por contención del GIL en Python, mientras que `1 hilo + lxml + Parquet` logró menor varianza y tiempo confirmado dentro del IC 95% (`1.1996 s` dentro de `[0.9948, 1.2123] s`). En el diseño 3×3 corroboramos que Parquet ahorra más del 98% de almacenamiento sin penalización significativa de tiempo (`p = 0.3845`).
 
 ### Calidad en los Sistemas de Información
-Medir ISO/IEC 25010 e ISO/IEC 25012 sobre código y datos reales evita calificaciones subjetivas: al conectar la bitácora diaria de GitHub Actions (`48/48` corridas exitosas en modo diario, `100.0%`), la complejidad ciclomática AST (`4.71`), los resultados del experimento $2^3$ y la completitud obligatoria de Capa Oro (`100.0%`), obtuvimos índices reales de `97.06%` y `99.67%` reforzados con Puerta 2 CI en cada `push`.
+Medir ISO/IEC 25010 e ISO/IEC 25012 sobre código y datos reales evita calificaciones subjetivas: al conectar la bitácora diaria de GitHub Actions (`48/48` corridas exitosas en modo diario, `100.0%`), la complejidad ciclomática AST (`4.71`), los resultados del experimento $2^3$ y la completitud obligatoria de Capa Oro (`100.0%`), obtuvimos índices reales de `96.00%` y `99.67%` reforzados con Puerta 2 CI en cada `push`.
 
 ---
 

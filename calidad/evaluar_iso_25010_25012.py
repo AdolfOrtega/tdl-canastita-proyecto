@@ -111,7 +111,7 @@ def auditar_seguridad_y_portabilidad() -> Dict[str, Any]:
                 hallazgos_secretos.append(f"Valor de .env filtrado en {rel}")
 
         if ruta.name != "evaluar_iso_25010_25012.py":
-            if "Users/adolf" in txt or "file:///c:" in txt.lower():
+            if re.search(r"file:\x2f{3}[a-zA-Z]:/", txt, re.I) or re.search(r"[a-zA-Z]:[/\\]+Users[/\\]+", txt):
                 hallazgos_rutas_locales.append(f"Ruta local detectada en {rel}")
 
     # Verificar que .env este ignorado y no rastreado en git
