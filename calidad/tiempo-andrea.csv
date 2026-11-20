@@ -13,3 +13,4 @@ fecha,inicio,fin,interrupcion_min,fase,actividad
 2026-11-18,17:00,19:45,15,codigo,Captura del snapshot local de 6 paginas SNIIM e implementacion de laboratorio/experimento_factorial_2k.py y test_experimento_e2.py
 2026-11-19,16:00,18:30,10,analisis,Ejecucion ANOVA validacion de supuestos Puerta 3 corrida de confirmacion y redaccion de informe_experimento.md
 2026-11-19,19:00,21:30,15,documentacion,Implementacion de calidad/auditor_tdl.py auditoria interna sobre corte e1 redaccion de auditoria_cruzada.md relatoria-E2.md y ENTREGA.md
+2026-11-19,21:35,22:20,5,pruebas,Verificacion QA visual de graficas experimentales correccion de etiquetas empalmadas y eliminacion de FutureWarning en adfuller con 28 pruebas pytest en verde
