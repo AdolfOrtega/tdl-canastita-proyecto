@@ -25,18 +25,16 @@ El objetivo es darle a los encargados de compras de **cocinas económicas y rest
 
 ---
 
-## Enlaces Rápidos de la Entrega E1
+## Enlaces Rápidos de la Entrega E2 (Experimento, Geodatos y Calidad ISO)
 
-* **Ficha Ejecutiva E1 (con atención a issues de E0):** [docs/E1/ENTREGA.md](docs/E1/ENTREGA.md)
-* **Relatoría Metodológica (6 preguntas guía):** [docs/relatoria-E1.md](docs/relatoria-E1.md)
-* **Plan SQA según estándar IEEE 730:** [docs/E1/plan_sqa_ieee730.md](docs/E1/plan_sqa_ieee730.md)
-* **Diccionario de Datos (Capas Plata y Oro):** [pipeline/diccionario_datos.md](pipeline/diccionario_datos.md)
-* **Informe Técnico de Series de Tiempo:** [laboratorio/informe_estadistico.md](laboratorio/informe_estadistico.md)
-* **Pronósticos a 4 Meses (Dic 2026 - Mar 2027):** [laboratorio/pronosticos_futuro.csv](laboratorio/pronosticos_futuro.csv)
-* **Métricas de Modelos (MAPE, RMSE, MAE):** [laboratorio/metricas_modelos.csv](laboratorio/metricas_modelos.csv)
-* **Tablero Interactivo Streamlit:** [tablero/app.py](tablero/app.py)
-* **Suite de Pruebas (91% cobertura):** [tests/test_pipeline.py](tests/test_pipeline.py) y [tests/test_extractores.py](tests/test_extractores.py)
-* **Evidencias de la Entrega E0 previa:** [docs/E0/ENTREGA.md](docs/E0/ENTREGA.md) y [docs/E0/propuesta.md](docs/E0/propuesta.md)
+* **Ficha Ejecutiva E2:** [docs/E2/ENTREGA.md](docs/E2/ENTREGA.md)
+* **Relatoría Metodológica E2:** [docs/relatoria-E2.md](docs/relatoria-E2.md)
+* **Declaración de Ética y Legalidad de Datos:** [docs/etica-datos.md](docs/etica-datos.md)
+* **Informe del Experimento Factorial 2³, 2 Vías y 2^(4-1):** [laboratorio/informe_experimento.md](laboratorio/informe_experimento.md)
+* **Evaluación ISO/IEC 25010, ISO/IEC 25012 y Antecedentes:** [docs/E2/evaluacion_iso_25010_25012.md](docs/E2/evaluacion_iso_25010_25012.md)
+* **Auditoría Técnica y Protocolo Cruzado:** [docs/E2/auditoria_cruzada.md](docs/E2/auditoria_cruzada.md)
+* **Manifiesto de Linaje de Capa Oro:** [data/oro/linaje_oro.json](data/oro/linaje_oro.json)
+* **Evidencias Previas (E1 y E0):** [docs/E1/ENTREGA.md](docs/E1/ENTREGA.md) · [docs/relatoria-E1.md](docs/relatoria-E1.md) · [docs/E0/ENTREGA.md](docs/E0/ENTREGA.md)
 
 ---
 
@@ -51,23 +49,33 @@ El objetivo es darle a los encargados de compras de **cocinas económicas y rest
    python -m pip install -r requirements.txt
    ```
 
-2. **Ejecutar la suite de pruebas unitarias y cobertura (91%):**
+2. **Ejecutar la suite completa de pruebas automatizadas y cobertura:**
    ```powershell
-   pytest -v --cov=pipeline
+   pytest -v --cov=pipeline --cov=calidad tests/
    ```
 
-3. **Ejecutar el pipeline de datos (Capa Plata y Capa Oro):**
+3. **Ejecutar el pipeline de datos (Plata Geoespacial, Plata y Oro con linaje):**
    ```powershell
+   python pipeline/enriquecer_geo.py
    python pipeline/limpieza_plata.py
    python pipeline/construir_oro.py
    ```
+   *(Para actualizar la fuente DENUE en Capa Bronce requiere `INEGI_TOKEN` en `.env`: `python -m extractores.ejecutar_captura --modo geo`)*.
 
-4. **Ejecutar el laboratorio estadístico de series de tiempo:**
+4. **Ejecutar los laboratorios estadísticos (Series E1 y Experimento Factorial E2):**
    ```powershell
    python laboratorio/pronostico_series_tiempo.py
+   python laboratorio/experimento_factorial_2k.py
    ```
 
-5. **Lanzar el tablero interactivo de control (Streamlit):**
+5. **Ejecutar evaluaciones ISO 25010/25012 y auditoría técnica:**
+   ```powershell
+   python calidad/evaluar_iso_25010_25012.py
+   python calidad/evaluar_iso_25010_25012.py --verificar-seguridad
+   python calidad/auditor_tdl.py .
+   ```
+
+6. **Lanzar el tablero interactivo de control (Streamlit):**
    ```powershell
    streamlit run tablero/app.py
    ```
@@ -84,34 +92,20 @@ tdl-canastita-proyecto/
 ├── docs/
 │   ├── E0/                        # Entregables E0 (propuesta.md, ENTREGA.md)
 │   ├── E1/                        # Entregables E1 (ENTREGA.md, plan_sqa_ieee730.md)
-│   └── relatoria-E1.md            # Relatoría reflexiva y metodológica de E1
-├── calidad/                       # Bitácora de capturas y registros PSP de tiempo/defectos
-│   ├── bitacora_captura.csv       # Historial de 27 corridas exitosas en producción (100% disponibilidad)
-│   ├── defectos-adolfo.csv        # Registro de defectos PSP Adolfo
-│   ├── tiempo-adolfo.csv          # Registro de tiempos PSP Adolfo
-│   ├── defectos-andrea.csv        # Registro de defectos PSP Andrea
-│   └── tiempo-andrea.csv          # Registro de tiempos PSP Andrea
-├── extractores/                   # Extractores éticos de Capa Bronce (SNIIM y Banxico)
-├── pipeline/                      # Transformaciones Medallion y calidad
-│   ├── limpieza_plata.py          # Puerta 1, cuarentena, deduplicación e IQR
-│   ├── construir_oro.py           # Agregación mensual, join macro y métricas derivadas
-│   └── diccionario_datos.md       # Diccionario dimensional de esquemas
+│   ├── E2/                        # Entregables E2 (ENTREGA.md, evaluacion_iso_25010_25012.md, auditoria_cruzada.md)
+│   ├── etica-datos.md             # Declaracion etica, licencias y LFPDPPP de las 3 fuentes
+│   ├── relatoria-E1.md            # Relatoría reflexiva de E1
+│   └── relatoria-E2.md            # Relatoría reflexiva de E2
+├── calidad/                       # Bitácora, evaluador ISO 25010/25012, auditor TDL y PSP
+├── extractores/                   # Extractores éticos de Capa Bronce (SNIIM, Banxico, DENUE-INEGI)
+├── pipeline/                      # Transformaciones Medallion, union espacial y linaje Oro
 ├── data/
-│   ├── bronce/                    # Datos crudos CSV + metadatos (.meta.json)
-│   ├── plata/                     # Datos limpios y normalizados (canasta_occidente_plata.csv)
-│   ├── oro/                       # Tabla analítica dimensional (canasta_occidente_oro.csv)
+│   ├── bronce/                    # Datos crudos (SNIIM, Banxico, DENUE-MGEM, snapshot HTML)
+│   ├── plata/                     # Datos limpios, normalizados y capa geo enriquecida
+│   ├── oro/                       # Tabla analítica dimensional, linaje por fila y linaje_oro.json
 │   └── cuarentena/                # Registros rechazados por Puerta 1 (rechazos_plata.csv)
-├── laboratorio/                   # Laboratorio estadístico de pronósticos
-│   ├── pronostico_series_tiempo.py# Modelos SES, Holt, Holt-Winters, ARIMA
-│   ├── informe_estadistico.md     # Reporte técnico detallado
-│   ├── metricas_modelos.csv       # Comparativa MAPE / RMSE / MAE
-│   ├── pronosticos_futuro.csv     # Proyecciones a 4 meses con IC 95%
-│   ├── correlaciones_macro.csv    # Correlaciones con TC FIX e INPC
-│   └── graficos/                  # Gráficos de descomposición y pronóstico
-├── tablero/                       # Dashboard interactivo con Streamlit
-│   └── app.py                     # Visor de mercado, pronósticos y panel SQA
-├── tests/                         # Suite automatizada (11 pruebas, 91% cobertura)
-│   ├── test_extractores.py        # Pruebas de extracción ética y metadatos
-│   └── test_pipeline.py           # Pruebas de Plata, Oro, Cuarentena e IQR
-└── .github/workflows/             # Flujos CI/CD programados en GitHub Actions
+├── laboratorio/                   # Pronosticos (E1) + Experimento factorial 2^3 y 2 vias (E2)
+├── tablero/                       # Dashboard Streamlit (5 pestanas incluyendo Mapa pydeck e ISO)
+├── tests/                         # Suite automatizada pytest (extractores, pipeline, estadistica, E2)
+└── .github/workflows/             # Captura programada (cron) e Integracion Continua Puerta 2 (push)
 ```
