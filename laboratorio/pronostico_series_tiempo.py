@@ -21,6 +21,7 @@ Metodología:
 """
 
 from datetime import datetime, timezone
+import inspect
 import json
 import logging
 from pathlib import Path
@@ -76,7 +77,11 @@ def preparar_serie(df_oro: pd.DataFrame, producto: str, plaza_id: int = 80) -> p
 
 def ejecutar_prueba_adf(serie: pd.Series, nombre: str) -> Dict:
     """Ejecuta la prueba de Augmented Dickey-Fuller en niveles y primera diferencia."""
-    resultado_niveles = adfuller(serie.dropna(), autolag="AIC")
+    kw_adf: Dict = {"autolag": "AIC"}
+    if "result_object" in inspect.signature(adfuller).parameters:
+        kw_adf["result_object"] = False
+
+    resultado_niveles = adfuller(serie.dropna(), **kw_adf)
     stat_niveles = resultado_niveles[0]
     p_niveles = resultado_niveles[1]
     crit_niveles = resultado_niveles[4]
@@ -84,7 +89,7 @@ def ejecutar_prueba_adf(serie: pd.Series, nombre: str) -> Dict:
 
     # Primera diferencia
     diff = serie.diff().dropna()
-    resultado_diff = adfuller(diff, autolag="AIC")
+    resultado_diff = adfuller(diff, **kw_adf)
     stat_diff = resultado_diff[0]
     p_diff = resultado_diff[1]
     crit_diff = resultado_diff[4]

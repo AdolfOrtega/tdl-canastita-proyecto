@@ -37,6 +37,7 @@ st.set_page_config(
 
 @st.cache_data
 def cargar_datos_oro():
+    """Carga la tabla dimensional mensual analitica de Capa Oro."""
     ruta_csv = DIR_ORO / "canasta_occidente_oro.csv"
     if not ruta_csv.exists():
         st.error("No se encontró el archivo de Capa Oro. Ejecuta primero `python pipeline/construir_oro.py`.")
@@ -48,6 +49,7 @@ def cargar_datos_oro():
 
 @st.cache_data
 def cargar_pronosticos():
+    """Carga proyecciones a 4 meses, metricas de modelos, correlaciones macro y ADF."""
     ruta_pron = DIR_LAB / "pronosticos_futuro.csv"
     ruta_met = DIR_LAB / "metricas_modelos.csv"
     ruta_corr = DIR_LAB / "correlaciones_macro.csv"
@@ -67,6 +69,7 @@ def cargar_pronosticos():
 
 @st.cache_data
 def cargar_cuarentena():
+    """Carga registros rechazados por Puerta 1 desde data/cuarentena/."""
     ruta_q = DIR_CUARENTENA / "rechazos_plata.csv"
     if ruta_q.exists():
         return pd.read_csv(ruta_q)
@@ -75,6 +78,7 @@ def cargar_cuarentena():
 
 @st.cache_data
 def cargar_bitacora():
+    """Carga el historial de corridas programadas para medicion SQA."""
     ruta_b = DIR_CALIDAD / "bitacora_captura.csv"
     if ruta_b.exists():
         return pd.read_csv(ruta_b)
@@ -83,6 +87,7 @@ def cargar_bitacora():
 
 @st.cache_data
 def cargar_datos_geo():
+    """Carga comercios DENUE enriquecidos y poligonos municipales INEGI."""
     ruta_geo = DIR_PLATA / "denue_occidente_geo.csv"
     ruta_muns = RAIZ / "data" / "bronce" / "denue_inegi" / "municipios_occidente.geojson"
     df_g = pd.read_csv(ruta_geo) if ruta_geo.exists() else pd.DataFrame()
@@ -92,6 +97,7 @@ def cargar_datos_geo():
 
 @st.cache_data
 def cargar_resultados_e2():
+    """Carga resultados cuantitativos del experimento factorial y evaluaciones ISO."""
     ruta_exp = DIR_LAB / "resultados_experimento_e2.json"
     ruta_25010 = DIR_CALIDAD / "resultados_iso_25010.json"
     ruta_25012 = DIR_CALIDAD / "resultados_iso_25012.json"
@@ -109,7 +115,21 @@ df_geo, geojson_muns = cargar_datos_geo()
 exp_e2, iso_25010, iso_25012 = cargar_resultados_e2()
 
 # ----------------- BARRA LATERAL (SIDEBAR) -----------------
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Logo-TecNM.svg/320px-Logo-TecNM.svg.png", width=160)
+st.sidebar.markdown(
+    """
+    <div style="background: linear-gradient(135deg, #1b396a 0%, #2c5282 100%);
+                color: #ffffff; padding: 12px 14px; border-radius: 8px;
+                margin-bottom: 10px; border-left: 5px solid #d4af37;">
+        <div style="font-size: 0.78rem; letter-spacing: 0.08em; opacity: 0.9;">
+            TECNOLOGICO NACIONAL DE MEXICO
+        </div>
+        <div style="font-size: 1.05rem; font-weight: 700; margin-top: 2px;">
+            Campus Colima · TDL Canastita
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 st.sidebar.title("TDL Canastita")
 st.sidebar.markdown("**Trusted Data Lab — Occidente**")
 st.sidebar.caption("TecNM Colima · Ing. en Sistemas Computacionales")
@@ -243,6 +263,7 @@ with pestanas[0]:
                 ax1.grid(True, linestyle=":", alpha=0.6)
                 ax1.legend(loc="upper left")
                 st.pyplot(fig1)
+                plt.close(fig1)
 
             with col_g2:
                 st.subheader(f"🗺️ Comparativo Regional de Plazas: {producto_sel}")
@@ -258,6 +279,7 @@ with pestanas[0]:
                 ax2.grid(True, linestyle=":", alpha=0.6)
                 ax2.legend(loc="upper left")
                 st.pyplot(fig2)
+                plt.close(fig2)
 
             st.caption("Fuente de datos: SNIIM (Secretaría de Economía) y API SIE de Banco de México, procesados y certificados en Capa Oro.")
 
@@ -315,6 +337,7 @@ with pestanas[1]:
         ax_pron.grid(True, linestyle=":", alpha=0.6)
         ax_pron.legend(loc="upper left")
         st.pyplot(fig_pron)
+        plt.close(fig_pron)
 
         # Tabla de Pronóstico y Tabla de Modelos
         col_t1, col_t2 = st.columns(2)
@@ -330,7 +353,7 @@ with pestanas[1]:
                         "limite_superior_95_mxn": "Límite Máx (95%)",
                     }
                 ),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
 
@@ -340,7 +363,7 @@ with pestanas[1]:
                 sub_met[["modelo", "mape", "rmse", "mae"]].rename(
                     columns={"modelo": "Familia de Modelo", "mape": "MAPE (%)", "rmse": "RMSE ($)", "mae": "MAE ($)"}
                 ),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
 
@@ -409,7 +432,7 @@ with pestanas[2]:
         if not df_cuarentena.empty:
             st.dataframe(
                 df_cuarentena[["fecha_rechazo_utc", "motivo_rechazo", "fecha_observacion_raw", "producto", "precio_min_mxn", "precio_max_mxn"]].head(15),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
             st.caption("Desglose de motivos: Inversión lógica (P_max < P_min) o inconsistencia de precio modal.")
@@ -422,7 +445,7 @@ with pestanas[2]:
         if not df_bitacora.empty:
             st.dataframe(
                 df_bitacora[["timestamp_inicio_utc", "fuente", "modo", "estado", "registros_capturados", "duracion_seg"]].tail(10),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
             st.caption("Tasa de éxito en corridas programadas de producción: 100%. MTTR = 0 h.")
@@ -559,12 +582,12 @@ with pestanas[3]:
             if not df_geo_f.empty:
                 resumen_anillos = df_geo_f["anillo_logistico"].value_counts().reset_index()
                 resumen_anillos.columns = ["Anillo Logístico", "Establecimientos"]
-                st.dataframe(resumen_anillos, use_container_width=True, hide_index=True)
+                st.dataframe(resumen_anillos, width="stretch", hide_index=True)
 
         with col_geo_r:
             st.subheader("📋 Muestra Pública DENUE (Cero PII)")
             cols_ver = ["nombre_comercial", "categoria_canastita", "colonia", "nombre_municipio_geo", "distancia_central_abasto_km"]
-            st.dataframe(df_geo_f[cols_ver].head(15), use_container_width=True, hide_index=True)
+            st.dataframe(df_geo_f[cols_ver].head(15), width="stretch", hide_index=True)
 
 # ================= PESTAÑA 5: EXPERIMENTO 2^3 & NORMAS ISO =================
 with pestanas[4]:
@@ -597,18 +620,18 @@ with pestanas[4]:
         with col_img1:
             p_ef = DIR_LAB / "graficos" / "efectos_principales_2_3.png"
             if p_ef.exists():
-                st.image(str(p_ef), caption="Efectos Principales del Diseño Factorial 2³", use_container_width=True)
+                st.image(str(p_ef), caption="Efectos Principales del Diseño Factorial 2³", width="stretch")
             p_2v = DIR_LAB / "graficos" / "interaccion_2vias_lote_formato.png"
             if p_2v.exists():
-                st.image(str(p_2v), caption="ANOVA 2 Vías (3x3): Lote x Formato de Salida", use_container_width=True)
+                st.image(str(p_2v), caption="ANOVA 2 Vías (3x3): Lote x Formato de Salida", width="stretch")
 
         with col_img2:
             p_in = DIR_LAB / "graficos" / "interacciones_2_3.png"
             if p_in.exists():
-                st.image(str(p_in), caption="Gráficas de Interacción Doble (2³)", use_container_width=True)
+                st.image(str(p_in), caption="Gráficas de Interacción Doble (2³)", width="stretch")
             p_cf = DIR_LAB / "graficos" / "confirmacion_optimo_vs_base.png"
             if p_cf.exists():
-                st.image(str(p_cf), caption="Corrida de Confirmación: Óptimo vs Base E1", use_container_width=True)
+                st.image(str(p_cf), caption="Corrida de Confirmación: Óptimo vs Base E1", width="stretch")
 
         st.markdown("---")
         col_iso1, col_iso2 = st.columns(2)
@@ -616,10 +639,10 @@ with pestanas[4]:
             st.subheader(f"📐 Calidad del Producto ISO/IEC 25010 ({iso_25010.get('puntaje_global_pct', 0)}%)")
             if iso_25010 and "caracteristicas" in iso_25010:
                 df_i10 = pd.DataFrame(iso_25010["caracteristicas"])[["caracteristica", "valor_medido", "calificacion_pct"]]
-                st.dataframe(df_i10, use_container_width=True, hide_index=True)
+                st.dataframe(df_i10, width="stretch", hide_index=True)
 
         with col_iso2:
             st.subheader(f"🗄️ Calidad de Datos ISO/IEC 25012 ({iso_25012.get('puntaje_global_pct', 0)}%)")
             if iso_25012 and "caracteristicas" in iso_25012:
                 df_i12 = pd.DataFrame(iso_25012["caracteristicas"])[["caracteristica", "categoria", "puntaje_pct"]]
-                st.dataframe(df_i12, use_container_width=True, hide_index=True)
+                st.dataframe(df_i12, width="stretch", hide_index=True)

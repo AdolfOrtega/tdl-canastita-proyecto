@@ -89,6 +89,7 @@ def ejecutar_corrida_extractor(
     captura_ts = "2026-11-20T00:00:00+00:00"
 
     def _procesar_una(item: Tuple[str, Dict[str, Any], str]) -> List[Dict[str, Any]]:
+        """Parsea una pagina HTML del lote asignado."""
         html, info, url = item
         return parsear_tabla_sniim(html, info, captura_ts, url, parser=parser)
 
@@ -310,7 +311,17 @@ def graficar_resultados_experimento(
         ax.set_title(titulo, fontweight="bold")
         ax.grid(True, linestyle=":", alpha=0.6)
         for xi, val in zip(x, resumen["mean"]):
-            ax.annotate(f"{val:.3f}s", (xi, val), textcoords="offset points", xytext=(0, 10), ha="center", fontsize=9)
+            ax.annotate(
+                f"{val:.3f}s",
+                (xi, val),
+                textcoords="offset points",
+                xytext=(12, 10),
+                ha="left",
+                fontsize=9,
+                fontweight="bold",
+                bbox=dict(boxstyle="round,pad=0.22", fc="white", ec="#cccccc", alpha=0.92),
+                zorder=10,
+            )
     axes[0].set_ylabel("Tiempo de ejecucion (seg)")
     axes[0].legend(loc="best", fontsize=8)
     fig.suptitle("Efectos Principales en Diseno Factorial 2^3 (Lote 12 paginas SNIIM)", fontweight="bold", y=1.02)
@@ -402,8 +413,9 @@ def graficar_resultados_experimento(
     res_conf = df_conf.groupby("escenario")["tiempo_seg"].agg(["mean", "std"]).reset_index()
     col_bar = ["#2ca02c" if "Optimo" in e else "#7f7f7f" for e in res_conf["escenario"]]
     bars = ax.bar(res_conf["escenario"], res_conf["mean"], yerr=res_conf["std"], capsize=6, color=col_bar, edgecolor="black", alpha=0.88)
-    for b, val in zip(bars, res_conf["mean"]):
-        ax.text(b.get_x() + b.get_width() / 2.0, val + 0.05, f"{val:.3f}s", ha="center", va="bottom", fontweight="bold")
+    for b, val, err in zip(bars, res_conf["mean"], res_conf["std"]):
+        ax.text(b.get_x() + b.get_width() / 2.0, val + err + 0.04, f"{val:.3f}s", ha="center", va="bottom", fontweight="bold")
+    ax.set_ylim(0, float((res_conf["mean"] + res_conf["std"]).max()) * 1.18)
     ax.set_ylabel("Tiempo de ejecucion promedio (seg)")
     ax.set_title("Corrida de Confirmacion (5 replicas independientes por escenario)", fontweight="bold")
     ax.grid(True, axis="y", linestyle=":", alpha=0.6)
@@ -426,6 +438,7 @@ def generar_informe_markdown(resultados: Dict[str, Any]) -> str:
     f24 = resultados["comparativa_2_4_fraccionado"]
 
     def _tabla_anova_md(filas: List[Dict[str, Any]]) -> str:
+        """Formatea una tabla ANOVA Tipo II como tabla Markdown."""
         lineas = ["| Termino | Sum Sq | GL | Estadistico F | p-valor | Significativo (alpha=0.05) | Eta^2 parcial |", "| :--- | :---: | :---: | :---: | :---: | :---: | :---: |"]
         for r in filas:
             f_str = f"{r['F']:.3f}" if r["F"] is not None else "--"

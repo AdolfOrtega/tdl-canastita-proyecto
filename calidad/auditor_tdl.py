@@ -42,6 +42,7 @@ def auditar_repositorio(ruta_repo: Path) -> Dict[str, Any]:
     hallazgos: List[Dict[str, str]] = []
 
     def _agregar(sev: str, categoria: str, evidencia: str, recomendacion: str) -> None:
+        """Agrega un hallazgo clasificado a la lista de auditoria."""
         hallazgos.append(
             {
                 "severidad": sev,
@@ -161,6 +162,7 @@ def auditar_repositorio(ruta_repo: Path) -> Dict[str, Any]:
 
 
 def main() -> int:
+    """Punto de entrada CLI del auditor tecnico TDL."""
     parser = argparse.ArgumentParser(description="Auditor TDL bajo ISO 25010 / 25012 / 19011")
     parser.add_argument("ruta", nargs="?", default=".", help="Ruta del repositorio a auditar")
     parser.add_argument("--json", action="store_true", help="Imprime salida en JSON")

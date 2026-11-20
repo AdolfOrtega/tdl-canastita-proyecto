@@ -192,6 +192,7 @@ def integrar_geoespacial_oro(
     df_g["es_abarrotes"] = (df_g.get("categoria_canastita", "") == "Abarrotes / Miscelanea").astype(int)
 
     def _moda_cvegeo(serie: pd.Series) -> Optional[str]:
+        """Obtiene la clave municipal modal de la plaza."""
         limpia = serie.dropna().astype(str)
         if limpia.empty:
             return None
@@ -252,6 +253,7 @@ def construir_manifiesto_linaje(
 ) -> Dict[str, Any]:
     """Construye el grafo completo de linaje Bronce -> Plata -> Oro con SHA-256."""
     def _info_archivo(ruta: Path, ruta_meta: Optional[Path] = None) -> Dict[str, Any]:
+        """Extrae ruta relativa, SHA-256, tamano y marca temporal de un archivo."""
         if not ruta.exists():
             return {"ruta": str(ruta.relative_to(RAIZ)), "existe": False}
         info: Dict[str, Any] = {

@@ -500,6 +500,7 @@ Medida ejecutada directamente sobre los **{r12['registros_oro']} registros anali
 
 
 def main() -> int:
+    """Punto de entrada CLI para medicion ISO/IEC 25010, 25012 y Puerta 2 CI."""
     parser = argparse.ArgumentParser(description="Evaluador cuantitativo ISO/IEC 25010 y 25012")
     parser.add_argument(
         "--verificar-seguridad",

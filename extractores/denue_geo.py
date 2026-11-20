@@ -304,6 +304,7 @@ def guardar_bronce_geoespacial(
 
 
 def main() -> None:
+    """Ejecuta la extraccion geoespacial DENUE-INEGI y guarda artefactos Bronce."""
     ext = ExtractorEtico(pausa=1.5)
     print("--- Descargando establecimientos DENUE-INEGI (sin PII) ---")
     registros = extraer_denue_occidente(extractor=ext)
