@@ -1,0 +1,11 @@
+escenario,tipo,replica,tiempo_seg,tasa_error_pct,tamano_kb
+"Optimo (1 hilo, lxml, Parquet)",optimo,1,1.17864,0.0,22.324
+"Base E1 (1 hilo, html.parser, CSV)",referencia,1,1.42488,0.0,2292.301
+"Optimo (1 hilo, lxml, Parquet)",optimo,2,1.17703,0.0,22.324
+"Base E1 (1 hilo, html.parser, CSV)",referencia,2,1.51073,0.0,2292.301
+"Optimo (1 hilo, lxml, Parquet)",optimo,3,1.31466,0.0,22.324
+"Base E1 (1 hilo, html.parser, CSV)",referencia,3,1.40987,0.0,2292.301
+"Optimo (1 hilo, lxml, Parquet)",optimo,4,1.15942,0.0,22.324
+"Base E1 (1 hilo, html.parser, CSV)",referencia,4,1.40075,0.0,2292.301
+"Optimo (1 hilo, lxml, Parquet)",optimo,5,1.16808,0.0,22.324
+"Base E1 (1 hilo, html.parser, CSV)",referencia,5,1.46654,0.0,2292.301

@@ -62,13 +62,13 @@ def limpiar_precio(texto):
         return None
 
 
-def parsear_tabla_sniim(html, plaza_info, captura_ts, url_origen, producto_fijo=None, calidad_fija="Primera"):
+def parsear_tabla_sniim(html, plaza_info, captura_ts, url_origen, producto_fijo=None, calidad_fija="Primera", parser="html.parser"):
     """
     Lee las filas <tr> de la tabla del SNIIM y regresa una lista de diccionarios.
     Nota: cuando se pide ProductoId=-1 la tabla trae 9 columnas, pero cuando se
     consulta un solo producto el SNIIM quita Producto y Calidad y deja 7 columnas.
     """
-    soup = BeautifulSoup(html, "html.parser")
+    soup = BeautifulSoup(html, parser)
     registros = []
 
     for fila in soup.find_all("tr"):

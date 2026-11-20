@@ -1,0 +1,92 @@
+{
+  "descripcion": "Copia local congelada de paginas HTML del SNIIM para diseño experimental reproducible (E2)",
+  "fecha_captura_utc": "2026-11-20T04:05:55.199589+00:00",
+  "total_paginas": 6,
+  "total_filas_referencia_lote": 2423,
+  "paginas": [
+    {
+      "indice": 1,
+      "archivo": "page_01_colima_w1.html",
+      "plaza_id": 80,
+      "ciudad": "Colima",
+      "estado": "Colima",
+      "nombre_plaza": "Colima: Centros de distribucion de Colima",
+      "fecha_inicio": "01/10/2026",
+      "fecha_final": "15/10/2026",
+      "tamano_bytes": 148129,
+      "filas_referencia": 188,
+      "url_origen": "http://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=15%2F10%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "sha256": "c6d5302b01607a773b428ae2cead2f7cf0575ccf5a5f6ec7dc3f67132247f025"
+    },
+    {
+      "indice": 2,
+      "archivo": "page_02_colima_w2.html",
+      "plaza_id": 80,
+      "ciudad": "Colima",
+      "estado": "Colima",
+      "nombre_plaza": "Colima: Centros de distribucion de Colima",
+      "fecha_inicio": "16/10/2026",
+      "fecha_final": "31/10/2026",
+      "tamano_bytes": 181765,
+      "filas_referencia": 235,
+      "url_origen": "http://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=16%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=80&Destino=Colima&PreciosPorId=1&RegistrosPorPagina=500",
+      "sha256": "ea0420b5babcdd04d175b1678ab7f99c92373f81e14760f7c9804c3c8dbba92e"
+    },
+    {
+      "indice": 3,
+      "archivo": "page_03_guadalajara_w1.html",
+      "plaza_id": 140,
+      "ciudad": "Guadalajara",
+      "estado": "Jalisco",
+      "nombre_plaza": "Jalisco: Mercado de Abasto de Guadalajara",
+      "fecha_inicio": "01/10/2026",
+      "fecha_final": "15/10/2026",
+      "tamano_bytes": 381493,
+      "filas_referencia": 500,
+      "url_origen": "http://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=15%2F10%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "sha256": "393e0730f86d3cedebe4ae77db4bb91a082ed1dfb320d21c48e0d33d885dfcbe"
+    },
+    {
+      "indice": 4,
+      "archivo": "page_04_guadalajara_w2.html",
+      "plaza_id": 140,
+      "ciudad": "Guadalajara",
+      "estado": "Jalisco",
+      "nombre_plaza": "Jalisco: Mercado de Abasto de Guadalajara",
+      "fecha_inicio": "16/10/2026",
+      "fecha_final": "31/10/2026",
+      "tamano_bytes": 381718,
+      "filas_referencia": 500,
+      "url_origen": "http://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=16%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=140&Destino=Guadalajara&PreciosPorId=1&RegistrosPorPagina=500",
+      "sha256": "fe0f2ebe74dedd3b23094415d397462962eb65f00252443dd91f38bf9bf194b5"
+    },
+    {
+      "indice": 5,
+      "archivo": "page_05_morelia_w1.html",
+      "plaza_id": 160,
+      "ciudad": "Morelia",
+      "estado": "Michoacan",
+      "nombre_plaza": "Michoacan: Mercado de Abasto de Morelia",
+      "fecha_inicio": "01/10/2026",
+      "fecha_final": "15/10/2026",
+      "tamano_bytes": 377892,
+      "filas_referencia": 500,
+      "url_origen": "http://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F10%2F2026&fechaFinal=15%2F10%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "sha256": "996e8373b717433d6348e45d18148eb7ebe102722e7edb9dafecb109e1e5de1f"
+    },
+    {
+      "indice": 6,
+      "archivo": "page_06_morelia_w2.html",
+      "plaza_id": 160,
+      "ciudad": "Morelia",
+      "estado": "Michoacan",
+      "nombre_plaza": "Michoacan: Mercado de Abasto de Morelia",
+      "fecha_inicio": "16/10/2026",
+      "fecha_final": "31/10/2026",
+      "tamano_bytes": 377592,
+      "filas_referencia": 500,
+      "url_origen": "http://www.economia-sniim.gob.mx/nuevo/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=16%2F10%2F2026&fechaFinal=31%2F10%2F2026&ProductoId=-1&OrigenId=-1&Origen=Todos&DestinoId=160&Destino=Morelia&PreciosPorId=1&RegistrosPorPagina=500",
+      "sha256": "ed8e86b0cb0dc28c8ae9d1ab533edbc9f3e22564333a6523fe5031ca8e1d7909"
+    }
+  ]
+}
