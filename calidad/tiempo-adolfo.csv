@@ -13,3 +13,4 @@ fecha,inicio,fin,interrupcion_min,fase,actividad
 2026-11-18,17:00,20:00,15,codigo,Implementacion de extractores/denue_geo.py union espacial en enriquecer_geo.py y linaje de datos en construir_oro.py
 2026-11-19,16:30,19:30,15,codigo,Implementacion de evaluador ISO/IEC 25010 y 25012 workflow CI Puerta 2 mapa pydeck en tablero y pruebas test_e2_geo_iso.py
 2026-11-19,19:45,21:15,10,revision,Revision cruzada como Quality Lead de resultados experimentales 2^3 e informe estadistico E2
+2026-11-19,21:20,22:20,5,pruebas,Auditoria QA full-stack pruebas E2E headless de tablero (test_tablero_e2e.py) correccion de logo roto deprecaciones Streamlit fugas Matplotlib y validacion en GitHub Actions CI
