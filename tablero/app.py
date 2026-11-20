@@ -16,6 +16,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import pydeck as pdk
 import streamlit as st
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -80,10 +81,32 @@ def cargar_bitacora():
     return pd.DataFrame()
 
 
+@st.cache_data
+def cargar_datos_geo():
+    ruta_geo = DIR_PLATA / "denue_occidente_geo.csv"
+    ruta_muns = RAIZ / "data" / "bronce" / "denue_inegi" / "municipios_occidente.geojson"
+    df_g = pd.read_csv(ruta_geo) if ruta_geo.exists() else pd.DataFrame()
+    muns = json.loads(ruta_muns.read_text(encoding="utf-8")) if ruta_muns.exists() else {}
+    return df_g, muns
+
+
+@st.cache_data
+def cargar_resultados_e2():
+    ruta_exp = DIR_LAB / "resultados_experimento_e2.json"
+    ruta_25010 = DIR_CALIDAD / "resultados_iso_25010.json"
+    ruta_25012 = DIR_CALIDAD / "resultados_iso_25012.json"
+    exp = json.loads(ruta_exp.read_text(encoding="utf-8")) if ruta_exp.exists() else {}
+    r10 = json.loads(ruta_25010.read_text(encoding="utf-8")) if ruta_25010.exists() else {}
+    r12 = json.loads(ruta_25012.read_text(encoding="utf-8")) if ruta_25012.exists() else {}
+    return exp, r10, r12
+
+
 df_oro = cargar_datos_oro()
 df_pron, df_metricas, df_corr, adf_data = cargar_pronosticos()
 df_cuarentena = cargar_cuarentena()
 df_bitacora = cargar_bitacora()
+df_geo, geojson_muns = cargar_datos_geo()
+exp_e2, iso_25010, iso_25012 = cargar_resultados_e2()
 
 # ----------------- BARRA LATERAL (SIDEBAR) -----------------
 st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Logo-TecNM.svg/320px-Logo-TecNM.svg.png", width=160)
@@ -127,6 +150,8 @@ pestanas = st.tabs([
     "📈 Visor de Precios y Mercado",
     "🔬 Laboratorio de Pronósticos 2027",
     "🛡️ Calidad de Datos, Cuarentena & SQA",
+    "🗺️ Mapa Geoespacial DENUE",
+    "⚗️ Experimento 2³ & Normas ISO",
 ])
 
 # ================= PESTAÑA 1: VISOR DE PRECIOS =================
@@ -352,10 +377,23 @@ with pestanas[2]:
     Supervisión técnica de la arquitectura Medallion, cumplimiento de puertas de calidad y estado de salud operativa.
     """)
 
-    # KPIs de Calidad
+    # KPIs de Calidad dinamicos
+    disp_str = "N/D"
+    delta_disp = "Sin bitacora"
+    if not df_bitacora.empty and "modo" in df_bitacora.columns:
+        prod_b = df_bitacora[df_bitacora["modo"] == "diario"]
+        if not prod_b.empty:
+            ex = int((prod_b["estado"] == "EXITO").sum())
+            tot = len(prod_b)
+            disp_str = f"{(ex / tot) * 100.0:.1f}%"
+            delta_disp = f"{ex} / {tot} corridas diarias"
+
+    iso10_val = f"{iso_25010['puntaje_global_pct']:.1f}%" if iso_25010 else "N/D"
+    iso12_val = f"{iso_25012['puntaje_global_pct']:.1f}%" if iso_25012 else "N/D"
+
     k1, k2, k3, k4 = st.columns(4)
-    k1.metric("Disponibilidad Operativa", "100.0%", delta="Meta SQA: ≥ 95%")
-    k2.metric("Cobertura de Tests (Pytest)", "91.0%", delta="11 / 11 aprobados")
+    k1.metric("Disponibilidad Operativa", disp_str, delta=delta_disp)
+    k2.metric("Indice ISO/IEC 25010", iso10_val, delta=f"ISO 25012 Datos: {iso12_val}")
     k3.metric("Registros Limpios en Plata", f"{len(pd.read_csv(DIR_PLATA / 'canasta_occidente_plata.csv')):,}" if (DIR_PLATA / "canasta_occidente_plata.csv").exists() else "0")
     k4.metric("Registros en Cuarentena", f"{len(df_cuarentena)}" if not df_cuarentena.empty else "0", delta="Puerta 1 activa", delta_color="inverse")
 
@@ -395,8 +433,193 @@ with pestanas[2]:
     st.subheader("📑 Documentación y Entregables de Calidad")
     st.markdown("""
     - **Plan SQA IEEE 730:** `docs/E1/plan_sqa_ieee730.md`
-    - **Diccionario de Datos:** `pipeline/diccionario_datos.md`
-    - **Informe de Series de Tiempo:** `laboratorio/informe_estadistico.md`
-    - **Ficha Ejecutiva E1:** `docs/E1/ENTREGA.md`
-    - **Relatoría Metodológica:** `docs/relatoria-E1.md`
+    - **Evaluación ISO/IEC 25010 y 25012:** `docs/E2/evaluacion_iso_25010_25012.md`
+    - **Declaración de Ética y LFPDPPP:** `docs/etica-datos.md`
+    - **Diccionario de Datos v2.0:** `pipeline/diccionario_datos.md`
+    - **Manifiesto de Linaje Oro:** `data/oro/linaje_oro.json`
+    - **Auditoría Cruzada:** `docs/E2/auditoria_cruzada.md`
     """)
+
+# ================= PESTAÑA 4: MAPA GEOESPACIAL DENUE =================
+with pestanas[3]:
+    st.header("🗺️ Cobertura Comercial Geoespacial (INEGI DENUE + Marco Geoestadístico)")
+    st.markdown("""
+    Unión espacial (`within`) sobre polígonos municipales oficiales del INEGI (CRS `EPSG:4326`), midiendo
+    la concentración de fruterías, abarroteras y cocinas económicas respecto a cada Central de Abasto.
+    *Cumplimiento estricto LFPDPPP: cero teléfonos, correos ni domicilios personales.*
+    """)
+
+    if df_geo.empty:
+        st.info("Ejecuta `python -m extractores.ejecutar_captura --modo geo` y `python pipeline/enriquecer_geo.py`.")
+    else:
+        col_f1, col_f2 = st.columns(2)
+        plazas_geo_disp = sorted(df_geo["ciudad_plaza"].dropna().unique().tolist())
+        plaza_geo_sel = col_f1.selectbox(
+            "📍 Selecciona Plaza para centrar mapa:",
+            plazas_geo_disp,
+            index=plazas_geo_disp.index("Colima") if "Colima" in plazas_geo_disp else 0,
+        )
+        cats_disp = ["Todas las Categorías"] + sorted(df_geo["categoria_canastita"].dropna().unique().tolist())
+        cat_geo_sel = col_f2.selectbox("🏪 Categoría Comercial (Canastita):", cats_disp, index=0)
+
+        df_geo_f = df_geo[df_geo["ciudad_plaza"] == plaza_geo_sel].copy()
+        if cat_geo_sel != "Todas las Categorías":
+            df_geo_f = df_geo_f[df_geo_f["categoria_canastita"] == cat_geo_sel].copy()
+
+        # KPIs Geoespaciales
+        total_g = len(df_geo_f)
+        dist_med = df_geo_f["distancia_central_abasto_km"].mean() if total_g else 0.0
+        pct_nucleo = (df_geo_f["distancia_central_abasto_km"] < 2.0).mean() * 100.0 if total_g else 0.0
+        pct_within = df_geo_f["cvegeo_mun"].notna().mean() * 100.0 if total_g else 0.0
+
+        g1, g2, g3, g4 = st.columns(4)
+        g1.metric("Establecimientos en Mapa", f"{total_g:,}")
+        g2.metric("Distancia Media a Central", f"{dist_med:.2f} km")
+        g3.metric("Dentro de Polígono INEGI", f"{pct_within:.1f}%")
+        g4.metric("Zona Núcleo (< 2 km)", f"{pct_nucleo:.1f}%")
+
+        # Asignar colores RGB segun categoria para pydeck
+        colores_rgb = {
+            "Fruteria / Mercado": [46, 160, 67, 210],
+            "Abarrotes / Miscelanea": [31, 119, 180, 185],
+            "Cocina economica / Restaurante": [255, 127, 14, 175],
+        }
+        df_geo_f["color_rgba"] = df_geo_f["categoria_canastita"].map(
+            lambda x: colores_rgb.get(x, [120, 120, 120, 160])
+        )
+
+        centrales_ref = {
+            "Colima": {"lat": 19.2248, "lon": -103.7325, "nombre_comercial": "CENTRAL DE ABASTO DE COLIMA", "categoria_canastita": "Nodo Mayorista SNIIM", "anillo_logistico": "0 km (Origen)", "distancia_central_abasto_km": 0.0},
+            "Guadalajara": {"lat": 20.6540, "lon": -103.3830, "nombre_comercial": "MERCADO DE ABASTO DE GUADALAJARA", "categoria_canastita": "Nodo Mayorista SNIIM", "anillo_logistico": "0 km (Origen)", "distancia_central_abasto_km": 0.0},
+            "Morelia": {"lat": 19.7230, "lon": -101.1780, "nombre_comercial": "MERCADO DE ABASTO DE MORELIA", "categoria_canastita": "Nodo Mayorista SNIIM", "anillo_logistico": "0 km (Origen)", "distancia_central_abasto_km": 0.0},
+        }
+        central_info = centrales_ref.get(plaza_geo_sel, {"lat": 19.24, "lon": -103.72, "nombre_comercial": plaza_geo_sel, "categoria_canastita": "Central", "anillo_logistico": "0 km", "distancia_central_abasto_km": 0.0})
+        df_central = pd.DataFrame([central_info])
+
+        capas_pdk = []
+        if geojson_muns:
+            capas_pdk.append(
+                pdk.Layer(
+                    "GeoJsonLayer",
+                    data=geojson_muns,
+                    stroked=True,
+                    filled=True,
+                    get_fill_color=[31, 119, 180, 22],
+                    get_line_color=[31, 119, 180, 140],
+                    line_width_min_pixels=2,
+                )
+            )
+
+        capas_pdk.append(
+            pdk.Layer(
+                "ScatterplotLayer",
+                data=df_geo_f,
+                get_position="[longitud, latitud]",
+                get_fill_color="color_rgba",
+                get_radius=38,
+                radius_min_pixels=3,
+                radius_max_pixels=10,
+                pickable=True,
+            )
+        )
+        capas_pdk.append(
+            pdk.Layer(
+                "ScatterplotLayer",
+                data=df_central,
+                get_position="[lon, lat]",
+                get_fill_color=[214, 39, 40, 255],
+                get_line_color=[255, 255, 255, 255],
+                stroked=True,
+                line_width_min_pixels=2,
+                get_radius=220,
+                radius_min_pixels=9,
+                pickable=True,
+            )
+        )
+
+        vista_inicial = pdk.ViewState(
+            latitude=float(df_geo_f["latitud"].mean()) if total_g else central_info["lat"],
+            longitude=float(df_geo_f["longitud"].mean()) if total_g else central_info["lon"],
+            zoom=12.2,
+            pitch=0,
+        )
+        st.pydeck_chart(
+            pdk.Deck(
+                map_style="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+                initial_view_state=vista_inicial,
+                layers=capas_pdk,
+                tooltip={"text": "{nombre_comercial}\n{categoria_canastita}\n{anillo_logistico}\nDistancia: {distancia_central_abasto_km} km"},
+            )
+        )
+        st.caption("Verde: Fruterías / Mercados | Azul: Abarrotes | Naranja: Cocinas / Restaurantes | Punto Rojo: Central de Abasto.")
+
+        col_geo_l, col_geo_r = st.columns(2)
+        with col_geo_l:
+            st.subheader("📊 Distribución por Anillo Logístico")
+            if not df_geo_f.empty:
+                resumen_anillos = df_geo_f["anillo_logistico"].value_counts().reset_index()
+                resumen_anillos.columns = ["Anillo Logístico", "Establecimientos"]
+                st.dataframe(resumen_anillos, use_container_width=True, hide_index=True)
+
+        with col_geo_r:
+            st.subheader("📋 Muestra Pública DENUE (Cero PII)")
+            cols_ver = ["nombre_comercial", "categoria_canastita", "colonia", "nombre_municipio_geo", "distancia_central_abasto_km"]
+            st.dataframe(df_geo_f[cols_ver].head(15), use_container_width=True, hide_index=True)
+
+# ================= PESTAÑA 5: EXPERIMENTO 2^3 & NORMAS ISO =================
+with pestanas[4]:
+    st.header("⚗️ Experimento Factorial 2³ & Evaluación ISO/IEC 25010 / 25012")
+    st.markdown("""
+    Resultados experimentales de la **Ruta Ingeniería** sobre copia local congelada del SNIIM
+    (`data/bronce/sniim_html_snapshot/`) y certificación cuantitativa bajo la familia **SQuaRE**.
+    """)
+
+    if not exp_e2:
+        st.info("Ejecuta `python laboratorio/experimento_factorial_2k.py` para generar el experimento.")
+    else:
+        conf_e2 = exp_e2.get("confirmacion", {})
+        exp1_e2 = exp_e2.get("experimento_2_3", {})
+        sup_e2 = exp1_e2.get("supuestos_escala_original", {})
+        f24_e2 = exp_e2.get("comparativa_2_4_fraccionado", {})
+
+        e1, e2, e3, e4 = st.columns(4)
+        e1.metric("Configuración Óptima", conf_e2.get("optimo_descripcion", "N/D"))
+        e2.metric("Tiempo Óptimo Confirmado", f"{conf_e2.get('optimo_media_obs_seg', 0):.3f} s", delta=f"{conf_e2.get('mejora_tiempo_vs_referencia_pct', 0):.1f}% más rápido vs E1")
+        e3.metric("Ahorro Disco Parquet", f"{exp1_e2.get('ahorro_espacio_parquet_pct', 0):.2f}%", delta=f"{exp1_e2.get('tasa_error_global_pct', 0):.1f}% tasa de error")
+        e4.metric("Ahorro Diseño 2^(4-1)", f"{f24_e2.get('ahorro_pct', 50):.0f}%", delta=f"Resolución {f24_e2.get('resolucion', 'IV')} ({f24_e2.get('relacion_definidora', 'I=ABCD')})")
+
+        st.markdown(f"""
+        - **Puerta 3 Estadística (Supuestos ANOVA 2³):** Shapiro-Wilk `p = {sup_e2.get('shapiro_p')}` (`normalidad={sup_e2.get('normalidad_cumplida')}`) · Levene `p = {sup_e2.get('levene_p')}` (`homocedasticidad={sup_e2.get('homocedasticidad_cumplida')}`) · Durbin-Watson = `{sup_e2.get('durbin_watson')}`.
+        - **Corrida de confirmación al 95%:** Intervalo predicho `[{conf_e2.get('ic95_inf_seg')}, {conf_e2.get('ic95_sup_seg')}] s` vs media observada **`{conf_e2.get('optimo_media_obs_seg')} s`** (Dentro de IC 95%: `{conf_e2.get('confirmacion_dentro_ic95')}`).
+        """)
+
+        col_img1, col_img2 = st.columns(2)
+        with col_img1:
+            p_ef = DIR_LAB / "graficos" / "efectos_principales_2_3.png"
+            if p_ef.exists():
+                st.image(str(p_ef), caption="Efectos Principales del Diseño Factorial 2³", use_container_width=True)
+            p_2v = DIR_LAB / "graficos" / "interaccion_2vias_lote_formato.png"
+            if p_2v.exists():
+                st.image(str(p_2v), caption="ANOVA 2 Vías (3x3): Lote x Formato de Salida", use_container_width=True)
+
+        with col_img2:
+            p_in = DIR_LAB / "graficos" / "interacciones_2_3.png"
+            if p_in.exists():
+                st.image(str(p_in), caption="Gráficas de Interacción Doble (2³)", use_container_width=True)
+            p_cf = DIR_LAB / "graficos" / "confirmacion_optimo_vs_base.png"
+            if p_cf.exists():
+                st.image(str(p_cf), caption="Corrida de Confirmación: Óptimo vs Base E1", use_container_width=True)
+
+        st.markdown("---")
+        col_iso1, col_iso2 = st.columns(2)
+        with col_iso1:
+            st.subheader(f"📐 Calidad del Producto ISO/IEC 25010 ({iso_25010.get('puntaje_global_pct', 0)}%)")
+            if iso_25010 and "caracteristicas" in iso_25010:
+                df_i10 = pd.DataFrame(iso_25010["caracteristicas"])[["caracteristica", "valor_medido", "calificacion_pct"]]
+                st.dataframe(df_i10, use_container_width=True, hide_index=True)
+
+        with col_iso2:
+            st.subheader(f"🗄️ Calidad de Datos ISO/IEC 25012 ({iso_25012.get('puntaje_global_pct', 0)}%)")
+            if iso_25012 and "caracteristicas" in iso_25012:
+                df_i12 = pd.DataFrame(iso_25012["caracteristicas"])[["caracteristica", "categoria", "puntaje_pct"]]
+                st.dataframe(df_i12, use_container_width=True, hide_index=True)

@@ -1,0 +1,102 @@
+{
+  "fecha_evaluacion_utc": "2026-11-20T04:14:18.435722+00:00",
+  "norma": "ISO/IEC 25012",
+  "registros_oro": 963,
+  "completitud_obligatoria_pct": 100.0,
+  "completitud_global_pct": 98.63,
+  "trazabilidad_pct": 100.0,
+  "comprensibilidad_diccionario_pct": 100.0,
+  "caracteristicas": [
+    {
+      "caracteristica": "Exactitud sintactica",
+      "categoria": "Inherente",
+      "valor": "100.0% formatos YYYY-MM validos",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Exactitud semantica",
+      "categoria": "Inherente",
+      "valor": "100.0% coherencia min <= promedio <= max (>0)",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Completitud",
+      "categoria": "Inherente",
+      "valor": "100.0% obligatoria / 98.63% global en 963 filas",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Consistencia",
+      "categoria": "Inherente",
+      "valor": "100.0% coherencia spread y conversion USD",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Credibilidad",
+      "categoria": "Inherente",
+      "valor": "100.0% respaldo oficial SNIIM + Banxico + INEGI",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Actualidad",
+      "categoria": "Inherente / Sist.",
+      "valor": "Ultimo periodo 2026-11 al dia con captura diaria (2026-11)",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Accesibilidad",
+      "categoria": "Inherente / Sist.",
+      "valor": "Tablero Streamlit + CSV/GeoJSON/Parquet abiertos",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Conformidad",
+      "categoria": "Inherente / Sist.",
+      "valor": "ISO 8601 + EPSG:4326 (union espacial 100.0%) + UTF-8",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Confidencialidad",
+      "categoria": "Inherente / Sist.",
+      "valor": "0 PII (LFPDPPP) y 0 secretos",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Eficiencia",
+      "categoria": "Inherente / Sist.",
+      "valor": "Oro Parquet reduce 76.31% frente a CSV (73.1 vs 308.5 KB)",
+      "puntaje_pct": 95.0
+    },
+    {
+      "caracteristica": "Precision",
+      "categoria": "Inherente / Sist.",
+      "valor": "Decimales homologados (2 MXN, 4 USD/FIX, 3 INPC)",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Trazabilidad",
+      "categoria": "Inherente / Sist.",
+      "valor": "100.0% filas con columnas _linaje_* + linaje_oro.json",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Comprensibilidad",
+      "categoria": "Inherente / Sist.",
+      "valor": "100.0% de columnas (34/34) documentadas en diccionario",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Disponibilidad",
+      "categoria": "Dependiente Sist.",
+      "valor": "100.0% de disponibilidad operativa real",
+      "puntaje_pct": 100.0
+    },
+    {
+      "caracteristica": "Portabilidad y Recuperabilidad",
+      "categoria": "Dependiente Sist.",
+      "valor": "Versionado Git + hashes SHA-256 + dualidad CSV/Parquet",
+      "puntaje_pct": 100.0
+    }
+  ],
+  "puntaje_global_pct": 99.67
+}

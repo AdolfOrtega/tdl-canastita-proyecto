@@ -1,0 +1,39 @@
+name: Puerta 2 - CI Calidad y Seguridad
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  puerta-2-calidad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Instalar dependencias del proyecto
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Verificar sintaxis y compilacion de modulos Python
+        run: |
+          python -m py_compile extractores/base.py extractores/sniim_canasta.py extractores/macro_api.py extractores/denue_geo.py extractores/snapshot_html_sniim.py pipeline/limpieza_plata.py pipeline/enriquecer_geo.py pipeline/construir_oro.py laboratorio/pronostico_series_tiempo.py laboratorio/experimento_factorial_2k.py calidad/evaluar_iso_25010_25012.py calidad/auditor_tdl.py tablero/app.py
+
+      - name: Ejecutar suite de pruebas unitarias e integracion con cobertura
+        run: |
+          pytest -v --cov=pipeline --cov=calidad --cov-fail-under=60 tests/
+
+      - name: Puerta de Seguridad y Completitud ISO/IEC 25012
+        run: |
+          python calidad/evaluar_iso_25010_25012.py --verificar-seguridad

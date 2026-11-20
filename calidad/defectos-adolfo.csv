@@ -7,3 +7,7 @@ numero,fecha,tipo,fase_introducido,fase_eliminado,minutos_correccion,defecto_ori
 6,2026-11-09,entorno,codigo,pruebas,15,,Al correr pytest con fastparquet/pyarrow en Windows la directiva WDAC bloqueo los DLLs de parquet; se corrigio implementando fallback transparente a CSV asegurando compatibilidad multiplataforma
 7,2026-11-10,datos,codigo,pruebas,10,,En Puerta 1 algunos registros del SNIIM tenian precio_frecuente fuera del rango min-max o max < min; se creo data/cuarentena/rechazos_plata.csv para aislarlos con auditoria
 8,2026-11-11,datos,codigo,pruebas,10,,Al agrupar en capa Oro algunas columnas opcionales en tests mocks causaban KeyError en redondeo; se agrego validacion defensiva de existencia de columnas
+9,2026-11-18,interfaz,codigo,pruebas,20,,API DENUE devolvio No hay resultados para Morelia por truncamiento de float a 3 decimales; se fijo precision de 6 decimales en construir_url_denue
+10,2026-11-18,datos,codigo,pruebas,15,,Consulta DENUE con palabra fruteria omitio fruterias en Guadalajara; se ajusto el giro de busqueda a frutas compatible con nomenclatura SCIAN
+11,2026-11-19,entorno,codigo,pruebas,20,,gpd.read_file fallo en Windows por DLL de pyogrio/GDAL; se implemento lectura GeoJSON por json.loads + GeoDataFrame.from_features y respaldo ray-casting
+12,2026-11-19,funcion,codigo,pruebas,10,,Al disenar escaner de secretos ISO 25010 los digests SHA-256 en .meta.json provocaban falsos positivos; se refinaron patrones especificos de tokens y UUID en URLs

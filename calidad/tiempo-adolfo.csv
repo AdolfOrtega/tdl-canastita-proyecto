@@ -9,3 +9,7 @@ fecha,inicio,fin,interrupcion_min,fase,actividad
 2026-11-10,16:00,19:30,20,codigo,Diseno e implementacion del modulo Capa Plata (limpieza_plata.py) reglas IQR y aislamiento a cuarentena
 2026-11-11,16:30,19:30,15,codigo,Diseno e implementacion de Capa Oro (construir_oro.py) join multifuente con Banxico FIX e INPC y diccionario de datos
 2026-11-12,17:00,20:30,20,pruebas,Integracion de pruebas de cobertura con pytest-cov (91%) soporte para tablero Streamlit y CI en GitHub Actions
+2026-11-17,16:00,18:30,15,diseno,Analisis de API INEGI DENUE v1 Marco Geoestadistico WSCatGeo y politicas de sanitizacion LFPDPPP
+2026-11-18,17:00,20:00,15,codigo,Implementacion de extractores/denue_geo.py union espacial en enriquecer_geo.py y linaje de datos en construir_oro.py
+2026-11-19,16:30,19:30,15,codigo,Implementacion de evaluador ISO/IEC 25010 y 25012 workflow CI Puerta 2 mapa pydeck en tablero y pruebas test_e2_geo_iso.py
+2026-11-19,19:45,21:15,10,revision,Revision cruzada como Quality Lead de resultados experimentales 2^3 e informe estadistico E2

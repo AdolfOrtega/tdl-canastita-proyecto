@@ -1,0 +1,93 @@
+{
+  "fecha_evaluacion_utc": "2026-11-20T04:14:18.424940+00:00",
+  "norma": "ISO/IEC 25010",
+  "seguridad_hallazgos_secretos": 0,
+  "seguridad_hallazgos_pii": 0,
+  "portabilidad_rutas_locales": 0,
+  "fiabilidad_detalle": {
+    "total_corridas_bitacora": 55,
+    "corridas_produccion_diario": 48,
+    "exitos_produccion": 48,
+    "fallas_produccion": 0,
+    "disponibilidad_prod_pct": 100.0,
+    "horas_monitoreo_produccion": 307.2,
+    "mtbf_horas_cota_inferior": 307.24,
+    "mttr_horas": 0.0,
+    "fallas_historicas_setup_e0": 2
+  },
+  "mantenibilidad_detalle": {
+    "archivos_python_analizados": 15,
+    "total_funciones": 79,
+    "funciones_documentadas_pct": 81.01,
+    "complejidad_ciclomatica_promedio": 4.71,
+    "complejidad_maxima_funcion": 19,
+    "evidencia_cobertura_presente": true
+  },
+  "caracteristicas": [
+    {
+      "id": 1,
+      "caracteristica": "Adecuacion funcional",
+      "metrica": "Fuentes activas integradas, capas Medallion (Bronce/Plata/Oro/Cuarentena/Geo) y tablero operativo",
+      "valor_medido": "3/3 fuentes (SNIIM, Banxico, DENUE+MGEM) y 9,650 puntos espaciales",
+      "umbral_objetivo": "3 fuentes + 4 capas",
+      "calificacion_pct": 100.0
+    },
+    {
+      "id": 2,
+      "caracteristica": "Eficiencia de desempeno",
+      "metrica": "Tiempo confirmado del punto optimo 2^3 y ahorro de disco con Parquet",
+      "valor_medido": "1.200s vs 1.443s (16.8% menos tiempo); 99.03% menos peso en Parquet",
+      "umbral_objetivo": "Mejora >= 10% y 0% error",
+      "calificacion_pct": 96.0
+    },
+    {
+      "id": 3,
+      "caracteristica": "Compatibilidad",
+      "metrica": "Interoperabilidad de formatos heterogeneos integrados al modelo comun",
+      "valor_medido": "HTML latin-1 + REST JSON + GeoJSON ITRF2008/WGS84 -> UTF-8 CSV/Parquet/GeoJSON",
+      "umbral_objetivo": "100% integracion sin perdida",
+      "calificacion_pct": 95.0
+    },
+    {
+      "id": 4,
+      "caracteristica": "Capacidad de interaccion (Usabilidad)",
+      "metrica": "Cobertura funcional en Streamlit con semaforo de compra, filtros, mapa pydeck e incertidumbre 95%",
+      "valor_medido": "5 pestanas interactivas y semaforo comprensible para el cliente (Restaurante Luisiana)",
+      "umbral_objetivo": ">= 4 vistas ejecutivas",
+      "calificacion_pct": 95.0
+    },
+    {
+      "id": 5,
+      "caracteristica": "Fiabilidad",
+      "metrica": "Disponibilidad operativa medida A = MTBF/(MTBF+MTTR) y Puerta 1 con cuarentena",
+      "valor_medido": "100.0% (48/48 corridas diarias en 307.2h; MTTR=0h)",
+      "umbral_objetivo": ">= 95.0%",
+      "calificacion_pct": 100.0
+    },
+    {
+      "id": 6,
+      "caracteristica": "Seguridad",
+      "metrica": "Secretos expuestos en codigo/datos y cumplimiento LFPDPPP (cero PII)",
+      "valor_medido": "0 secretos expuestos y 0 columnas PII en 92 archivos",
+      "umbral_objetivo": "0 secretos y 0 PII",
+      "calificacion_pct": 100.0
+    },
+    {
+      "id": 7,
+      "caracteristica": "Mantenibilidad",
+      "metrica": "Complejidad ciclomatica promedio de McCabe y tasa de docstrings en funciones",
+      "valor_medido": "CC promedio = 4.71, docstrings = 81.01% (79 funciones)",
+      "umbral_objetivo": "CC promedio <= 6 y doc >= 80%",
+      "calificacion_pct": 90.5
+    },
+    {
+      "id": 8,
+      "caracteristica": "Portabilidad",
+      "metrica": "Ausencia de rutas locales absolutas y compatibilidad Windows + Linux CI",
+      "valor_medido": "0 rutas locales absolutas; fallback puro Python + PyArrow/CSV",
+      "umbral_objetivo": "0 rutas locales absolutas",
+      "calificacion_pct": 100.0
+    }
+  ],
+  "puntaje_global_pct": 97.06
+}
