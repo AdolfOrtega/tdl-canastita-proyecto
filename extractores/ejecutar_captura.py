@@ -11,6 +11,7 @@ y registra cada corrida en calidad/bitacora_captura.csv.
 import argparse
 import csv
 import json
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -108,6 +109,48 @@ def ejecutar(modo="diario"):
     extractor = ExtractorEtico(pausa=1.5)
     hoy_str = datetime.now().strftime("%Y-%m-%d")
     fallos = 0
+
+    if modo == "geo":
+        from extractores.denue_geo import (
+            extraer_denue_occidente,
+            extraer_municipios_geojson,
+            guardar_bronce_geoespacial,
+            sanitizar_url_token,
+        )
+
+        t_geo = time.time()
+        ini_geo = datetime.now(timezone.utc).isoformat()
+        try:
+            regs_denue = extraer_denue_occidente(extractor=extractor)
+            geo_mun = extraer_municipios_geojson(extractor=extractor)
+            salidas = guardar_bronce_geoespacial(regs_denue, geo_mun)
+            registrar_bitacora(
+                fuente="INEGI_DENUE_MGEM_GEO",
+                modo=modo,
+                inicio_utc=ini_geo,
+                fin_utc=datetime.now(timezone.utc).isoformat(),
+                duracion_seg=time.time() - t_geo,
+                estado="EXITO",
+                registros_capturados=len(regs_denue),
+                archivo_salida=str(salidas["denue_csv"].relative_to(RAIZ_PROYECTO)),
+            )
+            print(f"OK - DENUE Geoespacial: {len(regs_denue)} establecimientos y {len(geo_mun['features'])} municipios guardados")
+            return 0
+        except Exception as e:
+            err_limpio = sanitizar_url_token(str(e), os.getenv("INEGI_TOKEN", ""))
+            registrar_bitacora(
+                fuente="INEGI_DENUE_MGEM_GEO",
+                modo=modo,
+                inicio_utc=ini_geo,
+                fin_utc=datetime.now(timezone.utc).isoformat(),
+                duracion_seg=time.time() - t_geo,
+                estado="FALLA",
+                registros_capturados=0,
+                archivo_salida="",
+                mensaje_error=err_limpio,
+            )
+            print(f"Error en DENUE Geoespacial: {err_limpio}")
+            return 1
 
     # Fuente 1: Scraping reciente de SNIIM (Colima, Guadalajara y Morelia)
     t0 = time.time()
@@ -263,9 +306,9 @@ def main():
     parser = argparse.ArgumentParser(description="Ejecuta la captura de datos en la capa bronce.")
     parser.add_argument(
         "--modo",
-        choices=["diario", "completo"],
+        choices=["diario", "completo", "geo"],
         default="diario",
-        help="diario (para GitHub Actions) o completo (descarga tambien el historico 2022-2026).",
+        help="diario (GitHub Actions), completo (incluye historico 2022-2026) o geo (fuente geoespacial DENUE-INEGI).",
     )
     args = parser.parse_args()
     sys.exit(ejecutar(modo=args.modo))

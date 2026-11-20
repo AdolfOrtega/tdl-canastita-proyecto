@@ -50,3 +50,7 @@ timestamp_inicio_utc,timestamp_fin_utc,fuente,modo,duracion_seg,estado,registros
 2026-11-19T21:13:12.992633+00:00,2026-11-19T21:13:17.970520+00:00,SNIIM_SCRAPER_REC,diario,4.978,EXITO,1470,data/bronce/sniim_canasta/fecha=2026-11-19/sniim_reciente_2026-11-19.csv,
 2026-11-19T21:13:17.970655+00:00,2026-11-19T21:13:18.706486+00:00,BANXICO_SIE_SF43718_USDMXN,diario,0.736,EXITO,1218,data/bronce/macro_api/tipo_cambio/usd_mxn_historico_2022_2026.csv,
 2026-11-19T21:13:18.706608+00:00,2026-11-19T21:13:20.286704+00:00,BANXICO_SIE_SP1_INPC,diario,1.58,EXITO,58,data/bronce/macro_api/inflacion/inpc_inflacion_mexico_historico.csv,
+2026-11-20T03:54:53.721098+00:00,2026-11-20T03:55:19.094625+00:00,INEGI_DENUE_MGEM_GEO,geo,25.374,EXITO,3296,data\bronce\denue_inegi\denue_occidente_raw.csv,
+2026-11-20T03:58:42.342297+00:00,2026-11-20T03:59:28.415344+00:00,INEGI_DENUE_MGEM_GEO,geo,46.073,EXITO,6160,data\bronce\denue_inegi\denue_occidente_raw.csv,
+2026-11-20T04:00:39.475687+00:00,2026-11-20T04:02:26.007173+00:00,INEGI_DENUE_MGEM_GEO,geo,106.531,EXITO,6160,data\bronce\denue_inegi\denue_occidente_raw.csv,
+2026-11-20T04:04:06.164624+00:00,2026-11-20T04:04:32.900409+00:00,INEGI_DENUE_MGEM_GEO,geo,26.736,EXITO,9650,data\bronce\denue_inegi\denue_occidente_raw.csv,

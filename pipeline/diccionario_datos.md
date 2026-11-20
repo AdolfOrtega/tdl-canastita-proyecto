@@ -4,7 +4,7 @@
 **Institución:** Instituto Tecnológico de Colima (TecNM)  
 **Equipo:** Adolfo Rodríguez (Ingeniería de Datos) y Andrea Tairi Velázquez Gallardo (Análisis Estadístico)  
 **Fecha:** Noviembre 2026  
-**Versión:** 1.0 (Entrega E1)
+**Versión:** 2.0 (Entrega E2 — Geoespacial y Linaje)
 
 ---
 
@@ -81,6 +81,48 @@ El observatorio sigue el patrón de arquitectura Medallion para garantizar el li
 | `variacion_yoy_pct` | Float | Sí (<12 meses)| $\frac{P_t - P_{t-12}}{P_{t-12}} \times 100$ | Tasa de variación porcentual anualizada. | `-8.50` |
 | `media_movil_3m` | Float | No | Rolling 3 meses de $P_{\text{promedio}}$ | Tendencia suavizada trimestral del insumo. | `26.80` |
 | `inflacion_mensual_pct` | Float | Sí (1er mes) | $\frac{\text{INPC}_t - \text{INPC}_{t-1}}{\text{INPC}_{t-1}} \times 100$ | Tasa de inflación mensual general de la economía. | `+0.45` |
+| `comercios_denue_radio` | Integer | No | $\text{Count}(id\_denue)$ por `plaza_id` | Total de establecimientos comerciales de la cadena agroalimentaria captados en la ciudad sede. | `2881` |
+| `fruterias_mercados_cercanos` | Integer | No | Suma donde categoría = Frutería / Mercado | Puntos de abasto minorista de fruta y verdura cercanos a la plaza. | `170` |
+| `cocinas_restaurantes_cercanos` | Integer | No | Suma donde categoría = Cocina / Restaurante | Establecimientos de comida preparada que demandan insumos frescos. | `1785` |
+| `abarrotes_cercanos` | Integer | No | Suma donde categoría = Abarrotes | Misceláneas y tiendas de abarrotes de barrio en el radio analizado. | `926` |
+| `distancia_media_abasto_km` | Float | No | $\text{Media}(\text{Haversine}(lat, lon, \text{Central}))$ | Distancia promedio (km) desde los comercios hasta la Central de Abasto. | `2.145` |
+| `cvegeo_sede` | String | No | Moda de `cvegeo_mun` tras unión espacial | Clave geoestadística municipal oficial del INEGI (Marco Geoestadístico). | `"06002"` |
+| `_linaje_fuente_precios` | String | No | Constante de origen de cotizaciones | Identificador de la fuente oficial de precios mayoristas. | `"SNIIM_SE"` |
+| `_linaje_fuente_macro` | String | No | Constante de origen macroeconómico | Series oficiales de Banco de México integradas (`SF43718`, `SP1`). | `"BANXICO_SIE_SF43718_SP1"` |
+| `_linaje_fuente_geo` | String | No | Identificador de origen espacial | Fuente comercial y cartográfica oficial (`INEGI DENUE v1 + MGEM`). | `"INEGI_DENUE_v1_MGEM"` |
+| `_linaje_fecha_captura_sniim` | String | No | $\max(\text{\_capturado\_en\_utc})$ del grupo | Marca temporal UTC exacta de captura del registro SNIIM más reciente del grupo. | `"2026-11-19T21:12:48+00:00"` |
+| `_linaje_fecha_proceso_oro_utc` | String | No | Timestamp UTC de ejecución Oro | Fecha y hora UTC de consolidación del lote analítico en Capa Oro. | `"2026-11-20T04:00:00+00:00"` |
+| `_linaje_version_pipeline` | String | No | Control de versión de esquema | Versión del pipeline Medallion que generó el registro. | `"2.0-E2"` |
+
+---
+
+## 3b. Capa Plata Geoespacial (`data/plata/denue_occidente_geo.csv` y `.geojson`)
+
+* **Grano:** Un establecimiento comercial único (`id_denue`) sanitizado de datos personales (LFPDPPP) y enriquecido por unión espacial `within` con el Marco Geoestadístico Nacional INEGI (CRS `EPSG:4326`).
+* **Fuentes:** API DENUE v1 (`frutas`, `abarrotes`, `restaurante`) + INEGI WSCatGeo municipios (`06002`, `06010`, `14039`, `16053`).
+
+| Nombre de Columna | Tipo de Dato | Descripción de Negocio / Regla de Derivación | Ejemplo |
+| :--- | :--- | :--- | :--- |
+| `id_denue` | String | Identificador único DENUE del establecimiento comercial (deduplicado). | `"318244"` |
+| `nombre_comercial` | String | Denominación comercial pública sin razón social personal. | `"FRUTERIA DELTA"` |
+| `clase_actividad` | String | Clasificación SCIAN oficial del establecimiento. | `"Comercio al por menor de frutas..."` |
+| `giro_consulta` | String | Palabra clave de extracción (`frutas`, `abarrotes`, `restaurante`). | `"frutas"` |
+| `estrato_personal` | String | Rango censal de tamaño del negocio por personal ocupado. | `"0 a 5 personas"` |
+| `plaza_id` | Integer | Plaza mayorista de referencia (`80`, `140`, `160`). | `80` |
+| `ciudad_plaza` | String | Ciudad sede (`Colima`, `Guadalajara`, `Morelia`). | `"Colima"` |
+| `colonia` | String | Asentamiento o colonia comercial sin calle ni número exterior/interior. | `"CENTRO"` |
+| `latitud`, `longitud` | Float | Coordenadas geográficas validadas en territorio nacional (`EPSG:4326`). | `19.2414`, `-103.7223` |
+| `cvegeo_mun` | String | Clave geoestadística municipal asignada mediante `sjoin` (`within`). | `"06002"` |
+| `nombre_municipio_geo` | String | Nombre oficial del municipio según el Marco Geoestadístico INEGI. | `"Colima"` |
+| `distancia_central_abasto_km` | Float | Distancia ortodrómica Haversine en kilómetros hasta la Central de Abasto. | `2.081` |
+| `anillo_logistico` | String | Discretización logística (`< 2 km`, `2 - 4 km`, `> 4 km`). | `"2 - 4 km (Anillo intermedio)"` |
+| `categoria_canastita` | String | Agrupación comercial para tablero (`Fruteria / Mercado`, `Abarrotes / Miscelanea`, `Cocina economica / Restaurante`). | `"Fruteria / Mercado"` |
+
+---
+
+## 3c. Manifiesto de Linaje de Datos (`data/oro/linaje_oro.json`)
+
+Archivo JSON estructurado que documenta la trazabilidad completa de extremo a extremo (`Bronce -> Plata -> Oro`), incluyendo la ruta relativa, tamaño en bytes, firma criptográfica `sha256` y fecha de captura UTC de cada insumo crudo, las reglas aplicadas por cada script de transformación y la correspondencia con las columnas `_linaje_*` de la Capa Oro.
 
 ---
 

@@ -1,0 +1,110 @@
+{
+  "esquema_linaje": "TDL-Canastita-Lineage-v2.0",
+  "fecha_generacion_utc": "2026-11-20T04:05:31.274994+00:00",
+  "destino_oro": {
+    "ruta": "data/oro/canasta_occidente_oro.csv",
+    "registros": 963,
+    "sha256_artefacto_primario": "a576d9850e65207edcae602052abb9eb26a4b14118be5b0a29605358a32e496f",
+    "columnas_linaje_fila": [
+      "_linaje_fecha_captura_sniim",
+      "_linaje_fuente_precios",
+      "_linaje_fuente_macro",
+      "_linaje_fuente_geo",
+      "_linaje_fecha_proceso_oro_utc",
+      "_linaje_version_pipeline"
+    ]
+  },
+  "grafo_transformacion": [
+    {
+      "etapa": "Bronce -> Plata (Precios SNIIM)",
+      "script": "pipeline/limpieza_plata.py",
+      "reglas": [
+        "Normalizacion regional de productos y plazas",
+        "Puerta 1 de calidad hacia data/cuarentena/rechazos_plata.csv",
+        "Deduplicacion por (fecha_iso, plaza_id, producto, origen, calidad)",
+        "Deteccion y acotamiento IQR por (producto, plaza_id)"
+      ]
+    },
+    {
+      "etapa": "Bronce -> Plata Geo (DENUE + Marco Geoestadistico)",
+      "script": "pipeline/enriquecer_geo.py",
+      "reglas": [
+        "Puerta 1 geoespacial: cero PII (LFPDPPP) y limites geograficos de Mexico",
+        "Union espacial point-in-polygon (EPSG:4326) con municipios INEGI",
+        "Calculo de distancia Haversine a Central de Abasto y anillos logisticos"
+      ]
+    },
+    {
+      "etapa": "Plata + Macro Banxico + Plata Geo -> Capa Oro",
+      "script": "pipeline/construir_oro.py",
+      "reglas": [
+        "Agregacion mensual por (anio_mes, plaza_id, producto)",
+        "Join analitico izquierdo con Banxico FIX (SF43718) e INPC (SP1)",
+        "Calculo de variaciones MoM%, YoY%, precio_usd, media movil 3M y spread",
+        "Join izquierdo con agregados comerciales geoespaciales por plaza_id",
+        "Inyeccion de trazabilidad _linaje_* por fila"
+      ]
+    }
+  ],
+  "entradas_bronce_principales": [
+    {
+      "ruta": "data/bronce/sniim_canasta/historico/sniim_occidente_historico_2022_2026.csv",
+      "existe": true,
+      "sha256": "c8f0cba3db8dc887884d10096ee1982d1820d3c72975653b8f1838fb8545e321",
+      "tamano_bytes": 6760173,
+      "fecha_captura_utc": "2026-11-06T07:15:32.127530+00:00"
+    },
+    {
+      "ruta": "data/bronce/macro_api/tipo_cambio/usd_mxn_historico_2022_2026.csv",
+      "existe": true,
+      "sha256": "8afa3157f0f81b443f500752ab9ad1fe451e43a0358dd220cea5804d1d973e89",
+      "tamano_bytes": 220310,
+      "fecha_captura_utc": "2026-11-19T21:13:18.704233+00:00"
+    },
+    {
+      "ruta": "data/bronce/macro_api/inflacion/inpc_inflacion_mexico_historico.csv",
+      "existe": true,
+      "sha256": "95e0c74afe06f518b00752b457d479990b804e951839c8d8ae22bcb0924bb364",
+      "tamano_bytes": 12163,
+      "fecha_captura_utc": "2026-11-19T21:13:20.286443+00:00"
+    },
+    {
+      "ruta": "data/bronce/denue_inegi/denue_occidente_raw.csv",
+      "existe": true,
+      "sha256": "a69fdc6ea91dd2ac2d0f70f7e6e77a0ef0ff8a845d24f79b6fba70b59ca42c84",
+      "tamano_bytes": 3379352,
+      "fecha_captura_utc": "2026-11-20T04:04:32.882921+00:00"
+    },
+    {
+      "ruta": "data/bronce/denue_inegi/municipios_occidente.geojson",
+      "existe": true,
+      "sha256": "6c3f305bfb0fad08eb122afd0c26419bbbe494fa0feedfa55cbbe006f11322e3",
+      "tamano_bytes": 339472,
+      "fecha_captura_utc": "2026-11-20T04:04:32.899406+00:00"
+    },
+    {
+      "ruta": "data/bronce/sniim_canasta/fecha=2026-11-19/sniim_reciente_2026-11-19.csv",
+      "existe": true,
+      "sha256": "565daaaee4cdde183f1b0eb4d85d69bcd8c703c86b5405bf8097ac886ae9be28",
+      "tamano_bytes": 721695,
+      "fecha_captura_utc": "2026-11-19T21:13:17.970376+00:00"
+    }
+  ],
+  "capturas_diarias_sniim_totales": 14,
+  "capas_plata_intermedias": [
+    {
+      "ruta": "data/plata/canasta_occidente_plata.csv",
+      "existe": true,
+      "sha256": "b1e6c11a3db4620c74966174cb1a6a3dd098740064a3d56e1fbca08732d767e5",
+      "tamano_bytes": 8025816,
+      "fecha_procesamiento_utc": "2026-11-20T04:05:31.199202+00:00"
+    },
+    {
+      "ruta": "data/plata/denue_occidente_geo.csv",
+      "existe": true,
+      "sha256": "4cdc015084e1bb13104777ceb738adc60409df0a8b8fcdb9c638c7901be103f2",
+      "tamano_bytes": 4084331,
+      "fecha_procesamiento_utc": "2026-11-20T04:05:00.115525+00:00"
+    }
+  ]
+}

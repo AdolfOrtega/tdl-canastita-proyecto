@@ -1,0 +1,15 @@
+{
+  "nombre_archivo": "municipios_occidente.geojson",
+  "descripcion": "Poligonos municipales oficiales del Marco Geoestadistico Nacional INEGI (Colima, Villa de Alvarez, Guadalajara, Morelia)",
+  "fuente": "INEGI Marco Geoestadistico WSCatGeo",
+  "crs": "EPSG:4326",
+  "fecha_captura_utc": "2026-11-20T04:04:32.899406+00:00",
+  "total_poligonos": 4,
+  "cvegeo_municipios": [
+    "06002",
+    "06010",
+    "14039",
+    "16053"
+  ],
+  "sha256_archivo": "6c3f305bfb0fad08eb122afd0c26419bbbe494fa0feedfa55cbbe006f11322e3"
+}

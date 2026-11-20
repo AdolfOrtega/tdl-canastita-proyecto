@@ -1,7 +1,7 @@
 {
   "capa": "Oro",
-  "descripcion": "Tabla analítica dimensional mensual integrada con precios mayoristas SNIIM e indicadores macro Banxico",
-  "fecha_procesamiento_utc": "2026-11-19T21:13:29.085345+00:00",
+  "descripcion": "Tabla analítica dimensional mensual integrada con precios mayoristas SNIIM, indicadores macro Banxico y densidad comercial geoespacial DENUE-INEGI",
+  "fecha_procesamiento_utc": "2026-11-20T04:05:31.274994+00:00",
   "total_registros_mensuales": 963,
   "total_meses_unicos": 59,
   "rango_periodos": {
@@ -72,10 +72,14 @@
     "Guanabana",
     "Naranja Valencia chica"
   ],
-  "sha256_artefacto": "b778edbb13be28f4a0aef8fdab912f861bf76d765a6be4dc92bd755ed7af3131",
+  "fuente_geoespacial_integrada": true,
+  "archivo_linaje": "data/oro/linaje_oro.json",
+  "sha256_csv": "a576d9850e65207edcae602052abb9eb26a4b14118be5b0a29605358a32e496f",
+  "sha256_artefacto": "06d0fde386648ce35549f876cc25a6601daab9650c0f192835c9248c3d59a571",
   "formato_primario": "parquet",
   "archivos_salida": {
     "parquet": "data/oro/canasta_occidente_oro.parquet",
-    "csv": "data/oro/canasta_occidente_oro.csv"
+    "csv": "data/oro/canasta_occidente_oro.csv",
+    "linaje": "data/oro/linaje_oro.json"
   }
 }

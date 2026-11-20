@@ -1,0 +1,23 @@
+{
+  "capa": "Plata Geoespacial",
+  "descripcion": "Comercios DENUE integrados mediante union espacial con poligonos municipales INEGI",
+  "fecha_procesamiento_utc": "2026-11-20T04:05:00.115525+00:00",
+  "motor_union_espacial": "geopandas_shapely",
+  "crs": "EPSG:4326",
+  "total_establecimientos": 9650,
+  "rechazados_cuarentena": 0,
+  "emparejados_dentro_poligono": 9650,
+  "tasa_emparejamiento_pct": 100.0,
+  "conteo_por_plaza": {
+    "Morelia": 3490,
+    "Guadalajara": 3279,
+    "Colima": 2881
+  },
+  "conteo_por_categoria": {
+    "Cocina economica / Restaurante": 5803,
+    "Abarrotes / Miscelanea": 2855,
+    "Fruteria / Mercado": 992
+  },
+  "sha256_csv": "4cdc015084e1bb13104777ceb738adc60409df0a8b8fcdb9c638c7901be103f2",
+  "sha256_geojson": "dc57d94e64988a5eab84f93804e1c8db61eaa4e3531edceaf3d6dcde77c9fd30"
+}

@@ -1,0 +1,46 @@
+{
+  "nombre_archivo": "denue_occidente_raw.csv",
+  "descripcion": "Establecimientos DENUE-INEGI alrededor de centrales de abasto de Colima, Guadalajara y Morelia (sin PII)",
+  "fuente": "INEGI DENUE API v1",
+  "fecha_captura_utc": "2026-11-20T04:04:32.882921+00:00",
+  "user_agent": "TDL-Observatorio/1.0 (proyecto academico; contacto: 23460528@colima.tecnm.mx)",
+  "total_registros": 9650,
+  "plazas_incluidas": [
+    80,
+    140,
+    160
+  ],
+  "giros_consultados": [
+    "frutas",
+    "abarrotes",
+    "restaurante"
+  ],
+  "campos_pii_excluidos_lfpdppp": [
+    "Telefono",
+    "Correo_e",
+    "Sitio_internet",
+    "Calle",
+    "Num_Exterior",
+    "Num_Interior",
+    "Tipo_vialidad",
+    "CP",
+    "Razon_social"
+  ],
+  "sha256_archivo": "a69fdc6ea91dd2ac2d0f70f7e6e77a0ef0ff8a845d24f79b6fba70b59ca42c84",
+  "columnas": [
+    "id_denue",
+    "nombre_comercial",
+    "clase_actividad",
+    "giro_consulta",
+    "estrato_personal",
+    "plaza_id",
+    "ciudad_plaza",
+    "estado_plaza",
+    "colonia",
+    "latitud",
+    "longitud",
+    "_fuente",
+    "_url_origen",
+    "_capturado_en_utc"
+  ]
+}
