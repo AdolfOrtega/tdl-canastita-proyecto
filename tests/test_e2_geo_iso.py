@@ -17,12 +17,23 @@ from extractores.denue_geo import (
     sanitizar_url_token,
 )
 from pipeline.enriquecer_geo import (
+    _punto_en_geometria,
     calcular_haversine_km,
     clasificar_categoria_y_anillo,
     ejecutar_union_espacial,
     filtrar_puerta_geoespacial,
+    procesar_capa_plata_geo,
 )
 from pipeline.construir_oro import agregar_linaje_oro, integrar_geoespacial_oro
+from calidad.evaluar_iso_25010_25012 import (
+    analizar_fiabilidad_bitacora,
+    analizar_mantenibilidad_codigo,
+    auditar_seguridad_y_portabilidad,
+    evaluar_iso_25010,
+    evaluar_iso_25012,
+    generar_reporte_iso_markdown,
+)
+from calidad.auditor_tdl import auditar_repositorio
 
 RAIZ = Path(__file__).resolve().parent.parent
 
@@ -142,14 +153,43 @@ def test_oro_linaje_y_geoespacial_completo():
 
 
 def test_evaluacion_iso_25010_25012_umbrales():
-    """Valida resultados ISO/IEC 25010 y 25012 (completitud >= 95% y cero secretos)."""
-    ruta_25010 = RAIZ / "calidad" / "resultados_iso_25010.json"
-    ruta_25012 = RAIZ / "calidad" / "resultados_iso_25012.json"
-    if not ruta_25010.exists() or not ruta_25012.exists():
-        pytest.skip("Resultados ISO aun no generados en este paso previo.")
+    """Ejecuta y valida el evaluador cuantitativo ISO/IEC 25010 y 25012."""
+    seg = auditar_seguridad_y_portabilidad()
+    mant = analizar_mantenibilidad_codigo()
+    fiab = analizar_fiabilidad_bitacora()
+    r10 = evaluar_iso_25010(seg, mant, fiab)
+    r12 = evaluar_iso_25012(seg, fiab)
+    md = generar_reporte_iso_markdown(r10, r12, seg)
 
-    r10 = json.loads(ruta_25010.read_text(encoding="utf-8"))
-    r12 = json.loads(ruta_25012.read_text(encoding="utf-8"))
     assert len(r10["caracteristicas"]) == 8
     assert r10["seguridad_hallazgos_secretos"] == 0
+    assert r10["seguridad_hallazgos_pii"] == 0
+    assert r10["portabilidad_rutas_locales"] == 0
     assert r12["completitud_obligatoria_pct"] >= 95.0
+    assert r12["trazabilidad_pct"] == 100.0
+    assert "ISO/IEC 9126" in md and "SQuaRE" in md
+
+
+def test_punto_en_geometria_multipolygon_y_pipeline_geo():
+    """Verifica motor ray-casting sobre MultiPolygon y flujo end-to-end geoespacial."""
+    mp = {
+        "type": "MultiPolygon",
+        "coordinates": [[[[0.0, 0.0], [2.0, 0.0], [2.0, 2.0], [0.0, 2.0], [0.0, 0.0]]]],
+    }
+    assert _punto_en_geometria(1.0, 1.0, mp) is True
+    assert _punto_en_geometria(5.0, 5.0, mp) is False
+
+    df_geo = procesar_capa_plata_geo()
+    assert len(df_geo) > 0
+    assert int(df_geo["cvegeo_mun"].isna().sum()) == 0
+
+
+def test_auditor_tdl_repo_propio_y_vacio(tmp_path):
+    """Valida que auditor_tdl apruebe el repositorio propio y detecte criticos en uno incompleto."""
+    res_propio = auditar_repositorio(RAIZ)
+    assert res_propio["conteos_severidad"]["CRITICO"] == 0
+    assert res_propio["disponibilidad_medida_pct"] >= 95.0
+
+    res_vacio = auditar_repositorio(tmp_path)
+    assert res_vacio["conteos_severidad"]["CRITICO"] >= 3
+    assert res_vacio["conteos_severidad"]["MAYOR"] >= 1

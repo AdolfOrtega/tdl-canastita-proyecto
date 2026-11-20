@@ -1,10 +1,10 @@
 {
   "esquema_linaje": "TDL-Canastita-Lineage-v2.0",
-  "fecha_generacion_utc": "2026-11-20T04:05:31.274994+00:00",
+  "fecha_generacion_utc": "2026-11-20T04:19:44.933360+00:00",
   "destino_oro": {
     "ruta": "data/oro/canasta_occidente_oro.csv",
     "registros": 963,
-    "sha256_artefacto_primario": "a576d9850e65207edcae602052abb9eb26a4b14118be5b0a29605358a32e496f",
+    "sha256_artefacto_primario": "0be161ae594419d11ee714bb4334109f56d0bac0838ff70624704dd7eeb457cc",
     "columnas_linaje_fila": [
       "_linaje_fecha_captura_sniim",
       "_linaje_fuente_precios",
@@ -97,14 +97,14 @@
       "existe": true,
       "sha256": "b1e6c11a3db4620c74966174cb1a6a3dd098740064a3d56e1fbca08732d767e5",
       "tamano_bytes": 8025816,
-      "fecha_procesamiento_utc": "2026-11-20T04:05:31.199202+00:00"
+      "fecha_procesamiento_utc": "2026-11-20T04:19:44.844494+00:00"
     },
     {
       "ruta": "data/plata/denue_occidente_geo.csv",
       "existe": true,
       "sha256": "4cdc015084e1bb13104777ceb738adc60409df0a8b8fcdb9c638c7901be103f2",
       "tamano_bytes": 4084331,
-      "fecha_procesamiento_utc": "2026-11-20T04:05:00.115525+00:00"
+      "fecha_procesamiento_utc": "2026-11-20T04:19:43.936181+00:00"
     }
   ]
 }
