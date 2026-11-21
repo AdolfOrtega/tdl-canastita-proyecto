@@ -1,8 +1,8 @@
 {
   "capa": "Oro",
   "descripcion": "Tabla analítica dimensional mensual integrada con precios mayoristas SNIIM, indicadores macro Banxico y densidad comercial geoespacial DENUE-INEGI",
-  "fecha_procesamiento_utc": "2026-11-20T20:57:24.297260+00:00",
-  "total_registros_mensuales": 963,
+  "fecha_procesamiento_utc": "2026-11-21T19:58:33.361853+00:00",
+  "total_registros_mensuales": 967,
   "total_meses_unicos": 59,
   "rango_periodos": {
     "min": "2022-01",
@@ -61,6 +61,7 @@
     "Uva Globo",
     "Uva Thompson",
     "Zanahoria mediana",
+    "Ciruela huesuda Roja",
     "LimÃ³n s/semilla",
     "Naranja Valencia grande",
     "PiÃ±a grande",
@@ -74,8 +75,8 @@
   ],
   "fuente_geoespacial_integrada": true,
   "archivo_linaje": "data/oro/linaje_oro.json",
-  "sha256_csv": "01e56cde2268825c7a6b2248ca3b6f59d151baebc9279c1e163171eed4683747",
-  "sha256_artefacto": "b2c116359d77e92c1d8f7cf73e06913307a2739d879463d13246dcda0c36629e",
+  "sha256_csv": "0cc406a4395d27d81f08744c2bbad714022fdbc0ef6b2774b8616f6f59d9b775",
+  "sha256_artefacto": "c4591ec9efde7a2416bf4f9b79b9f9196df7f20e43a8f660d356c5979b150883",
   "formato_primario": "parquet",
   "archivos_salida": {
     "parquet": "data/oro/canasta_occidente_oro.parquet",

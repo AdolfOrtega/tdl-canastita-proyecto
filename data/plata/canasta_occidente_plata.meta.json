@@ -1,10 +1,10 @@
 {
   "capa": "Plata",
   "descripcion": "Datos limpios, normalizados y con banderas IQR de la canasta agropecuaria de Occidente",
-  "fecha_procesamiento_utc": "2026-11-20T20:57:24.228937+00:00",
-  "total_registros": 15275,
-  "total_en_cuarentena": 11,
-  "total_atipicos_iqr": 690,
+  "fecha_procesamiento_utc": "2026-11-21T19:58:33.286820+00:00",
+  "total_registros": 15318,
+  "total_en_cuarentena": 12,
+  "total_atipicos_iqr": 698,
   "rango_fechas": {
     "min": "2022-01-03",
     "max": "2026-11-20"
@@ -71,9 +71,10 @@
     "Granada China",
     "Naranja Valencia chica",
     "Guanabana",
-    "Chile Pasilla"
+    "Chile Pasilla",
+    "Ciruela huesuda Roja"
   ],
-  "sha256_artefacto": "541ca0c9458dba04cb8abecf797733b359def608ad788bfe82876836bd276264",
+  "sha256_artefacto": "69d3b0ef46ef2558cd218c2c8db41926f78b6d44e68a018eb30e4219884c9791",
   "formato_primario": "parquet",
   "archivos_salida": {
     "parquet": "data/plata/canasta_occidente_plata.parquet",
