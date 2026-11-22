@@ -1,10 +1,10 @@
 {
   "esquema_linaje": "TDL-Canastita-Lineage-v2.0",
-  "fecha_generacion_utc": "2026-11-21T19:58:33.361853+00:00",
+  "fecha_generacion_utc": "2026-11-22T20:11:08.537281+00:00",
   "destino_oro": {
     "ruta": "data/oro/canasta_occidente_oro.csv",
     "registros": 967,
-    "sha256_artefacto_primario": "0cc406a4395d27d81f08744c2bbad714022fdbc0ef6b2774b8616f6f59d9b775",
+    "sha256_artefacto_primario": "f953c3b4f4edc1d1d812a2bc58556a5c324ebd7406e859b0ed7828241cdab186",
     "columnas_linaje_fila": [
       "_linaje_fecha_captura_sniim",
       "_linaje_fuente_precios",
@@ -57,16 +57,16 @@
     {
       "ruta": "data/bronce/macro_api/tipo_cambio/usd_mxn_historico_2022_2026.csv",
       "existe": true,
-      "sha256": "983111384830461f9777030c13b09880ac76560173ee981ba90da768eedad369",
+      "sha256": "9f4e55fee80fa817b2468da104ff6b39a011dc4427071dba403bb87f545d680f",
       "tamano_bytes": 220310,
-      "fecha_captura_utc": "2026-11-21T19:58:21.205465+00:00"
+      "fecha_captura_utc": "2026-11-22T20:10:57.909097+00:00"
     },
     {
       "ruta": "data/bronce/macro_api/inflacion/inpc_inflacion_mexico_historico.csv",
       "existe": true,
-      "sha256": "217f97cc97ba4a467691c977f6b15e0d1b5147c342fb21115fb86ef156c82970",
+      "sha256": "406b5514d53d919904d7596320e5cf76124527fc527a6b1c108cfa88df70e5c8",
       "tamano_bytes": 12163,
-      "fecha_captura_utc": "2026-11-21T19:58:22.829261+00:00"
+      "fecha_captura_utc": "2026-11-22T20:10:59.533331+00:00"
     },
     {
       "ruta": "data/bronce/denue_inegi/denue_occidente_raw.csv",
@@ -83,28 +83,28 @@
       "fecha_captura_utc": "2026-11-20T04:04:32.899406+00:00"
     },
     {
-      "ruta": "data/bronce/sniim_canasta/fecha=2026-11-21/sniim_reciente_2026-11-21.csv",
+      "ruta": "data/bronce/sniim_canasta/fecha=2026-11-22/sniim_reciente_2026-11-22.csv",
       "existe": true,
-      "sha256": "fb3e6d483c98c159965ac20a5dc504aa37fe77e86f3f8b0d3d487a40b221808d",
+      "sha256": "b8695ae21c9fd262feb6c4449d5a9391f0bcc4c09f7f9222d1c720567fb40c7b",
       "tamano_bytes": 721647,
-      "fecha_captura_utc": "2026-11-21T19:58:20.526448+00:00"
+      "fecha_captura_utc": "2026-11-22T20:10:57.147357+00:00"
     }
   ],
-  "capturas_diarias_sniim_totales": 16,
+  "capturas_diarias_sniim_totales": 17,
   "capas_plata_intermedias": [
     {
       "ruta": "data/plata/canasta_occidente_plata.csv",
       "existe": true,
       "sha256": "f8c32d0bb0de9256f417fd38b7d6d5cc3db9968d30f83fc9a124dcbd72a0b319",
       "tamano_bytes": 8078054,
-      "fecha_procesamiento_utc": "2026-11-21T19:58:33.286820+00:00"
+      "fecha_procesamiento_utc": "2026-11-22T20:11:08.472701+00:00"
     },
     {
       "ruta": "data/plata/denue_occidente_geo.csv",
       "existe": true,
       "sha256": "d5711592f0f654a2be9c290f15444e03337c223f31cb77d7c8d16d95839598d2",
       "tamano_bytes": 4074680,
-      "fecha_procesamiento_utc": "2026-11-21T19:58:32.370124+00:00"
+      "fecha_procesamiento_utc": "2026-11-22T20:11:07.523434+00:00"
     }
   ]
 }

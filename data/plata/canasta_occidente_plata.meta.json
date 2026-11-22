@@ -1,9 +1,9 @@
 {
   "capa": "Plata",
   "descripcion": "Datos limpios, normalizados y con banderas IQR de la canasta agropecuaria de Occidente",
-  "fecha_procesamiento_utc": "2026-11-21T19:58:33.286820+00:00",
+  "fecha_procesamiento_utc": "2026-11-22T20:11:08.472701+00:00",
   "total_registros": 15318,
-  "total_en_cuarentena": 12,
+  "total_en_cuarentena": 13,
   "total_atipicos_iqr": 698,
   "rango_fechas": {
     "min": "2022-01-03",
