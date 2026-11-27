@@ -1,0 +1,241 @@
+{
+  "fecha_analisis_utc": "2026-11-27T06:57:13.050682+00:00",
+  "variables": [
+    "precio_promedio_mxn",
+    "precio_usd",
+    "volatilidad_precio_std",
+    "spread_pct",
+    "variacion_mom_pct",
+    "variacion_yoy_pct",
+    "num_observaciones"
+  ],
+  "productos_base": [
+    "Aguacate Hass",
+    "Cebolla Bola",
+    "Chile Serrano",
+    "Jitomate Saladette",
+    "Limon con semilla #5",
+    "Papa Alpha"
+  ],
+  "carga": {
+    "registros_oro_totales": 967,
+    "registros_canasta_base": 823,
+    "registros_completos_e3": 619,
+    "registros_excluidos_rezago_estructural": 204,
+    "nulos_previos_por_variable": {
+      "precio_promedio_mxn": 0,
+      "precio_usd": 0,
+      "volatilidad_precio_std": 0,
+      "spread_pct": 0,
+      "variacion_mom_pct": 17,
+      "variacion_yoy_pct": 204,
+      "num_observaciones": 0
+    },
+    "periodo_min": "2023-01",
+    "periodo_max": "2026-11",
+    "conteo_por_ciudad": {
+      "Colima": 274,
+      "Guadalajara": 160,
+      "Morelia": 185
+    },
+    "conteo_por_producto": {
+      "Aguacate Hass": 100,
+      "Cebolla Bola": 63,
+      "Chile Serrano": 119,
+      "Jitomate Saladette": 95,
+      "Limon con semilla #5": 123,
+      "Papa Alpha": 119
+    }
+  },
+  "normalidad": {
+    "mardia_original": {
+      "n": 619,
+      "p": 7,
+      "b1p_asimetria": 68.8254,
+      "chi2_asimetria": 7100.4854,
+      "gl_asimetria": 84,
+      "p_asimetria": 0.0,
+      "b2p_curtosis": 168.9883,
+      "z_curtosis": 117.4594,
+      "p_curtosis": 0.0,
+      "es_normal_alpha05": false
+    },
+    "henze_zirkler_original": {
+      "beta": 1.4304,
+      "estadistico_hz": 24.4096,
+      "p_valor": 0.0,
+      "es_normal_alpha05": false
+    },
+    "mardia_yeo_johnson": {
+      "n": 619,
+      "p": 7,
+      "b1p_asimetria": 14.6406,
+      "chi2_asimetria": 1510.4192,
+      "gl_asimetria": 84,
+      "p_asimetria": 0.0,
+      "b2p_curtosis": 75.5093,
+      "z_curtosis": 13.8632,
+      "p_curtosis": 0.0,
+      "es_normal_alpha05": false
+    },
+    "henze_zirkler_yeo_johnson": {
+      "beta": 1.4304,
+      "estadistico_hz": 5.9951,
+      "p_valor": 0.0,
+      "es_normal_alpha05": false
+    }
+  },
+  "mahalanobis": {
+    "grados_libertad_p": 7,
+    "rango_matriz_cov": 7,
+    "num_condicion_cov": 55963.92,
+    "d2_media": 6.9887,
+    "d2_mediana": 3.6658,
+    "d2_maximo": 198.2776,
+    "umbral_chi2_95": 14.0671,
+    "umbral_chi2_99": 18.4753,
+    "observaciones_sobre_chi2_99": 47,
+    "pct_sobre_chi2_99": 7.59,
+    "correlacion_qq_chi2": 0.7755
+  },
+  "pca": {
+    "kaiser_componentes_seleccionados": 2,
+    "varianza_pc1_pct": 44.57,
+    "varianza_pc2_pct": 18.62,
+    "varianza_pc1_pc2_pct": 63.19,
+    "varianza_pc1_pc3_pct": 77.24,
+    "eigenvalores": [
+      3.12,
+      1.3031,
+      0.9835,
+      0.7868,
+      0.5513,
+      0.2522,
+      0.003
+    ],
+    "ortonormalidad_max_error": 0.0,
+    "nombres_negocio": {
+      "PC1": "Indice de Nivel de Precio, Volatilidad y Escala",
+      "PC2": "Indice de Choque Estacional e Inflacionario (MoM/YoY)",
+      "PC3": "Indice de Amplitud Mayorista (Spread %) y Riesgo"
+    }
+  },
+  "manova": {
+    "manova_plazas_wilks": {
+      "factor": "Plaza (Colima, Guadalajara, Morelia)",
+      "estadistico": "Wilks' lambda",
+      "valor": 0.13393,
+      "f_valor": 150.9788,
+      "num_df": 14.0,
+      "den_df": 1220.0,
+      "p_valor": 0.0,
+      "significativo_05": true
+    },
+    "manova_plazas_pillai": {
+      "factor": "Plaza (Colima, Guadalajara, Morelia)",
+      "estadistico": "Pillai's trace",
+      "valor": 1.03008,
+      "f_valor": 92.7002,
+      "num_df": 14.0,
+      "den_df": 1222.0,
+      "p_valor": 0.0,
+      "significativo_05": true
+    },
+    "permanova_plazas": {
+      "n_permutaciones": 999,
+      "k_grupos": 3,
+      "pseudo_f": 141.7209,
+      "p_valor_permutacion": 0.001,
+      "significativo_05": true
+    },
+    "permanova_productos": {
+      "n_permutaciones": 999,
+      "k_grupos": 6,
+      "pseudo_f": 4.6119,
+      "p_valor_permutacion": 0.001,
+      "significativo_05": true
+    },
+    "anovas_univariados_ciudad": [
+      {
+        "variable": "precio_promedio_mxn",
+        "f_univariado": 257.2827,
+        "p_valor": 0.0,
+        "significativo_alpha05": true,
+        "significativo_bonferroni": true
+      },
+      {
+        "variable": "precio_usd",
+        "f_univariado": 251.8542,
+        "p_valor": 0.0,
+        "significativo_alpha05": true,
+        "significativo_bonferroni": true
+      },
+      {
+        "variable": "volatilidad_precio_std",
+        "f_univariado": 90.0116,
+        "p_valor": 0.0,
+        "significativo_alpha05": true,
+        "significativo_bonferroni": true
+      },
+      {
+        "variable": "spread_pct",
+        "f_univariado": 139.8345,
+        "p_valor": 0.0,
+        "significativo_alpha05": true,
+        "significativo_bonferroni": true
+      },
+      {
+        "variable": "variacion_mom_pct",
+        "f_univariado": 0.4738,
+        "p_valor": 0.62284341,
+        "significativo_alpha05": false,
+        "significativo_bonferroni": false
+      },
+      {
+        "variable": "variacion_yoy_pct",
+        "f_univariado": 0.6694,
+        "p_valor": 0.51236275,
+        "significativo_alpha05": false,
+        "significativo_bonferroni": false
+      },
+      {
+        "variable": "num_observaciones",
+        "f_univariado": 969.0272,
+        "p_valor": 0.0,
+        "significativo_alpha05": true,
+        "significativo_bonferroni": true
+      }
+    ],
+    "error_tipo_i_sin_correccion_pct": 30.17,
+    "alpha_bonferroni": 0.00714,
+    "centroides_plaza": {
+      "Colima": {
+        "precio_promedio_mxn": 36.533,
+        "precio_usd": 2.009,
+        "volatilidad_precio_std": 2.349,
+        "spread_pct": 24.119,
+        "variacion_mom_pct": 1.566,
+        "variacion_yoy_pct": 9.313,
+        "num_observaciones": 8.555
+      },
+      "Guadalajara": {
+        "precio_promedio_mxn": 617.768,
+        "precio_usd": 34.045,
+        "volatilidad_precio_std": 80.25,
+        "spread_pct": 58.881,
+        "variacion_mom_pct": 3.389,
+        "variacion_yoy_pct": 7.01,
+        "num_observaciones": 23.119
+      },
+      "Morelia": {
+        "precio_promedio_mxn": 501.322,
+        "precio_usd": 27.356,
+        "volatilidad_precio_std": 33.257,
+        "spread_pct": 24.881,
+        "variacion_mom_pct": 1.343,
+        "variacion_yoy_pct": 4.237,
+        "num_observaciones": 20.605
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+factor,estadistico,valor,f_valor,num_df,den_df,p_valor,significativo_05
+"Plaza (Colima, Guadalajara, Morelia)",Wilks' lambda,0.13393,150.9788,14.0,1220.0,0.0,True
+"Plaza (Colima, Guadalajara, Morelia)",Pillai's trace,1.03008,92.7002,14.0,1222.0,0.0,True
+"Plaza (Colima, Guadalajara, Morelia)",Hotelling-Lawley trace,5.24217,228.1291,14.0,972.6,0.0,True
+"Plaza (Colima, Guadalajara, Morelia)",Roy's greatest root,4.9971,436.1758,7.0,611.0,0.0,True
+Producto (6 insumos base),Wilks' lambda,0.78464,4.3339,35.0,2555.8,0.0,True
+Producto (6 insumos base),Pillai's trace,0.22494,4.1119,35.0,3055.0,0.0,True
+Producto (6 insumos base),Hotelling-Lawley trace,0.26243,4.5416,35.0,1715.0,0.0,True
+Producto (6 insumos base),Roy's greatest root,0.20959,18.2938,7.0,611.0,0.0,True
