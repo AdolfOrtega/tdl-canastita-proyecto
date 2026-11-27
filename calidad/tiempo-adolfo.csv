@@ -18,3 +18,4 @@ fecha,inicio,fin,interrupcion_min,fase,actividad
 2026-11-26,18:00,20:30,10,documentacion,Redaccion de licencia abierta CC-BY-4.0 (LICENSE-DATA.md) datasheet completo de Capa Oro y reporte optimizacion_pipeline_e3.md
 2026-11-27,16:00,19:00,10,codigo,Integracion de Pestana 6 Mapa Multivariado PC1-PC2 y Sello TDL en tablero/app.py descarga abierta y actualizacion CI Puerta 2
 2026-11-27,19:15,20:30,5,pruebas,Ejecucion completa suite pytest con pruebas E2E de 6 pestanas evaluacion ISO 25010/25012 y validacion Puerta 2 CI en GitHub Actions
+2026-11-27,15:15,15:40,0,codigo,Correccion de mojibake en limpieza_plata.py (reparar_mojibake) regeneracion de Plata/Oro homologacion clave Banxico SF43718 en diccionario y prueba unitaria

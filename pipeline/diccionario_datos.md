@@ -74,7 +74,7 @@ El observatorio sigue el patrón de arquitectura Medallion para garantizar el li
 | `conteo_atipicos_iqr` | Integer | No | $\sum \text{es\_atipico\_iqr}$ | Cantidad de días del mes con precios atípicos. | `1` |
 | `spread_mensual_mxn` | Float | No | $P_{\max} - P_{\min}$ | Amplitud o brecha de precios en el mercado local. | `10.00` |
 | `spread_pct` | Float | No | $\frac{\text{spread}}{P_{\text{promedio}}} \times 100$ | Porcentaje del spread respecto al precio promedio. | `35.09` |
-| `tipo_cambio_fix_promedio` | Float | No | Join mensual con Banxico (SF60653). | Tipo de cambio FIX promedio del mes (USD/MXN). | `16.8520` |
+| `tipo_cambio_fix_promedio` | Float | No | Join mensual con Banxico (SF43718). | Tipo de cambio FIX promedio del mes (USD/MXN). | `16.8520` |
 | `inpc_mensual` | Float | No | Join mensual con Banxico (SP1). | Índice Nacional de Precios al Consumidor. | `134.120` |
 | `precio_usd` | Float | No | $\frac{P_{\text{promedio}}}{\text{TC\_FIX}}$ | Precio mayorista equivalente en dólares por kilogramo. | `1.6912` |
 | `variacion_mom_pct` | Float | Sí (1er mes) | $\frac{P_t - P_{t-1}}{P_{t-1}} \times 100$ | Tasa de variación porcentual intermensual. | `+12.40` |

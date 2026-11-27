@@ -44,9 +44,25 @@ MAPEO_PLAZAS = {
 }
 
 
+def reparar_mojibake(texto: object) -> object:
+    """Repara cadenas UTF-8 decodificadas por error como latin-1 (mojibake)."""
+    if not isinstance(texto, str):
+        return texto
+    if "Ã" not in texto and "Â" not in texto:
+        return texto
+    try:
+        return texto.encode("latin-1").decode("utf-8")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        return texto
+
+
 def normalizar_productos_y_plazas(df: pd.DataFrame) -> pd.DataFrame:
     """Homologa nombres de productos y ciudades para evitar inconsistencias."""
     df_out = df.copy()
+    for col_txt in ("producto", "origen", "presentacion", "calidad"):
+        if col_txt in df_out.columns:
+            df_out[col_txt] = df_out[col_txt].map(reparar_mojibake)
+
     if "producto" in df_out.columns:
         df_out["producto"] = df_out["producto"].astype(str).str.strip()
         df_out["producto"] = df_out["producto"].replace(MAPEO_PRODUCTOS)

@@ -262,3 +262,23 @@ def test_pipeline_completo_genera_archivos():
         (df_oro["plaza_id"] == 80) & (df_oro["producto"] == "Jitomate Saladette")
     ]["anio_mes"].nunique()
     assert periodos_colima_jitomate >= 36
+
+
+def test_reparar_mojibake_productos_secundarios():
+    """Valida que la normalizacion repare doble codificacion UTF-8/latin-1 en productos SNIIM."""
+    df_raw = pd.DataFrame({
+        "producto": [
+            "Chile JalapeÃ±o",
+            "PiÃ±a mediana",
+            "LimÃ³n c/semilla # 5",
+            "Aguacate Hass",
+        ],
+        "ciudad": ["Colima", "Guadalajara", "Morelia", "Colima"],
+    })
+    df_norm = normalizar_productos_y_plazas(df_raw)
+    assert df_norm["producto"].tolist() == [
+        "Chile Jalapeño",
+        "Piña mediana",
+        "Limon con semilla #5",
+        "Aguacate Hass",
+    ]

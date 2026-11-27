@@ -1,7 +1,7 @@
 {
   "capa": "Plata Geoespacial",
   "descripcion": "Comercios DENUE integrados mediante union espacial con poligonos municipales INEGI",
-  "fecha_procesamiento_utc": "2026-11-27T06:57:45.643107+00:00",
+  "fecha_procesamiento_utc": "2026-11-27T21:27:31.654669+00:00",
   "motor_union_espacial": "geopandas_shapely",
   "crs": "EPSG:4326",
   "total_establecimientos": 9650,
