@@ -1,16 +1,16 @@
 {
-  "fecha_generacion_utc": "2026-11-27T06:54:27.477505+00:00",
+  "fecha_generacion_utc": "2026-11-27T21:27:19.223170+00:00",
   "totales_acumulados": {
-    "sesiones_totales": 38,
-    "horas_adolfo": 40.08,
-    "horas_andrea": 38.83,
-    "horas_equipo": 78.92,
-    "defectos_adolfo": 18,
-    "defectos_andrea": 14,
-    "defectos_totales": 32,
-    "minutos_retrabajo_totales": 455,
-    "review_yield_global_pct": 18.75,
-    "exactitud_estimacion_media_pct": 94.59
+    "sesiones_totales": 40,
+    "horas_adolfo": 40.5,
+    "horas_andrea": 39.25,
+    "horas_equipo": 79.75,
+    "defectos_adolfo": 19,
+    "defectos_andrea": 15,
+    "defectos_totales": 34,
+    "minutos_retrabajo_totales": 480,
+    "review_yield_global_pct": 23.53,
+    "exactitud_estimacion_media_pct": 93.52
   },
   "evolucion_etapas": [
     {
@@ -55,15 +55,15 @@
     {
       "etapa": "E3",
       "horas_planeadas_equipo": 19.5,
-      "horas_reales_adolfo": 8.92,
-      "horas_reales_andrea": 10.67,
-      "horas_reales_equipo": 19.58,
-      "error_estimacion_pct": 0.43,
-      "defectos_totales": 5,
-      "eliminados_antes_pruebas": 2,
-      "review_yield_pct": 40.0,
-      "minutos_correccion_promedio": 12.0,
-      "defectos_por_hora": 0.255
+      "horas_reales_adolfo": 9.33,
+      "horas_reales_andrea": 11.08,
+      "horas_reales_equipo": 20.42,
+      "error_estimacion_pct": 4.7,
+      "defectos_totales": 7,
+      "eliminados_antes_pruebas": 4,
+      "review_yield_pct": 57.14,
+      "minutos_correccion_promedio": 12.14,
+      "defectos_por_hora": 0.343
     }
   ],
   "defectos_por_fase": [
@@ -81,15 +81,15 @@
     },
     {
       "fase": "codigo",
-      "inyectados": 21,
+      "inyectados": 23,
       "eliminados": 0,
       "minutos_correccion_total": 0
     },
     {
       "fase": "revision",
       "inyectados": 1,
-      "eliminados": 6,
-      "minutos_correccion_total": 80
+      "eliminados": 8,
+      "minutos_correccion_total": 105
     },
     {
       "fase": "pruebas",
@@ -100,22 +100,22 @@
   ],
   "defectos_por_tipo_psp": [
     {
+      "tipo": "datos",
+      "conteo": 9,
+      "minutos_totales": 125,
+      "minutos_promedio": 13.89
+    },
+    {
       "tipo": "entorno",
       "conteo": 9,
       "minutos_totales": 125,
       "minutos_promedio": 13.89
     },
     {
-      "tipo": "datos",
-      "conteo": 8,
-      "minutos_totales": 110,
-      "minutos_promedio": 13.75
-    },
-    {
       "tipo": "documentacion",
-      "conteo": 3,
-      "minutos_totales": 35,
-      "minutos_promedio": 11.67
+      "conteo": 4,
+      "minutos_totales": 45,
+      "minutos_promedio": 11.25
     },
     {
       "tipo": "interfaz",

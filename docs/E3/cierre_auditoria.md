@@ -22,6 +22,8 @@
 | **INT-04** | **MENOR** | Auditoria interna `e1` | Posibles rutas locales absolutas en documentacion Markdown y advertencias UI. | Eliminacion total + regex bloqueante en Puerta 2 CI (commit `7b114e9` y `4e1e367`). | **Cerrado** |
 | **E3-AUD-01** | **MENOR** | Revision pre-E3 | Descripciones `#5` y `#9` en `defectos-andrea.csv` contenian comas sin comillas generando `ParserError` en `pandas`. | Entrecomillado estandar RFC-4180 verificado con `csv.reader` y `pandas.read_csv` (commit `37ef180`). | **Cerrado** |
 | **E3-AUD-02** | **MAYOR** | Revision arquitectura E3 | La configuracion ganadora del experimento $2^3$ (`1 hilo + lxml + Parquet`) seguia solo en laboratorio y faltaba aplicarla en el extractor y pipeline real con benchmark. | Implementado `parser="lxml"` con fallback y escritura/lectura `.parquet` en Bronce + benchmark `benchmark_optimizacion_e3.py`. | **Cerrado** |
+| **E3-AUD-03** | **MENOR** | Auditoria post-E3 (Datos) | Se detectaron 19 nombres de productos secundarios SNIIM con doble codificacion UTF-8/latin-1 (*mojibake*) en Plata y Oro. | Implementada `reparar_mojibake()` en `pipeline/limpieza_plata.py` + `test_reparar_mojibake_productos_secundarios` (0 caracteres corruptos). | **Cerrado** |
+| **E3-AUD-04** | **MENOR** | Auditoria post-E3 (Docs) | Referencia desactualizada a serie Banxico `SF60653` en `pipeline/diccionario_datos.md` frente a `SF43718` usada en `macro_api.py`. | Homologada la clave a `SF43718` en `pipeline/diccionario_datos.md` con registro PSP Andrea `#15`. | **Cerrado** |
 
 ---
 

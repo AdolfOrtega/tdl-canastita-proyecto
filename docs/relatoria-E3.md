@@ -18,10 +18,10 @@ Consolidar la etapa multivariada y de certificación final (**Sello TDL**): cons
 | **25 nov 2026** | Andrea Tairi Velázquez | 2.75 h | Diseño de matriz multivariada (`N = 619`, 7 variables continuas), pruebas Mardia y Henze-Zirkler, tratamiento Yeo-Johnson y distancias Q-Q de Mahalanobis en `laboratorio/analisis_multivariado_e3.py`. |
 | **26 nov 2026** | Adolfo Rodríguez | 2.33 h | Redacción de licencia abierta `CC BY 4.0` ([LICENSE-DATA.md](../LICENSE-DATA.md)), ficha técnica completa [docs/E3/datasheet_canasta_oro.md](E3/datasheet_canasta_oro.md) y reporte cuantitativo [docs/E3/optimizacion_pipeline_e3.md](E3/optimizacion_pipeline_e3.md). |
 | **26 nov 2026** | Andrea Tairi Velázquez | 3.25 h | Implementación de PCA estandarizado, gráfica de sedimentación, biplot PC1–PC2, MANOVA (`Wilks`, `Pillai`), PERMANOVA y redacción de [laboratorio/informe_multivariado_e3.md](../laboratorio/informe_multivariado_e3.md). |
-| **27 nov 2026** | Andrea Tairi Velázquez | 4.67 h | Desarrollo de `calidad/retrospectiva_psp.py`, evaluación MoProSoft/CMMI, tendencias DataOps, cierre de auditoría, verificador del Sello TDL (`6/6`), suite `test_e3_multivariado_sello.py`, `relatoria-E3.md` y `ENTREGA.md`. |
-| **27 nov 2026** | Adolfo Rodríguez | 4.00 h | Publicación de Pestaña 6 (`Mapa Multivariado & Sello TDL`) y botón de descarga abierta en `tablero/app.py`, ampliación de pruebas E2E (`test_tablero_e2e.py`), actualización CI Puerta 2 y verificación `pytest` / ISO / GitHub Actions. |
+| **27 nov 2026** | Andrea Tairi Velázquez | 5.08 h | Desarrollo de `calidad/retrospectiva_psp.py`, evaluación MoProSoft/CMMI, tendencias DataOps, cierre de auditoría post-E3, verificador del Sello TDL (`6/6`), `test_e3_multivariado_sello.py`, `relatoria-E3.md` y `ENTREGA.md`. |
+| **27 nov 2026** | Adolfo Rodríguez | 4.42 h | Pestaña 6 (`Mapa Multivariado & Sello TDL`) y descarga abierta en `tablero/app.py`, pruebas E2E (`test_tablero_e2e.py`), CI Puerta 2, corrección de *mojibake* (`reparar_mojibake`) y clave `SF43718` en diccionario. |
 
-*Total invertido en E3 según bitácoras PSP (`calidad/tiempo-*.csv`):* **Adolfo 8.92 h (535 min) · Andrea 10.67 h (640 min) · Total E3: 19.58 h netas · Acumulado E0–E3: 78.92 horas netas.**
+*Total invertido en E3 según bitácoras PSP (`calidad/tiempo-*.csv`):* **Adolfo 9.33 h (560 min) · Andrea 11.08 h (665 min) · Total E3: 20.42 h netas · Acumulado E0–E3: 79.75 horas netas.**
 
 ---
 
@@ -38,6 +38,8 @@ Consolidar la etapa multivariada y de certificación final (**Sello TDL**): cons
 * **Defecto Andrea #12 (Lógica / Diseño MANOVA):** Se detectó en revisión previa el riesgo de singularidad intra-grupo y se fijaron 7 variables con varianza intra-plaza positiva verificando rango completo `7` (`15 min`).
 * **Defecto Andrea #13 (Sintaxis Python 3.12):** Las cadenas f-string con LaTeX emitieron `SyntaxWarning` en `analisis_multivariado_e3.py`; se convirtió la plantilla a raw f-string (`rf"""`), dejando `0` advertencias (`10 min`).
 * **Defecto Andrea #14 (Entorno / Dependencias):** Se sustituyó `PowerTransformer` por `scipy.stats.yeojohnson` para mantener `requirements.txt` mínimo y evitar fallos en CI (`10 min`).
+* **Defecto Adolfo #19 (Datos / Codificación):** La auditoría post-E3 detectó `19` nombres de productos secundarios SNIIM con doble codificación UTF-8/latin-1 (*mojibake*) en Plata y Oro; se implementó `reparar_mojibake()` en `pipeline/limpieza_plata.py` con prueba unitaria dejando `0` caracteres corruptos (`15 min`).
+* **Defecto Andrea #15 (Documentación / Trazabilidad):** La auditoría de calidad detectó referencia heredada a serie Banxico `SF60653` en `pipeline/diccionario_datos.md` frente a `SF43718` usada en `macro_api.py`; se homologó a `SF43718` y se actualizó `cierre_auditoria.md` (`10 min`).
 
 ---
 
@@ -50,7 +52,7 @@ Comprendimos con datos reales por qué **MANOVA no equivale a correr 7 ANOVAs se
 Medimos el impacto real de pasar la optimización del laboratorio a producción: cambiar a `1 hilo + lxml + Parquet` redujo el tiempo combinado (`Scraping+Bronce + Medallion I/O`) en **`24.74%`** (`1.2970 s` -> `0.9761 s`) y el almacenamiento en **`98.01%`** (`10,610.00 KB` -> `210.86 KB`) manteniendo `0.0%` de error y `100.0%` de completitud obligatoria en Oro, listo para consumo público bajo licencia `CC BY 4.0` y *datasheet* completo.
 
 ### Calidad en los Sistemas de Información
-La retrospectiva cuantitativa PSP (`78.92 h` acumuladas y `32` defectos gestionados de E0 a E3) evidenció cómo el error de estimación convergió a **`+0.43%` en E3** y el *Review Yield* temprano subió de `0.0%` (E2) a **`40.0%` (E3)**; al integrar MoProSoft, CMMI, prácticas DataOps y el auditor automatizado logramos **`0` hallazgos abiertos** y **`6/6` umbrales del Sello TDL**.
+La retrospectiva cuantitativa PSP (`79.75 h` acumuladas y `34` defectos gestionados de E0 a E3) evidenció cómo el error de estimación se estabilizó en **`+4.70%` en E3** (`93.52%` de exactitud media) y el *Review Yield* temprano subió de `0.0%` (E2) a **`57.14%` (E3)** tras cazar defectos preventivos en revisión de auditoría; al integrar MoProSoft, CMMI, prácticas DataOps y el auditor automatizado logramos **`0` hallazgos abiertos** y **`6/6` umbrales del Sello TDL**.
 
 ---
 

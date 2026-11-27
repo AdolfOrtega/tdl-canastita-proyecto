@@ -19,7 +19,7 @@ Todas las metricas provienen de ejecuciones reales de codigo ([calidad/evaluar_i
 | 4 | **Capacidad de interaccion (Usabilidad)** | Cobertura funcional en Streamlit con semaforo de compra, filtros, mapa pydeck, mapa PCA y Sello TDL | 6 pestanas interactivas y semaforo comprensible para el cliente (Restaurante Luisiana) | >= 4 vistas ejecutivas | **97.0%** |
 | 5 | **Fiabilidad** | Disponibilidad operativa medida A = MTBF/(MTBF+MTTR) y Puerta 1 con cuarentena | 100.0% (66/66 corridas diarias en 476.2h; MTTR=0h) | >= 95.0% | **100.0%** |
 | 6 | **Seguridad** | Secretos expuestos en codigo/datos y cumplimiento LFPDPPP (cero PII) | 0 secretos expuestos y 0 columnas PII en 135 archivos | 0 secretos y 0 PII | **100.0%** |
-| 7 | **Mantenibilidad** | Complejidad ciclomatica promedio de McCabe y tasa de docstrings en funciones | CC promedio = 4.37, docstrings = 95.54% (112 funciones) | CC promedio <= 6 y doc >= 80% | **97.8%** |
+| 7 | **Mantenibilidad** | Complejidad ciclomatica promedio de McCabe y tasa de docstrings en funciones | CC promedio = 4.39, docstrings = 95.58% (113 funciones) | CC promedio <= 6 y doc >= 80% | **97.8%** |
 | 8 | **Portabilidad** | Ausencia de rutas locales absolutas y compatibilidad Windows + Linux CI | 0 rutas locales absolutas; fallback puro Python + PyArrow/CSV | 0 rutas locales absolutas | **100.0%** |
 
 * **Indice global medido ISO/IEC 25010:** **`98.22%`** (Escala TecNM: Excelente).
@@ -42,7 +42,7 @@ Medida ejecutada directamente sobre los **967 registros analiticos** de [data/or
 | **Accesibilidad** | Inherente / Sist. | Tablero Streamlit + CSV/GeoJSON/Parquet abiertos | **100.0%** |
 | **Conformidad** | Inherente / Sist. | ISO 8601 + EPSG:4326 (union espacial 100.0%) + UTF-8 | **100.0%** |
 | **Confidencialidad** | Inherente / Sist. | 0 PII (LFPDPPP) y 0 secretos | **100.0%** |
-| **Eficiencia** | Inherente / Sist. | Oro Parquet reduce 76.32% frente a CSV (73.4 vs 309.9 KB) | **95.0%** |
+| **Eficiencia** | Inherente / Sist. | Oro Parquet reduce 76.32% frente a CSV (73.3 vs 309.8 KB) | **95.0%** |
 | **Precision** | Inherente / Sist. | Decimales homologados (2 MXN, 4 USD/FIX, 3 INPC) | **100.0%** |
 | **Trazabilidad** | Inherente / Sist. | 100.0% filas con columnas _linaje_* + linaje_oro.json | **100.0%** |
 | **Comprensibilidad** | Inherente / Sist. | 100.0% de columnas (34/34) documentadas en diccionario | **100.0%** |

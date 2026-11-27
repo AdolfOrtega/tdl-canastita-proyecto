@@ -223,6 +223,7 @@ def generar_grafica_psp(res: Dict[str, Any]) -> None:
 def generar_reporte_psp(res: Dict[str, Any]) -> str:
     """Genera docs/E3/retrospectiva_psp.md con los datos reales medidos de E0 a E3."""
     t = res["totales_acumulados"]
+    e3_row = next(r for r in res["evolucion_etapas"] if r["etapa"] == "E3")
     filas_et = []
     for r in res["evolucion_etapas"]:
         filas_et.append(
@@ -269,8 +270,8 @@ def generar_reporte_psp(res: Dict[str, Any]) -> str:
 
 ### Hallazgos de Evolucion E0 -> E3
 1. **Madurez en estimacion:** En E0/E1 las desviaciones frente al plan nacieron por descubrimientos externos (`robots.txt` de Open-Meteo, codificacion `latin-1` de SNIIM y bloqueos DLL en Windows). Ya en E2 y E3 el error de estimacion se mantuvo dentro de un margen controlado inferior al `±5%`.
-2. **Mejora del *Review Yield*:** Mientras en E1 y E2 la mayoria de defectos afloraron hasta `pruebas`, en E3 la revision por pares previa (*Quality Lead*) elevo el *Review Yield* temprano al **`40.0%`** (frente a `16.67%` en E1 y `0.0%` en E2).
-3. **Caida en densidad de defectos:** La tasa descendio de `0.500` defectos/hora en E0 (`0.655` en E2 con QA/E2E) hasta **`0.255`** defectos/hora en E3 conforme Puertas 1 y 2 automatizaron las validaciones mecanicas.
+2. **Mejora del *Review Yield*:** Mientras en E1 y E2 la mayoria de defectos afloraron hasta `pruebas`, en E3 la revision por pares previa (*Quality Lead*) elevo el *Review Yield* temprano al **`{e3_row['review_yield_pct']:.1f}%`** (frente a `16.67%` en E1 y `0.0%` en E2).
+3. **Estabilizacion de densidad de defectos:** La tasa paso de `0.500` defectos/hora en E0 (`0.655` en E2 con QA/E2E) a **`{e3_row['defectos_por_hora']:.3f}`** defectos/hora en E3 incluyendo hallazgos preventivos de revision.
 
 ---
 

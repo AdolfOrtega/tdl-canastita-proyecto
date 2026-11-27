@@ -1,5 +1,5 @@
 {
-  "fecha_evaluacion_utc": "2026-11-27T06:59:37.758967+00:00",
+  "fecha_evaluacion_utc": "2026-11-27T21:29:04.235138+00:00",
   "norma": "ISO/IEC 25010",
   "seguridad_hallazgos_secretos": 0,
   "seguridad_hallazgos_pii": 0,
@@ -17,9 +17,9 @@
   },
   "mantenibilidad_detalle": {
     "archivos_python_analizados": 19,
-    "total_funciones": 112,
-    "funciones_documentadas_pct": 95.54,
-    "complejidad_ciclomatica_promedio": 4.37,
+    "total_funciones": 113,
+    "funciones_documentadas_pct": 95.58,
+    "complejidad_ciclomatica_promedio": 4.39,
     "complejidad_maxima_funcion": 19,
     "evidencia_cobertura_presente": true
   },
@@ -76,9 +76,9 @@
       "id": 7,
       "caracteristica": "Mantenibilidad",
       "metrica": "Complejidad ciclomatica promedio de McCabe y tasa de docstrings en funciones",
-      "valor_medido": "CC promedio = 4.37, docstrings = 95.54% (112 funciones)",
+      "valor_medido": "CC promedio = 4.39, docstrings = 95.58% (113 funciones)",
       "umbral_objetivo": "CC promedio <= 6 y doc >= 80%",
-      "calificacion_pct": 97.77
+      "calificacion_pct": 97.79
     },
     {
       "id": 8,
