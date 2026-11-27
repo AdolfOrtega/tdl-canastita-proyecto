@@ -1,9 +1,9 @@
 {
-  "fecha_evaluacion_utc": "2026-11-20T04:35:19.618433+00:00",
+  "fecha_evaluacion_utc": "2026-11-27T06:59:37.767963+00:00",
   "norma": "ISO/IEC 25012",
-  "registros_oro": 963,
+  "registros_oro": 967,
   "completitud_obligatoria_pct": 100.0,
-  "completitud_global_pct": 98.63,
+  "completitud_global_pct": 98.62,
   "trazabilidad_pct": 100.0,
   "comprensibilidad_diccionario_pct": 100.0,
   "caracteristicas": [
@@ -22,7 +22,7 @@
     {
       "caracteristica": "Completitud",
       "categoria": "Inherente",
-      "valor": "100.0% obligatoria / 98.63% global en 963 filas",
+      "valor": "100.0% obligatoria / 98.62% global en 967 filas",
       "puntaje_pct": 100.0
     },
     {
@@ -64,7 +64,7 @@
     {
       "caracteristica": "Eficiencia",
       "categoria": "Inherente / Sist.",
-      "valor": "Oro Parquet reduce 76.31% frente a CSV (73.1 vs 308.5 KB)",
+      "valor": "Oro Parquet reduce 76.32% frente a CSV (73.4 vs 309.9 KB)",
       "puntaje_pct": 95.0
     },
     {

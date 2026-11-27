@@ -293,10 +293,10 @@ def evaluar_iso_25010(seg: Dict[str, Any], mant: Dict[str, Any], fiab: Dict[str,
         {
             "id": 4,
             "caracteristica": "Capacidad de interaccion (Usabilidad)",
-            "metrica": "Cobertura funcional en Streamlit con semaforo de compra, filtros, mapa pydeck e incertidumbre 95%",
-            "valor_medido": "5 pestanas interactivas y semaforo comprensible para el cliente (Restaurante Luisiana)",
+            "metrica": "Cobertura funcional en Streamlit con semaforo de compra, filtros, mapa pydeck, mapa PCA y Sello TDL",
+            "valor_medido": "6 pestanas interactivas y semaforo comprensible para el cliente (Restaurante Luisiana)",
             "umbral_objetivo": ">= 4 vistas ejecutivas",
-            "calificacion_pct": 95.0,
+            "calificacion_pct": 97.0,
         },
         {
             "id": 5,

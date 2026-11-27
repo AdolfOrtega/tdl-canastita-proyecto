@@ -1,0 +1,44 @@
+{
+  "repositorio": "tdl-canastita-proyecto",
+  "criterios": [
+    {
+      "criterio": "Disponibilidad ultimos 14 dias",
+      "umbral": ">= 95%",
+      "medido": "100.00%",
+      "cumple": true
+    },
+    {
+      "criterio": "Completitud Capa Oro (ISO/IEC 25012)",
+      "umbral": ">= 95%",
+      "medido": "100.00%",
+      "cumple": true
+    },
+    {
+      "criterio": "Cobertura pruebas automaticas (CI >= 60%)",
+      "umbral": ">= 60%",
+      "medido": "7 modulos test + CI Puerta 2",
+      "cumple": true
+    },
+    {
+      "criterio": "Secretos expuestos en repositorio",
+      "umbral": "0",
+      "medido": "0",
+      "cumple": true
+    },
+    {
+      "criterio": "Hallazgos criticos de auditoria abiertos",
+      "umbral": "0",
+      "medido": "0",
+      "cumple": true
+    },
+    {
+      "criterio": "Reproducibilidad + Dataset abierto y Datasheet",
+      "umbral": "Reproducible",
+      "medido": "OK (CC BY 4.0 + Datasheet)",
+      "cumple": true
+    }
+  ],
+  "criterios_cumplidos": 6,
+  "total_criterios": 6,
+  "apto_sello_tdl": true
+}
