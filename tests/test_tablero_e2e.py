@@ -11,18 +11,18 @@ from streamlit.testing.v1 import AppTest
 RUTA_APP = Path(__file__).resolve().parent.parent / "tablero" / "app.py"
 
 
-def test_tablero_renderiza_5_pestanas_sin_excepciones():
-    """Verifica que el tablero cargue todas sus vistas, KPIs y selectores sin errores."""
+def test_tablero_renderiza_6_pestanas_sin_excepciones():
+    """Verifica que el tablero cargue sus 6 vistas, KPIs y selectores sin errores."""
     at = AppTest.from_file(str(RUTA_APP), default_timeout=30)
     at.run()
 
     assert len(at.exception) == 0, f"Excepciones en renderizado inicial: {at.exception}"
-    assert len(at.tabs) == 5
-    assert len(at.metric) >= 20
+    assert len(at.tabs) == 6
+    assert len(at.metric) >= 24
 
 
-def test_tablero_interaccion_filtros_y_mapa():
-    """Prueba cambios interactivos de moneda, plazas, productos y categorias DENUE."""
+def test_tablero_interaccion_filtros_mapa_y_pca():
+    """Prueba cambios interactivos de moneda, plazas, productos, DENUE y mapa PCA E3."""
     at = AppTest.from_file(str(RUTA_APP), default_timeout=30)
     at.run()
 
@@ -47,3 +47,9 @@ def test_tablero_interaccion_filtros_y_mapa():
         for cat in at.selectbox[2].options[:2]:
             at.selectbox[2].set_value(cat).run()
             assert len(at.exception) == 0
+
+    # Probar selectores del Mapa Multivariado PCA (Pestana 6)
+    at.selectbox[3].set_value("Producto Canastita").run()
+    assert len(at.exception) == 0
+    at.selectbox[4].set_value("Aguacate Hass").run()
+    assert len(at.exception) == 0

@@ -107,12 +107,32 @@ def cargar_resultados_e2():
     return exp, r10, r12
 
 
+@st.cache_data
+def cargar_resultados_e3():
+    """Carga proyecciones PCA, MANOVA, benchmark de optimizacion y Sello TDL (E3)."""
+    ruta_mv = DIR_LAB / "resultados_multivariado_e3.json"
+    ruta_proj = DIR_LAB / "pca_proyeccion_oro_e3.csv"
+    ruta_pca_meta = DIR_LAB / "pca_cargas_y_varianza_e3.csv"
+    ruta_bench = DIR_ORO / "benchmark_optimizacion_e3.json"
+    ruta_sello = DIR_CALIDAD / "solicitud_sello_tdl.json"
+    ruta_psp = DIR_CALIDAD / "resumen_psp_e0_e3.json"
+
+    mv = json.loads(ruta_mv.read_text(encoding="utf-8")) if ruta_mv.exists() else {}
+    df_proj = pd.read_csv(ruta_proj) if ruta_proj.exists() else pd.DataFrame()
+    df_pca_m = pd.read_csv(ruta_pca_meta) if ruta_pca_meta.exists() else pd.DataFrame()
+    bench = json.loads(ruta_bench.read_text(encoding="utf-8")) if ruta_bench.exists() else {}
+    sello = json.loads(ruta_sello.read_text(encoding="utf-8")) if ruta_sello.exists() else {}
+    psp_res = json.loads(ruta_psp.read_text(encoding="utf-8")) if ruta_psp.exists() else {}
+    return mv, df_proj, df_pca_m, bench, sello, psp_res
+
+
 df_oro = cargar_datos_oro()
 df_pron, df_metricas, df_corr, adf_data = cargar_pronosticos()
 df_cuarentena = cargar_cuarentena()
 df_bitacora = cargar_bitacora()
 df_geo, geojson_muns = cargar_datos_geo()
 exp_e2, iso_25010, iso_25012 = cargar_resultados_e2()
+mv_e3, df_pca_proj, df_pca_meta, bench_e3, sello_tdl, psp_e3 = cargar_resultados_e3()
 
 # ----------------- BARRA LATERAL (SIDEBAR) -----------------
 st.sidebar.markdown(
@@ -172,6 +192,7 @@ pestanas = st.tabs([
     "🛡️ Calidad de Datos, Cuarentena & SQA",
     "🗺️ Mapa Geoespacial DENUE",
     "⚗️ Experimento 2³ & Normas ISO",
+    "🧭 Mapa Multivariado & Sello TDL",
 ])
 
 # ================= PESTAÑA 1: VISOR DE PRECIOS =================
@@ -646,3 +667,116 @@ with pestanas[4]:
             if iso_25012 and "caracteristicas" in iso_25012:
                 df_i12 = pd.DataFrame(iso_25012["caracteristicas"])[["caracteristica", "categoria", "puntaje_pct"]]
                 st.dataframe(df_i12, width="stretch", hide_index=True)
+
+# ================= PESTAÑA 6: MAPA MULTIVARIADO PCA/MANOVA & SELLO TDL =================
+with pestanas[5]:
+    st.header("🧭 Mapa Multivariado (PCA + MANOVA) & Sello TDL (E3)")
+    st.markdown("""
+    Proyección de las 7 métricas económicas de Capa Oro en componentes principales estandarizados (**PC1 vs PC2**),
+    contrastada por **MANOVA (`Wilks`, `Pillai`)** y **PERMANOVA** sobre Colima, Guadalajara y Morelia.
+    """)
+
+    if df_pca_proj.empty or not mv_e3:
+        st.info("Ejecuta `python laboratorio/analisis_multivariado_e3.py` para generar el análisis multivariado.")
+    else:
+        pca_info = mv_e3.get("pca", {})
+        manova_info = mv_e3.get("manova", {})
+        wilks_r = manova_info.get("manova_plazas_wilks", {})
+        pillai_r = manova_info.get("manova_plazas_pillai", {})
+        tot_bench = bench_e3.get("total_end_to_end", {}) if bench_e3 else {}
+
+        m_e3_1, m_e3_2, m_e3_3, m_e3_4 = st.columns(4)
+        m_e3_1.metric(
+            "Varianza PCA (PC1 + PC2)",
+            f"{pca_info.get('varianza_pc1_pc2_pct', 0):.2f}%",
+            delta=f"{pca_info.get('kaiser_componentes_seleccionados', 2)} comp. Kaiser (lambda>1)",
+        )
+        m_e3_2.metric(
+            "MANOVA Plazas (Wilks / Pillai)",
+            f"Lambda={wilks_r.get('valor', 0):.3f}",
+            delta=f"Pillai={pillai_r.get('valor', 0):.3f} (p={pillai_r.get('p_valor', 0):.4g})",
+        )
+        m_e3_3.metric(
+            "Pipeline E3 (lxml + Parquet)",
+            f"-{tot_bench.get('mejora_tiempo_pct', 0):.1f}% tiempo",
+            delta=f"-{tot_bench.get('ahorro_espacio_pct', 0):.1f}% peso en disco",
+        )
+        sello_ok = bool(sello_tdl.get("apto_sello_tdl", False))
+        sello_cnt = f"{sello_tdl.get('criterios_cumplidos', 0)}/{sello_tdl.get('total_criterios', 6)}"
+        m_e3_4.metric(
+            "Sello de Calidad TDL",
+            f"CERTIFICADO ({sello_cnt})" if sello_ok else f"EN REVISION ({sello_cnt})",
+            delta="6/6 umbrales validados" if sello_ok else "Revisar criterios",
+        )
+
+        st.markdown("---")
+        col_f_pca1, col_f_pca2 = st.columns(2)
+        color_por = col_f_pca1.selectbox(
+            "🎨 Colorear mapa PCA por:",
+            ["Plaza Mayorista (E0)", "Producto Canastita"],
+            index=0,
+        )
+        prods_pca = ["Todos los Productos"] + sorted(df_pca_proj["producto"].dropna().unique().tolist())
+        prod_pca_sel = col_f_pca2.selectbox("🧺 Filtrar insumo en proyección PCA:", prods_pca, index=0)
+
+        df_plot_pca = df_pca_proj.copy()
+        if prod_pca_sel != "Todos los Productos":
+            df_plot_pca = df_plot_pca[df_plot_pca["producto"] == prod_pca_sel]
+
+        fig_pca, ax_pca = plt.subplots(figsize=(9.5, 5.2))
+        col_grupo = "ciudad" if color_por.startswith("Plaza") else "producto"
+        paleta_pca = ["#2ca02c", "#1f77b4", "#d62728", "#9467bd", "#ff7f0e", "#8c564b"]
+        grupos_ord = sorted(df_plot_pca[col_grupo].unique().tolist())
+        for idx_g, g_nom in enumerate(grupos_ord):
+            sub_g = df_plot_pca[df_plot_pca[col_grupo] == g_nom]
+            col_hex = paleta_pca[idx_g % len(paleta_pca)]
+            ax_pca.scatter(sub_g["PC1"], sub_g["PC2"], s=28, alpha=0.55, color=col_hex, label=f"{g_nom} ({len(sub_g)})")
+            cx, cy = float(sub_g["PC1"].mean()), float(sub_g["PC2"].mean())
+            ax_pca.scatter([cx], [cy], s=140, color=col_hex, edgecolor="#1a202c", marker="D", zorder=6)
+
+        ax_pca.axhline(0, color="#a0aec0", lw=1.0, linestyle="--")
+        ax_pca.axvline(0, color="#a0aec0", lw=1.0, linestyle="--")
+        ax_pca.set_xlabel(f"PC1 ({pca_info.get('varianza_pc1_pct', 0):.1f}% var.) - Nivel de Precio, Volatilidad y Escala")
+        ax_pca.set_ylabel(f"PC2 ({pca_info.get('varianza_pc2_pct', 0):.1f}% var.) - Choque Estacional e Inflacionario (MoM/YoY)")
+        ax_pca.set_title("Mapa Multivariado de Perfiles Mayoristas en Occidente (PC1 vs PC2)", fontweight="bold")
+        ax_pca.grid(True, linestyle=":", alpha=0.45)
+        ax_pca.legend(loc="upper left", ncol=2, fontsize=8.5)
+        fig_pca.tight_layout()
+        st.pyplot(fig_pca)
+        plt.close(fig_pca)
+
+        st.success(
+            "**Interpretación ejecutiva para el cliente (*Restaurante Luisiana* y comercios de Colima):** "
+            "Hacia la derecha (**PC1 alto**) se agrupan las operaciones de alto flujo y mayor volumen por lote "
+            "(**Guadalajara** y **Morelia**, donde predominan presentaciones por caja/arpilla y mayor número de cotizaciones mensuales), "
+            "mientras **Colima** se concentra a la izquierda con cotizaciones por kilogramo y menor dispersión intrames (`spread 24.1%` vs `58.9%` en GDL). "
+            "Hacia arriba (**PC2 alto**) emergen los meses de choque inflacionario/estacional (`MoM` y `YoY`), validando con MANOVA (`Wilks p < 0.001`, `Pillai p < 0.001`) "
+            "que cada plaza opera bajo un perfil multivariado distinto."
+        )
+
+        st.markdown("---")
+        col_s1, col_s2 = st.columns([1.3, 1])
+        with col_s1:
+            st.subheader("🏅 Cumplimiento del Sello TDL (6 Umbrales)")
+            if sello_tdl and "criterios" in sello_tdl:
+                df_sello = pd.DataFrame(sello_tdl["criterios"])
+                st.dataframe(df_sello, width="stretch", hide_index=True)
+
+        with col_s2:
+            st.subheader("📦 Dataset Abierto (CC BY 4.0)")
+            st.markdown("""
+            Descarga la tabla certificada de **Capa Oro** con linaje `_linaje_*` y ficha técnica (`docs/E3/datasheet_canasta_oro.md`).
+            - **Licencia:** `CC BY 4.0` / Libre Uso MX (`LICENSE-DATA.md`).
+            - **Retrospectiva PSP (E0–E3):** `{:.2f} h` equipo · `{}` defectos gestionados.
+            """.format(
+                psp_e3.get("totales_acumulados", {}).get("horas_equipo", 0.0),
+                psp_e3.get("totales_acumulados", {}).get("defectos_totales", 0),
+            ))
+            ruta_oro_csv = DIR_ORO / "canasta_occidente_oro.csv"
+            if ruta_oro_csv.exists():
+                st.download_button(
+                    label="⬇️ Descargar Capa Oro CSV (CC BY 4.0)",
+                    data=ruta_oro_csv.read_bytes(),
+                    file_name="canasta_occidente_oro.csv",
+                    mime="text/csv",
+                )

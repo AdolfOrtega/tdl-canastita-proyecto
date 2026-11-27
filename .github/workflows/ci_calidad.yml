@@ -28,7 +28,7 @@ jobs:
 
       - name: Verificar sintaxis y compilacion de modulos Python
         run: |
-          python -m py_compile extractores/base.py extractores/sniim_canasta.py extractores/macro_api.py extractores/denue_geo.py extractores/snapshot_html_sniim.py pipeline/limpieza_plata.py pipeline/enriquecer_geo.py pipeline/construir_oro.py laboratorio/pronostico_series_tiempo.py laboratorio/experimento_factorial_2k.py calidad/evaluar_iso_25010_25012.py calidad/auditor_tdl.py tablero/app.py
+          python -m py_compile extractores/base.py extractores/sniim_canasta.py extractores/macro_api.py extractores/denue_geo.py extractores/snapshot_html_sniim.py pipeline/limpieza_plata.py pipeline/enriquecer_geo.py pipeline/construir_oro.py pipeline/benchmark_optimizacion_e3.py laboratorio/pronostico_series_tiempo.py laboratorio/experimento_factorial_2k.py laboratorio/analisis_multivariado_e3.py calidad/evaluar_iso_25010_25012.py calidad/auditor_tdl.py calidad/retrospectiva_psp.py tablero/app.py
 
       - name: Ejecutar suite de pruebas unitarias e integracion con cobertura
         run: |
