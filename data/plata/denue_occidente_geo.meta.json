@@ -1,7 +1,7 @@
 {
   "capa": "Plata Geoespacial",
   "descripcion": "Comercios DENUE integrados mediante union espacial con poligonos municipales INEGI",
-  "fecha_procesamiento_utc": "2026-11-27T21:27:31.654669+00:00",
+  "fecha_procesamiento_utc": "2026-11-27T21:50:54.567821+00:00",
   "motor_union_espacial": "geopandas_shapely",
   "crs": "EPSG:4326",
   "total_establecimientos": 9650,
@@ -18,6 +18,6 @@
     "Abarrotes / Miscelanea": 2855,
     "Fruteria / Mercado": 992
   },
-  "sha256_csv": "4cdc015084e1bb13104777ceb738adc60409df0a8b8fcdb9c638c7901be103f2",
+  "sha256_csv": "d5711592f0f654a2be9c290f15444e03337c223f31cb77d7c8d16d95839598d2",
   "sha256_geojson": "dc57d94e64988a5eab84f93804e1c8db61eaa4e3531edceaf3d6dcde77c9fd30"
 }

@@ -1,33 +1,9 @@
 repeticion,etapa,configuracion,tiempo_seg,tamano_kb,filas
-1,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),1.114503999997396,2292.30078125,4846
-1,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),0.8666690999962157,22.32421875,4846
-1,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.16078390000620857,8317.6982421875,16488
-1,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.033768600012990646,188.5439453125,16488
-2,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),1.0972267000033753,2292.30078125,4846
-2,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),0.8963876999914646,22.32421875,4846
-2,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.16756380000151694,8317.6982421875,16488
-2,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.032656900002621114,188.5439453125,16488
-3,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),1.1188057999970624,2292.30078125,4846
-3,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),0.9475473999918904,22.32421875,4846
-3,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.18967629999679048,8317.6982421875,16488
-3,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.03246449999278411,188.5439453125,16488
-4,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),1.1278699000104098,2292.30078125,4846
-4,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),0.8983610000141198,22.32421875,4846
-4,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.16345239999645855,8317.6982421875,16488
-4,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.03383659999235533,188.5439453125,16488
-5,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),1.1734601999924053,2292.30078125,4846
-5,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),0.9235257999971509,22.32421875,4846
-5,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.16510799998650327,8317.6982421875,16488
-5,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.0349108999944292,188.5439453125,16488
-6,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),1.1697325999994064,2292.30078125,4846
-6,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),1.0615403999981936,22.32421875,4846
-6,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.18654669998795725,8317.6982421875,16488
-6,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.03242250000766944,188.5439453125,16488
-7,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),1.1140447000070708,2292.30078125,4846
-7,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),1.0050871999992523,22.32421875,4846
-7,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.16977120000228751,8317.6982421875,16488
-7,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.03368239999690559,188.5439453125,16488
-8,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),1.0917168000014499,2292.30078125,4846
-8,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),0.9431582999968668,22.32421875,4846
-8,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.16624299999966752,8317.6982421875,16488
-8,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.032932200003415346,188.5439453125,16488
+1,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),2.643118948999984,2287.5673828125,4846
+1,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),2.052631747999982,22.32421875,4846
+1,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.14762878799999157,8333.337890625,16574
+1,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.024173676999993177,187.9609375,16574
+2,Scraping + Bronce (12 pags),Antes E1 (html.parser + CSV),2.6407266340000035,2287.5673828125,4846
+2,Scraping + Bronce (12 pags),Despues E3 (lxml + Parquet),2.0190235110000003,22.32421875,4846
+2,Medallion I/O (Plata + Oro),Antes E1 (CSV),0.14341260700001612,8333.337890625,16574
+2,Medallion I/O (Plata + Oro),Despues E3 (Parquet),0.023044276000007358,187.9609375,16574

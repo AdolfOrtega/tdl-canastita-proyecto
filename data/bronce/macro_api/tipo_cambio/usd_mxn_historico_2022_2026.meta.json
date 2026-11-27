@@ -5,12 +5,16 @@
   "fuentes_origen": [
     "BANXICO_SIE_SF43718"
   ],
-  "fecha_captura_utc": "2026-11-26T22:09:34.494382+00:00",
+  "fecha_captura_utc": "2026-11-27T21:50:44.542539+00:00",
   "user_agent": "TDL-Observatorio/1.0 (proyecto academico; contacto: 23460528@colima.tecnm.mx)",
   "total_registros": 1218,
   "total_periodos_mensuales": 59,
   "primer_periodo": "2022-01",
   "ultimo_periodo": "2026-11",
+  "formato_optimizado_e3": "parquet",
+  "tamano_csv_bytes": 220310,
+  "tamano_parquet_bytes": 21679,
+  "ahorro_parquet_pct": 90.16,
   "columnas": [
     "fecha_iso",
     "anio_mes",
