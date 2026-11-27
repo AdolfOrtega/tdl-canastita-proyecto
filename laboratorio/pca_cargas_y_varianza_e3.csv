@@ -1,0 +1,8 @@
+componente,nombre_negocio,eigenvalor,varianza_explicada_pct,varianza_acumulada_pct,criterio_kaiser_mayor_1,peso_precio_promedio_mxn,carga_precio_promedio_mxn,peso_precio_usd,carga_precio_usd,peso_volatilidad_precio_std,carga_volatilidad_precio_std,peso_spread_pct,carga_spread_pct,peso_variacion_mom_pct,carga_variacion_mom_pct,peso_variacion_yoy_pct,carga_variacion_yoy_pct,peso_num_observaciones,carga_num_observaciones
+PC1,"Indice de Nivel de Precio, Volatilidad y Escala",3.12,44.57,44.57,True,0.5128,0.9059,0.5143,0.9084,0.4568,0.8069,0.3092,0.5462,0.1163,0.2054,0.1388,0.2452,0.368,0.65
+PC2,Indice de Choque Estacional e Inflacionario (MoM/YoY),1.3031,18.62,63.19,True,-0.1656,-0.1891,-0.1592,-0.1817,0.1897,0.2165,0.1484,0.1694,0.5706,0.6513,0.6696,0.7643,-0.3397,-0.3878
+PC3,Indice de Amplitud Mayorista (Spread %) y Riesgo,0.9835,14.05,77.24,False,-0.3049,-0.3024,-0.3048,-0.3023,0.316,0.3134,0.7667,0.7604,-0.3225,-0.3198,-0.1469,-0.1457,-0.0283,-0.028
+PC4,Indice de Contraste Impulso Mensual vs Anual,0.7868,11.24,88.48,False,-0.1255,-0.1114,-0.126,-0.1118,-0.1728,-0.1533,0.1956,0.1735,0.7271,0.645,-0.4936,-0.4378,0.3577,0.3173
+PC5,Indice de Liquidez y Densidad de Plaza,0.5513,7.88,96.35,False,-0.2011,-0.1493,-0.1972,-0.1464,-0.2746,-0.2039,0.009,0.0067,-0.1658,-0.1231,0.502,0.3727,0.7521,0.5585
+PC6,Componente Residual de Spread vs Volatilidad,0.2522,3.6,99.96,False,-0.2519,-0.1265,-0.2438,-0.1225,0.7418,0.3725,-0.5061,-0.2542,0.0279,0.014,-0.1233,-0.0619,0.234,0.1175
+PC7,Componente Tipo de Cambio Efectivo (MXN vs USD),0.003,0.04,100.0,False,-0.7049,-0.0387,0.7093,0.0389,-0.0049,-0.0003,0.0019,0.0001,-0.0021,-0.0001,-0.004,-0.0002,-0.0021,-0.0001
