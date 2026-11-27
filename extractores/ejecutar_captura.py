@@ -17,6 +17,8 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+import pandas as pd
+
 from extractores.base import ExtractorEtico, UA, cargar_env
 from extractores.macro_api import (
     extraer_inflacion_mexico_api,
@@ -51,6 +53,18 @@ def guardar_csv_y_metadatos(registros, subcarpeta, nombre_base, descripcion):
     periodos_unicos = sorted({r.get("anio_mes", "") for r in registros if r.get("anio_mes")})
     fuentes_unicas = sorted({r.get("_fuente", "") for r in registros if r.get("_fuente")})
 
+    ruta_parquet = ruta_csv.with_suffix(".parquet")
+    parquet_ok = False
+    try:
+        pd.DataFrame(registros).to_parquet(ruta_parquet, index=False)
+        parquet_ok = True
+    except Exception:
+        parquet_ok = False
+
+    tam_csv = ruta_csv.stat().st_size
+    tam_parq = ruta_parquet.stat().st_size if parquet_ok and ruta_parquet.exists() else None
+    ahorro_parq = round((1.0 - (tam_parq / tam_csv)) * 100.0, 2) if tam_parq and tam_csv else 0.0
+
     meta = {
         "nombre_archivo": ruta_csv.name,
         "descripcion": descripcion,
@@ -62,6 +76,10 @@ def guardar_csv_y_metadatos(registros, subcarpeta, nombre_base, descripcion):
         "total_periodos_mensuales": len(periodos_unicos),
         "primer_periodo": periodos_unicos[0] if periodos_unicos else None,
         "ultimo_periodo": periodos_unicos[-1] if periodos_unicos else None,
+        "formato_optimizado_e3": "parquet" if parquet_ok else "csv",
+        "tamano_csv_bytes": tam_csv,
+        "tamano_parquet_bytes": tam_parq,
+        "ahorro_parquet_pct": ahorro_parq,
         "columnas": columnas,
     }
     with ruta_meta.open("w", encoding="utf-8") as f:

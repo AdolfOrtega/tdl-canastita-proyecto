@@ -1,10 +1,10 @@
 {
   "esquema_linaje": "TDL-Canastita-Lineage-v2.0",
-  "fecha_generacion_utc": "2026-11-26T22:09:47.060866+00:00",
+  "fecha_generacion_utc": "2026-11-27T06:58:03.055997+00:00",
   "destino_oro": {
     "ruta": "data/oro/canasta_occidente_oro.csv",
     "registros": 967,
-    "sha256_artefacto_primario": "5ee453351840904994e2e48403dafd02799a06717270db53fca6c2812a2c8b95",
+    "sha256_artefacto_primario": "7af1fd2405588e074177800ab93513f0cc0ee8b6652a718895884f9279e25f88",
     "columnas_linaje_fila": [
       "_linaje_fecha_captura_sniim",
       "_linaje_fuente_precios",
@@ -50,8 +50,8 @@
     {
       "ruta": "data/bronce/sniim_canasta/historico/sniim_occidente_historico_2022_2026.csv",
       "existe": true,
-      "sha256": "9fe14fd74ead2178e9a1fb86b87c9647cf21b41a37af56ab3100fcb05da3e2c7",
-      "tamano_bytes": 6746525,
+      "sha256": "c8f0cba3db8dc887884d10096ee1982d1820d3c72975653b8f1838fb8545e321",
+      "tamano_bytes": 6760173,
       "fecha_captura_utc": "2026-11-06T07:15:32.127530+00:00"
     },
     {
@@ -71,8 +71,8 @@
     {
       "ruta": "data/bronce/denue_inegi/denue_occidente_raw.csv",
       "existe": true,
-      "sha256": "172df462398ee4304580e6ec49bbb1f8e85580312419ed9ec91dd4ab0142f76e",
-      "tamano_bytes": 3369701,
+      "sha256": "a69fdc6ea91dd2ac2d0f70f7e6e77a0ef0ff8a845d24f79b6fba70b59ca42c84",
+      "tamano_bytes": 3379352,
       "fecha_captura_utc": "2026-11-20T04:04:32.882921+00:00"
     },
     {
@@ -95,16 +95,16 @@
     {
       "ruta": "data/plata/canasta_occidente_plata.csv",
       "existe": true,
-      "sha256": "f9ca86a5e7fe6783ee2323faf7c0e40a41f8237483360e75a335e33033e001c8",
-      "tamano_bytes": 8184492,
-      "fecha_procesamiento_utc": "2026-11-26T22:09:46.986041+00:00"
+      "sha256": "b3b409e42daa550191ff06cb81bd4469be040451f1a2bfcd2cecdfdaaa6c3fa5",
+      "tamano_bytes": 8200014,
+      "fecha_procesamiento_utc": "2026-11-27T06:58:02.955239+00:00"
     },
     {
       "ruta": "data/plata/denue_occidente_geo.csv",
       "existe": true,
-      "sha256": "d5711592f0f654a2be9c290f15444e03337c223f31cb77d7c8d16d95839598d2",
-      "tamano_bytes": 4074680,
-      "fecha_procesamiento_utc": "2026-11-26T22:09:45.977830+00:00"
+      "sha256": "4cdc015084e1bb13104777ceb738adc60409df0a8b8fcdb9c638c7901be103f2",
+      "tamano_bytes": 4084331,
+      "fecha_procesamiento_utc": "2026-11-27T06:57:45.643107+00:00"
     }
   ]
 }

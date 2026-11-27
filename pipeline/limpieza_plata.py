@@ -211,6 +211,22 @@ def registrar_cuarentena(df_rechazados: pd.DataFrame) -> None:
     logger.warning("Se enviaron %d registros a cuarentena en %s", len(df_rechazados), archivo_cuarentena)
 
 
+def _leer_bronce_optimizado(ruta_csv: Path) -> pd.DataFrame:
+    """
+    Lee una particion de Capa Bronce priorizando Parquet (configuracion optima E2/E3)
+    y usando CSV como respaldo transparente multiplataforma.
+    """
+    ruta_parquet = ruta_csv.with_suffix(".parquet")
+    if ruta_parquet.exists():
+        try:
+            return pd.read_parquet(ruta_parquet).astype(object).where(
+                lambda d: d.notna(), np.nan
+            )
+        except Exception:
+            pass
+    return pd.read_csv(ruta_csv, dtype=str)
+
+
 def procesar_capa_plata() -> pd.DataFrame:
     """
     Función orquestadora principal de Capa Bronce a Capa Plata:
@@ -238,7 +254,7 @@ def procesar_capa_plata() -> pd.DataFrame:
         raise FileNotFoundError("No se encontraron archivos en Capa Bronce para procesar Plata.")
 
     logger.info("Leyendo %d fuentes de datos en Capa Bronce...", len(archivos_bronce))
-    dfs = [pd.read_csv(f, dtype=str) for f in archivos_bronce]
+    dfs = [_leer_bronce_optimizado(f) for f in archivos_bronce]
     df_crudo = pd.concat(dfs, ignore_index=True)
     logger.info("Total registros brutos combinados: %d", len(df_crudo))
 
@@ -296,6 +312,7 @@ def procesar_capa_plata() -> pd.DataFrame:
         "plazas_incluidas": df_plata["ciudad"].unique().tolist(),
         "productos_incluidos": df_plata["producto"].unique().tolist(),
         "sha256_artefacto": sha_archivo,
+        "optimizacion_e3": "1_hilo_lxml_parquet",
         "formato_primario": "parquet" if parquet_guardado else "csv",
         "archivos_salida": {
             "parquet": str(ruta_parquet.relative_to(RAIZ)) if parquet_guardado else None,

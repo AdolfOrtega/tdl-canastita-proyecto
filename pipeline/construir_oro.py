@@ -242,7 +242,7 @@ def agregar_linaje_oro(
         df_out["_linaje_fecha_captura_sniim"] = df_out["_linaje_fecha_captura_sniim"].fillna(ts_proceso)
 
     df_out["_linaje_fecha_proceso_oro_utc"] = ts_proceso
-    df_out["_linaje_version_pipeline"] = "2.0-E2"
+    df_out["_linaje_version_pipeline"] = "3.0-E3"
     return df_out
 
 

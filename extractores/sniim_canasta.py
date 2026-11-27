@@ -10,7 +10,7 @@ Descarga los precios mayoristas de frutas y hortalizas desde el portal del SNIIM
 
 import re
 from datetime import datetime, timedelta, timezone
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, FeatureNotFound
 from extractores.base import ExtractorEtico
 
 URL_SNIIM = (
@@ -62,13 +62,17 @@ def limpiar_precio(texto):
         return None
 
 
-def parsear_tabla_sniim(html, plaza_info, captura_ts, url_origen, producto_fijo=None, calidad_fija="Primera", parser="html.parser"):
+def parsear_tabla_sniim(html, plaza_info, captura_ts, url_origen, producto_fijo=None, calidad_fija="Primera", parser="lxml"):
     """
     Lee las filas <tr> de la tabla del SNIIM y regresa una lista de diccionarios.
+    Usa lxml por defecto (optimo experimental E2/E3) con respaldo automatico a html.parser.
     Nota: cuando se pide ProductoId=-1 la tabla trae 9 columnas, pero cuando se
     consulta un solo producto el SNIIM quita Producto y Calidad y deja 7 columnas.
     """
-    soup = BeautifulSoup(html, parser)
+    try:
+        soup = BeautifulSoup(html, parser)
+    except FeatureNotFound:
+        soup = BeautifulSoup(html, "html.parser")
     registros = []
 
     for fila in soup.find_all("tr"):
@@ -125,7 +129,7 @@ def parsear_tabla_sniim(html, plaza_info, captura_ts, url_origen, producto_fijo=
     return registros
 
 
-def extraer_sniim_reciente(extractor=None, dias_ventana=35):
+def extraer_sniim_reciente(extractor=None, dias_ventana=35, parser="lxml"):
     """Descarga los registros recientes de las 3 plazas para la corrida diaria."""
     ext = extractor or ExtractorEtico(pausa=1.5)
     captura_ts = datetime.now(timezone.utc).isoformat()
@@ -151,13 +155,13 @@ def extraer_sniim_reciente(extractor=None, dias_ventana=35):
         resp = ext.get(URL_SNIIM, params=params)
         # El HTML del SNIIM viene en latin-1
         html = resp.content.decode("latin-1", errors="replace")
-        filas = parsear_tabla_sniim(html, info, captura_ts, resp.url)
+        filas = parsear_tabla_sniim(html, info, captura_ts, resp.url, parser=parser)
         todos.extend(filas)
 
     return todos
 
 
-def extraer_sniim_historico(extractor=None, fecha_inicio="01/01/2022", fecha_final="05/11/2026"):
+def extraer_sniim_historico(extractor=None, fecha_inicio="01/01/2022", fecha_final="05/11/2026", parser="lxml"):
     """Descarga la serie historica desde 2022 (>= 36 meses) para los 6 productos base."""
     ext = extractor or ExtractorEtico(pausa=1.5)
     captura_ts = datetime.now(timezone.utc).isoformat()
@@ -185,6 +189,7 @@ def extraer_sniim_historico(extractor=None, fecha_inicio="01/01/2022", fecha_fin
                 resp.url,
                 producto_fijo=nombre_prod,
                 calidad_fija=calidad_prod,
+                parser=parser,
             )
             todos.extend(filas)
 

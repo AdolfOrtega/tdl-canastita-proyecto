@@ -4,7 +4,7 @@
 **Institución:** Instituto Tecnológico de Colima (TecNM)  
 **Equipo:** Adolfo Rodríguez (Ingeniería de Datos) y Andrea Tairi Velázquez Gallardo (Análisis Estadístico)  
 **Fecha:** Noviembre 2026  
-**Versión:** 2.0 (Entrega E2 — Geoespacial y Linaje)
+**Versión:** 3.0 (Entrega E3 — Dataset Abierto y Optimización)
 
 ---
 
@@ -12,7 +12,7 @@
 
 El observatorio sigue el patrón de arquitectura Medallion para garantizar el linaje, la auditabilidad y la confianza de los datos:
 
-1. **Capa Bronce (`data/bronce/`):** Almacén de ingestión cruda en formatos nativos (CSV) con metadatos JSON y bitácora de extracción.
+1. **Capa Bronce (`data/bronce/`):** Almacén de ingestión cruda en formatos CSV + Parquet optimizado (`lxml`, 1 hilo) con metadatos JSON y bitácora de extracción.
 2. **Capa Plata (`data/plata/`):** Almacén limpio, deduplicado, tipado, estandarizado a nivel regional, con tratamiento y etiquetado de anomalías (IQR) y filtrado por Puerta 1.
 3. **Capa Oro (`data/oro/`):** Tabla dimensional analítica mensual integrada con indicadores macroeconómicos de Banco de México (tipo de cambio FIX e INPC) y métricas derivadas (variaciones intermensuales MoM, anuales YoY, precios en USD y spreads).
 4. **Almacén de Cuarentena (`data/cuarentena/`):** Repositorio de auditoría de registros rechazados por Puerta 1 con motivo de fallo y marca temporal.
@@ -91,8 +91,8 @@ El observatorio sigue el patrón de arquitectura Medallion para garantizar el li
 | `_linaje_fuente_macro` | String | No | Constante de origen macroeconómico | Series oficiales de Banco de México integradas (`SF43718`, `SP1`). | `"BANXICO_SIE_SF43718_SP1"` |
 | `_linaje_fuente_geo` | String | No | Identificador de origen espacial | Fuente comercial y cartográfica oficial (`INEGI DENUE v1 + MGEM`). | `"INEGI_DENUE_v1_MGEM"` |
 | `_linaje_fecha_captura_sniim` | String | No | $\max(\text{\_capturado\_en\_utc})$ del grupo | Marca temporal UTC exacta de captura del registro SNIIM más reciente del grupo. | `"2026-11-19T21:12:48+00:00"` |
-| `_linaje_fecha_proceso_oro_utc` | String | No | Timestamp UTC de ejecución Oro | Fecha y hora UTC de consolidación del lote analítico en Capa Oro. | `"2026-11-20T04:00:00+00:00"` |
-| `_linaje_version_pipeline` | String | No | Control de versión de esquema | Versión del pipeline Medallion que generó el registro. | `"2.0-E2"` |
+| `_linaje_fecha_proceso_oro_utc` | String | No | Timestamp UTC de ejecución Oro | Fecha y hora UTC de consolidación del lote analítico en Capa Oro. | `"2026-11-27T00:00:00+00:00"` |
+| `_linaje_version_pipeline` | String | No | Control de versión de esquema | Versión del pipeline Medallion que generó el registro. | `"3.0-E3"` |
 
 ---
 
