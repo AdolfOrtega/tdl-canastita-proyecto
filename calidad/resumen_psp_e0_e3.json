@@ -1,0 +1,151 @@
+{
+  "fecha_generacion_utc": "2026-11-27T06:54:27.477505+00:00",
+  "totales_acumulados": {
+    "sesiones_totales": 38,
+    "horas_adolfo": 40.08,
+    "horas_andrea": 38.83,
+    "horas_equipo": 78.92,
+    "defectos_adolfo": 18,
+    "defectos_andrea": 14,
+    "defectos_totales": 32,
+    "minutos_retrabajo_totales": 455,
+    "review_yield_global_pct": 18.75,
+    "exactitud_estimacion_media_pct": 94.59
+  },
+  "evolucion_etapas": [
+    {
+      "etapa": "E0",
+      "horas_planeadas_equipo": 19.0,
+      "horas_reales_adolfo": 8.92,
+      "horas_reales_andrea": 7.08,
+      "horas_reales_equipo": 16.0,
+      "error_estimacion_pct": -15.79,
+      "defectos_totales": 8,
+      "eliminados_antes_pruebas": 3,
+      "review_yield_pct": 37.5,
+      "minutos_correccion_promedio": 15.62,
+      "defectos_por_hora": 0.5
+    },
+    {
+      "etapa": "E1",
+      "horas_planeadas_equipo": 23.0,
+      "horas_reales_adolfo": 12.25,
+      "horas_reales_andrea": 11.25,
+      "horas_reales_equipo": 23.5,
+      "error_estimacion_pct": 2.17,
+      "defectos_totales": 6,
+      "eliminados_antes_pruebas": 1,
+      "review_yield_pct": 16.67,
+      "minutos_correccion_promedio": 12.5,
+      "defectos_por_hora": 0.255
+    },
+    {
+      "etapa": "E2",
+      "horas_planeadas_equipo": 20.5,
+      "horas_reales_adolfo": 10.0,
+      "horas_reales_andrea": 9.83,
+      "horas_reales_equipo": 19.83,
+      "error_estimacion_pct": -3.25,
+      "defectos_totales": 13,
+      "eliminados_antes_pruebas": 0,
+      "review_yield_pct": 0.0,
+      "minutos_correccion_promedio": 15.0,
+      "defectos_por_hora": 0.655
+    },
+    {
+      "etapa": "E3",
+      "horas_planeadas_equipo": 19.5,
+      "horas_reales_adolfo": 8.92,
+      "horas_reales_andrea": 10.67,
+      "horas_reales_equipo": 19.58,
+      "error_estimacion_pct": 0.43,
+      "defectos_totales": 5,
+      "eliminados_antes_pruebas": 2,
+      "review_yield_pct": 40.0,
+      "minutos_correccion_promedio": 12.0,
+      "defectos_por_hora": 0.255
+    }
+  ],
+  "defectos_por_fase": [
+    {
+      "fase": "planeacion",
+      "inyectados": 1,
+      "eliminados": 0,
+      "minutos_correccion_total": 0
+    },
+    {
+      "fase": "diseno",
+      "inyectados": 5,
+      "eliminados": 0,
+      "minutos_correccion_total": 0
+    },
+    {
+      "fase": "codigo",
+      "inyectados": 21,
+      "eliminados": 0,
+      "minutos_correccion_total": 0
+    },
+    {
+      "fase": "revision",
+      "inyectados": 1,
+      "eliminados": 6,
+      "minutos_correccion_total": 80
+    },
+    {
+      "fase": "pruebas",
+      "inyectados": 4,
+      "eliminados": 26,
+      "minutos_correccion_total": 375
+    }
+  ],
+  "defectos_por_tipo_psp": [
+    {
+      "tipo": "entorno",
+      "conteo": 9,
+      "minutos_totales": 125,
+      "minutos_promedio": 13.89
+    },
+    {
+      "tipo": "datos",
+      "conteo": 8,
+      "minutos_totales": 110,
+      "minutos_promedio": 13.75
+    },
+    {
+      "tipo": "documentacion",
+      "conteo": 3,
+      "minutos_totales": 35,
+      "minutos_promedio": 11.67
+    },
+    {
+      "tipo": "interfaz",
+      "conteo": 3,
+      "minutos_totales": 60,
+      "minutos_promedio": 20.0
+    },
+    {
+      "tipo": "logica",
+      "conteo": 3,
+      "minutos_totales": 40,
+      "minutos_promedio": 13.33
+    },
+    {
+      "tipo": "funcion",
+      "conteo": 2,
+      "minutos_totales": 20,
+      "minutos_promedio": 10.0
+    },
+    {
+      "tipo": "sintaxis",
+      "conteo": 2,
+      "minutos_totales": 25,
+      "minutos_promedio": 12.5
+    },
+    {
+      "tipo": "sistema",
+      "conteo": 2,
+      "minutos_totales": 40,
+      "minutos_promedio": 20.0
+    }
+  ]
+}

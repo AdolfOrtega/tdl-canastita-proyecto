@@ -14,3 +14,7 @@ fecha,inicio,fin,interrupcion_min,fase,actividad
 2026-11-19,16:30,19:30,15,codigo,Implementacion de evaluador ISO/IEC 25010 y 25012 workflow CI Puerta 2 mapa pydeck en tablero y pruebas test_e2_geo_iso.py
 2026-11-19,19:45,21:15,10,revision,Revision cruzada como Quality Lead de resultados experimentales 2^3 e informe estadistico E2
 2026-11-19,21:20,22:20,5,pruebas,Auditoria QA full-stack pruebas E2E headless de tablero (test_tablero_e2e.py) correccion de logo roto deprecaciones Streamlit fugas Matplotlib y validacion en GitHub Actions CI
+2026-11-25,17:00,19:45,10,codigo,Implementacion de optimizacion 1 hilo + lxml + Parquet en extractores y pipeline Medallion mas benchmark pipeline/benchmark_optimizacion_e3.py
+2026-11-26,18:00,20:30,10,documentacion,Redaccion de licencia abierta CC-BY-4.0 (LICENSE-DATA.md) datasheet completo de Capa Oro y reporte optimizacion_pipeline_e3.md
+2026-11-27,16:00,19:00,10,codigo,Integracion de Pestana 6 Mapa Multivariado PC1-PC2 y Sello TDL en tablero/app.py descarga abierta y actualizacion CI Puerta 2
+2026-11-27,19:15,20:30,5,pruebas,Ejecucion completa suite pytest con pruebas E2E de 6 pestanas evaluacion ISO 25010/25012 y validacion Puerta 2 CI en GitHub Actions

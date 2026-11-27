@@ -14,3 +14,7 @@ fecha,inicio,fin,interrupcion_min,fase,actividad
 2026-11-19,16:00,18:30,10,analisis,Ejecucion ANOVA validacion de supuestos Puerta 3 corrida de confirmacion y redaccion de informe_experimento.md
 2026-11-19,19:00,21:30,15,documentacion,Implementacion de calidad/auditor_tdl.py auditoria interna sobre corte e1 redaccion de auditoria_cruzada.md relatoria-E2.md y ENTREGA.md
 2026-11-19,21:35,22:20,5,pruebas,Verificacion QA visual de graficas experimentales correccion de etiquetas empalmadas y eliminacion de FutureWarning en adfuller con 28 pruebas pytest en verde
+2026-11-25,16:30,19:30,15,analisis,Diseno de matriz multivariada de 7 variables continuas pruebas Mardia y Henze-Zirkler Q-Q Mahalanobis y tratamiento Yeo-Johnson en laboratorio/analisis_multivariado_e3.py
+2026-11-26,16:00,19:30,15,codigo,Implementacion de PCA estandarizado biplot PC1-PC2 MANOVA Wilks/Pillai PERMANOVA e informe_multivariado_e3.md
+2026-11-27,15:00,17:45,10,codigo,Desarrollo de calidad/retrospectiva_psp.py calculo de metricas PSP E0-E3 autoevaluacion MoProSoft CMMI y documento de tendencias DataOps
+2026-11-27,18:00,20:15,10,documentacion,Verificacion de 6 criterios Sello TDL en auditor_tdl.py pruebas test_e3_multivariado_sello.py relatoria E3 y ficha ENTREGA.md
