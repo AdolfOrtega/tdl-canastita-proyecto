@@ -1,0 +1,8 @@
+,precio_promedio_mxn,precio_usd,volatilidad_precio_std,spread_pct,variacion_mom_pct,variacion_yoy_pct,num_observaciones
+precio_promedio_mxn,1.0,0.9969,0.5956,0.2447,0.1044,0.1226,0.537
+precio_usd,0.9969,1.0,0.6002,0.2463,0.1091,0.1298,0.5378
+volatilidad_precio_std,0.5956,0.6002,1.0,0.5931,0.138,0.2857,0.3131
+spread_pct,0.2447,0.2463,0.5931,1.0,0.0869,0.0949,0.2969
+variacion_mom_pct,0.1044,0.1091,0.138,0.0869,1.0,0.2656,0.0274
+variacion_yoy_pct,0.1226,0.1298,0.2857,0.0949,0.2656,1.0,-0.0709
+num_observaciones,0.537,0.5378,0.3131,0.2969,0.0274,-0.0709,1.0
